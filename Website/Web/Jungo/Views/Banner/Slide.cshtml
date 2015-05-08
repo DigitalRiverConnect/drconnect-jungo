@@ -1,0 +1,16 @@
+﻿@model DigitalRiver.CloudLink.Commerce.Nimbus.ViewModels.Layout.BannerSlideViewModel
+@{
+    var bkgnd = string.IsNullOrEmpty(Model.BannerImageUrl) ?
+        string.Empty :
+        string.Format("style=\"background-image: url('{0}');background-repeat:no-repeat\"", Model.BannerImageUrl);
+}
+<div class="jumbotron" @Html.Raw(bkgnd)>
+    <a href="@Model.BannerLinkUrl">
+    <h1>@Model.BannerCaption</h1>
+    <p>@Model.CallToAction</p>
+    @if (!string.IsNullOrEmpty(Model.ButtonText))
+    {
+        <p><a class="btn btn-primary btn-lg" href="@Model.BannerLinkUrl" role="button">@Model.ButtonText</a></p>
+    }
+    </a>
+</div>

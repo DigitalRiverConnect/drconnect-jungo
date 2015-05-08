@@ -1,0 +1,17 @@
+{
+    "siteInfos": [
+		{
+			"companyId": "SportsInc",
+			"siteId": "sportsus",
+			"country": "US",
+			"locale": "en-US",
+			"gcLocale": "en_US",
+			"currency": "USD",
+			"isDefault": "true",
+			"isCartHandledBySite": "true",
+			"drBuyNowFormAction": "%Config.Site.drBuyNowFormAction%",
+			"drShoppingCartUrl": "%Config.Site.drShoppingCartUrl%",
+			"drThemeId": "38823900"
+		}
+	]
+}

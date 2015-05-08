@@ -1,0 +1,49 @@
+﻿@using DigitalRiver.CloudLink.Commerce.Nimbus.SportsUs.ViewHelpers
+@using Jungo.Infrastructure.Config
+@using Jungo.Infrastructure.Extensions
+@model DigitalRiver.CloudLink.Commerce.Nimbus.ViewModels.Catalog.ProductListViewModel
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-xs-12">
+            <h4>@Model.Title</h4>
+        </div>
+    </div>
+    <div class="row">
+        @{
+            var i = 0;
+        }
+        @foreach (var item in Model.Products)
+        {
+            if (i++ % 3 == 0) // Force items to go to a new line
+            {
+                <div class="clearfix"></div>
+            }
+
+            <div class="col-sm-4">
+                <a href="@item.Url">
+                    @if (item.Product != null)
+                    {
+                        var imgurl = VHCSS.GetImageFromAttribute(item.Product, "productImage2", item.Product.ThumbnailImage);
+
+                        <img src="@imgurl" alt="@item.Product.DisplayName" /><br/>
+                        if (item.Product.Pricing.TotalDiscountWithQuantity.Value > 0)
+                        {
+                            <p>
+                                <span>@Res.Product_PriceNowColon&#160;@item.Product.Pricing.FormattedSalePriceWithQuantity</span>
+                                <span>@Res.Product_PriceWasColon&#160;<del>@item.Product.Pricing.FormattedListPriceWithQuantity</del></span><br/>
+                            </p>
+                        }
+                        else
+                        {
+                            <p>
+                                @item.Product.Pricing.FormattedSalePriceWithQuantity<br/>
+                            </p>
+                        }
+                    }
+                    <strong>@item.Title</strong><br/>
+                    @item.Text
+                </a>
+            </div>
+        }
+    </div>
+</div>

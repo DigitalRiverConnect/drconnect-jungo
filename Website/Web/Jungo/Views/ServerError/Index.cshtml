@@ -1,0 +1,57 @@
+﻿@using DigitalRiver.CloudLink.Commerce.Nimbus.N2Content
+@using DigitalRiver.CloudLink.Commerce.Nimbus.SportsUs.Infrastructure.Helpers
+@{
+    Layout = "~/Views/Shared/_ServerErrorLayout.cshtml";
+}
+@* DON'T LET THIS PAGE THROW AN UNCAUGHT EXCEPTION, OTHERWISE WE'LL HAVE AN ENDLESS REDIRECTION TO THIS PAGE *@
+@try
+{
+    <div class="grid-container">
+        <div class="breadcrumb hide-for-resp5-down">
+            <a href="@Html.StoreLink()">Home</a>
+        </div>
+    </div>
+    <div class="grid-container">
+        <div class="grid-row column-3">
+            <div class="grid-unit colspan-2" id="error">
+                <h2>@Model.ServerErrorPageMetaData.Title</h2>
+                <p>@Model.ServerErrorPageMetaData.Heading</p>
+                @if (Model.ServerErrorPageMetaData.ShowUrl)
+                {
+                    <h3 class="title">Source URL:</h3>
+                    <span id="url">@Model.SourceUrl</span>
+                }
+                @if (Model.ServerErrorPageMetaData.ShowRequestID)
+                {
+                    <h3 class="title">Request ID:</h3>
+                    <span id="url">@Model.RequestID</span>
+                }
+                @if (Model.ServerErrorPageMetaData.ShowExcp)
+                {
+                    <h3 class="title">Exception Message:</h3>
+                    <span id="message">@Model.ExceptionMessage</span>
+                }
+                @if (Model.ServerErrorPageMetaData.ShowStackTrace)
+                {
+                    <h3 class="title">Stack Trace:</h3>
+                    <span id="trace">@Model.StackTrace</span>
+                }
+                <a class="link-to-button" href="@Html.StoreLink()">Return to the store</a>
+            </div>
+            <div class="grid-unit">
+                @{ Html.DroppableZone(Zones.Right).Render(); }
+            </div>
+        </div>
+    </div>
+}
+catch
+{
+    <div class="grid-container">
+        <div class="grid-row column-3" id="error">
+            <div class="grid-unit">
+                <h2>Error</h2>
+                <p>Sorry, there was a problem with your request</p>
+            </div>
+        </div>
+    </div>
+}

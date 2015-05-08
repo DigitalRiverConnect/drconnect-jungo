@@ -1,0 +1,20 @@
+﻿@using DigitalRiver.CloudLink.Commerce.Nimbus.SportsUs.Infrastructure.Helpers
+@model DigitalRiver.CloudLink.Commerce.Nimbus.ViewModels.Catalog.OffersViewModel
+@{
+    var behaviorClass = ViewBag.CssClass ?? "";
+}
+<div class="grid-row">
+@foreach (var item in Model.Items)
+{
+    <div class="small-stacked-offers">
+        <img src="@Html.GetPublicURL(item.Image)" alt="@item.AltText" />
+        <p class="title">@item.DisplayName</p>
+        <p class="description">@item.Text
+        @if (!string.IsNullOrEmpty(item.CmsLink()))
+        {
+            <br /><a href="@Html.AssureHttpUrl(item.CmsLink())" title="@item.DisplayName">@item.LinkText</a>
+        }
+        </p>
+    </div>
+}
+</div>

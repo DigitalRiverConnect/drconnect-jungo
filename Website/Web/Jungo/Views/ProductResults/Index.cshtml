@@ -1,0 +1,82 @@
+﻿@using System.Globalization;
+@using DigitalRiver.CloudLink.Commerce.Nimbus.SportsUs.Infrastructure.Helpers
+@using DigitalRiver.CloudLink.Commerce.Nimbus.SportsUs.ViewHelpers
+@using Microsoft.WindowsAzure.Storage
+@model DigitalRiver.CloudLink.Commerce.Nimbus.ViewModels.Catalog.ProductResultsViewModel
+
+@{
+    var query = Request.Params["query"];
+    var urlPageSize = Request.Params["pageSize"];
+}
+
+@if (Model != null && Model.SearchResult != null && Model.SearchResult.Products.Product.Length > 0)
+{
+    <h1>@Model.SearchResult.Title</h1>
+
+    <div class="row">
+        <div class="col-xs-12 text-center">
+            <h5>@Model.SearchResult.TotalResults @Res.Catalog_ViewingOneThroughXOfYResultsPart3</h5>
+        </div>
+    </div>
+
+    <div class="row">
+        @{
+            var i = 0;
+        }
+
+        @foreach (var item in Model.SearchResult.Products.Product)
+        {
+            var imgurl = VHCSS.GetImageFromAttribute(item, "productImage2", item.ThumbnailImage);
+            if (i++ % 3 == 0)
+            {
+                <div class="clearfix"></div>    
+            }
+            
+            <div class="col-sm-4">
+
+                <a href="@Html.ProductDetailLink(item.Id)" class="product-control" pid-ref="@item.Id">
+                    <img src="@imgurl" alt="@item.DisplayName" />
+                    @if (item.Pricing.TotalDiscountWithQuantity.Value > 0)
+                    {
+                        <p class="savings-message">Save&nbsp;@item.Pricing.TotalDiscountWithQuantity.Currency@item.Pricing.TotalDiscountWithQuantity.Value.ToString("F2")</p>
+                    }
+                    <p class="savings-message"></p>
+                    @if (!string.IsNullOrWhiteSpace(item.DisplayName))
+                    {
+                        <h4>@item.DisplayName</h4>
+                    }
+                    @if (!string.IsNullOrWhiteSpace(item.LongDescription))
+                    {
+                        <div>@item.LongDescription</div>
+                    }
+                    <p class="actual-price">@item.Pricing.FormattedSalePriceWithQuantity</p>
+                </a>
+            </div>
+        }
+    </div>
+
+    <div class="row">
+        <div class="col-xs-12 text-center">
+            <h5>@Model.SearchResult.TotalResults @Res.Catalog_ViewingOneThroughXOfYResultsPart3</h5>
+        </div>
+    </div>
+}
+else if (Html.IsManaging())
+{
+    <div>Results go here.</div>
+}
+else
+{
+    var queryString = !string.IsNullOrWhiteSpace(query) ? query : "";
+    <section class="product-results">
+        <div class="grid-container">
+            <h1 id="dr_noResultsFound" class="heading--large">
+                @string.Format(Res.Catalog_CatalogSearchNoResultsFoundFor, query)
+            </h1>
+            <div class="phoneAndChatSupport noResultsFound">
+                <div class="heading--small">@Res.Catalog_CatalogSearchResultsSupportMessage</div>
+                <div class="phone-support float-left">@Res.Catalog_CatalogSearchResultsSupportPhone</div>
+            </div>
+        </div>
+    </section>
+}

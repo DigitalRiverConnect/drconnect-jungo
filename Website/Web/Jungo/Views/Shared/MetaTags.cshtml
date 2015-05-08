@@ -1,0 +1,175 @@
+﻿@using DigitalRiver.CloudLink.Commerce.Nimbus.SportsUs.Infrastructure.Helpers
+@using DigitalRiver.CloudLink.Commerce.Nimbus.ViewModels
+@using DigitalRiver.CloudLink.Commerce.Nimbus.ViewModels.Catalog
+@{
+    var metaKeywords = string.Empty;
+    var metaDescription = string.Empty;
+    var facebookAppId = string.Empty;
+    var twitterSite = string.Empty;
+    var twitterTitle = string.Empty;
+    var twitterDescription = string.Empty;
+    var twitterImageUrl = string.Empty;
+    var twitterImageWidth = string.Empty;
+    var twitterImageHeight = string.Empty;
+    var twitterData1 = string.Empty;
+    var twitterLabel1 = string.Empty;
+    var twitterData2 = string.Empty;
+    var twitterLabel2 = string.Empty;
+    var twitterCard = string.Empty;
+    var ogImage = string.Empty;
+    var ogType = string.Empty;
+    var ogTitle = string.Empty;
+    var ogDescription = string.Empty;
+    var ogSiteName = string.Empty;
+    var applicationName = string.Empty;
+    var siteName = string.Empty;
+    var pageUri = new Uri(Request.Url.ToString());
+    var canonicalPageUrl = pageUri.GetLeftPart(UriPartial.Path);
+    var pageViewModel = Model as PageViewModelBase;
+    if (pageViewModel != null)
+    {
+        metaKeywords = pageViewModel.SeoMetaKeywords;
+        metaDescription = pageViewModel.SeoMetaDescription;
+        facebookAppId = pageViewModel.Metadata.FacebookAppId;
+        twitterSite = pageViewModel.Metadata.TwitterSite;
+        twitterTitle = pageViewModel.Metadata.TwitterTitle;
+        twitterDescription = pageViewModel.Metadata.TwitterDescription;
+        twitterImageUrl = pageViewModel.Metadata.TwitterImageSrc;
+        twitterImageWidth = pageViewModel.Metadata.TwitterImageWidth;
+        twitterImageHeight = pageViewModel.Metadata.TwitterImageHeight;
+        twitterData1 = pageViewModel.Metadata.TwitterData1;
+        twitterLabel1 = pageViewModel.Metadata.TwitterLabel1;
+        twitterData2 = pageViewModel.Metadata.TwitterData2;
+        twitterLabel2 = pageViewModel.Metadata.TwitterLabel2;
+        twitterCard = pageViewModel.Metadata.TwitterCard;
+        ogImage = pageViewModel.Metadata.OgImage;
+        ogType = pageViewModel.Metadata.OgType;
+        ogTitle = pageViewModel.Metadata.OgTitle;
+        ogDescription = pageViewModel.Metadata.OgDescription;
+        ogSiteName = pageViewModel.Metadata.OgSiteName;
+        applicationName = pageViewModel.Metadata.ApplicationName;
+    }
+
+    <link rel="canonical" href="@canonicalPageUrl" />
+
+    
+    @* BEGIN Meta tags for responsive design *@
+    if (pageViewModel is ProductDetailPageViewModel)
+    {
+        <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width" />
+    }
+    if (Html.IsCheckoutWorkflow())
+    {
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="format-detection" content="telephone=no" />
+    }
+    @* END Meta tags for responsive design *@
+
+
+    if (!Html.IsCheckoutWorkflow())
+    {
+        <meta itemprop="url" content="@canonicalPageUrl" />
+        if (!string.IsNullOrEmpty(metaKeywords))
+        {
+            <meta name="keywords" content="@metaKeywords" />
+        }
+        if (!string.IsNullOrEmpty(metaDescription))
+        {
+            <meta name="description" content="@metaDescription" />
+        }
+        
+        @* BEGIN Facebook *@
+        if (!string.IsNullOrEmpty(facebookAppId))
+        {
+            <meta name="fb:app_id" content="@facebookAppId" />
+        }
+        @* END Facebook*@
+
+
+        @* BEGIN OpenGraph *@
+        <meta property="og:url" content="@canonicalPageUrl" />
+        if (!string.IsNullOrEmpty(ogSiteName))
+        {
+            <meta property="og:site_name" content="@ogSiteName" />
+        }
+        if (!string.IsNullOrEmpty(ogImage))
+        {
+            <meta property="og:image" content="@Html.GetPublicURL(ogImage)" />
+        }
+        if (!string.IsNullOrEmpty(ogType))
+        {
+            <meta property="og:type" content="@ogType" />
+        }
+        if (!string.IsNullOrEmpty(ogDescription))
+        {
+            <meta property="og:description" content="@ogDescription" />
+        }
+        if (!string.IsNullOrEmpty(ogTitle))
+        {
+            <meta property="og:title" content="@ogTitle" />
+        }
+        @* END OpenGraph *@
+
+
+        @* BEGIN Twitter *@
+        <meta name="twitter:url" content="@canonicalPageUrl" />
+        if (!string.IsNullOrEmpty(twitterImageWidth))
+        {
+            <meta name="twitter:image:width" content="@twitterImageWidth" />
+        }
+        if (!string.IsNullOrEmpty(twitterImageHeight))
+        {
+            <meta name="twitter:image:height" content="@twitterImageHeight" />
+        }
+        if (!string.IsNullOrEmpty(twitterSite))
+        {
+            <meta name="twitter:site" content="@twitterSite" />
+        }
+        if (!string.IsNullOrEmpty(twitterImageUrl))
+        {
+            <meta name="twitter:image:src" content="@Html.GetPublicURL(twitterImageUrl)" />
+        }
+        if (!string.IsNullOrEmpty(twitterData1))
+        {
+            <meta name="twitter:data1" content="@twitterData1" />
+        }
+        if (!string.IsNullOrEmpty(twitterLabel1))
+        {
+            <meta name="twitter:label1" content="@twitterLabel1" />
+        }
+        if (!string.IsNullOrEmpty(twitterData2))
+        {
+            <meta name="twitter:data2" content="@twitterData2" />
+        }
+        if (!string.IsNullOrEmpty(twitterLabel2))
+        {
+            <meta name="twitter:label2" content="@twitterLabel2" />
+        }
+        if (!string.IsNullOrEmpty(twitterCard))
+        {
+            <meta name="twitter:card" content="@twitterCard" />
+        }
+        if (!string.IsNullOrEmpty(twitterTitle))
+        {
+            <meta name="twitter:title" content="@twitterTitle" />
+        }
+        if (!string.IsNullOrEmpty(twitterDescription))
+        {
+            <meta name="twitter:description" content="@twitterDescription" />
+        }
+        @* END Twitter *@
+    }
+    else
+    {
+        <meta name="robots" content="noindex" />
+        <meta name="robots" content="nofollow" />
+    }
+
+    
+    @* BEGIN Pinned site metadata *@
+    if (!string.IsNullOrEmpty(applicationName))
+    {
+        <meta name="application-name" content="@applicationName" />
+    }
+    @* END Pinned site metadata *@
+}

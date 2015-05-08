@@ -1,0 +1,32 @@
+﻿#error {
+    margin-bottom:20px;
+}
+#error a {
+    margin-top: 15px;
+}
+#error p {
+    font-size: 1em;
+}
+#error .title,
+#error span {
+    display:block;
+}
+#error .title {
+    border-bottom: 1px solid #dadada;
+    padding-bottom: 5px;
+    margin:20px 0 5px 0;
+}
+#error #trace {
+	font-size: 0.75em;
+	color: #dead00;
+}
+.ServerErrorPage header {
+    margin-bottom: 2em;
+    padding-bottom: 0.875em;
+}
+.ServerErrorPage section {
+    margin-bottom: 4.375em;
+}
+.ServerErrorPage header.slim-header > .grid-container:first-child {
+    padding-bottom: 0.8125em;
+}

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<n2 version="2.4.0.0" exportVersion="2" exportDate="07/10/2013 23:28:37">
+  <item id="430" name="" parent="426" title="Catalog Page - Office" state="Published" created="02/27/2013 15:41:37" updated="07/10/2013 23:28:37" published="02/27/2013 15:41:37" sortOrder="6" url="/Catalog/Index?page=430" visible="True" savedBy="rreed" typeName="DigitalRiver.CloudLink.N2MVC.Models.Pages.CatalogPage, DigitalRiver.CloudLink.N2MVC" discriminator="CatalogPage" ancestralTrail="/1/426/" childState="2">
+    <details>
+      <detail name="CategoryID" typeName="System.String, mscorlib" meta="" encoded="True"><![CDATA[62684700]]></detail>
+    </details>
+    <detailCollections />
+    <children />
+    <authorizations />
+    <properties />
+  </item>
+</n2>

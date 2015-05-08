@@ -1,0 +1,100 @@
+﻿@using DigitalRiver.CloudLink.Commerce.Nimbus.SportsUs.Controllers
+@using Microsoft.Ajax.Utilities
+@model DigitalRiver.CloudLink.Commerce.Nimbus.SportsUs.Controllers.DiagnosticViewTesterModel
+@{
+    Layout = "~/Views/Shared/_DiagnosticLayout.cshtml";
+    ViewBag.Title = "View Tester";
+}
+@helper RenderViewTreeNode(DiagnosticViewTesterTree treeNode)
+{
+    <li><span>@treeNode.FolderName</span>
+        <ul>
+            @foreach (var folder in treeNode.ContainedFolders)
+            {
+                @RenderViewTreeNode(folder)
+            }
+            @foreach (var parts in treeNode.ContainedFileNames.Select(file => file.Split(',')))
+            {
+                <li class="tree-leaf" data-view-file-path="@parts[0]">@parts[1]</li>
+            }
+        </ul>
+    </li>
+}
+@*http://jsfiddle.net/mehmetatas/fXzHS/2/*@
+<style>
+    .tree li { margin: 0 0; list-style-type: none; position: relative; padding: 10px/*box vert sep*/ 5px/*right diag whitespace*/ 0/*leaf vert space after*/ 5px/*horz bar whitespace right edge*/; }
+    .tree li::before { content: ''; position: absolute; top: 0/*vert bar up-down*/; width: 1px; height: 100%; right: auto; left: -20px/*vert bar left-right*/; border-left: 1px solid #ccc; bottom: 50px; }
+    .tree li::after { content: ''; position: absolute; top: 21px/*horz bar up-down*/; width: 25px/*horz bar w*/; height: 20px; right: auto; left: -20px/*horz bar left-right*/; border-top: 1px solid #ccc; }
+    .tree li span { display: inline-block; border: 1px solid #ccc; padding: 1px/*box white h*/ 10px/*box white w*/; text-decoration: none; color: #666; font-family: arial, verdana, tahoma;
+        font-size: 11px; border-radius: 5px; -webkit-border-radius: 5px; -moz-border-radius: 5px; cursor:cell }
+    .tree-leaf {
+        font-weight: bold; font-size: 11px;
+        cursor: pointer;
+    }
+    .tree-leaf-selected {color:blue;}
+    /*Remove connectors before root*/
+    .tree > ul > li::before, .tree > ul > li::after { border: 0; }
+    /*Remove connectors after last child*/
+    .tree li:last-child::before { height: 22px/*vert bar btm connecting horz bar blank space*/; }
+    /*Time for some hover effects*/
+    /*We will apply the hover effect to the lineage of the element also*/
+    .tree li span:hover, .tree li span:hover + ul li span { background: #c8e4f8; color: #000; border: 1px solid #94a0b4; }
+    /*Connector styles on hover*/
+    .tree li span:hover + ul li::after, .tree li span:hover + ul li::before, .tree li span:hover + ul::before, .tree li span:hover + ul ul::before { border-color: #94a0b4; }
+</style>
+@if (string.IsNullOrEmpty(Model.ErrorMessage))
+{
+    <form id="testFrm" action="" method="POST" enctype="multipart/form-data" style="margin-left: 10px;" target="_blank">
+        <table>
+            <tr>
+                <td style="vertical-align: top">
+                    <div class="tree" style="height: 900px; overflow-y: scroll;">
+                        <ul>
+                            @RenderViewTreeNode(Model.RootFolder)
+                        </ul>
+                    </div>
+                </td>
+
+                <td style="vertical-align: top">
+                    <fieldset style="width: 660px;">
+                        <legend style="font-size: 16px; font-weight: bold; margin-bottom: 3px;">JSON, for converting to CLR object, then pass to View</legend>
+                        <div style="margin-left: 15px;">
+                            <div style="margin-top: 15px;"><span style="font-weight: bold;">Text: </span>@Html.TextAreaFor(m => m.Json, 15, 40, new {style = "width:580px"})</div>
+                            <div style="margin-top: 5px;"><span style="font-weight: bold;">Or from file: </span><input type="file" name="JsonFile" /></div>
+                        </div>
+                    </fieldset>
+                    <div style="margin-top: 15px;">
+                        <span style="font-weight: bold;">Selected View: </span>@Html.TextBoxFor(m => m.SelectedViewName, new {@readonly = "readonly", style = "width:500px;"})
+                    </div>
+                    <div style="margin-top: 15px;">
+                        <input id="test" type="submit" value="Test" />
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </form>
+    <script type="text/javascript">
+        $(function() {
+            $('.tree li').hide();
+            $('.tree li:first').show();
+            $('.tree li:first > ul > li').show();
+            $('.tree li').on('click', function(e) {
+                var children = $(this).find('> ul > li');
+                if (children.is(":visible")) children.hide('fast');
+                else children.show('fast');
+                e.stopPropagation();
+            });
+            $('.tree-leaf').click(function(e) {
+                $('#SelectedViewName').val($(this).attr('data-view-file-path'));
+                $('.tree-leaf').removeClass('tree-leaf-selected');
+                $(this).addClass('tree-leaf-selected');
+            });
+        });
+    </script>
+}
+else
+{
+    <div style="margin-top:50px;margin-left:50px;">
+        <span style="font-weight: bold; color: red;">Error: <span style="font-weight: normal;">@Model.ErrorMessage</span></span>
+    </div>
+}

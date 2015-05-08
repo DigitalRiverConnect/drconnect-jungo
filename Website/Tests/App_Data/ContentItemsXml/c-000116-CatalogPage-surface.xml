@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<n2 version="2.4.0.0" exportVersion="2" exportDate="07/10/2013 23:28:35">
+  <item id="116" name="surface" parent="39" title="Surface" state="Published" created="03/11/2013 22:15:22" updated="07/10/2013 23:28:35" published="03/11/2013 22:15:22" sortOrder="35" url="/msusa/store/surface" visible="True" savedBy="sweber" typeName="DigitalRiver.CloudLink.N2MVC.Models.Pages.CatalogPage, DigitalRiver.CloudLink.N2MVC" discriminator="CatalogPage" ancestralTrail="/1/12/13/39/" childState="132">
+    <details>
+      <detail name="CategoryID" typeName="System.String, mscorlib" meta="" encoded="True"><![CDATA[62685300]]></detail>
+    </details>
+    <detailCollections />
+    <children>
+      <child id="117" name="117" versionIndex="0" />
+    </children>
+    <authorizations />
+    <properties />
+  </item>
+  <item id="117" name="" parent="116" title="SurfaceContent" zoneName="Content" state="Published" created="03/12/2013 22:46:38" updated="07/10/2013 23:28:35" published="03/12/2013 22:51:26" sortOrder="0" url="/msusa/store/surface?item=117" visible="True" savedBy="admin" typeName="DigitalRiver.CloudLink.N2MVC.Models.Parts.TemplatePart, DigitalRiver.CloudLink.N2MVC" discriminator="TemplatePart" ancestralTrail="/1/12/13/39/116/" childState="128">
+    <details>
+      <detail name="ViewTemplate" typeName="System.String, mscorlib" meta="" encoded="True"><![CDATA[ContainerFull]]></detail>
+    </details>
+    <detailCollections />
+    <children>
+      <child id="118" name="118" versionIndex="0" />
+    </children>
+    <authorizations />
+    <properties />
+  </item>
+  <item id="118" name="" parent="117" title="" zoneName="Content" state="Published" created="03/12/2013 22:46:50" updated="07/10/2013 23:28:35" published="03/12/2013 22:51:26" sortOrder="-10" url="/msusa/store/surface?item=118" visible="True" savedBy="admin" typeName="DigitalRiver.CloudLink.N2MVC.Models.Parts.ProductResultsPart, DigitalRiver.CloudLink.N2MVC" discriminator="ProductResultsPart" ancestralTrail="/1/12/13/39/116/117/" childState="2">
+    <details />
+    <detailCollections />
+    <children />
+    <authorizations />
+    <properties />
+  </item>
+</n2>

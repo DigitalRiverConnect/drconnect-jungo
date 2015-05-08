@@ -1,0 +1,98 @@
+﻿@model DigitalRiver.CloudLink.Commerce.Nimbus.N2Content.Models.ImagePickerViewModel
+@{
+    Layout = "~/Views/Shared/_AdminPopupLayout.cshtml";
+    ViewBag.Title = "Site Manager Image Picker";
+}
+<div class="admin content" id="image-picker" data-root-url="@Request.ApplicationPath" data-service-controller="@Html.ViewContext.RouteData.Values["controller"]" data-loading-animation="@Url.Content("~/Content/img/admin/loading.gif")">
+    @Html.HiddenFor(vm => vm.ControlId)
+    <div id="top-area" class="ng-scope">
+        <div>
+            <div id="menu" class="action-bar secondary navbar ng-scope">
+                <ul class="menu nav">
+                    <li class="item primary-action ng-scope">
+                        <a class="sort page-action page-action-description" href="javascript:void(0)"><b class="ico n2-icon-th-large"></b> Sort<br><span>Newest first</span></a>
+                        <a href="#" class="dropdown-toggle ng-scope" data-toggle="dropdown" ng-show="item.Children.length">
+                            <b class="caret"></b>
+                        </a>
+                        @Html.TextBoxFor(vm => vm.SearchCriteria, new { @value = "Enter keyword", @placeholder = "Enter keyword" })
+                        <ul class="dropdown-menu ng-scope">
+                            <li class="item secondary-action ng-scope">
+                                <a class="page-action sort-newest" href="javascript:void(0)"><b class="ico n2-icon-circle-blank"></b> Date (Newest first)</a>
+                            </li>
+                            <li class="item secondary-action ng-scope">
+                                <a class="page-action sort-oldest" href="javascript:void(0)"><b class="ico n2-icon-circle-blank"></b> Date (Oldest first)</a>
+                            </li>
+                        </ul>
+                        <a class="page-action" id="btnReset" href="javascript:void(0)">Clear</a>
+                        <a class="page-action" id="btnSearch" href="javascript:void(0)">Search</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="itemListEditor">
+        <div class="item">
+            <h3><span>Upload an image</span></h3>
+            <div class="itemEditor">
+                <div class="editDetail EditableImageSelection">
+                    @using (Html.BeginForm("UploadFile", "ImagePicker", FormMethod.Post, new { enctype = "multipart/form-data" }))
+                    {
+                        @Html.AntiForgeryToken()
+                        <input type="file" id="file" name="file" value="Browse" />
+                        <input type="hidden" id="virtualPath" name="virtualPath" value="@Model.VirtualPath" />
+                        <input id="upload-image" type="submit" value="Upload image" />
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="results">
+        <span id="virtual-path">@Model.VirtualPath</span>
+        <div class="results-wrapper">
+            <ul id="image-directories"></ul>
+            <div id="image-files"></div>
+        </div>
+        <div class="image-preview-wrapper"></div>
+    </div>
+</div>
+
+<script id="directory-template" type="text/template">
+<li>
+    <a href="javascript:void(0);" title="<%=FileName%>" data-path-direction="<%=Direction%>" data-file-path="<%=FilePath%>" data-image-type="<%=FileType%>"><%=FileName%></a>
+</li>
+</script>
+
+<script id="image-item-template" type="text/template">
+<div class="image-tile">
+    <a href="javascript:void(0);" data-image-file-path="<%=FilePath%>" data-image-type="<%=FileType%>" title="">
+        <img src="<%=ImageUrl%>" alt="<%=FileName%>" data-file-date="<%=FileDateStr%>" data-file-name="<%=FileName%>" />
+        <div class="info-wrapper">
+            <div class="info">
+                <span class="width"><%=img_width%></span>&nbsp;x&nbsp;<span class="height"><%=img_height%></span> - <span class="name"><%=FileName%></span>
+            </div>
+        </div>
+    </a>
+</div>
+</script>
+
+<script id="image-preview-template" type="text/template">
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+    </div>
+    <div class="modal-body">
+        <div class="image-box">
+            <div class="image-wrapper">
+                <img src="<%=source%>" alt="<%=name%>" />
+            </div>
+        </div>
+        <div class="details-box">
+            <label>File: </label><span><%=name%></span><br />
+            <label>Date: </label><span><%=date%></span><br />
+            <label>Dimensions: </label><span class="width"><%=img_width%></span>&nbsp;x&nbsp;<span class="height"><%=img_height%></span><br />
+        </div>
+    </div>
+    <div class="modal-footer">
+        <button id="btnUseImage" data-image-file-path="<%=href%>" class="btn btn-primary">Use this image</button>
+        <button id="imagePreviewClose" data-dismiss="modal" class="btn btn-info">Cancel</button>
+    </div>
+</script>

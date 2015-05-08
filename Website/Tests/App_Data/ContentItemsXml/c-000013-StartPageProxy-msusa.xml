@@ -1,0 +1,529 @@
+<?xml version="1.0" encoding="utf-8"?>
+<n2 version="2.4.0.0" exportVersion="2" exportDate="07/10/2013 23:28:35">
+  <item id="13" name="msusa" parent="12" title="msusa" state="Published" created="01/18/2013 15:12:50" updated="07/10/2013 23:28:34" published="01/18/2013 07:12:50" sortOrder="-18" url="/msusa" visible="True" savedBy="stwright" typeName="DigitalRiver.CloudLink.N2MVC.Models.Pages.StartPage, DigitalRiver.CloudLink.N2MVC" discriminator="StartPage" ancestralTrail="/1/12/" childState="132">
+    <details>
+      <detail name="LanguageCode" typeName="System.String, mscorlib" meta="" encoded="True"><![CDATA[en-US]]></detail>
+      <detail name="SiteID" typeName="System.String, mscorlib" meta="" encoded="True"><![CDATA[msusa]]></detail>
+    </details>
+    <detailCollections />
+    <children>
+      <child id="14" name="14" versionIndex="0" />
+      <child id="16" name="16" versionIndex="0" />
+      <child id="169" name="169" versionIndex="0" />
+      <child id="171" name="171" versionIndex="0" />
+      <child id="172" name="172" versionIndex="0" />
+      <child id="173" name="173" versionIndex="0" />
+    </children>
+    <authorizations />
+    <properties />
+  </item>
+  <item id="14" name="" parent="13" title="" zoneName="BeforeContent" state="Published" created="01/19/2013 05:11:40" updated="07/10/2013 23:28:34" published="01/18/2013 13:11:40" sortOrder="-20" url="/msusa?item=14" visible="True" savedBy="admin" typeName="DigitalRiver.CloudLink.N2MVC.Models.Parts.TemplatePart, DigitalRiver.CloudLink.N2MVC" discriminator="TemplatePart" ancestralTrail="/1/12/13/" childState="128">
+    <details>
+      <detail name="ViewTemplate" typeName="System.String, mscorlib" meta="" encoded="True"><![CDATA[HomeHero]]></detail>
+    </details>
+    <detailCollections />
+    <children>
+      <child id="15" name="15" versionIndex="0" />
+    </children>
+    <authorizations />
+    <properties />
+  </item>
+  <item id="15" name="" parent="14" title="MSFT Home Hero Banner" zoneName="HeroBanner" state="Published" created="03/01/2013 00:50:37" updated="07/10/2013 23:28:34" published="03/01/2013 00:50:46" sortOrder="0" url="/msusa?item=15" visible="True" savedBy="admin" typeName="DigitalRiver.CloudLink.N2MVC.Models.Parts.CmsPopPart, DigitalRiver.CloudLink.N2MVC" discriminator="CmsPopPart" ancestralTrail="/1/12/13/14/" childState="2">
+    <details>
+      <detail name="ViewTemplate" typeName="System.String, mscorlib" meta="" encoded="True"><![CDATA[MsComHeroBanner]]></detail>
+    </details>
+    <detailCollections />
+    <children />
+    <authorizations />
+    <properties />
+  </item>
+  <item id="16" name="" parent="13" title="" zoneName="Content" state="Published" created="02/21/2013 10:47:10" updated="07/10/2013 23:28:34" published="02/20/2013 18:49:51" sortOrder="-17" url="/msusa?item=16" visible="True" savedBy="admin" typeName="DigitalRiver.CloudLink.N2MVC.Models.Parts.TemplatePart, DigitalRiver.CloudLink.N2MVC" discriminator="TemplatePart" ancestralTrail="/1/12/13/" childState="128">
+    <details>
+      <detail name="ViewTemplate" typeName="System.String, mscorlib" meta="" encoded="True"><![CDATA[Container1plus3]]></detail>
+    </details>
+    <detailCollections />
+    <children>
+      <child id="17" name="17" versionIndex="0" />
+      <child id="18" name="18" versionIndex="0" />
+    </children>
+    <authorizations />
+    <properties />
+  </item>
+  <item id="17" name="" parent="16" title="" zoneName="Content" state="Published" created="02/21/2013 10:49:06" updated="07/10/2013 23:28:34" published="02/20/2013 18:49:51" sortOrder="-5" url="/msusa?item=17" visible="True" savedBy="admin" typeName="DigitalRiver.CloudLink.N2MVC.Models.Parts.TemplatePart, DigitalRiver.CloudLink.N2MVC" discriminator="TemplatePart" ancestralTrail="/1/12/13/16/" childState="2">
+    <details>
+      <detail name="Text" typeName="System.String, mscorlib" meta="" encoded="True"><![CDATA[&lt;div id=&quot;pivot-1&quot; class=&quot;pivot &quot; bi:type=&quot;pivot&quot;&gt;
+    &lt;h2 bi:titleflag=&quot;t1&quot; bi:title=&quot;t1&quot; class=&quot;heading&quot;&gt;For home&lt;/h2&gt;
+    &lt;a href=&quot;#pivot-2&quot; bi:track=&quot;false&quot; class=&quot;pivot-switch&quot;&gt;For work&lt;/a&gt;
+
+    &lt;div class=&quot;grid-row row-3 features&quot;&gt;
+        &lt;div class=&quot;grid-unit&quot;&gt;
+            &lt;div bi:type=&quot;highlight&quot;&gt;
+                &lt;a href=&quot;http://clk.atdmt.com/MRT/go/421231242/direct/01/&quot;
+                   bi:linkid=&quot;HH1-GEN-132X2ENUS29015&quot; bi:cpid=&quot;workHighlight&quot;&gt;
+                    &lt;img bi:parenttitle=&quot;t1&quot;
+                         src=&quot;http://i.s-microsoft.com/global/ImageStore/publishingimages/FY13/asset/highlights/XboxOffer_1210_420x210_EN_US.jpg&quot;
+                         alt=&quot;The new entertainment experience from Xbox is here.&quot; bi:mimiclink=&quot;true&quot;
+                         bi:type=&quot;img&quot;/&gt;
+
+                    &lt;p bi:parenttitle=&quot;t1&quot; bi:mimiclink=&quot;true&quot; bi:type=&quot;desc&quot;&gt;Xbox 360 as low as $99
+                        with 2 yr Xbox LIVE Gold membership at $14.99/mo.&lt;/p&gt;
+                &lt;/a&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;grid-unit&quot;&gt;
+            &lt;div bi:type=&quot;highlight&quot;&gt;
+                &lt;a href=&quot;http://clk.atdmt.com/MRT/go/429148849/direct/01/&quot;
+                   bi:linkid=&quot;HH2-GEN-132P1ENUS33268&quot; bi:cpid=&quot;homeHighlight&quot;&gt;
+                    &lt;img bi:parenttitle=&quot;t1&quot;
+                         src=&quot;http://i.s-microsoft.com/global/ImageStore/publishingimages/FY13/asset/highlights/WP_Demo_1231_420x210_EN_US.jpg&quot;
+                         alt=&quot;Test drive Windows Phone, the new phone reinvented around you.&quot;
+                         bi:mimiclink=&quot;true&quot; bi:type=&quot;img&quot;/&gt;
+
+                    &lt;p bi:parenttitle=&quot;t1&quot; bi:mimiclink=&quot;true&quot; bi:type=&quot;desc&quot;&gt;Meet the new phone
+                        reinvented around you. Take Windows Phone for a test drive.&lt;/p&gt;
+                &lt;/a&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;grid-unit&quot;&gt;
+            &lt;div bi:type=&quot;highlight&quot;&gt;
+                &lt;a href=&quot;http://clk.atdmt.com/MRT/go/421891233/direct/01/&quot;
+                   bi:linkid=&quot;HH3-GEN-132O1ENUS29356&quot; bi:cpid=&quot;homeHighlight&quot;&gt;
+                    &lt;img bi:parenttitle=&quot;t1&quot;
+                         src=&quot;http://i.s-microsoft.com/global/ImageStore/publishingimages/FY13/asset/highlights/OfcLaunch_1112_420x210_EN_US.jpg&quot;
+                         alt=&quot;Limited-time offer: Buy Office now, get the next version free.*&quot;
+                         bi:mimiclink=&quot;true&quot; bi:type=&quot;img&quot;/&gt;
+
+                    &lt;p bi:parenttitle=&quot;t1&quot; bi:mimiclink=&quot;true&quot; bi:type=&quot;desc&quot;&gt;Limited-time offer: Buy
+                        Office now, get the next version free.*&lt;/p&gt;
+                &lt;/a&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;grid-row row-3 &quot;&gt;
+        &lt;div class=&quot;grid-unit&quot;&gt;
+            &lt;div bi:type=&quot;list&quot; class=&quot;list-of-links list-of-links-med&quot;&gt;
+                &lt;h3 bi:titleflag=&quot;t1&quot; bi:title=&quot;t1&quot; class=&quot;heading&quot;&gt;Downloads&lt;/h3&gt;
+                &lt;ul bi:parenttitle=&quot;t1&quot;&gt;
+                    &lt;li&gt;&lt;a bi:index=&quot;0&quot; bi:linkid=&quot;MA1-GEN-131W4ENUS22343&quot; bi:cpid=&quot;homeModA&quot;
+                           href=&quot;http://windows.microsoft.com/en-US/windows/downloads?WT.mc_id=MSCOM_EN_US_HP_MODHOME_131W4ENUS22343&quot;&gt;Windows&lt;/a&gt;
+                    &lt;/li&gt;
+                    &lt;li&gt;&lt;a bi:index=&quot;1&quot; bi:linkid=&quot;MA2-GEN-131O4ENUS22344&quot; bi:cpid=&quot;homeModA&quot;
+                           href=&quot;http://office.microsoft.com/en-us/downloads?WT.mc_id=MSCOM_EN_US_HP_MODHOME_131O4ENUS22344&quot;&gt;Office&lt;/a&gt;
+                    &lt;/li&gt;
+                    &lt;li&gt;&lt;a bi:index=&quot;2&quot; bi:linkid=&quot;MA3-GEN-132I1ENUS33272&quot; bi:cpid=&quot;homeModA&quot;
+                           href=&quot;http://clk.atdmt.com/MRT/go/422085667/direct/01/&quot;&gt;Internet Explorer&lt;/a&gt;
+                    &lt;/li&gt;
+                &lt;/ul&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;grid-unit&quot;&gt;
+            &lt;div bi:type=&quot;list&quot; class=&quot;list-of-links list-of-links-med&quot;&gt;
+                &lt;h3 bi:titleflag=&quot;t1&quot; bi:title=&quot;t1&quot; class=&quot;heading&quot;&gt;Security &amp;amp; updates&lt;/h3&gt;
+                &lt;ul bi:parenttitle=&quot;t1&quot;&gt;
+                    &lt;li&gt;&lt;a bi:index=&quot;0&quot; bi:linkid=&quot;MB1-GEN-133Z4ENUS36062&quot; bi:cpid=&quot;homeModB&quot;
+                           href=&quot;http://www.microsoft.com/security/pc-security/bulletins/201301.aspx?WT.mc_id=MSCOM_EN_US_HP_MODHOME_133Z4ENUS36062&quot;&gt;January
+                        security updates&lt;/a&gt;
+                    &lt;/li&gt;
+                    &lt;li&gt;&lt;a bi:index=&quot;1&quot; bi:linkid=&quot;MB2-GEN-131Z4ENUS21979&quot; bi:cpid=&quot;homeModB&quot;
+                           href=&quot;http://windows.microsoft.com/en-US/windows/products/security-essentials?WT.mc_id=MSCOM_EN_US_HP_MODHOME_131Z4ENUS21979&quot;&gt;Microsoft
+                        Security Essentials&lt;/a&gt;
+                    &lt;/li&gt;
+                    &lt;li&gt;&lt;a bi:index=&quot;2&quot; bi:linkid=&quot;MB3-GEN-131W4ENUS21980&quot; bi:cpid=&quot;homeModB&quot;
+                           href=&quot;http://windows.microsoft.com/en-US/windows/downloads/service-packs?WT.mc_id=MSCOM_EN_US_HP_MODHOME_131W4ENUS21980&quot;&gt;Windows
+                        Service Pack Center&lt;/a&gt;
+                    &lt;/li&gt;
+                &lt;/ul&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;grid-unit&quot;&gt;
+            &lt;div bi:type=&quot;list&quot; class=&quot;list-of-links list-of-links-med&quot;&gt;
+                &lt;h3 bi:titleflag=&quot;t1&quot; bi:title=&quot;t1&quot; class=&quot;heading&quot;&gt;Support&lt;/h3&gt;
+                &lt;ul bi:parenttitle=&quot;t1&quot;&gt;
+                    &lt;li&gt;&lt;a bi:index=&quot;0&quot; bi:linkid=&quot;MC1-GEN-131W4ENUS21970&quot; bi:cpid=&quot;homeModC&quot;
+                           href=&quot;http://windows.microsoft.com/en-us/windows/help?WT.mc_id=MSCOM_EN_US_HP_MODHOME_131W4ENUS21970&quot;&gt;Windows
+                        help and how-to&lt;/a&gt;
+                    &lt;/li&gt;
+                    &lt;li&gt;&lt;a bi:index=&quot;1&quot; bi:linkid=&quot;MC2-GEN-131O4ENUS21971&quot; bi:cpid=&quot;homeModC&quot;
+                           href=&quot;http://office.microsoft.com/en-us/support/?WT.mc_id=MSCOM_EN_US_HP_MODHOME_131O4ENUS21971&quot;&gt;Office&lt;/a&gt;
+                    &lt;/li&gt;
+                    &lt;li&gt;&lt;a bi:index=&quot;2&quot; bi:linkid=&quot;MC3-GEN-131Z4ENUS21977&quot; bi:cpid=&quot;homeModC&quot;
+                           href=&quot;http://support.microsoft.com/?WT.mc_id=MSCOM_EN_US_HP_MODHOME_131Z4ENUS21977&quot;&gt;Find
+                        more support&lt;/a&gt;
+                    &lt;/li&gt;
+                &lt;/ul&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&quot;pivot-2&quot; class=&quot;pivot &quot; bi:type=&quot;pivot&quot;&gt;
+    &lt;h2 bi:titleflag=&quot;t1&quot; bi:title=&quot;t1&quot; class=&quot;heading&quot;&gt;For work&lt;/h2&gt;
+    &lt;a href=&quot;#pivot-1&quot; bi:track=&quot;false&quot; class=&quot;pivot-switch&quot;&gt;For home&lt;/a&gt;
+
+    &lt;div class=&quot;grid-row row-3 features&quot;&gt;
+        &lt;div class=&quot;grid-unit&quot;&gt;
+            &lt;div bi:type=&quot;highlight&quot;&gt;
+                &lt;a href=&quot;http://clk.atdmt.com/MRT/go/424257189/direct/01/&quot;
+                   bi:linkid=&quot;HW1-GEN-132C1ENUS34629&quot; bi:cpid=&quot;workHighlight&quot;&gt;
+                    &lt;img bi:parenttitle=&quot;t1&quot;
+                         src=&quot;http://i.s-microsoft.com/global/ImageStore/PublishingImages/FY13/Asset/Highlights/WinSrv_1015_420x210_EN_US.jpg&quot;
+                         alt=&quot;Windows Server 2012, the first server built from the cloud up.&quot;
+                         bi:mimiclink=&quot;true&quot; bi:type=&quot;img&quot;/&gt;
+
+                    &lt;p bi:parenttitle=&quot;t1&quot; bi:mimiclink=&quot;true&quot; bi:type=&quot;desc&quot;&gt;Insert cloud-grade
+                        capabilities into your datacenter with the new Windows Server 2012.&lt;/p&gt;
+                &lt;/a&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;grid-unit&quot;&gt;
+            &lt;div bi:type=&quot;highlight&quot;&gt;
+                &lt;a href=&quot;http://clk.atdmt.com/MRT/go/424461649/direct/01/&quot;
+                   bi:linkid=&quot;HW2-GEN-133N2ENUS33869&quot; bi:cpid=&quot;workHighlight&quot;&gt;
+                    &lt;img bi:parenttitle=&quot;t1&quot;
+                         src=&quot;http://i.s-microsoft.com/global/ImageStore/PublishingImages/FY13/Asset/Highlights/WinIntune_1217_420x210_EN_US.jpg&quot;
+                         alt=&quot;Try the new Windows Intune for free for 30 days.&quot; bi:mimiclink=&quot;true&quot;
+                         bi:type=&quot;img&quot;/&gt;
+
+                    &lt;p bi:parenttitle=&quot;t1&quot; bi:mimiclink=&quot;true&quot; bi:type=&quot;desc&quot;&gt;Say yes to BYOD. Try the
+                        new Windows Intune free for 30 days.&lt;/p&gt;
+                &lt;/a&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;grid-unit&quot;&gt;
+            &lt;div bi:type=&quot;highlight&quot;&gt;
+                &lt;a href=&quot;http://clk.atdmt.com/MRT/go/422330561/direct/01/&quot;
+                   bi:linkid=&quot;HW3-O08-132L1ENUS29013&quot; bi:cpid=&quot;homeHighlight&quot;&gt;
+                    &lt;img bi:parenttitle=&quot;t1&quot;
+                         src=&quot;http://i.s-microsoft.com/global/ImageStore/PublishingImages/FY13/Asset/highlights/Ofc_Smb_1022_420x210_EN_US.jpg&quot;
+                         alt=&quot;Preview Office 365 Small Business Premium.&quot; bi:mimiclink=&quot;true&quot;
+                         bi:type=&quot;img&quot;/&gt;
+
+                    &lt;p bi:parenttitle=&quot;t1&quot; bi:mimiclink=&quot;true&quot; bi:type=&quot;desc&quot;&gt;Sign up to begin your free
+                        Office 365 Small Business Preview today.&lt;/p&gt;
+                &lt;/a&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;grid-row row-3 &quot;&gt;
+        &lt;div class=&quot;grid-unit&quot;&gt;
+            &lt;div bi:type=&quot;list&quot; class=&quot;list-of-links list-of-links-med&quot;&gt;
+                &lt;h3 bi:titleflag=&quot;t1&quot; bi:title=&quot;t1&quot; class=&quot;heading&quot;&gt;Downloads&lt;/h3&gt;
+                &lt;ul bi:parenttitle=&quot;t1&quot;&gt;
+                    &lt;li&gt;&lt;a bi:index=&quot;0&quot; bi:linkid=&quot;ME1-GEN-131Z4ENUS22347&quot; bi:cpid=&quot;workModE&quot;
+                           href=&quot;http://msdn.microsoft.com/en-us/evalcenter/default.aspx?WT.mc_id=MSCOM_EN_US_HP_MODWORK_131Z4ENUS22347&quot;&gt;Downloads
+                        for developers&lt;/a&gt;
+                    &lt;/li&gt;
+                    &lt;li&gt;&lt;a bi:index=&quot;1&quot; bi:linkid=&quot;ME2-GEN-131Z4ENUS22346&quot; bi:cpid=&quot;workModE&quot;
+                           href=&quot;http://technet.microsoft.com/en-us/evalcenter?WT.mc_id=MSCOM_EN_US_HP_MODWORK_131Z4ENUS22346&quot;&gt;Downloads
+                        for IT Pros&lt;/a&gt;
+                    &lt;/li&gt;
+                    &lt;li&gt;&lt;a bi:index=&quot;2&quot; bi:linkid=&quot;ME3-GEN-131Z4ENUS22345&quot; bi:cpid=&quot;workModE&quot;
+                           href=&quot;http://www.microsoftbusinesshub.com/Solutions?WT.mc_id=MSCOM_EN_US_HP_MODWORK_131Z4ENUS22345&quot;&gt;Tools
+                        and solutions for businesses&lt;/a&gt;
+                    &lt;/li&gt;
+                    &lt;li&gt;&lt;a bi:index=&quot;3&quot; bi:linkid=&quot;ME4-GEN-131Z4ENUS21986&quot; bi:cpid=&quot;workModE&quot;
+                           href=&quot;http://www.microsoft.com/en-us/download/?WT.mc_id=MSCOM_EN_US_HP_MODWORK_131Z4ENUS21986&quot;&gt;Find
+                        more downloads&lt;/a&gt;
+                    &lt;/li&gt;
+                &lt;/ul&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;grid-unit&quot;&gt;
+            &lt;div bi:type=&quot;list&quot; class=&quot;list-of-links list-of-links-med&quot;&gt;
+                &lt;h3 bi:titleflag=&quot;t1&quot; bi:title=&quot;t1&quot; class=&quot;heading&quot;&gt;Resources&lt;/h3&gt;
+                &lt;ul bi:parenttitle=&quot;t1&quot;&gt;
+                    &lt;li&gt;&lt;a bi:index=&quot;0&quot; bi:linkid=&quot;MF1-GEN-131Z4ENUS22348&quot; bi:cpid=&quot;workModF&quot;
+                           href=&quot;http://technet.microsoft.com/en-us/bb421517?WT.mc_id=MSCOM_EN_US_HP_MODWORK_131Z4ENUS22348&quot;&gt;TechCenters&lt;/a&gt;
+                    &lt;/li&gt;
+                    &lt;li&gt;&lt;a bi:index=&quot;1&quot; bi:linkid=&quot;MF2-GEN-131Z4ENUS22349&quot; bi:cpid=&quot;workModF&quot;
+                           href=&quot;http://www.microsoft.com/en-us/download/details.aspx?id=25175&amp;amp;WT.mc_id=MSCOM_EN_US_HP_MODWORK_131Z4ENUS22349&quot;&gt;Microsoft
+                        Deployment Toolkit&lt;/a&gt;
+                    &lt;/li&gt;
+                    &lt;li&gt;&lt;a bi:index=&quot;2&quot; bi:linkid=&quot;MF3-GEN-133Z4ENUS36062&quot; bi:cpid=&quot;workModF&quot;
+                           href=&quot;http://www.microsoft.com/security/pc-security/bulletins/201301.aspx?WT.mc_id=MSCOM_EN_US_HP_MODWORK_133Z4ENUS36062&quot;&gt;January
+                        security updates&lt;/a&gt;
+                    &lt;/li&gt;
+                    &lt;li&gt;&lt;a bi:index=&quot;3&quot; bi:linkid=&quot;MF4-GEN-131Z4ENUS23586&quot; bi:cpid=&quot;workModF&quot;
+                           href=&quot;http://pinpoint.microsoft.com/en-us/home?WT.mc_id=MSCOM_EN_US_HP_MODWORK_131Z4ENUS23586&quot;&gt;Find
+                        IT experts and solutions&lt;/a&gt;
+                    &lt;/li&gt;
+                &lt;/ul&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;grid-unit&quot;&gt;
+            &lt;div bi:type=&quot;list&quot; class=&quot;list-of-links list-of-links-med&quot;&gt;
+                &lt;h3 bi:titleflag=&quot;t1&quot; bi:title=&quot;t1&quot; class=&quot;heading&quot;&gt;Support&lt;/h3&gt;
+                &lt;ul bi:parenttitle=&quot;t1&quot;&gt;
+                    &lt;li&gt;&lt;a bi:index=&quot;0&quot; bi:linkid=&quot;MG1-GEN-131Z4ENUS22351&quot; bi:cpid=&quot;workModG&quot;
+                           href=&quot;http://technet.microsoft.com/en-us/ms772425?WT.mc_id=MSCOM_EN_US_HP_MODWORK_131Z4ENUS22351&quot;&gt;For
+                        IT Pros&lt;/a&gt;
+                    &lt;/li&gt;
+                    &lt;li&gt;&lt;a bi:index=&quot;1&quot; bi:linkid=&quot;MG2-GEN-131Z4ENUS22352&quot; bi:cpid=&quot;workModG&quot;
+                           href=&quot;http://msdn.microsoft.com/en-us/hh361695?WT.mc_id=MSCOM_EN_US_HP_MODWORK_131Z4ENUS22352&quot;&gt;For
+                        developers&lt;/a&gt;
+                    &lt;/li&gt;
+                    &lt;li&gt;&lt;a bi:index=&quot;2&quot; bi:linkid=&quot;MG3-GEN-131Z4ENUS28306&quot; bi:cpid=&quot;workModG&quot;
+                           href=&quot;http://smallbusiness.support.microsoft.com?WT.mc_id=MSCOM_EN_US_HP_MODWORK_131Z4ENUS28306&quot;&gt;For
+                        small businesses&lt;/a&gt;
+                    &lt;/li&gt;
+                    &lt;li&gt;&lt;a bi:index=&quot;3&quot; bi:linkid=&quot;MG4-GEN-131Z4ENUS21977&quot; bi:cpid=&quot;workModG&quot;
+                           href=&quot;http://support.microsoft.com/?WT.mc_id=MSCOM_EN_US_HP_MODWORK_131Z4ENUS21977&quot;&gt;Find
+                        more support&lt;/a&gt;
+                    &lt;/li&gt;
+                &lt;/ul&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+]]></detail>
+    </details>
+    <detailCollections />
+    <children />
+    <authorizations />
+    <properties />
+  </item>
+  <item id="18" name="" parent="16" title="" zoneName="Left" state="Published" created="02/27/2013 23:04:15" updated="07/10/2013 23:28:34" published="02/28/2013 18:40:52" sortOrder="0" url="/msusa?item=18" visible="True" savedBy="admin" typeName="DigitalRiver.CloudLink.N2MVC.Models.Parts.TextPart, DigitalRiver.CloudLink.N2MVC" discriminator="TextPart" ancestralTrail="/1/12/13/16/" childState="2">
+    <details>
+      <detail name="Text" typeName="System.String, mscorlib" meta="" encoded="True"><![CDATA[&lt;div class=&quot;list-of-links list-of-links-xlg list-array&quot;&gt;
+&lt;h2 class=&quot;heading&quot;&gt;Discover&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://windows.microsoft.com/&quot;&gt; Windows&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://office.microsoft.com/&quot;&gt; Office&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.windowsphone.com/&quot;&gt; Windows Phone&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.xbox.com/&quot;&gt; Xbox&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.skype.com/go/skype/?cm_mmc=MSFT|TRAF_B1-_-mscom-hero-us&quot;&gt; Skype&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;]]></detail>
+    </details>
+    <detailCollections />
+    <children />
+    <authorizations />
+    <properties />
+  </item>
+  <item id="169" name="" parent="13" title="" zoneName="AfterContent" state="Published" created="03/01/2013 18:53:21" updated="07/10/2013 23:28:35" published="03/01/2013 18:55:19" sortOrder="0" url="/msusa?item=169" visible="True" savedBy="admin" typeName="DigitalRiver.CloudLink.N2MVC.Models.Parts.TemplatePart, DigitalRiver.CloudLink.N2MVC" discriminator="TemplatePart" ancestralTrail="/1/12/13/" childState="128">
+    <details>
+      <detail name="ViewTemplate" typeName="System.String, mscorlib" meta="" encoded="True"><![CDATA[Social]]></detail>
+    </details>
+    <detailCollections />
+    <children>
+      <child id="170" name="170" versionIndex="0" />
+    </children>
+    <authorizations />
+    <properties />
+  </item>
+  <item id="170" name="" parent="169" title="" zoneName="Content" state="Published" created="03/01/2013 20:23:01" updated="07/10/2013 23:28:35" published="03/01/2013 20:23:10" sortOrder="0" url="/msusa?item=170" visible="True" savedBy="admin" typeName="DigitalRiver.CloudLink.N2MVC.Models.Parts.HtmlPart, DigitalRiver.CloudLink.N2MVC" discriminator="HtmlPart" ancestralTrail="/1/12/13/169/" childState="2">
+    <details>
+      <detail name="Notes" typeName="System.String, mscorlib" meta="" encoded="True"><![CDATA[copied from microsoft.com on March 1, 2013]]></detail>
+      <detail name="Text" typeName="System.String, mscorlib" meta="" encoded="True"><![CDATA[&lt;div bi:type=&quot;slideshow&quot; class=&quot;slideshow slideshow-news&quot;&gt;
+    &lt;ul class=&quot;slides&quot;&gt;
+        &lt;li id=&quot;slide-1&quot; bi:index=&quot;0&quot; selectbi=&quot;&quot; style=&quot;margin-right: -100%; float: left; width: 100%; display: none;&quot;&gt;
+&lt;div bi:type=&quot;highlight&quot;&gt;
+    &lt;a href=&quot;http://aka.ms/envision&quot; bi:linkid=&quot;MNC-GEN-000001&quot; bi:cpid=&quot;hpNews&quot;&gt;
+        &lt;img bi:parenttitle=&quot;t1&quot; src=&quot;http://i.s-microsoft.com/global/en-us/news/publishingimages/homepage/highlights/theme_Envisioning_hl.jpg&quot; alt=&quot;Future of work and play now on display&quot; bi:mimiclink=&quot;true&quot; bi:type=&quot;img&quot;&gt;
+        &lt;h3 class=&quot;title&quot; bi:mimiclink=&quot;true&quot; bi:title=&quot;t1&quot; bi:titleflag=&quot;t1&quot; bi:type=&quot;title&quot;&gt;Future of work and play now on display&lt;/h3&gt;
+        &lt;p bi:parenttitle=&quot;t1&quot; bi:mimiclink=&quot;true&quot; bi:type=&quot;desc&quot;&gt;&lt;time pubdate=&quot;&quot; class=&quot;pubdate&quot;&gt;March 1, 2013 -&lt;/time&gt; Microsoft unveils new Envisioning Center, a hands-on experience with the future that also serves as a laboratory for engineering teams.&lt;/p&gt;
+        &lt;/a&gt;
+&lt;/div&gt;
+        &lt;/li&gt;&lt;li id=&quot;slide-2&quot; bi:index=&quot;1&quot; selectbi=&quot;&quot; style=&quot;margin-right: -100%; float: left; width: 100%; display: none;&quot;&gt;
+&lt;div bi:type=&quot;highlight&quot;&gt;
+    &lt;a href=&quot;/en-us/news/Press/2013/Feb13/02-27OfficeCommercialGAPR.aspx&quot; bi:linkid=&quot;MNC-GEN-000002&quot; bi:cpid=&quot;hpNews&quot;&gt;
+        &lt;img bi:parenttitle=&quot;t1&quot; src=&quot;http://i.s-microsoft.com/global/en-us/news/publishingimages/homepage/highlights/Event_Office365Biz_hl.jpg&quot; alt=&quot;Office 365 for business releases worldwide&quot; bi:mimiclink=&quot;true&quot; bi:type=&quot;img&quot;&gt;
+        &lt;h3 class=&quot;title&quot; bi:mimiclink=&quot;true&quot; bi:title=&quot;t1&quot; bi:titleflag=&quot;t1&quot; bi:type=&quot;title&quot;&gt;Office 365 for business releases worldwide&lt;/h3&gt;
+        &lt;p bi:parenttitle=&quot;t1&quot; bi:mimiclink=&quot;true&quot; bi:type=&quot;desc&quot;&gt;&lt;time pubdate=&quot;&quot; class=&quot;pubdate&quot;&gt;Feb. 27, 2013 -&lt;/time&gt; New cloud services tailored to the needs and budgets of small, medium and large organizations.&lt;/p&gt;
+        &lt;/a&gt;
+&lt;/div&gt;
+        &lt;/li&gt;&lt;li id=&quot;slide-3&quot; bi:index=&quot;2&quot; selectbi=&quot;&quot; style=&quot;margin-right: -100%; float: left; width: 100%; display: block;&quot;&gt;
+&lt;div bi:type=&quot;highlight&quot;&gt;
+    &lt;a href=&quot;/en-us/news/features/2013/feb13/02-26WindowsStoreApps.aspx&quot; bi:linkid=&quot;MNC-GEN-000003&quot; bi:cpid=&quot;hpNews&quot;&gt;
+        &lt;img bi:parenttitle=&quot;t1&quot; src=&quot;http://i.s-microsoft.com/global/en-us/news/publishingimages/homepage/highlights/spot_MWC_hl.jpg&quot; alt=&quot;Around the world with Windows 8 apps&quot; bi:mimiclink=&quot;true&quot; bi:type=&quot;img&quot;&gt;
+        &lt;h3 class=&quot;title&quot; bi:mimiclink=&quot;true&quot; bi:title=&quot;t1&quot; bi:titleflag=&quot;t1&quot; bi:type=&quot;title&quot;&gt;Around the world with Windows 8 apps&lt;/h3&gt;
+        &lt;p bi:parenttitle=&quot;t1&quot; bi:mimiclink=&quot;true&quot; bi:type=&quot;desc&quot;&gt;&lt;time pubdate=&quot;&quot; class=&quot;pubdate&quot;&gt;Feb. 26, 2013 -&lt;/time&gt; App builders across the globe are creating amazing experiences and enjoying success along the way. See the slideshow.&lt;/p&gt;
+        &lt;/a&gt;
+&lt;/div&gt;
+        &lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;div class=&quot;navigation international&quot; bi:track=&quot;false&quot;&gt;
+        
+        &lt;div class=&quot;grid-container&quot; data-title-text=&quot;Go To Slide {{idx}}&quot;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;prev-next light-foreground&quot; bi:track=&quot;false&quot;&gt;
+        
+        &lt;button class=&quot;prev&quot;&gt;&lt;span class=&quot;icon-left&quot; aria-hidden=&quot;true&quot;&gt;&lt;/span&gt;&lt;span class=&quot;screen-reader-text&quot;&gt;Previous&lt;/span&gt;&lt;/button&gt;
+        &lt;button class=&quot;next&quot;&gt;&lt;span class=&quot;icon-right&quot; aria-hidden=&quot;true&quot;&gt;&lt;/span&gt;&lt;span class=&quot;screen-reader-text&quot;&gt;Next&lt;/span&gt;&lt;/button&gt;
+    &lt;/div&gt;
+&lt;/div&gt;]]></detail>
+    </details>
+    <detailCollections />
+    <children />
+    <authorizations />
+    <properties />
+  </item>
+  <item id="171" name="" parent="13" title="Search Bar" zoneName="AfterContent" state="Published" created="01/18/2013 23:15:59" updated="07/10/2013 23:28:35" published="01/18/2013 07:15:59" sortOrder="11" url="/msusa?item=171" visible="True" savedBy="admin" typeName="DigitalRiver.CloudLink.N2MVC.Models.Parts.TemplatePart, DigitalRiver.CloudLink.N2MVC" discriminator="TemplatePart" ancestralTrail="/1/12/13/" childState="2">
+    <details>
+      <detail name="Text" typeName="System.String, mscorlib" meta="" encoded="True"><![CDATA[&lt;section class=&quot;row-cool-gray-3 row-padded&quot;&gt;
+    &lt;div class=&quot;grid-container&quot;&gt;
+        &lt;div class=&quot;grid-row row-1 &quot;&gt;
+            &lt;div class=&quot;grid-unit&quot;&gt;
+                &lt;div id=&quot;ctl00_ctl17_subLayout1_ctl04_ctl00_mscom-search&quot; data-id=&quot;#mscom-search&quot;
+                     class=&quot;mscom-search global-navigation&quot; bi:type=&quot;Search&quot;&gt;
+                    &lt;div role=&quot;search&quot; class=&quot;search-form&quot;&gt;
+                        &lt;input type=&quot;hidden&quot; name=&quot;form&quot; value=&quot;smc&quot;/&gt;
+                        &lt;input type=&quot;hidden&quot; name=&quot;setlang&quot; value=&quot;en-us&quot;/&gt;
+                        &lt;input type=&quot;hidden&quot; class=&quot;search-source&quot; name=&quot;source&quot; value=&quot;0&quot;/&gt;
+
+                        &lt;div class=&quot;input-wrapper&quot;&gt;
+                            &lt;label for=&quot;ctl00_ctl17_subLayout1_ctl04_ctl00_q&quot; class=&quot;screen-reader-text&quot;&gt;Search
+                                Microsoft.com&lt;/label&gt;
+                            &lt;input name=&quot;q&quot; id=&quot;ctl00_ctl17_subLayout1_ctl04_ctl00_q&quot; class=&quot;search-box&quot; type=&quot;search&quot;
+                                   autocomplete=&quot;off&quot;/&gt;
+                        &lt;/div&gt;
+                        &lt;button type=&quot;submit&quot; name=&quot;ctl00$ctl17$subLayout1$ctl04$ctl00$searchButton&quot; value=&quot;&quot;
+                                id=&quot;ctl00_ctl17_subLayout1_ctl04_ctl00_searchButton&quot; type=&quot;submit&quot; class=&quot;search-submit&quot;
+                                value=&quot;Search&quot;&gt;&lt;img
+                                src=&quot;http://i.s-microsoft.com/global/imagestore/PublishingImages/sprites/search-button-blue.png&quot;
+                                alt=&quot;Submit&quot; height=&quot;16&quot; width=&quot;16&quot;/&gt;&lt;/button&gt;
+                    &lt;/div&gt;
+                    &lt;div class=&quot;search-results-box&quot;&gt;
+                        &lt;div bi:track=&quot;false&quot; class=&quot;search-results&quot;&gt;
+                            &lt;ul&gt;
+                            &lt;/ul&gt;
+                        &lt;/div&gt;
+                        &lt;div class=&quot;search-scope&quot;&gt;
+                            &lt;ul&gt;
+                                &lt;li&gt;&lt;a class=&quot;checked&quot;&gt;Search Microsoft.com&lt;/a&gt;&lt;/li&gt;
+                                &lt;li&gt;&lt;a&gt;Search the Web&lt;/a&gt;&lt;/li&gt;
+                            &lt;/ul&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                    &lt;script type=&quot;text/javascript&quot;&gt;
+                        jQuery(document).ready(function ($) {
+                            var search = new Ms.Search(
+                                    &#39;ctl00_ctl17_subLayout1_ctl04_ctl00_mscom-search&#39;,
+                                    { &quot;scope&quot;: [
+                                        { &quot;watermarkText&quot;: [&quot;Search Microsoft.com&quot;], &quot;searchUrlFormat&quot;: [&quot;http://search.microsoft.com/results.aspx?form=MSHOME&amp;amp;mkt={1}&amp;amp;setlang={1}&amp;amp;q={0}&quot;], &quot;bi&quot;: [
+                                            { &quot;parameter&quot;: [
+                                                { &quot;name&quot;: [&quot;linkid&quot;], &quot;value&quot;: [&quot;searchmscomclick&quot;] },
+                                                { &quot;name&quot;: [&quot;cpid&quot;], &quot;value&quot;: [&quot;MSCOMSearch&quot;] },
+                                                { &quot;name&quot;: [&quot;searchtype&quot;], &quot;value&quot;: [&quot;MSCOM&quot;] }
+                                            ]
+                                            }
+                                        ], &quot;autoSuggest&quot;: [
+                                            { &quot;serviceUrlFormat&quot;: [&quot;http://search.microsoft.com/shared/templates/master/smcPage/AutoSuggestHandler.ashx?q={0}&amp;amp;site=smc&amp;amp;locale={1}&quot;], &quot;jsonpCallbackName&quot;: [&quot;cb&quot;], &quot;resultType&quot;: [&quot;smcUnmarkedArray&quot;], &quot;minChars&quot;: [&quot;1&quot;] }
+                                        ]
+                                        },
+                                        { &quot;watermarkText&quot;: [&quot;Search the Web&quot;], &quot;searchUrlFormat&quot;: [&quot;http://www.bing.com/search?form=MSHPLS&amp;amp;q={0}&amp;amp;mkt={1}&quot;], &quot;bi&quot;: [
+                                            { &quot;parameter&quot;: [
+                                                { &quot;name&quot;: [&quot;cpid&quot;], &quot;value&quot;: [&quot;BingSearch&quot;] },
+                                                { &quot;name&quot;: [&quot;searchtype&quot;], &quot;value&quot;: [&quot;Bing&quot;] }
+                                            ]
+                                            }
+                                        ], &quot;autoSuggest&quot;: [
+                                            { &quot;serviceUrlFormat&quot;: [&quot;http://api.bing.com/qsonhs.aspx?FORM=MSHPLS&amp;amp;mkt={1}&amp;amp;type=cb&amp;amp;q={0}&amp;amp;o=s+p+a+l+h&quot;], &quot;jsonpCallbackName&quot;: [&quot;cb&quot;], &quot;resultType&quot;: [&quot;bingJSON&quot;], &quot;minChars&quot;: [&quot;1&quot;] }
+                                        ]
+                                        }
+                                    ]
+                                    });
+                        });
+                    &lt;/script&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/section&gt;
+]]></detail>
+    </details>
+    <detailCollections />
+    <children />
+    <authorizations />
+    <properties />
+  </item>
+  <item id="172" name="" parent="13" title="" zoneName="Navigation" state="Published" created="02/21/2013 08:34:57" updated="07/10/2013 23:28:35" published="02/21/2013 01:57:03" sortOrder="21" url="/msusa?item=172" visible="True" savedBy="admin" typeName="DigitalRiver.CloudLink.N2MVC.Models.Parts.TemplatePart, DigitalRiver.CloudLink.N2MVC" discriminator="TemplatePart" ancestralTrail="/1/12/13/" childState="2">
+    <details>
+      <detail name="ViewTemplate" typeName="System.String, mscorlib" meta="" encoded="True"><![CDATA[MsComNav]]></detail>
+    </details>
+    <detailCollections />
+    <children />
+    <authorizations />
+    <properties />
+  </item>
+  <item id="173" name="" parent="13" title="Ms Com Header" zoneName="Header" state="Published" created="02/28/2013 02:53:34" updated="07/10/2013 23:28:35" published="02/28/2013 02:53:38" sortOrder="31" url="/msusa?item=173" visible="True" savedBy="admin" typeName="DigitalRiver.CloudLink.N2MVC.Models.Parts.TemplatePart, DigitalRiver.CloudLink.N2MVC" discriminator="TemplatePart" ancestralTrail="/1/12/13/" childState="2">
+    <details>
+      <detail name="Text" typeName="System.String, mscorlib" meta="" encoded="True"><![CDATA[&lt;div class=&quot;top-bar account-center&quot;&gt;
+    &lt;div class=&quot;grid-container&quot;&gt;
+        &lt;span class=&quot;top-bar-storelink &quot;&gt;
+            &lt;span class=&quot;store-editorial&quot;&gt;
+                &lt;a href=&quot;http://content.microsoftstore.com/home.aspx?WT.mc_id=MSCOM_EN_US_HP_NAV_STORELOC_132M2ENUS35042&quot;&gt;Find a Microsoft Store near you&lt;/a&gt;
+            &lt;/span&gt;
+        &lt;/span&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;grid-container&quot;&gt;
+    &lt;h1&gt;
+        &lt;div data-picture=&quot;&quot; data-alt=&quot;Microsoft&quot; class=&quot;mscom-logo&quot; data-resolved=&quot;true&quot;&gt;
+            &lt;div data-src=&quot;http://i.s-microsoft.com/global/ImageStore/PublishingImages/logos/hp/logo-lg-1x.png&quot;&gt;
+            &lt;/div&gt;
+            &lt;div data-src=&quot;http://i.s-microsoft.com/global/ImageStore/PublishingImages/logos/hp/logo-lg-2x.png&quot;
+                data-media=&quot;(min-device-pixel-ratio: 2.0)&quot;&gt;
+            &lt;/div&gt;
+            &lt;div data-src=&quot;http://i.s-microsoft.com/global/ImageStore/PublishingImages/logos/hp/logo-sm-1x.png&quot;
+                data-media=&quot;(max-width: 539px)&quot;&gt;
+            &lt;/div&gt;
+            &lt;div data-src=&quot;http://i.s-microsoft.com/global/ImageStore/PublishingImages/logos/hp/logo-sm-2x.png&quot;
+                data-media=&quot;(max-width: 539px) and (min-device-pixel-ratio: 2.0)&quot;&gt;
+            &lt;/div&gt;
+            &lt;noscript&gt;&amp;lt;img src=&quot;http://i.s-microsoft.com/global/ImageStore/PublishingImages/logos/hp/logo-lg-1x.png&quot; alt=&quot;Microsoft&quot; /&amp;gt;&lt;/noscript&gt;
+            &lt;img alt=&quot;Microsoft&quot; src=&quot;http://i.s-microsoft.com/global/ImageStore/PublishingImages/logos/hp/logo-lg-1x.png&quot;
+                data-source-index=&quot;0&quot;&gt;&lt;/div&gt;
+        &lt;script type=&quot;text/javascript&quot;&gt;            window.picturePolyfill.resolveLast();&lt;/script&gt;
+    &lt;/h1&gt;
+    &lt;div class=&quot;site-header-togglers&quot; bi:track=&quot;false&quot;&gt;
+        &lt;a href=&quot;#mscom-navigation&quot; id=&quot;toggle-menu&quot; class=&quot;toggle toggle-menu&quot; title=&quot;Toggle Navigation&quot;
+            bi:type=&quot;menu&quot;&gt;&lt;span class=&quot;icon-menu&quot; aria-role=&quot;hidden&quot;&gt;&lt;/span&gt;&lt;span class=&quot;screen-reader-text&quot;&gt;
+                Menu&lt;/span&gt;&lt;/a&gt; &lt;a href=&quot;#mscom-search&quot; id=&quot;toggle-search&quot; class=&quot;toggle toggle-search&quot;
+                    title=&quot;Toggle Search&quot; bi:type=&quot;search&quot;&gt;&lt;span class=&quot;icon-search&quot; aria-role=&quot;hidden&quot;&gt;
+                    &lt;/span&gt;&lt;span class=&quot;screen-reader-text&quot;&gt;Search&lt;/span&gt;&lt;/a&gt;
+    &lt;/div&gt;
+    &lt;div id=&quot;ctl00_ctl15_ctl00_ctl00_mscom-search&quot; data-id=&quot;#mscom-search&quot; class=&quot;mscom-search global-navigation msft&quot;
+        bi:type=&quot;Search&quot;&gt;
+        &lt;div role=&quot;search&quot; class=&quot;search-form&quot;&gt;
+            &lt;input type=&quot;hidden&quot; name=&quot;form&quot; value=&quot;smc&quot;&gt;
+            &lt;input type=&quot;hidden&quot; name=&quot;setlang&quot; value=&quot;en-us&quot;&gt;
+            &lt;input type=&quot;hidden&quot; class=&quot;search-source&quot; name=&quot;source&quot; value=&quot;0&quot;&gt;
+            &lt;div class=&quot;input-wrapper&quot;&gt;
+                &lt;label for=&quot;ctl00_ctl15_ctl00_ctl00_q&quot; class=&quot;screen-reader-text&quot;&gt;
+                    Search Microsoft.com&lt;/label&gt;
+                &lt;input name=&quot;q&quot; id=&quot;ctl00_ctl15_ctl00_ctl00_q&quot; class=&quot;search-box&quot; type=&quot;search&quot; autocomplete=&quot;off&quot;&gt;
+            &lt;/div&gt;
+            &lt;button type=&quot;submit&quot; name=&quot;ctl00$ctl15$ctl00$ctl00$searchButton&quot; value=&quot;&quot; id=&quot;ctl00_ctl15_ctl00_ctl00_searchButton&quot;
+                class=&quot;search-submit&quot;&gt;
+                &lt;img src=&quot;http://i.s-microsoft.com/global/imagestore/PublishingImages/sprites/search-button-blue.png&quot;
+                    alt=&quot;Submit&quot; height=&quot;16&quot; width=&quot;16&quot;&gt;&lt;/button&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;search-results-box&quot;&gt;
+            &lt;div bi:track=&quot;false&quot; class=&quot;search-results&quot;&gt;
+                &lt;ul&gt;
+                &lt;/ul&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;search-scope&quot;&gt;
+                &lt;ul&gt;
+                    &lt;li&gt;&lt;a class=&quot;checked&quot;&gt;Search Microsoft.com&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a&gt;Search the Web&lt;/a&gt;&lt;/li&gt;
+                &lt;/ul&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;script type=&quot;text/javascript&quot;&gt;
+            jQuery(document).ready(function ($) {
+                var search = new Ms.Search(
+                &#39;ctl00_ctl15_ctl00_ctl00_mscom-search&#39;,
+                { &quot;scope&quot;: [{ &quot;watermarkText&quot;: [&quot;Search Microsoft.com&quot;], &quot;searchUrlFormat&quot;: [&quot;http://search.microsoft.com/results.aspx?form=MSHOME&amp;amp;mkt={1}&amp;amp;setlang={1}&amp;amp;q={0}&quot;], &quot;bi&quot;: [{ &quot;parameter&quot;: [{ &quot;name&quot;: [&quot;linkid&quot;], &quot;value&quot;: [&quot;searchmscomclick&quot;] }, { &quot;name&quot;: [&quot;cpid&quot;], &quot;value&quot;: [&quot;MSCOMSearch&quot;] }, { &quot;name&quot;: [&quot;searchtype&quot;], &quot;value&quot;: [&quot;MSCOM&quot;]}]}], &quot;autoSuggest&quot;: [{ &quot;serviceUrlFormat&quot;: [&quot;http://search.microsoft.com/shared/templates/master/smcPage/AutoSuggestHandler.ashx?q={0}&amp;amp;site=smc&amp;amp;locale={1}&quot;], &quot;jsonpCallbackName&quot;: [&quot;cb&quot;], &quot;resultType&quot;: [&quot;smcUnmarkedArray&quot;], &quot;minChars&quot;: [&quot;1&quot;]}] }, { &quot;watermarkText&quot;: [&quot;Search the Web&quot;], &quot;searchUrlFormat&quot;: [&quot;http://www.bing.com/search?form=MSHPLS&amp;amp;q={0}&amp;amp;mkt={1}&quot;], &quot;bi&quot;: [{ &quot;parameter&quot;: [{ &quot;name&quot;: [&quot;cpid&quot;], &quot;value&quot;: [&quot;BingSearch&quot;] }, { &quot;name&quot;: [&quot;searchtype&quot;], &quot;value&quot;: [&quot;Bing&quot;]}]}], &quot;autoSuggest&quot;: [{ &quot;serviceUrlFormat&quot;: [&quot;http://api.bing.com/qsonhs.aspx?FORM=MSHPLS&amp;amp;mkt={1}&amp;amp;type=cb&amp;amp;q={0}&amp;amp;o=s+p+a+l+h&quot;], &quot;jsonpCallbackName&quot;: [&quot;cb&quot;], &quot;resultType&quot;: [&quot;bingJSON&quot;], &quot;minChars&quot;: [&quot;1&quot;]}]}] });
+            });
+        &lt;/script&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+]]></detail>
+    </details>
+    <detailCollections />
+    <children />
+    <authorizations />
+    <properties />
+  </item>
+</n2>

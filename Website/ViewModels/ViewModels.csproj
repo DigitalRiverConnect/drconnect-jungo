@@ -1,0 +1,147 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{613DE8B4-E42D-416A-B2F3-0A12A2A5D944}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DigitalRiver.CloudLink.Commerce.Nimbus.ViewModels</RootNamespace>
+    <AssemblyName>DigitalRiver.CloudLink.Commerce.Nimbus.ViewModels</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\..\..\..\..\</SolutionDir>
+    <RestorePackages>true</RestorePackages>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Cloud.DEV|AnyCPU'">
+    <OutputPath>bin\Cloud.DEV\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DataAnnotationsExtensions">
+      <HintPath>..\..\packages\DataAnnotationsExtensions.1.1.0.0\lib\NETFramework40\DataAnnotationsExtensions.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\packages\Newtonsoft.Json.6.0.5\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Ninject, Version=3.2.0.0, Culture=neutral, PublicKeyToken=c7192dc5380945e7, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\packages\Ninject.3.2.2.0\lib\net45-full\Ninject.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Mvc, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Attributes\JsonPropertyAttribute.cs" />
+    <Compile Include="Cart\BuyViewModel.cs" />
+    <Compile Include="Cart\MiniCartViewModel.cs" />
+    <Compile Include="Cart\ShoppingCartInterstitialViewModel.cs" />
+    <Compile Include="Cart\ShoppingCartViewModel.cs" />
+    <Compile Include="Catalog\BundleProductPickerViewModel.cs" />
+    <Compile Include="Catalog\CatalogPageViewModel.cs" />
+    <Compile Include="Catalog\CategoryListViewModel.cs" />
+    <Compile Include="Catalog\CategoryNavigationViewModel.cs" />
+    <Compile Include="Catalog\CategoryViewModel.cs" />
+    <Compile Include="Catalog\CrossSellOfferViewModel.cs" />
+    <Compile Include="Catalog\CrossSellViewModel.cs" />
+    <Compile Include="Catalog\OfferListViewModel.cs" />
+    <Compile Include="Catalog\OffersViewModel.cs" />
+    <Compile Include="Catalog\Option.cs" />
+    <Compile Include="Catalog\PriceViewModel.cs" />
+    <Compile Include="Catalog\ProductDetailPageViewModel.cs" />
+    <Compile Include="Catalog\ProductListViewModel.cs" />
+    <Compile Include="Catalog\ProductMediaViewModel.cs" />
+    <Compile Include="Catalog\ProductOfferViewModel.cs" />
+    <Compile Include="Catalog\ProductResultsViewModel.cs" />
+    <Compile Include="Catalog\PromoTilesViewModel.cs" />
+    <Compile Include="Catalog\SearchPageViewModel.cs" />
+    <Compile Include="Catalog\SearchPartViewModel.cs" />
+    <Compile Include="Catalog\VariationsCollection.cs" />
+    <Compile Include="ErrorModels.cs" />
+    <Compile Include="Layout\BannerViewModel.cs" />
+    <Compile Include="Layout\BreadcrumbsViewModel.cs" />
+    <Compile Include="Layout\ComparisonTableViewModel.cs" />
+    <Compile Include="Layout\ContentPageViewModel.cs" />
+    <Compile Include="Layout\AnalyticsViewModel.cs" />
+    <Compile Include="Layout\FlexBannerViewModel.cs" />
+    <Compile Include="Layout\LanguageSelectorPartViewModel.cs" />
+    <Compile Include="Layout\ListOfLinksViewModel.cs" />
+    <Compile Include="Layout\WideBannerViewModel.cs" />
+    <Compile Include="PageViewModelBase.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Resources\Messages.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Messages.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Shopper\ChangePasswordModel.cs" />
+    <Compile Include="Shopper\LogOnModel.cs" />
+    <Compile Include="Shopper\RegisterModel.cs" />
+    <Compile Include="Shopper\ShopperNameViewModel.cs" />
+    <Compile Include="Cart\ShoppingCartModels.cs" />
+    <Compile Include="SimpleResponseViewModel.cs" />
+    <Compile Include="Utils\ProductExtensions.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Messages.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Messages.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Jungo\Infrastructure\Infrastructure.csproj">
+      <Project>{a2438ed0-6cc5-4fe3-8a38-9f92cb0b58f4}</Project>
+      <Name>Infrastructure</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Jungo\Models\Models.csproj">
+      <Project>{FF01C160-A252-402E-B7A8-015453E03BCA}</Project>
+      <Name>Models</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(SolutionDir)\.nuget\NuGet.targets" Condition="Exists('$(SolutionDir)\.nuget\NuGet.targets')" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

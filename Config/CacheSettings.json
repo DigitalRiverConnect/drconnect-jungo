@@ -1,0 +1,29 @@
+{
+    "defaultTtl": "1800",
+    "settings": [
+        { "nameRegex": "StandardConfigurationServiceRepositoryCache", "ttl": "1800" },
+        { "nameRegex": "BaseControllerJsonFields", "ttl": "86400" },
+        { "nameRegex": "ServerHealthCache", "ttl": "60" },
+        { "nameRegex": "CatalogServiceFeaturedProductCache", "ttl": "300" },
+        { "nameRegex": "CatalogServicePointOfPromotionCache", "ttl": "300" },
+        { "nameRegex": "CatalogServiceProductInfo", "ttl": "300" },
+        { "nameRegex": "CatalogServicePromotionResultCache", "ttl": "300" },
+        { "nameRegex": "KeywordSearchEngineProductCache", "ttl": "300" },
+        { "nameRegex": "CategorySearchEngineProductCache", "ttl": "300" },
+        { "nameRegex": "CatalogServiceCategoryCache", "ttl": "300" },
+        { "nameRegex": "CatalogServiceCategoryCache_Single", "ttl": "300" },
+        { "nameRegex": "SessionRepository_SessionInfo", "ttl": "86400" },
+        { "nameRegex": "ShopperSearchResult", "ttl": "86400" },
+        { "nameRegex": "ConfigFailoverCache", "ttl": "172800" },
+        { "nameRegex": "ProductFailoverCache", "ttl": "259200" },
+        { "nameRegex": "KeywordSearchEngineProductFailoverCache", "ttl": "259200" },
+        { "nameRegex": "CategorySearchEngineProductFailoverCache", "ttl": "259200" },
+        { "nameRegex": "CatalogServiceCategorySearchFailoverCache", "ttl": "259200" },
+        { "nameRegex": "CatalogServiceCategoryFailoverCache", "ttl": "259200" },
+        { "nameRegex": "CatalogServiceCategoryFailoverCache_Single", "ttl": "259200" },
+        { "nameRegex": "CatalogServiceFeaturedProductFailoverCache", "ttl": "259200" },
+        { "nameRegex": "CatalogServicePromotionResultFailoverCache", "ttl": "259200" },
+        { "nameRegex": "IntellisenseSearchEngine_FailoverCache", "ttl": "259200"
+        }
+    ]
+}

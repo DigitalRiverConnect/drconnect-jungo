@@ -1,0 +1,16 @@
+@using DigitalRiver.CloudLink.Commerce.Nimbus.SportsUs.Infrastructure.Session
+@model DigitalRiver.CloudLink.Commerce.Nimbus.ViewModels.Cart.MiniCartViewModel
+@{
+    var url = Url.RouteUrl("SiteServices",
+        new {controller = "MiniCartPart", action = "GetMiniCart", siteId = @WebSession.Current.SiteId, cultureCode = @WebSession.Current.CultureCode});
+}
+<div id="miniCartContainer" class="cart enabled header-link">Cart (...)</div>
+<script type="text/javascript">
+    $(function() {
+        $.ajax('@url', {
+            type: "GET", success: function (data) {
+                $('#miniCartContainer').html(data);
+            }
+        });
+    });
+</script>

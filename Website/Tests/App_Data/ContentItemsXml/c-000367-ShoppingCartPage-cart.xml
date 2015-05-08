@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<n2 version="2.4.0.0" exportVersion="2" exportDate="07/10/2013 23:28:36">
+  <item id="367" name="cart" parent="285" title="Cart" state="Published" created="01/18/2013 15:06:05" updated="07/10/2013 23:28:36" published="01/18/2013 15:06:05" sortOrder="85" url="/msca/store/cart" visible="True" savedBy="stwright" typeName="DigitalRiver.CloudLink.N2MVC.Models.Pages.ShoppingCartPage, DigitalRiver.CloudLink.N2MVC" discriminator="ShoppingCartPage" ancestralTrail="/1/12/174/285/" childState="128">
+    <details />
+    <detailCollections />
+    <children>
+      <child id="368" name="368" versionIndex="0" />
+    </children>
+    <authorizations />
+    <properties />
+  </item>
+  <item id="368" name="" parent="367" title="Shopping Cart Container" zoneName="Content" state="Published" created="04/19/2013 00:54:19" updated="07/10/2013 23:28:36" published="04/19/2013 00:54:29" sortOrder="0" url="/msca/store/cart?item=368" visible="True" savedBy="stwright" typeName="DigitalRiver.CloudLink.N2MVC.Models.Parts.TemplatePart, DigitalRiver.CloudLink.N2MVC" discriminator="TemplatePart" ancestralTrail="/1/12/174/285/367/" childState="128">
+    <details>
+      <detail name="ViewTemplate" typeName="System.String, mscorlib" meta="" encoded="True"><![CDATA[Container2plus1]]></detail>
+    </details>
+    <detailCollections />
+    <children>
+      <child id="369" name="369" versionIndex="0" />
+    </children>
+    <authorizations />
+    <properties />
+  </item>
+  <item id="369" name="" parent="368" title="" zoneName="Content" state="Published" created="04/19/2013 00:54:24" updated="07/10/2013 23:28:36" published="04/19/2013 01:02:03" sortOrder="0" url="/msca/store/cart?item=369" visible="True" savedBy="" typeName="DigitalRiver.CloudLink.N2MVC.Models.Parts.ShoppingCartPart, DigitalRiver.CloudLink.N2MVC" discriminator="ShoppingCartPart" ancestralTrail="/1/12/174/285/367/368/" childState="2">
+    <details />
+    <detailCollections />
+    <children />
+    <authorizations />
+    <properties />
+  </item>
+</n2>

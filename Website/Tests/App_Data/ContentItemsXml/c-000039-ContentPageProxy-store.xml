@@ -1,0 +1,475 @@
+<?xml version="1.0" encoding="utf-8"?>
+<n2 version="2.4.0.0" exportVersion="2" exportDate="07/10/2013 23:28:35">
+  <item id="39" name="store" parent="13" title="Store" translationKey="9" state="Published" created="01/18/2013 12:17:14" updated="07/10/2013 23:28:34" published="01/18/2013 12:17:14" sortOrder="-8" url="/msusa/store" visible="True" savedBy="stwright" typeName="DigitalRiver.CloudLink.N2MVC.Models.Pages.ContentPage, DigitalRiver.CloudLink.N2MVC" discriminator="ContentPage" ancestralTrail="/1/12/13/" childState="132">
+    <details />
+    <detailCollections />
+    <children>
+      <child id="40" name="40" versionIndex="0" />
+      <child id="45" name="45" versionIndex="0" />
+      <child id="54" name="54" versionIndex="0" />
+      <child id="145" name="145" versionIndex="0" />
+      <child id="146" name="146" versionIndex="0" />
+      <child id="147" name="147" versionIndex="0" />
+      <child id="148" name="148" versionIndex="0" />
+      <child id="162" name="162" versionIndex="0" />
+      <child id="166" name="166" versionIndex="0" />
+    </children>
+    <authorizations />
+    <properties />
+  </item>
+  <item id="40" name="" parent="39" title="Hero banner container" zoneName="Content" state="Published" created="03/01/2013 00:51:32" updated="07/10/2013 23:28:34" published="03/01/2013 00:51:58" sortOrder="-50" url="/msusa/store?item=40" visible="True" savedBy="admin" typeName="DigitalRiver.CloudLink.N2MVC.Models.Parts.TemplatePart, DigitalRiver.CloudLink.N2MVC" discriminator="TemplatePart" ancestralTrail="/1/12/13/39/" childState="128">
+    <details>
+      <detail name="ViewTemplate" typeName="System.String, mscorlib" meta="" encoded="True"><![CDATA[HomeHero]]></detail>
+    </details>
+    <detailCollections />
+    <children>
+      <child id="41" name="41" versionIndex="0" />
+      <child id="42" name="42" versionIndex="0" />
+      <child id="43" name="43" versionIndex="0" />
+      <child id="44" name="44" versionIndex="0" />
+    </children>
+    <authorizations />
+    <properties />
+  </item>
+  <item id="41" name="" parent="40" title="Buy a touchscreen PC, get Office 365 University" zoneName="HeroBanner" state="Published" created="05/28/2013 17:21:27" updated="07/10/2013 23:28:34" published="05/28/2013 17:24:03" sortOrder="-10" url="/msusa/store?item=41" visible="True" savedBy="stwright" typeName="DigitalRiver.CloudLink.N2MVC.Models.Parts.CMSBannerPart, DigitalRiver.CloudLink.N2MVC" discriminator="CMSBannerPart" ancestralTrail="/1/12/13/39/40/" childState="2">
+    <details>
+      <detail name="Title" typeName="System.String, mscorlib" meta="" encoded="True"><![CDATA[Buy a touchscreen PC, get Office 365 University]]></detail>
+      <detail name="ViewTemplate" typeName="System.String, mscorlib" meta="" encoded="True"><![CDATA[MsStoreHeroBanner]]></detail>
+      <detail name="Subtitle" typeName="System.String, mscorlib" meta="" encoded="True"><![CDATA[Set them up for success with this limited-time offer]]></detail>
+      <detail name="BannerImageUrl" typeName="System.String, mscorlib" meta="" encoded="True"><![CDATA[http://dri1.img.digitalrivercontent.net/Storefront/Site/msusa/images/promo/en-US/en-US_Hm_Rot__PCOffice_WordStartScreen.jpg]]></detail>
+      <detail name="BannerBackgroundColor" typeName="System.String, mscorlib" meta="" encoded="True"><![CDATA[#ffffff]]></detail>
+      <detail name="TitleAreaBackgroundColor" typeName="System.String, mscorlib" meta="" encoded="True"><![CDATA[#002050]]></detail>
+      <detail name="TitleAreaForegroundColor" typeName="System.String, mscorlib" meta="" encoded="True"><![CDATA[#FFFFFF]]></detail>
+      <detail name="BannerImageFullWidth" typeName="System.Boolean, mscorlib" meta="">True</detail>
+    </details>
+    <detailCollections />
+    <children />
+    <authorizations />
+    <properties />
+  </item>
+  <item id="42" name="" parent="40" title="Surface RT: The perfect gift for grads, starting at just $499" zoneName="HeroBanner" state="Published" created="05/28/2013 17:22:21" updated="07/10/2013 23:28:34" published="05/28/2013 17:24:03" sortOrder="-5" url="/msusa/store?item=42" visible="True" savedBy="stwright" typeName="DigitalRiver.CloudLink.N2MVC.Models.Parts.CMSBannerPart, DigitalRiver.CloudLink.N2MVC" discriminator="CMSBannerPart" ancestralTrail="/1/12/13/39/40/" childState="2">
+    <details>
+      <detail name="Title" typeName="System.String, mscorlib" meta="" encoded="True"><![CDATA[Surface RT: The perfect gift for grads, starting at just $499]]></detail>
+      <detail name="ViewTemplate" typeName="System.String, mscorlib" meta="" encoded="True"><![CDATA[MsStoreHeroBanner]]></detail>
+      <detail name="Subtitle" typeName="System.String, mscorlib" meta="" encoded="True"><![CDATA[Get it now]]></detail>
+      <detail name="BannerImageUrl" typeName="System.String, mscorlib" meta="" encoded="True"><![CDATA[http://dri1.img.digitalrivercontent.net/Storefront/Site/msusa/images/promo/en-US/en-US_Hm_Rot_Surface_RT_Graduation_Promo.jpg]]></detail>
+      <detail name="BannerBackgroundColor" typeName="System.String, mscorlib" meta="" encoded="True"><![CDATA[#ffffff]]></detail>
+      <detail name="TitleAreaBackgroundColor" typeName="System.String, mscorlib" meta="" encoded="True"><![CDATA[#002050]]></detail>
+      <detail name="TitleAreaForegroundColor" typeName="System.String, mscorlib" meta="" encoded="True"><![CDATA[#FFFFFF]]></detail>
+      <detail name="BannerImageFullWidth" typeName="System.Boolean, mscorlib" meta="">True</detail>
+    </details>
+    <detailCollections />
+    <children />
+    <authorizations />
+    <properties />
+  </item>
+  <item id="43" name="" parent="40" title="Celebrate your grad" zoneName="HeroBanner" state="Published" created="05/28/2013 17:23:59" updated="07/10/2013 23:28:34" published="05/28/2013 17:24:03" sortOrder="-3" url="/msusa/store?item=43" visible="True" savedBy="stwright" typeName="DigitalRiver.CloudLink.N2MVC.Models.Parts.CMSBannerPart, DigitalRiver.CloudLink.N2MVC" discriminator="CMSBannerPart" ancestralTrail="/1/12/13/39/40/" childState="2">
+    <details>
+      <detail name="Title" typeName="System.String, mscorlib" meta="" encoded="True"><![CDATA[Celebrate your grad]]></detail>
+      <detail name="ViewTemplate" typeName="System.String, mscorlib" meta="" encoded="True"><![CDATA[MsStoreHeroBanner]]></detail>
+      <detail name="Subtitle" typeName="System.String, mscorlib" meta="" encoded="True"><![CDATA[Shop smart gifts for life&#39;s biggest achievements]]></detail>
+      <detail name="BannerImageUrl" typeName="System.String, mscorlib" meta="" encoded="True"><![CDATA[http://dri2.img.digitalrivercontent.net/Storefront/Site/msusa/images/promo/en-US/en-US_Hm_Rot_Grad_Evergreen.jpg]]></detail>
+      <detail name="BannerBackgroundColor" typeName="System.String, mscorlib" meta="" encoded="True"><![CDATA[#ffffff]]></detail>
+      <detail name="TitleAreaBackgroundColor" typeName="System.String, mscorlib" meta="" encoded="True"><![CDATA[#002050]]></detail>
+      <detail name="BannerImageFullWidth" typeName="System.Boolean, mscorlib" meta="">True</detail>
+      <detail name="TitleAreaForegroundColor" typeName="System.String, mscorlib" meta="" encoded="True"><![CDATA[#FFFFFF]]></detail>
+    </details>
+    <detailCollections />
+    <children />
+    <authorizations />
+    <properties />
+  </item>
+  <item id="44" name="" parent="40" title="Award winning design, now up to $350 off" zoneName="HeroBanner" state="Published" created="05/28/2013 17:23:12" updated="07/10/2013 23:28:34" published="05/28/2013 17:24:03" sortOrder="-2" url="/msusa/store?item=44" visible="True" savedBy="stwright" typeName="DigitalRiver.CloudLink.N2MVC.Models.Parts.CMSBannerPart, DigitalRiver.CloudLink.N2MVC" discriminator="CMSBannerPart" ancestralTrail="/1/12/13/39/40/" childState="2">
+    <details>
+      <detail name="Title" typeName="System.String, mscorlib" meta="" encoded="True"><![CDATA[Award winning design, now up to $350 off]]></detail>
+      <detail name="ViewTemplate" typeName="System.String, mscorlib" meta="" encoded="True"><![CDATA[MsStoreHeroBanner]]></detail>
+      <detail name="Subtitle" typeName="System.String, mscorlib" meta="" encoded="True"><![CDATA[Save on the thin and light Acer Aspire 7]]></detail>
+      <detail name="BannerImageUrl" typeName="System.String, mscorlib" meta="" encoded="True"><![CDATA[http://dri1.img.digitalrivercontent.net/Storefront/Site/msusa/images/promo/en-US_Hm_Rot_Acer_S7.jpg]]></detail>
+      <detail name="BannerBackgroundColor" typeName="System.String, mscorlib" meta="" encoded="True"><![CDATA[#ffffff]]></detail>
+      <detail name="TitleAreaBackgroundColor" typeName="System.String, mscorlib" meta="" encoded="True"><![CDATA[#002050]]></detail>
+      <detail name="TitleAreaForegroundColor" typeName="System.String, mscorlib" meta="" encoded="True"><![CDATA[#FFFFFF]]></detail>
+      <detail name="BannerImageFullWidth" typeName="System.Boolean, mscorlib" meta="">True</detail>
+    </details>
+    <detailCollections />
+    <children />
+    <authorizations />
+    <properties />
+  </item>
+  <item id="45" name="" parent="39" title="Top Categories + Specialty Stores" zoneName="Content" state="Published" created="02/20/2013 18:28:45" updated="07/10/2013 23:28:34" published="02/20/2013 18:35:01" sortOrder="-40" url="/msusa/store?item=45" visible="True" savedBy="admin" typeName="DigitalRiver.CloudLink.N2MVC.Models.Parts.TemplatePart, DigitalRiver.CloudLink.N2MVC" discriminator="TemplatePart" ancestralTrail="/1/12/13/39/" childState="128">
+    <details>
+      <detail name="ViewTemplate" typeName="System.String, mscorlib" meta="" encoded="True"><![CDATA[Container3plus1RevFlow]]></detail>
+    </details>
+    <detailCollections />
+    <children>
+      <child id="46" name="46" versionIndex="0" />
+      <child id="50" name="50" versionIndex="0" />
+    </children>
+    <authorizations />
+    <properties />
+  </item>
+  <item id="46" name="" parent="45" title="Our top categories" zoneName="Content" state="Published" created="01/18/2013 14:52:11" updated="07/10/2013 23:28:34" published="02/20/2013 18:35:02" sortOrder="0" url="/msusa/store?item=46" visible="True" savedBy="admin" typeName="DigitalRiver.CloudLink.N2MVC.Models.Parts.CmsPopPart, DigitalRiver.CloudLink.N2MVC" discriminator="CmsPopPart" ancestralTrail="/1/12/13/39/45/" childState="128">
+    <details>
+      <detail name="ViewTemplate" typeName="System.String, mscorlib" meta="" encoded="True"><![CDATA[CmsPromotion]]></detail>
+      <detail name="CssClass" typeName="System.String, mscorlib" meta="" encoded="True"><![CDATA[top-categories]]></detail>
+      <detail name="NumElementsWide" typeName="System.String, mscorlib" meta="" encoded="True"><![CDATA[3]]></detail>
+    </details>
+    <detailCollections />
+    <children>
+      <child id="47" name="47" versionIndex="0" />
+      <child id="48" name="48" versionIndex="0" />
+      <child id="49" name="49" versionIndex="0" />
+    </children>
+    <authorizations />
+    <properties />
+  </item>
+  <item id="47" name="" parent="46" title="Expert-picked computers" zoneName="Offers" state="Published" created="03/11/2013 20:54:32" updated="07/10/2013 23:28:34" published="03/11/2013 21:11:45" sortOrder="-30" url="?categoryId=62684600" visible="True" savedBy="admin" typeName="DigitalRiver.CloudLink.N2MVC.Models.Parts.PromotionOffer, DigitalRiver.CloudLink.N2MVC" discriminator="PromotionOffer" ancestralTrail="/1/12/13/39/45/46/" childState="2">
+    <details>
+      <detail name="Title" typeName="System.String, mscorlib" meta="" encoded="True"><![CDATA[Expert-picked computers]]></detail>
+      <detail name="Image" typeName="System.String, mscorlib" meta="" encoded="True"><![CDATA[~/upload/Category_1_IMG_s1.jpg]]></detail>
+      <detail name="TargetUrl" typeName="System.String, mscorlib" meta="" encoded="True"><![CDATA[?categoryId=62684600]]></detail>
+    </details>
+    <detailCollections />
+    <children />
+    <authorizations />
+    <properties />
+  </item>
+  <item id="48" name="" parent="46" title="Windows reimagined" zoneName="Offers" state="Published" created="03/11/2013 20:59:19" updated="07/10/2013 23:28:34" published="03/11/2013 21:11:45" sortOrder="-20" url="?categoryId=62684800" visible="True" savedBy="sweber" typeName="DigitalRiver.CloudLink.N2MVC.Models.Parts.PromotionOffer, DigitalRiver.CloudLink.N2MVC" discriminator="PromotionOffer" ancestralTrail="/1/12/13/39/45/46/" childState="2">
+    <details>
+      <detail name="Title" typeName="System.String, mscorlib" meta="" encoded="True"><![CDATA[Windows reimagined]]></detail>
+      <detail name="Image" typeName="System.String, mscorlib" meta="" encoded="True"><![CDATA[~/upload/Category_2_IMG_s1.jpg]]></detail>
+      <detail name="TargetUrl" typeName="System.String, mscorlib" meta="" encoded="True"><![CDATA[?categoryId=62684800]]></detail>
+    </details>
+    <detailCollections />
+    <children />
+    <authorizations />
+    <properties />
+  </item>
+  <item id="49" name="" parent="46" title="The all new Office 2013" zoneName="Offers" state="Published" created="03/11/2013 20:59:19" updated="07/10/2013 23:28:34" published="03/11/2013 21:11:45" sortOrder="0" url="?categoryId=62684700" visible="True" savedBy="sweber" typeName="DigitalRiver.CloudLink.N2MVC.Models.Parts.PromotionOffer, DigitalRiver.CloudLink.N2MVC" discriminator="PromotionOffer" ancestralTrail="/1/12/13/39/45/46/" childState="2">
+    <details>
+      <detail name="Title" typeName="System.String, mscorlib" meta="" encoded="True"><![CDATA[The all new Office 2013]]></detail>
+      <detail name="TargetUrl" typeName="System.String, mscorlib" meta="" encoded="True"><![CDATA[?categoryId=62684700]]></detail>
+      <detail name="Image" typeName="System.String, mscorlib" meta="" encoded="True"><![CDATA[~/upload/Category_3_IMG_s1.jpg]]></detail>
+    </details>
+    <detailCollections />
+    <children />
+    <authorizations />
+    <properties />
+  </item>
+  <item id="50" name="" parent="45" title="Specialty stores" zoneName="Right" state="Published" created="02/20/2013 18:39:59" updated="07/10/2013 23:28:34" published="02/20/2013 18:41:40" sortOrder="10" url="/msusa/store?item=50" visible="True" savedBy="sweber" typeName="DigitalRiver.CloudLink.N2MVC.Models.Parts.CmsPopPart, DigitalRiver.CloudLink.N2MVC" discriminator="CmsPopPart" ancestralTrail="/1/12/13/39/45/" childState="128">
+    <details>
+      <detail name="ViewTemplate" typeName="System.String, mscorlib" meta="" encoded="True"><![CDATA[CmsSpecialtyStores]]></detail>
+      <detail name="CssClass" typeName="System.String, mscorlib" meta="" encoded="True"><![CDATA[specialty-stores]]></detail>
+    </details>
+    <detailCollections />
+    <children>
+      <child id="51" name="51" versionIndex="0" />
+      <child id="52" name="52" versionIndex="0" />
+      <child id="53" name="53" versionIndex="0" />
+    </children>
+    <authorizations />
+    <properties />
+  </item>
+  <item id="51" name="" parent="50" title="Products that mean business" zoneName="Offers" state="Published" created="03/11/2013 21:01:16" updated="07/10/2013 23:28:34" published="03/11/2013 21:11:45" sortOrder="-20" url="?categoryId=62118900" visible="True" savedBy="admin" typeName="DigitalRiver.CloudLink.N2MVC.Models.Parts.PromotionOffer, DigitalRiver.CloudLink.N2MVC" discriminator="PromotionOffer" ancestralTrail="/1/12/13/39/45/50/" childState="2">
+    <details>
+      <detail name="Title" typeName="System.String, mscorlib" meta="" encoded="True"><![CDATA[Products that mean business]]></detail>
+      <detail name="TargetUrl" typeName="System.String, mscorlib" meta="" encoded="True"><![CDATA[?categoryId=62118900]]></detail>
+    </details>
+    <detailCollections />
+    <children />
+    <authorizations />
+    <properties />
+  </item>
+  <item id="52" name="" parent="50" title="Deals and offers for student" zoneName="Offers" state="Published" created="03/11/2013 21:01:16" updated="07/10/2013 23:28:34" published="03/11/2013 21:11:45" sortOrder="-10" url="?categoryId=62118800" visible="True" savedBy="admin" typeName="DigitalRiver.CloudLink.N2MVC.Models.Parts.PromotionOffer, DigitalRiver.CloudLink.N2MVC" discriminator="PromotionOffer" ancestralTrail="/1/12/13/39/45/50/" childState="2">
+    <details>
+      <detail name="Title" typeName="System.String, mscorlib" meta="" encoded="True"><![CDATA[Deals and offers for student]]></detail>
+      <detail name="TargetUrl" typeName="System.String, mscorlib" meta="" encoded="True"><![CDATA[?categoryId=62118800]]></detail>
+    </details>
+    <detailCollections />
+    <children />
+    <authorizations />
+    <properties />
+  </item>
+  <item id="53" name="" parent="50" title="Resources for developers" zoneName="Offers" state="Published" created="03/11/2013 21:11:22" updated="07/10/2013 23:28:34" published="03/11/2013 21:11:45" sortOrder="0" url="?categoryId=62119000" visible="True" savedBy="admin" typeName="DigitalRiver.CloudLink.N2MVC.Models.Parts.PromotionOffer, DigitalRiver.CloudLink.N2MVC" discriminator="PromotionOffer" ancestralTrail="/1/12/13/39/45/50/" childState="2">
+    <details>
+      <detail name="Title" typeName="System.String, mscorlib" meta="" encoded="True"><![CDATA[Resources for developers]]></detail>
+      <detail name="TargetUrl" typeName="System.String, mscorlib" meta="" encoded="True"><![CDATA[?categoryId=62119000]]></detail>
+    </details>
+    <detailCollections />
+    <children />
+    <authorizations />
+    <properties />
+  </item>
+  <item id="54" name="" parent="39" title="Whats new container" zoneName="Content" state="Published" created="02/20/2013 18:29:45" updated="07/10/2013 23:28:34" published="02/20/2013 18:35:04" sortOrder="-20" url="/msusa/store?item=54" visible="True" savedBy="admin" typeName="DigitalRiver.CloudLink.N2MVC.Models.Parts.TemplatePart, DigitalRiver.CloudLink.N2MVC" discriminator="TemplatePart" ancestralTrail="/1/12/13/39/" childState="128">
+    <details>
+      <detail name="ViewTemplate" typeName="System.String, mscorlib" meta="" encoded="True"><![CDATA[ContainerFull]]></detail>
+    </details>
+    <detailCollections />
+    <children>
+      <child id="55" name="55" versionIndex="0" />
+      <child id="59" name="59" versionIndex="0" />
+      <child id="64" name="64" versionIndex="0" />
+    </children>
+    <authorizations />
+    <properties />
+  </item>
+  <item id="55" name="" parent="54" title="Our top Products" zoneName="Content" state="Published" created="01/18/2013 14:52:37" updated="07/10/2013 23:28:34" published="02/20/2013 18:35:06" sortOrder="-67" url="/msusa/store?item=55" visible="True" savedBy="sweber" typeName="DigitalRiver.CloudLink.N2MVC.Models.Parts.CmsPopPart, DigitalRiver.CloudLink.N2MVC" discriminator="CmsPopPart" ancestralTrail="/1/12/13/39/54/" childState="128">
+    <details>
+      <detail name="ViewTemplate" typeName="System.String, mscorlib" meta="" encoded="True"><![CDATA[CmsPromotion]]></detail>
+      <detail name="CssClass" typeName="System.String, mscorlib" meta="" encoded="True"><![CDATA[recommended-products]]></detail>
+      <detail name="NumElementsWide" typeName="System.String, mscorlib" meta="" encoded="True"><![CDATA[3]]></detail>
+    </details>
+    <detailCollections />
+    <children>
+      <child id="56" name="56" versionIndex="0" />
+      <child id="57" name="57" versionIndex="0" />
+      <child id="58" name="58" versionIndex="0" />
+    </children>
+    <authorizations />
+    <properties />
+  </item>
+  <item id="56" name="" parent="55" title="Beats Solo" zoneName="Offers" state="Published" created="03/11/2013 22:43:42" updated="07/10/2013 23:28:34" published="03/11/2013 23:00:13" sortOrder="-10" url="" visible="True" savedBy="admin" typeName="DigitalRiver.CloudLink.N2MVC.Models.Parts.PromotionOffer, DigitalRiver.CloudLink.N2MVC" discriminator="PromotionOffer" ancestralTrail="/1/12/13/39/54/55/" childState="2">
+    <details>
+      <detail name="Title" typeName="System.String, mscorlib" meta="" encoded="True"><![CDATA[Beats Solo]]></detail>
+      <detail name="TagLine" typeName="System.String, mscorlib" meta="" encoded="True"><![CDATA[Headphones of the year: Audio Magazine]]></detail>
+      <detail name="Image" typeName="System.String, mscorlib" meta="" encoded="True"><![CDATA[~/upload/Product_1_IMG_s1.jpg]]></detail>
+      <detail name="Text" typeName="System.String, mscorlib" meta="" encoded="True"><![CDATA[With Beats Solo, you&#39;ll hear every sonic detail the musicians and recording engineers laid down in the studio]]></detail>
+    </details>
+    <detailCollections />
+    <children />
+    <authorizations />
+    <properties />
+  </item>
+  <item id="57" name="" parent="55" title="Skullcandy Titan Earbuds with Inline Mic" zoneName="Offers" state="Published" created="03/11/2013 22:43:42" updated="07/10/2013 23:28:34" published="03/11/2013 23:00:13" sortOrder="-5" url="" visible="True" savedBy="admin" typeName="DigitalRiver.CloudLink.N2MVC.Models.Parts.PromotionOffer, DigitalRiver.CloudLink.N2MVC" discriminator="PromotionOffer" ancestralTrail="/1/12/13/39/54/55/" childState="2">
+    <details>
+      <detail name="Title" typeName="System.String, mscorlib" meta="" encoded="True"><![CDATA[Skullcandy Titan Earbuds with Inline Mic]]></detail>
+      <detail name="Image" typeName="System.String, mscorlib" meta="" encoded="True"><![CDATA[~/upload/Product_2_IMG_s1.jpg]]></detail>
+      <detail name="Text" typeName="System.String, mscorlib" meta="" encoded="True"><![CDATA[The Jawbone JAMBOX delivers rich hi-fi audio in a portable wireless speaker and fills even the largest rooms.]]></detail>
+    </details>
+    <detailCollections />
+    <children />
+    <authorizations />
+    <properties />
+  </item>
+  <item id="58" name="" parent="55" title="HP Pavilion HPE h9-1182 Phoenix [test]" zoneName="Offers" state="Published" created="03/11/2013 22:43:42" updated="07/10/2013 23:28:34" published="03/11/2013 23:00:13" sortOrder="0" url="" visible="True" savedBy="admin" typeName="DigitalRiver.CloudLink.N2MVC.Models.Parts.PromotionOffer, DigitalRiver.CloudLink.N2MVC" discriminator="PromotionOffer" ancestralTrail="/1/12/13/39/54/55/" childState="2">
+    <details>
+      <detail name="Title" typeName="System.String, mscorlib" meta="" encoded="True"><![CDATA[HP Pavilion HPE h9-1182 Phoenix [test]]]></detail>
+      <detail name="TagLine" typeName="System.String, mscorlib" meta="" encoded="True"><![CDATA[Best new product: Gizmodo]]></detail>
+      <detail name="Image" typeName="System.String, mscorlib" meta="" encoded="True"><![CDATA[~/upload/Product_4_IMG_s1.jpg]]></detail>
+      <detail name="Text" typeName="System.String, mscorlib" meta="" encoded="True"><![CDATA[Block out the world around you and immerse yourself in clear, clean sound with these Skullcandy Titan earbuds.]]></detail>
+    </details>
+    <detailCollections />
+    <children />
+    <authorizations />
+    <properties />
+  </item>
+  <item id="59" name="" parent="54" title="The Microsoft Store Difference" zoneName="Content" state="Published" created="02/14/2013 16:35:27" updated="07/10/2013 23:28:34" published="02/20/2013 18:35:08" sortOrder="-62" url="/msusa/store?item=59" visible="True" savedBy="sweber" typeName="DigitalRiver.CloudLink.N2MVC.Models.Parts.CmsPopPart, DigitalRiver.CloudLink.N2MVC" discriminator="CmsPopPart" ancestralTrail="/1/12/13/39/54/" childState="128">
+    <details>
+      <detail name="ViewTemplate" typeName="System.String, mscorlib" meta="" encoded="True"><![CDATA[CmsPromotion]]></detail>
+      <detail name="CssClass" typeName="System.String, mscorlib" meta="" encoded="True"><![CDATA[store-difference]]></detail>
+      <detail name="NumElementsWide" typeName="System.String, mscorlib" meta="" encoded="True"><![CDATA[4]]></detail>
+    </details>
+    <detailCollections />
+    <children>
+      <child id="60" name="60" versionIndex="0" />
+      <child id="61" name="61" versionIndex="0" />
+      <child id="62" name="62" versionIndex="0" />
+      <child id="63" name="63" versionIndex="0" />
+    </children>
+    <authorizations />
+    <properties />
+  </item>
+  <item id="60" name="" parent="59" title="Microsoft Signature" zoneName="Offers" state="Published" created="03/11/2013 22:23:13" updated="07/10/2013 23:28:34" published="03/11/2013 22:23:23" sortOrder="-10" url="?categoryId=62111700" visible="True" savedBy="admin" typeName="DigitalRiver.CloudLink.N2MVC.Models.Parts.PromotionOffer, DigitalRiver.CloudLink.N2MVC" discriminator="PromotionOffer" ancestralTrail="/1/12/13/39/54/59/" childState="2">
+    <details>
+      <detail name="Title" typeName="System.String, mscorlib" meta="" encoded="True"><![CDATA[Microsoft Signature]]></detail>
+      <detail name="Image" typeName="System.String, mscorlib" meta="" encoded="True"><![CDATA[~/upload/StoreDifference_1_IMG_s1.jpg]]></detail>
+      <detail name="Text" typeName="System.String, mscorlib" meta="" encoded="True"><![CDATA[lorem ipsum dolor sit amet, adiscrpating elit. pellented lorem odio]]></detail>
+      <detail name="TargetUrl" typeName="System.String, mscorlib" meta="" encoded="True"><![CDATA[?categoryId=62111700]]></detail>
+    </details>
+    <detailCollections />
+    <children />
+    <authorizations />
+    <properties />
+  </item>
+  <item id="61" name="" parent="59" title="Free shipping. Free returns." zoneName="Offers" state="Published" created="03/11/2013 22:23:13" updated="07/10/2013 23:28:34" published="03/11/2013 22:23:23" sortOrder="-5" url="" visible="True" savedBy="admin" typeName="DigitalRiver.CloudLink.N2MVC.Models.Parts.PromotionOffer, DigitalRiver.CloudLink.N2MVC" discriminator="PromotionOffer" ancestralTrail="/1/12/13/39/54/59/" childState="2">
+    <details>
+      <detail name="Title" typeName="System.String, mscorlib" meta="" encoded="True"><![CDATA[Free shipping. Free returns.]]></detail>
+      <detail name="Image" typeName="System.String, mscorlib" meta="" encoded="True"><![CDATA[~/upload/StoreDifference_2_IMG_s1.jpg]]></detail>
+      <detail name="Text" typeName="System.String, mscorlib" meta="" encoded="True"><![CDATA[lorem ipsum dolor sit amet, adiscrpating elit. pellented lorem odio]]></detail>
+    </details>
+    <detailCollections />
+    <children />
+    <authorizations />
+    <properties />
+  </item>
+  <item id="62" name="" parent="59" title="Support" zoneName="Offers" state="Published" created="03/11/2013 22:23:13" updated="07/10/2013 23:28:34" published="03/11/2013 22:23:23" sortOrder="-2" url="" visible="True" savedBy="admin" typeName="DigitalRiver.CloudLink.N2MVC.Models.Parts.PromotionOffer, DigitalRiver.CloudLink.N2MVC" discriminator="PromotionOffer" ancestralTrail="/1/12/13/39/54/59/" childState="2">
+    <details>
+      <detail name="Title" typeName="System.String, mscorlib" meta="" encoded="True"><![CDATA[Support]]></detail>
+      <detail name="Image" typeName="System.String, mscorlib" meta="" encoded="True"><![CDATA[~/upload/StoreDifference_3_IMG_s1.jpg]]></detail>
+      <detail name="Text" typeName="System.String, mscorlib" meta="" encoded="True"><![CDATA[lorem ipsum dolor sit amet, adiscrpating elit. pellented lorem odio]]></detail>
+    </details>
+    <detailCollections />
+    <children />
+    <authorizations />
+    <properties />
+  </item>
+  <item id="63" name="" parent="59" title="Up and running" zoneName="Offers" state="Published" created="03/11/2013 22:23:13" updated="07/10/2013 23:28:34" published="03/11/2013 22:23:23" sortOrder="0" url="?categoryId=62112300" visible="True" savedBy="admin" typeName="DigitalRiver.CloudLink.N2MVC.Models.Parts.PromotionOffer, DigitalRiver.CloudLink.N2MVC" discriminator="PromotionOffer" ancestralTrail="/1/12/13/39/54/59/" childState="2">
+    <details>
+      <detail name="Title" typeName="System.String, mscorlib" meta="" encoded="True"><![CDATA[Up and running]]></detail>
+      <detail name="Image" typeName="System.String, mscorlib" meta="" encoded="True"><![CDATA[~/upload/StoreDifference_4_IMG_s1.jpg]]></detail>
+      <detail name="Text" typeName="System.String, mscorlib" meta="" encoded="True"><![CDATA[lorem ipsum dolor sit amet, adiscrpating elit. pellented lorem odio]]></detail>
+      <detail name="TargetUrl" typeName="System.String, mscorlib" meta="" encoded="True"><![CDATA[?categoryId=62112300]]></detail>
+    </details>
+    <detailCollections />
+    <children />
+    <authorizations />
+    <properties />
+  </item>
+  <item id="64" name="" parent="54" title="Whats new" zoneName="Content" state="Published" created="02/15/2013 14:46:09" updated="07/10/2013 23:28:34" published="02/20/2013 18:35:04" sortOrder="-57" url="/msusa/store?item=64" visible="True" savedBy="sweber" typeName="DigitalRiver.CloudLink.N2MVC.Models.Parts.CmsPopPart, DigitalRiver.CloudLink.N2MVC" discriminator="CmsPopPart" ancestralTrail="/1/12/13/39/54/" childState="128">
+    <details>
+      <detail name="ViewTemplate" typeName="System.String, mscorlib" meta="" encoded="True"><![CDATA[CmsPromotion]]></detail>
+      <detail name="CssClass" typeName="System.String, mscorlib" meta="" encoded="True"><![CDATA[whats-new]]></detail>
+      <detail name="NumElementsWide" typeName="System.String, mscorlib" meta="" encoded="True"><![CDATA[3]]></detail>
+    </details>
+    <detailCollections />
+    <children>
+      <child id="65" name="65" versionIndex="0" />
+      <child id="66" name="66" versionIndex="0" />
+      <child id="67" name="67" versionIndex="0" />
+    </children>
+    <authorizations />
+    <properties />
+  </item>
+  <item id="65" name="" parent="64" title="" zoneName="Offers" state="Published" created="03/11/2013 22:19:43" updated="07/10/2013 23:28:34" published="03/11/2013 22:23:23" sortOrder="-10" url="?categoryId=62684900" visible="True" savedBy="sweber" typeName="DigitalRiver.CloudLink.N2MVC.Models.Parts.PromotionOffer, DigitalRiver.CloudLink.N2MVC" discriminator="PromotionOffer" ancestralTrail="/1/12/13/39/54/64/" childState="2">
+    <details>
+      <detail name="Image" typeName="System.String, mscorlib" meta="" encoded="True"><![CDATA[~/upload/Whatsnew_1_IMG_s1.jpg]]></detail>
+      <detail name="TargetUrl" typeName="System.String, mscorlib" meta="" encoded="True"><![CDATA[?categoryId=62684900]]></detail>
+    </details>
+    <detailCollections />
+    <children />
+    <authorizations />
+    <properties />
+  </item>
+  <item id="66" name="" parent="64" title="" zoneName="Offers" state="Published" created="03/11/2013 22:19:43" updated="07/10/2013 23:28:34" published="03/11/2013 22:23:23" sortOrder="-5" url="?categoryId=62685000" visible="True" savedBy="sweber" typeName="DigitalRiver.CloudLink.N2MVC.Models.Parts.PromotionOffer, DigitalRiver.CloudLink.N2MVC" discriminator="PromotionOffer" ancestralTrail="/1/12/13/39/54/64/" childState="2">
+    <details>
+      <detail name="Image" typeName="System.String, mscorlib" meta="" encoded="True"><![CDATA[~/upload/Whatsnew_2_IMG_s1.jpg]]></detail>
+      <detail name="TargetUrl" typeName="System.String, mscorlib" meta="" encoded="True"><![CDATA[?categoryId=62685000]]></detail>
+    </details>
+    <detailCollections />
+    <children />
+    <authorizations />
+    <properties />
+  </item>
+  <item id="67" name="" parent="64" title="" zoneName="Offers" state="Published" created="03/11/2013 22:19:43" updated="07/10/2013 23:28:34" published="03/11/2013 22:23:23" sortOrder="0" url="?categoryId=62684800" visible="True" savedBy="sweber" typeName="DigitalRiver.CloudLink.N2MVC.Models.Parts.PromotionOffer, DigitalRiver.CloudLink.N2MVC" discriminator="PromotionOffer" ancestralTrail="/1/12/13/39/54/64/" childState="2">
+    <details>
+      <detail name="Image" typeName="System.String, mscorlib" meta="" encoded="True"><![CDATA[~/upload/Whatsnew_3_IMG_s1.jpg]]></detail>
+      <detail name="TargetUrl" typeName="System.String, mscorlib" meta="" encoded="True"><![CDATA[?categoryId=62684800]]></detail>
+    </details>
+    <detailCollections />
+    <children />
+    <authorizations />
+    <properties />
+  </item>
+  <item id="145" name="" parent="39" title="Social" zoneName="AfterContent" state="Published" created="01/18/2013 14:43:31" updated="07/10/2013 23:28:35" published="01/18/2013 14:43:31" sortOrder="90" url="/msusa/store?item=145" visible="True" savedBy="admin" typeName="DigitalRiver.CloudLink.N2MVC.Models.Parts.TemplatePart, DigitalRiver.CloudLink.N2MVC" discriminator="TemplatePart" ancestralTrail="/1/12/13/39/" childState="2">
+    <details>
+      <detail name="ViewTemplate" typeName="System.String, mscorlib" meta="" encoded="True"><![CDATA[Social]]></detail>
+    </details>
+    <detailCollections />
+    <children />
+    <authorizations />
+    <properties />
+  </item>
+  <item id="146" name="" parent="39" title="Shop products" zoneName="Links" state="Published" created="02/20/2013 16:36:41" updated="07/10/2013 23:28:35" published="02/20/2013 16:36:41" sortOrder="91" url="" visible="True" savedBy="admin" typeName="DigitalRiver.CloudLink.N2MVC.Models.Parts.NavLink, DigitalRiver.CloudLink.N2MVC" discriminator="NavLink" ancestralTrail="/1/12/13/39/" childState="2">
+    <details />
+    <detailCollections />
+    <children />
+    <authorizations />
+    <properties />
+  </item>
+  <item id="147" name="" parent="39" title="Answer desk" zoneName="Links" state="Published" created="02/20/2013 16:36:41" updated="07/10/2013 23:28:35" published="02/20/2013 16:36:41" sortOrder="92" url="" visible="True" savedBy="admin" typeName="DigitalRiver.CloudLink.N2MVC.Models.Parts.NavLink, DigitalRiver.CloudLink.N2MVC" discriminator="NavLink" ancestralTrail="/1/12/13/39/" childState="2">
+    <details />
+    <detailCollections />
+    <children />
+    <authorizations />
+    <properties />
+  </item>
+  <item id="148" name="" parent="39" title="Find a store" zoneName="Links" state="Published" created="02/20/2013 16:36:41" updated="07/10/2013 23:28:35" published="02/20/2013 16:36:41" sortOrder="93" url="" visible="True" savedBy="admin" typeName="DigitalRiver.CloudLink.N2MVC.Models.Parts.NavLink, DigitalRiver.CloudLink.N2MVC" discriminator="NavLink" ancestralTrail="/1/12/13/39/" childState="2">
+    <details />
+    <detailCollections />
+    <children />
+    <authorizations />
+    <properties />
+  </item>
+  <item id="162" name="" parent="39" title="MsStoreNav" zoneName="RecursiveNavigation" state="Published" created="02/20/2013 18:34:37" updated="07/10/2013 23:28:35" published="02/20/2013 18:35:11" sortOrder="95" url="/msusa/store?item=162" visible="True" savedBy="admin" typeName="DigitalRiver.CloudLink.N2MVC.Models.Parts.TemplatePart, DigitalRiver.CloudLink.N2MVC" discriminator="TemplatePart" ancestralTrail="/1/12/13/39/" childState="128">
+    <details>
+      <detail name="ViewTemplate" typeName="System.String, mscorlib" meta="" encoded="True"><![CDATA[MsStoreNav]]></detail>
+    </details>
+    <detailCollections />
+    <children>
+      <child id="163" name="163" versionIndex="0" />
+      <child id="164" name="164" versionIndex="0" />
+      <child id="165" name="165" versionIndex="0" />
+    </children>
+    <authorizations />
+    <properties />
+  </item>
+  <item id="163" name="" parent="162" title="Categories" zoneName="Tier2" state="Published" created="02/21/2013 13:39:14" updated="07/10/2013 23:28:35" published="02/21/2013 13:49:36" sortOrder="-10" url="/msusa/store?item=163" visible="True" savedBy="admin" typeName="DigitalRiver.CloudLink.N2MVC.Models.Parts.CategoriesPart, DigitalRiver.CloudLink.N2MVC" discriminator="CategoriesPart" ancestralTrail="/1/12/13/39/162/" childState="2">
+    <details>
+      <detail name="CategoryID" typeName="System.String, mscorlib" meta="" encoded="True"><![CDATA[MainMenu_Right]]></detail>
+      <detail name="ViewTemplate" typeName="System.String, mscorlib" meta="" encoded="True"><![CDATA[_Tier2Partial]]></detail>
+    </details>
+    <detailCollections />
+    <children />
+    <authorizations />
+    <properties />
+  </item>
+  <item id="164" name="" parent="162" title="Categories" zoneName="Tier1" state="Published" created="02/21/2013 13:48:54" updated="07/10/2013 23:28:35" published="02/21/2013 13:49:37" sortOrder="-5" url="/msusa/store?item=164" visible="True" savedBy="admin" typeName="DigitalRiver.CloudLink.N2MVC.Models.Parts.CategoriesPart, DigitalRiver.CloudLink.N2MVC" discriminator="CategoriesPart" ancestralTrail="/1/12/13/39/162/" childState="2">
+    <details>
+      <detail name="CategoryID" typeName="System.String, mscorlib" meta="" encoded="True"><![CDATA[MainMenu_Bottom]]></detail>
+      <detail name="ViewTemplate" typeName="System.String, mscorlib" meta="" encoded="True"><![CDATA[_Tier1Partial]]></detail>
+      <detail name="Levels" typeName="System.Int32, mscorlib" meta="">2</detail>
+    </details>
+    <detailCollections />
+    <children />
+    <authorizations />
+    <properties />
+  </item>
+  <item id="165" name="" parent="162" title="Categories" zoneName="Tier3" state="Published" created="02/21/2013 13:58:11" updated="07/10/2013 23:28:35" published="02/21/2013 14:00:31" sortOrder="0" url="/msusa/store?item=165" visible="True" savedBy="admin" typeName="DigitalRiver.CloudLink.N2MVC.Models.Parts.CategoriesPart, DigitalRiver.CloudLink.N2MVC" discriminator="CategoriesPart" ancestralTrail="/1/12/13/39/162/" childState="2">
+    <details>
+      <detail name="CategoryID" typeName="System.String, mscorlib" meta="" encoded="True"><![CDATA[MainMenu_Top]]></detail>
+      <detail name="ViewTemplate" typeName="System.String, mscorlib" meta="" encoded="True"><![CDATA[_Tier3Partial]]></detail>
+    </details>
+    <detailCollections />
+    <children />
+    <authorizations />
+    <properties />
+  </item>
+  <item id="166" name="" parent="39" title="Ms Store Header" zoneName="RecursiveHeader" state="Published" created="02/28/2013 02:54:04" updated="07/10/2013 23:28:35" published="02/28/2013 02:54:10" sortOrder="96" url="/msusa/store?item=166" visible="True" savedBy="admin" typeName="DigitalRiver.CloudLink.N2MVC.Models.Parts.TemplatePart, DigitalRiver.CloudLink.N2MVC" discriminator="TemplatePart" ancestralTrail="/1/12/13/39/" childState="128">
+    <details>
+      <detail name="ViewTemplate" typeName="System.String, mscorlib" meta="" encoded="True"><![CDATA[MsStoreHeader]]></detail>
+    </details>
+    <detailCollections />
+    <children>
+      <child id="167" name="167" versionIndex="0" />
+      <child id="168" name="168" versionIndex="0" />
+    </children>
+    <authorizations />
+    <properties />
+  </item>
+  <item id="167" name="" parent="166" title="" zoneName="SiteAction" state="Published" created="04/19/2013 00:52:19" updated="07/10/2013 23:28:35" published="04/19/2013 00:52:27" sortOrder="-10" url="/msusa/store?item=167" visible="True" savedBy="" typeName="DigitalRiver.CloudLink.N2MVC.Models.Parts.MiniCartPart, DigitalRiver.CloudLink.N2MVC" discriminator="MiniCartPart" ancestralTrail="/1/12/13/39/166/" childState="2">
+    <details />
+    <detailCollections />
+    <children />
+    <authorizations />
+    <properties />
+  </item>
+  <item id="168" name="" parent="166" title="" zoneName="Content" state="Published" created="05/15/2013 23:17:56" updated="07/10/2013 23:28:35" published="05/15/2013 23:18:28" sortOrder="0" url="/msusa/store?item=168" visible="True" savedBy="" typeName="DigitalRiver.CloudLink.N2MVC.Models.Parts.SearchPart, DigitalRiver.CloudLink.N2MVC" discriminator="SearchPart" ancestralTrail="/1/12/13/39/166/" childState="2">
+    <details>
+      <detail name="MaxResults" typeName="System.Int32, mscorlib" meta="">5</detail>
+      <detail name="ShowProductImages" typeName="System.Boolean, mscorlib" meta="">True</detail>
+    </details>
+    <detailCollections />
+    <children />
+    <authorizations />
+    <properties />
+  </item>
+</n2>

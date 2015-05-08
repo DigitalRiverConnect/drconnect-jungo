@@ -1,0 +1,431 @@
+<?xml version="1.0"?>
+<xsd:schema targetNamespace="http://integration.digitalriver.com/RemoteUserManagement/1.0" elementFormDefault="qualified" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://integration.digitalriver.com/RemoteUserManagement/1.0" xmlns:common="http://integration.digitalriver.com/Common/1.0">
+    <!-- Comment xsd imports as wsdl2java does not like it, however uncomment them in the archived version folders -->
+    <!-- <xsd:import namespace="http://integration.digirariver.com/Common/1.0" schemaLocation="http://@WEBSERVER_ADDRESS@/integration/xsd/Common/1"/> -->
+
+	<xsd:import
+		namespace="http://integration.digitalriver.com/Common/1.0"
+		schemaLocation="Common.xsd">
+	</xsd:import>
+
+
+    <xsd:complexType name="LoginRequest">
+        <xsd:sequence>
+            <xsd:element name="userKey" type="common:UserKey" form="unqualified" minOccurs="1" maxOccurs="1">
+                <xsd:annotation>
+                    <xsd:documentation>
+                      Login ID for the user
+                    </xsd:documentation>
+                </xsd:annotation>
+            </xsd:element>
+            <xsd:element name="password" type="xsd:string" form="unqualified" minOccurs="1" maxOccurs="1">
+                <xsd:annotation>
+                    <xsd:documentation>
+                      Password to be used for the remote auth request
+                    </xsd:documentation>
+                </xsd:annotation>
+            </xsd:element>
+            <xsd:element name="extendedAttributes"  type="common:ExtendedAttributesInfoArray" form="unqualified" nillable="true" minOccurs="0" maxOccurs="1" >
+               <xsd:annotation>
+                  <xsd:documentation>
+                      Extra attributes to be sent as part of this login request
+                  </xsd:documentation>
+               </xsd:annotation>
+            </xsd:element>
+        </xsd:sequence>
+    </xsd:complexType>
+
+    <xsd:complexType name="LoginResponse">
+        <xsd:sequence>
+            <xsd:element name="successful" type="xsd:boolean" form="unqualified" minOccurs="1" maxOccurs="1">
+                <xsd:annotation>
+                    <xsd:documentation>
+                      Boolean flag indicating if the login request was successful
+                    </xsd:documentation>
+                </xsd:annotation>
+            </xsd:element>
+            <xsd:element name="userKey" type="common:UserKey" form="unqualified" nillable="true" minOccurs="1" maxOccurs="1">
+                <xsd:annotation>
+                    <xsd:documentation>
+                      Information about the user being logged in
+                    </xsd:documentation>
+                </xsd:annotation>
+            </xsd:element>
+            <xsd:element name="errorCode" type="xsd:string" form="unqualified" nillable="true" minOccurs="0" maxOccurs="1">
+                <xsd:annotation>
+                    <xsd:documentation>
+                       Error code agreed between digitalriver and remote party. Digital River would be responsible for
+                       localizing the error messages from the given error code
+                    </xsd:documentation>
+                </xsd:annotation>
+            </xsd:element>
+            <xsd:element name="errorMessage" type="xsd:string" form="unqualified" nillable="true" minOccurs="0" maxOccurs="1">
+                <xsd:annotation>
+                    <xsd:documentation>
+                       Localized error message. Fill in this field only if the remote party does not want Digital River to
+                       localize error messages for them. Typically, the end user would end up seeing this error message.
+                    </xsd:documentation>
+                </xsd:annotation>
+            </xsd:element>
+            <xsd:element name="sessionToken" type="xsd:string" form="unqualified" minOccurs="0" maxOccurs="1" nillable="true">
+                <xsd:annotation>
+                    <xsd:documentation>
+                        Shared session token to be used for SSO
+                    </xsd:documentation>
+                </xsd:annotation>
+            </xsd:element>
+            <xsd:element name="extendedAttributes"  type="common:ExtendedAttributesInfoArray" form="unqualified" nillable="true" minOccurs="0" maxOccurs="1" >
+                <xsd:annotation>
+                    <xsd:documentation>
+                        Extra attributes sent by the remote service as part of this login request
+                    </xsd:documentation>
+                </xsd:annotation>
+            </xsd:element>
+            <xsd:element name="userInfo"  type="common:UserInfo" form="unqualified" nillable="true" minOccurs="0" maxOccurs="1" >
+                <xsd:annotation>
+                    <xsd:documentation>
+                        Information about the user
+                    </xsd:documentation>
+                </xsd:annotation>
+            </xsd:element>
+			<xsd:element name="additionalAddresses"  type="AddressInfoArray" form="unqualified" nillable="true" minOccurs="0" maxOccurs="1" >
+                <xsd:annotation>
+                    <xsd:documentation>
+                        Multiple Addresses sent by the remote service as part of this login request
+                    </xsd:documentation>
+                </xsd:annotation>
+            </xsd:element>
+        </xsd:sequence>
+    </xsd:complexType>
+
+    <xsd:complexType name="ValidateSessionRequest">
+        <xsd:sequence>
+            <xsd:element name="userKey" type="common:UserKey" form="unqualified" minOccurs="1" maxOccurs="1">
+                <xsd:annotation>
+                    <xsd:documentation>
+                      User Information
+                    </xsd:documentation>
+                </xsd:annotation>
+            </xsd:element>
+            <xsd:element name="sessionToken" type="xsd:string" form="unqualified" minOccurs="1" maxOccurs="1">
+                <xsd:annotation>
+                    <xsd:documentation>
+                      Contains session token information to be verified
+                    </xsd:documentation>
+                </xsd:annotation>
+            </xsd:element>
+            <xsd:element name="extendedAttributes"  type="common:ExtendedAttributesInfoArray" form="unqualified" nillable="true" minOccurs="0" maxOccurs="1" >
+                <xsd:annotation>
+                    <xsd:documentation>
+                        Extra attributes to be sent as part of this session token request
+                    </xsd:documentation>
+                </xsd:annotation>
+            </xsd:element>
+        </xsd:sequence>
+    </xsd:complexType>
+
+    <xsd:complexType name="ValidateSessionResponse">
+        <xsd:sequence>
+            <xsd:element name="valid" type="xsd:boolean" form="unqualified" minOccurs="1" maxOccurs="1">
+                <xsd:annotation>
+                    <xsd:documentation>
+                      Boolean flag indicating if the user session was valid
+                    </xsd:documentation>
+                </xsd:annotation>
+            </xsd:element>
+            <xsd:element name="userKey" type="common:UserKey" form="unqualified" minOccurs="1" maxOccurs="1">
+                <xsd:annotation>
+                    <xsd:documentation>
+                      User Information
+                    </xsd:documentation>
+                </xsd:annotation>
+            </xsd:element>
+            <xsd:element name="errorCode" type="xsd:string" form="unqualified" nillable="true" minOccurs="0" maxOccurs="1">
+                <xsd:annotation>
+                    <xsd:documentation>
+                       Error code agreed between digitalriver and remote party. Digital River would be responsible for
+                       localizing the error messages from the given error code
+                    </xsd:documentation>
+                </xsd:annotation>
+            </xsd:element>
+            <xsd:element name="errorMessage" type="xsd:string" form="unqualified" nillable="true" minOccurs="0" maxOccurs="1">
+                <xsd:annotation>
+                    <xsd:documentation>
+                       Localized error message. Fill in this field only if the remote party does not want Digital River to
+                       localize error messages for them. Typically, the end user would end up seeing this error message.
+                    </xsd:documentation>
+                </xsd:annotation>
+            </xsd:element>
+            <xsd:element name="extendedAttributes"  type="common:ExtendedAttributesInfoArray" form="unqualified" nillable="true" minOccurs="0" maxOccurs="1" >
+                <xsd:annotation>
+                    <xsd:documentation>
+                        Extra attributes sent by the remote service as part of the validate session request
+                    </xsd:documentation>
+                </xsd:annotation>
+            </xsd:element>
+        </xsd:sequence>
+    </xsd:complexType>
+
+    <xsd:complexType name="GetUserProfileRequest">
+        <xsd:sequence>
+            <xsd:element name="userKey" type="common:UserKey" form="unqualified" minOccurs="1" maxOccurs="1">
+                <xsd:annotation>
+                    <xsd:documentation>
+                      Login ID for the user
+                    </xsd:documentation>
+                </xsd:annotation>
+            </xsd:element>
+            <xsd:element name="sessionToken" type="xsd:string" form="unqualified" minOccurs="1" maxOccurs="1">
+                <xsd:annotation>
+                    <xsd:documentation>
+                        Session token shared between digital river and remote client
+                    </xsd:documentation>
+                </xsd:annotation>
+            </xsd:element>
+            <xsd:element name="extendedAttributes"  type="common:ExtendedAttributesInfoArray" form="unqualified" nillable="true" minOccurs="0" maxOccurs="1" >
+                <xsd:annotation>
+                    <xsd:documentation>
+                        Extra attributes to be sent as part of this getuser request
+                    </xsd:documentation>
+                </xsd:annotation>
+            </xsd:element>
+        </xsd:sequence>
+    </xsd:complexType>
+
+    <xsd:complexType name="GetUserProfileResponse">
+        <xsd:sequence>
+            <xsd:element name="userInfo"  type="common:UserInfo" form="unqualified" minOccurs="1" maxOccurs="1" >
+                <xsd:annotation>
+                    <xsd:documentation>
+                        Information about the user
+                    </xsd:documentation>
+                </xsd:annotation>
+            </xsd:element>
+            <xsd:element name="errorCode" type="xsd:string" form="unqualified" nillable="true" minOccurs="0" maxOccurs="1">
+                <xsd:annotation>
+                    <xsd:documentation>
+                       Error code agreed between digitalriver and remote party. Digital River would be responsible for
+                       localizing the error messages from the given error code
+                    </xsd:documentation>
+                </xsd:annotation>
+            </xsd:element>
+            <xsd:element name="errorMessage" type="xsd:string" form="unqualified" nillable="true" minOccurs="0" maxOccurs="1">
+                <xsd:annotation>
+                    <xsd:documentation>
+                       Localized error message. Fill in this field only if the remote party does not want Digital River to
+                       localize error messages for them. Typically, the end user would end up seeing this error message.
+                    </xsd:documentation>
+                </xsd:annotation>
+            </xsd:element>
+            <xsd:element name="extendedAttributes"  type="common:ExtendedAttributesInfoArray" form="unqualified" nillable="true" minOccurs="0" maxOccurs="1" >
+                <xsd:annotation>
+                    <xsd:documentation>
+                        Extra attributes to be sent as part of this getuser request
+                    </xsd:documentation>
+                </xsd:annotation>
+            </xsd:element>
+            <xsd:element name="password" type="xsd:string" form="unqualified" nillable="true" minOccurs="0" maxOccurs="1">
+                <xsd:annotation>
+                  <xsd:documentation>
+                     Password to be used for the remote auth request
+                   </xsd:documentation>
+                </xsd:annotation>
+            </xsd:element>
+			<xsd:element name="additionalAddresses"  type="AddressInfoArray" form="unqualified" nillable="true" minOccurs="0" maxOccurs="1" >
+                <xsd:annotation>
+                    <xsd:documentation>
+                        Multiple Addresses sent by the remote service as part of this get user request
+                    </xsd:documentation>
+                </xsd:annotation>
+            </xsd:element>
+        </xsd:sequence>
+    </xsd:complexType>
+
+    <xsd:complexType name="CreateUserProfileRequest">
+        <xsd:sequence>
+            <xsd:element name="userInfo"  type="common:UserInfo" form="unqualified" minOccurs="1" maxOccurs="1" >
+                <xsd:annotation>
+                    <xsd:documentation>
+                        Information about the user
+                    </xsd:documentation>
+                </xsd:annotation>
+            </xsd:element>
+            <xsd:element name="password" type="xsd:string" form="unqualified" nillable="true" minOccurs="0" maxOccurs="1">
+                <xsd:annotation>
+                  <xsd:documentation>
+                     Password to be used for the remote auth request
+                   </xsd:documentation>
+                </xsd:annotation>
+            </xsd:element>
+            <xsd:element name="extendedAttributes"  type="common:ExtendedAttributesInfoArray" form="unqualified" nillable="true" minOccurs="0" maxOccurs="1" >
+                <xsd:annotation>
+                    <xsd:documentation>
+                        Extra attributes to be sent as part of this create user request
+                    </xsd:documentation>
+                </xsd:annotation>
+            </xsd:element>
+        </xsd:sequence>
+    </xsd:complexType>
+
+    <xsd:complexType name="CreateUserProfileResponse">
+        <xsd:sequence>
+            <xsd:element name="successful"  type="xsd:boolean" form="unqualified" minOccurs="1" maxOccurs="1" >
+                <xsd:annotation>
+                    <xsd:documentation>
+                        True/False indicator if the user creation was successful
+                    </xsd:documentation>
+                </xsd:annotation>
+            </xsd:element>
+            <xsd:element name="errorCode" type="xsd:string" form="unqualified" nillable="true" minOccurs="0" maxOccurs="1">
+                <xsd:annotation>
+                    <xsd:documentation>
+                       Error code agreed between digitalriver and remote party. Digital River would be responsible for
+                       localizing the error messages from the given error code
+                    </xsd:documentation>
+                </xsd:annotation>
+            </xsd:element>
+            <xsd:element name="errorMessage" type="xsd:string" form="unqualified" nillable="true" minOccurs="0" maxOccurs="1">
+                <xsd:annotation>
+                    <xsd:documentation>
+                       Localized error message. Fill in this field only if the remote party does not want Digital River to
+                       localize error messages for them. Typically, the end user would end up seeing this error message.
+                    </xsd:documentation>
+                </xsd:annotation>
+            </xsd:element>
+            <xsd:element name="sessionToken" type="xsd:string" form="unqualified" minOccurs="1" maxOccurs="1">
+                <xsd:annotation>
+                    <xsd:documentation>
+                        Session token shared between digital river and remote client
+                    </xsd:documentation>
+                </xsd:annotation>
+            </xsd:element>
+            <xsd:element name="loginID" type="xsd:string" form="unqualified" nillable="true" minOccurs="0" maxOccurs="1">
+                <xsd:annotation>
+                    <xsd:documentation>
+                      Login ID generated by the external system for this create user profile call
+                    </xsd:documentation>
+                </xsd:annotation>
+            </xsd:element>
+            <xsd:element name="externalReferenceID" type="xsd:string" form="unqualified" nillable="true" minOccurs="0" maxOccurs="1">
+                <xsd:annotation>
+                    <xsd:documentation>
+                        External reference id generated by this create user profile call
+                    </xsd:documentation>
+                </xsd:annotation>
+            </xsd:element>
+            <xsd:element name="extendedAttributes"  type="common:ExtendedAttributesInfoArray" form="unqualified" nillable="true" minOccurs="0" maxOccurs="1" >
+                <xsd:annotation>
+                    <xsd:documentation>
+                        Extra attributes to be sent as part of this getuser request
+                    </xsd:documentation>
+                </xsd:annotation>
+            </xsd:element>
+        </xsd:sequence>
+    </xsd:complexType>
+
+    <xsd:complexType name="UpdateUserProfileRequest">
+        <xsd:sequence>
+            <xsd:element name="userInfo"  type="common:UserInfo" form="unqualified" minOccurs="1" maxOccurs="1" >
+                <xsd:annotation>
+                    <xsd:documentation>
+                        Information about the user
+                    </xsd:documentation>
+                </xsd:annotation>
+            </xsd:element>
+            <xsd:element name="sessionToken" type="xsd:string" form="unqualified" minOccurs="1" maxOccurs="1">
+                <xsd:annotation>
+                    <xsd:documentation>
+                        Session token shared between digital river and remote client
+                    </xsd:documentation>
+                </xsd:annotation>
+            </xsd:element>
+            <xsd:element name="password" type="xsd:string" form="unqualified" nillable="true" minOccurs="0" maxOccurs="1">
+                <xsd:annotation>
+                  <xsd:documentation>
+                     Password to be used for the remote auth request
+                   </xsd:documentation>
+                </xsd:annotation>
+            </xsd:element>
+            <xsd:element name="extendedAttributes"  type="common:ExtendedAttributesInfoArray" form="unqualified" nillable="true" minOccurs="0" maxOccurs="1" >
+                <xsd:annotation>
+                    <xsd:documentation>
+                        Extra attributes to be sent as part of this update user request
+                    </xsd:documentation>
+                </xsd:annotation>
+            </xsd:element>
+        </xsd:sequence>
+    </xsd:complexType>
+
+    <xsd:complexType name="UpdateUserProfileResponse">
+        <xsd:sequence>
+            <xsd:element name="successful"  type="xsd:boolean" form="unqualified" minOccurs="1" maxOccurs="1" >
+                <xsd:annotation>
+                    <xsd:documentation>
+                        True/False indicator if the user update was successful
+                    </xsd:documentation>
+                </xsd:annotation>
+            </xsd:element>
+            <xsd:element name="errorCode" type="xsd:string" form="unqualified" nillable="true" minOccurs="0" maxOccurs="1">
+                <xsd:annotation>
+                    <xsd:documentation>
+                       Error code agreed between digitalriver and remote party. Digital River would be responsible for
+                       localizing the error messages from the given error code
+                    </xsd:documentation>
+                </xsd:annotation>
+            </xsd:element>
+            <xsd:element name="errorMessage" type="xsd:string" form="unqualified" nillable="true" minOccurs="0" maxOccurs="1">
+                <xsd:annotation>
+                    <xsd:documentation>
+                       Localized error message. Fill in this field only if the remote party does not want Digital River to
+                       localize error messages for them. Typically, the end user would end up seeing this error message.
+                    </xsd:documentation>
+                </xsd:annotation>
+            </xsd:element>
+            <xsd:element name="loginID" type="xsd:string" form="unqualified" nillable="true" minOccurs="0" maxOccurs="1">
+                <xsd:annotation>
+                    <xsd:documentation>
+                      Login ID of the user that was updated
+                    </xsd:documentation>
+                </xsd:annotation>
+            </xsd:element>
+            <xsd:element name="externalReferenceID" type="xsd:string" form="unqualified" nillable="true" minOccurs="0" maxOccurs="1">
+                <xsd:annotation>
+                    <xsd:documentation>
+                        External reference id generated by this create user profile call
+                    </xsd:documentation>
+                </xsd:annotation>
+            </xsd:element>
+
+            <xsd:element name="extendedAttributes"  type="common:ExtendedAttributesInfoArray" form="unqualified" nillable="true" minOccurs="0" maxOccurs="1" >
+                <xsd:annotation>
+                    <xsd:documentation>
+                        Extra attributes to be sent as part of this get user request
+                    </xsd:documentation>
+                </xsd:annotation>
+            </xsd:element>
+        </xsd:sequence>
+    </xsd:complexType>
+	<xsd:complexType name="AddressInfoArray">
+		<xsd:annotation>
+			<xsd:documentation>Array of AddressInfo objects</xsd:documentation>
+		</xsd:annotation>
+		<xsd:sequence>
+			<xsd:element minOccurs="0" maxOccurs="unbounded" form="unqualified" name="address" nillable="true" type="common:AddressInfo" />
+		</xsd:sequence>
+	</xsd:complexType>
+
+    <!--  Top level schema elements -->
+	<xsd:element name="LoginRequest"              type="LoginRequest" />
+	<xsd:element name="LoginResponse"             type="LoginResponse" />
+	<xsd:element name="ValidateSessionRequest"    type="ValidateSessionRequest" />
+	<xsd:element name="ValidateSessionResponse"   type="ValidateSessionResponse" />
+	<xsd:element name="GetUserProfileRequest"     type="GetUserProfileRequest" />
+	<xsd:element name="GetUserProfileResponse"    type="GetUserProfileResponse" />
+	<xsd:element name="CreateUserProfileRequest"  type="CreateUserProfileRequest" />
+	<xsd:element name="CreateUserProfileResponse" type="CreateUserProfileResponse" />
+	<xsd:element name="UpdateUserProfileRequest"  type="CreateUserProfileRequest" />
+	<xsd:element name="UpdateUserProfileResponse" type="CreateUserProfileResponse" />
+
+
+</xsd:schema>
+

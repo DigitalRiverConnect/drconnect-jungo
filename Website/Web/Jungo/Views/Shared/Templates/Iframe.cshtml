@@ -1,0 +1,15 @@
+﻿@using DigitalRiver.CloudLink.Commerce.Nimbus.SportsUs.Infrastructure.Session
+@{
+    var paramId = !string.IsNullOrWhiteSpace(Request.Params["id"]) ? "&id=" + Server.UrlEncode(Request.Params["id"]) : "";
+    var paramSkuId =    !string.IsNullOrWhiteSpace(Request.Params["skuId"]) ? "&skuId=" + Server.UrlEncode(Request.Params["skuId"]) : "";
+    var paramProdCat =  !string.IsNullOrWhiteSpace(Request.Params["prodcat"]) ? "&prodcat=" + Server.UrlEncode(Request.Params["prodcat"]) : "";
+    var paramEntryid =  !string.IsNullOrWhiteSpace(Request.Params["entryid"]) ? "&entryid=" + Server.UrlEncode(Request.Params["entryid"]) : "";
+    var paramReferrer = Request.UrlReferrer != null ? "&ref=" + Server.UrlEncode(Request.UrlReferrer.Scheme.ToString() + "://" + Request.UrlReferrer.Host.ToString() + Request.UrlReferrer.AbsolutePath.ToString()) : "";
+    var paramWebTrends = !string.IsNullOrWhiteSpace(WebSession.Current.McId) ? "&WT.mc_id=" + WebSession.Current.McId : "";
+    var paramOmniture = !string.IsNullOrWhiteSpace(WebSession.Current.IcId) ? "&Icid=" + WebSession.Current.IcId : "";
+}
+
+<iframe class="chatframe" scrolling="no" frameborder="0"></iframe>
+<script type="text/javascript">
+    $(".chatframe").attr('src', 'https://www.awasa.microsoft.com/en-US/consultation/index?partnerid=store@(Html.Raw(paramId + paramSkuId + paramProdCat + paramEntryid))&psrc=ms_store@(Html.Raw(paramReferrer + paramWebTrends + paramOmniture))');
+</script>

@@ -1,0 +1,18 @@
+{
+    "limitedPublicTokenQuery": "?grant_type=password{&client_id,dr_session_token}",
+    "apiKeyQuery": "{?apiKey}",
+    "refreshTokenQuery": "?grant_type=refresh_token{&client_id,refresh_token}",
+    "expandQuery": "{?expand}",
+    "productsKeywordQuery": "{?keyword,pageNumber,pageSize,sort}",
+    "applyCouponQuery": "{?promoCode,expand}",
+    "changeQuantityQuery": "{?quantity}",
+    "multipleProductQuery": "{?productIds,expand}",
+    "addProductToCartQuery": "{?productId,quantity,offerId}",
+    "pagingOptionsQuery": "{?pageNumber,pageSize,sort}",
+    "expandAllQueryValue": "all",
+    "expandProductIdQueryValue": "product.id",
+    "idSegment": "/{id}",
+    "productOffersSegment": "/offers",
+    "popOffersSegment": "/point-of-promotions/{pop}/offers",
+    "inventoryStatusSegment": "/inventory-status"
+}

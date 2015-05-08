@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<xs:element name="action" type="Action" />
+	<xs:complexType name="Action">
+		<xs:sequence>
+			<xs:element name="title" type="xs:string"/>
+			<xs:element name="description" type="xs:string" minOccurs="0"/>
+			<xs:element name="url" type="xs:string"/>
+			<xs:element name="requestHeaders" type="RequestHeaders" minOccurs="0"/>
+			<xs:element name="parameters" type="Parameters"/>
+			<xs:element name="responseHeaders" type="ResponseHeaders" minOccurs="0"/>
+			<xs:element name="responseStatusCodes" type="ResponseStatusCodes"/>
+      <xs:element name="responseExceptions" type="ResponseExceptions"/>
+			<xs:element name="examples" type="Examples" minOccurs="0"/>
+		</xs:sequence>
+		<xs:attribute name="name" type="xs:string" use="required"/>
+		<xs:attribute name="httpMethod" type="HttpMethod" use="optional" default="GET"/>
+		<xs:attribute name="requireAuthenticated" type="xs:boolean" use="optional" default="false"/>
+    <xs:attribute name="ssl" type="xs:boolean" use="optional" default="false"/>
+		<xs:attribute name="format" type="Format" use="optional" default="JSON"/>
+	</xs:complexType>
+	<xs:simpleType name="Format">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="JSON"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:complexType name="RequestHeaders">
+		<xs:sequence>
+			<xs:element name="header" type="RequestHeader" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="RequestHeader">
+		<xs:sequence>
+			<xs:element name="description" type="xs:string"/>
+			<xs:element name="example" type="xs:string" minOccurs="0"/>
+		</xs:sequence>
+		<xs:attribute name="name" type="xs:string" use="required"/>
+		<xs:attribute name="required" type="xs:boolean" use="required"/>
+	</xs:complexType>
+	<xs:complexType name="Parameters">
+		<xs:sequence>
+			<xs:element name="parameter" type="Parameter" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:simpleType name="HttpMethod">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="GET"/>
+			<xs:enumeration value="POST"/>
+			<xs:enumeration value="PUT"/>
+			<xs:enumeration value="DELETE"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:complexType name="Parameter">
+		<xs:sequence>
+			<xs:element name="description" type="xs:string"/>
+			<xs:element name="example" type="xs:string" minOccurs="0"/>
+			<xs:element name="default" type="xs:string" minOccurs="0"/>
+		</xs:sequence>
+		<xs:attribute name="name" type="xs:string" use="required"/>
+		<xs:attribute name="required" type="xs:boolean" use="required"/>
+	</xs:complexType>
+	<xs:complexType name="ResponseHeaders">
+		<xs:sequence>
+			<xs:element name="header" type="ResponseHeader" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="ResponseHeader">
+		<xs:sequence>
+			<xs:element name="description" type="xs:string"/>
+			<xs:element name="example" type="xs:string" minOccurs="0"/>
+		</xs:sequence>
+		<xs:attribute name="name" type="xs:string" use="required"/>
+	</xs:complexType>
+	<xs:complexType name="ResponseStatusCodes">
+		<xs:sequence>
+			<xs:element name="statusCode" type="StatusCode" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="StatusCode">
+		<xs:sequence>
+			<xs:element name="description" type="xs:string"/>
+		</xs:sequence>
+		<xs:attribute name="value" type="xs:string" use="required"/>
+	</xs:complexType>
+	<xs:complexType name="Examples">
+		<xs:sequence>
+			<xs:element name="example" type="Example" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="Example">
+		<xs:sequence>
+			<xs:element name="url" type="xs:string"/>
+			<xs:element name="httpMethod" type="HttpMethod"/>
+			<xs:element name="description" type="xs:string"/>
+      <xs:element name="requestHeaders" type="RequestHeaders" minOccurs="0"/>
+			<xs:element name="requestBody" type="xs:string" minOccurs="0"/>
+      <xs:element name="responseStatusCode" type="StatusCode" minOccurs="0"/>
+      <xs:element name="responseHeaders" type="ResponseHeaders" minOccurs="0"/>
+			<xs:element name="responseBody" type="xs:string" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+  <xs:complexType name="ResponseExceptions">
+    <xs:sequence>
+      <xs:element name="exception" type="Exception" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="Exception">
+    <xs:sequence>
+      <xs:element name="description" type="xs:string"/>
+    </xs:sequence>
+    <xs:attribute name="value" type="xs:string" use="required"/>
+    <xs:attribute name="retry" type="Retry" use="optional" default="No"/>
+  </xs:complexType>
+  <xs:simpleType name="Retry">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Yes"/>
+      <xs:enumeration value="No"/>
+      <xs:enumeration value="Update"/>
+    </xs:restriction>
+  </xs:simpleType>
+</xs:schema>

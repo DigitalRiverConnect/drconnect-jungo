@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<n2 version="2.4.0.0" exportVersion="2" exportDate="07/10/2013 23:28:36">
+  <item id="354" name="surface" parent="285" title="Surface" state="Published" created="03/11/2013 22:15:22" updated="07/10/2013 23:28:36" published="03/11/2013 22:15:22" sortOrder="35" url="/msca/store/surface" visible="True" savedBy="ehornbostel" typeName="DigitalRiver.CloudLink.N2MVC.Models.Pages.CatalogPage, DigitalRiver.CloudLink.N2MVC" discriminator="CatalogPage" ancestralTrail="/1/12/174/285/" childState="132">
+    <details>
+      <detail name="CategoryID" typeName="System.String, mscorlib" meta="" encoded="True"><![CDATA[62685300]]></detail>
+    </details>
+    <detailCollections />
+    <children>
+      <child id="355" name="355" versionIndex="0" />
+    </children>
+    <authorizations />
+    <properties />
+  </item>
+  <item id="355" name="" parent="354" title="SurfaceContent" zoneName="Content" state="Published" created="03/12/2013 22:46:38" updated="07/10/2013 23:28:36" published="03/12/2013 22:51:26" sortOrder="0" url="/msca/store/surface?item=355" visible="True" savedBy="admin" typeName="DigitalRiver.CloudLink.N2MVC.Models.Parts.TemplatePart, DigitalRiver.CloudLink.N2MVC" discriminator="TemplatePart" ancestralTrail="/1/12/174/285/354/" childState="128">
+    <details>
+      <detail name="ViewTemplate" typeName="System.String, mscorlib" meta="" encoded="True"><![CDATA[ContainerFull]]></detail>
+    </details>
+    <detailCollections />
+    <children>
+      <child id="356" name="356" versionIndex="0" />
+    </children>
+    <authorizations />
+    <properties />
+  </item>
+  <item id="356" name="" parent="355" title="" zoneName="Content" state="Published" created="03/12/2013 22:46:50" updated="07/10/2013 23:28:36" published="03/12/2013 22:51:26" sortOrder="-10" url="/msca/store/surface?item=356" visible="True" savedBy="admin" typeName="DigitalRiver.CloudLink.N2MVC.Models.Parts.ProductResultsPart, DigitalRiver.CloudLink.N2MVC" discriminator="ProductResultsPart" ancestralTrail="/1/12/174/285/354/355/" childState="2">
+    <details />
+    <detailCollections />
+    <children />
+    <authorizations />
+    <properties />
+  </item>
+</n2>

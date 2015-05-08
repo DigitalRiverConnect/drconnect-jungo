@@ -1,0 +1,44 @@
+@using DigitalRiver.CloudLink.Commerce.Nimbus.N2Content.Services
+@using DigitalRiver.CloudLink.Commerce.Nimbus.SportsUs.ViewHelpers
+@using DigitalRiver.CloudLink.Commerce.Nimbus.ViewModels.Utils
+@model DigitalRiver.CloudLink.Commerce.Nimbus.ViewModels.Catalog.ProductDetailPageViewModel
+
+@if (Model == null || !Model.Product.DisplayableProduct || !Model.Product.Purchasable)
+{
+    <div class="row" id="product-details">
+        <div class="col-sm-12">
+            <p>@Res.Catalog_ProductNotFound</p>
+        </div>
+    </div>
+}
+else
+{
+    var product = Model.Product;
+    var displayProduct = Model.Product.GetDisplayProduct();
+    var productTitle = product.DisplayName ?? string.Empty;
+    var productImage = VHCSS.GetImageFromAttribute(Model.Product, "productImage2", Model.Product.ThumbnailImage);
+    var productSalePrice = displayProduct.Pricing.FormattedSalePriceWithQuantity;
+    var productFullPrice = displayProduct.Pricing.FormattedListPriceWithQuantity;
+    var cartLink = DependencyResolver.Current.GetService<ILinkGenerator>().GenerateShoppingCartLink();
+    <div class="row">
+        <div class="col-sm-4">
+            <img src="@productImage" alt="@productTitle">
+        </div>
+        <div class="col-sm-8">
+            <div class="added-to-cart table">
+                <div class="table-cell checked-icon-container">
+                    <img src="@Html.GetPublicURL("~/upload/Content/img/Interstitial_cart.jpg")" alt="@Res.Product_AddedToCart">
+                </div>
+                <div class="table-cell">
+                    <p class="heading--large font-light">@Res.Product_AddedToCart</p>
+                </div>
+            </div>
+            <h3 class="heading--small">@productTitle</h3>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-12">
+            <a href="@cartLink" class="btn btn-link">@Res.Product_ReviewAndCheckout</a>
+        </div>
+    </div>
+}

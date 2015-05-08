@@ -1,0 +1,92 @@
+{
+    "groups": [
+        {
+            "variations": [
+                {
+                    "id": "color",
+                    "attributeName": "color",
+                    "masks": [{"format": "{0}{1}", "formatVar1": " ({0})"}]
+                },
+                {
+                    "id": "size",
+                    "attributeName": "size",
+                    "masks": [{"format": "{0}{1}", "formatVar1": " ({0})"}]
+                },
+                {
+                    "id": "style",
+                    "attributeName": "style",
+                    "masks": [{"format": "{0}{1}", "formatVar1": " ({0})"}]
+                }
+            ]
+        },
+        {
+            "variations": [
+                {
+                    "id": "color",
+                    "attributeName": "color",
+                    "masks": [{"format": "{0}{1}", "formatVar1": " ({0})"}]
+                },
+                {
+                    "id": "size",
+                    "attributeName": "size",
+                    "masks": [{"format": "{0}{1}", "formatVar1": " ({0})"}]
+                }
+            ]
+        },
+        {
+            "variations": [
+                {
+                    "id": "size",
+                    "attributeName": "size",
+                    "masks": [{"format": "{0}{1}", "formatVar1": " ({0})"}]
+                },
+                {
+                    "id": "style",
+                    "attributeName": "style",
+                    "masks": [{"format": "{0}{1}", "formatVar1": " ({0})"}]
+                }
+            ]
+        },
+        {
+            "variations": [
+                {
+                    "id": "color",
+                    "attributeName": "color",
+                    "masks": [{"format": "{0}{1}", "formatVar1": " ({0})"}]
+                },
+                {
+                    "id": "style",
+                    "attributeName": "style",
+                    "masks": [{"format": "{0}{1}", "formatVar1": " ({0})"}]
+                }
+            ]
+        },
+        {
+            "variations": [
+                {
+                    "id": "color",
+                    "attributeName": "color",
+                    "masks": [{"format": "{0}{1}", "formatVar1": " ({0})"}]
+                }
+            ]
+        },
+        {
+            "variations": [
+                {
+                    "id": "size",
+                    "attributeName": "size",
+                    "masks": [{"format": "{0}{1}", "formatVar1": " ({0})"}]
+                }
+            ]
+        },
+        {
+            "variations": [
+                {
+                    "id": "style",
+                    "attributeName": "style",
+                    "masks": [{"format": "{0}{1}", "formatVar1": " ({0})"}]
+                }
+            ]
+        }
+    ]
+}

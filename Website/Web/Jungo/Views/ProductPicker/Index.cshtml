@@ -1,0 +1,70 @@
+﻿@model DigitalRiver.CloudLink.Commerce.Nimbus.N2Content.Models.ProductPickerViewModel
+@{
+    Layout = "~/Views/Shared/_AdminPopupLayout.cshtml";
+    ViewBag.Title = "Site Manager Product Picker";
+}
+<div class="admin" id="product-picker" @HttpHelper.CreateDataRootUrl(Request) data-service-controller="@Html.ViewContext.RouteData.Values["controller"]" data-control-id="@Model.ControlId" data-mode="@Model.Mode" data-selected-items="@Model.SelectedItems">
+    <div id="page-search">
+        <div class="search-query input-append ng-scope">
+            @using (Html.BeginForm(new { action = "index" }))
+            {
+                @Html.DisplayContent("Keywords")
+                @Html.TextBoxFor(vm => vm.SearchCriteria, new { @value = "Enter keyword", @placeholder = "Enter keyword" })
+            }
+            <button id="btnSearchProducts" class="btn" title="Search"><b class="n2-icon-search"></b></button>
+            <button id="btnReset" class="btn" title="Reset"><b class="n2-icon-remove"></b></button>
+        </div>
+    </div>
+    <div class="results" id="page-tree">
+        <div id="searchResults">
+            <ul class="targettable ng-scope expanded"></ul>
+        </div>
+        @if (Model.Mode != null && Model.Mode.Equals("Multi", StringComparison.InvariantCultureIgnoreCase)) 
+        {
+            <div id="selected-items-section">
+                <p>Selected items</p>
+                <div id="selectedResults">
+                    <ul class="targettable ng-scope expanded"></ul>
+                    <div class="buttons">
+                        <button id="btnResetSelected" title="Reset">Reset</button>
+                        <button id="btnDone" title="Done">Done</button>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+    <script id="paging-template" type="text/template">
+    <%if(isVisible) { %>
+        <% if(isSearching) { %>
+        <span class="display">Searching...</span>
+        <% } else if(hasResults) { %>
+            <%if(!hidePrev) {%>
+        <button class="btnPrevious">Previous</button>
+            <% } %>
+        <span class="display">Page <%=pageNum%> of <%=pageOf%></span>
+            <%if(!hideNext) {%>
+        <button class="btnNext">Next</button>
+            <% } %>
+        <% } else { %>
+        <span class="display">No results</span>
+        <% } %>
+    <% } %>
+    </script>
+    <script id="ac-item-template" type="text/template">
+        <div class="item ng-scope">
+            <b class="handle"></b>
+            <a href="javascript:void(0)" target="preview" class="link ng-binding" title="<%=DisplayName%>">
+                <span class="page-icon" style="background-image:url(/favicon.ico)"></span>&nbsp;<%=DisplayName%>
+            </a>
+        </div>
+    </script>
+    <script id="prod-selected-item-template" type="text/template">
+        <div class="item ng-scope">
+            <b class="handle"></b>
+            <a href="javascript:void(0)" target="preview" class="link ng-binding" title="<%=DisplayName%>">
+                <span class="page-icon" style="background-image:url(/favicon.ico)"></span>&nbsp;<%=DisplayName%>
+            </a>
+            <button id="btnDelete">Delete</button>
+        </div>
+    </script>
+</div>

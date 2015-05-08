@@ -1,0 +1,42 @@
+﻿@model Exception
+@{
+    Layout = "~/Views/Shared/_ErrorLayout.cshtml";
+}
+<section>
+    <div class="grid-container">
+        <div class="grid-row">
+            <div class="grid-unit">
+                <h1 class="heading--large">We're experiencing some problems</h1>
+                <h2 class="heading--medium">We are currently experiencing problems. Please try again later.</h2>
+                @if (Model != null)
+                {
+                    <h3 class="title">Exception Message:</h3>
+                    <span>@Model.Message</span>
+                    <h3 class="title">Stack Trace:</h3>
+                    <span style="font-size: 0.75em; color: #dead00;">@Model.StackTrace</span>
+                    if (Model.InnerException != null)
+                    {
+                        <h3 class="title">Inner Exception Message:</h3>
+                        <span>@Model.InnerException.Message</span>
+                        <h3 class="title">Inner Stack Trace:</h3>
+                        <span style="font-size: 0.75em; color: #dead00;">@Model.InnerException.StackTrace</span>
+                        if (Model.InnerException.InnerException != null)
+                        {
+                            <h3 class="title">Inner Inner Exception Message:</h3>
+                            <span>@Model.InnerException.InnerException.Message</span>
+                            <h3 class="title">Inner Inner Stack Trace:</h3>
+                            <span style="font-size: 0.75em; color: #dead00;">@Model.InnerException.InnerException.StackTrace</span>
+                            if (Model.InnerException.InnerException.InnerException != null)
+                            {
+                                <h3 class="title">Inner Inner Inner Exception Message:</h3>
+                                <span>@Model.InnerException.InnerException.InnerException.Message</span>
+                                <h3 class="title">Inner Inner Inner Stack Trace:</h3>
+                                <span style="font-size: 0.75em; color: #dead00;">@Model.InnerException.InnerException.InnerException.StackTrace</span>
+                            }
+                        }
+                    }
+                }
+            </div>
+        </div>
+    </div>
+</section>

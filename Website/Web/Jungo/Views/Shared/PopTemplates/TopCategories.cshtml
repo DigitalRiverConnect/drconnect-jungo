@@ -1,0 +1,66 @@
+﻿@using DigitalRiver.CloudLink.Commerce.Nimbus.SportsUs.Infrastructure.Helpers
+@model DigitalRiver.CloudLink.Commerce.Nimbus.ViewModels.Catalog.OffersViewModel
+@{
+    var numWide = ViewBag.NumElementsWide ?? "";
+    var behaviorClass = ViewBag.CssClass ?? "";
+}
+@if (Model != null)
+{
+	<h1 class="heading--large">@Model.DisplayName</h1>
+	<div class="grid-row column-@numWide @behaviorClass">
+	@foreach (var item in Model.Items)
+ {
+		<div class="grid-unit">
+            @if (!string.IsNullOrEmpty(item.CmsLink()))
+            {
+            <a class="image-and-text" href="@Html.AssureHttpUrl(item.CmsLink())" title="@item.DisplayName">
+                @if (!string.IsNullOrWhiteSpace(item.Image))
+                { 
+                <img src="@Html.GetPublicURL(item.Image)" alt="@item.AltText" />
+                }
+                @if (!string.IsNullOrWhiteSpace(item.DisplayName))
+                {
+                    <h2 class="heading--small">@item.DisplayName</h2>
+                }
+                @if (!string.IsNullOrWhiteSpace(item.Text))
+                {
+                    <div class="description">@Html.Raw(item.Text)</div>
+                }
+                @if (!string.IsNullOrWhiteSpace(item.TagLine))
+                {
+                    <div class="description">@item.TagLine</div>
+                }
+                @if (!string.IsNullOrWhiteSpace(item.LinkText))
+                {
+                    <p class="call-to-action">@item.LinkText</p>
+                }
+            </a>
+            }
+            else
+            {
+                if (!string.IsNullOrWhiteSpace(item.Image))
+                { 
+                <img src="@Html.GetPublicURL(item.Image)" alt="@item.AltText" />
+                }
+                if (!string.IsNullOrWhiteSpace(item.DisplayName))
+                {
+                    <h2 class="heading--small">@item.DisplayName</h2>
+                }
+                if (!string.IsNullOrWhiteSpace(item.Text))
+                {
+                    <div class="description">@Html.Raw(item.Text)</div>
+                }
+                if (!string.IsNullOrWhiteSpace(item.TagLine))
+                {
+                    <div class="description">@item.TagLine</div>
+                }
+                if (!string.IsNullOrWhiteSpace(item.LinkText))
+                {
+                    <p class="call-to-action">@item.LinkText</p>
+                }
+            }
+            
+		</div>
+ }
+	</div>
+}

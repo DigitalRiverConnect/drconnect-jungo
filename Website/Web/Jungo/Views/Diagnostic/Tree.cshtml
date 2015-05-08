@@ -1,0 +1,40 @@
+﻿@using DigitalRiver.CloudLink.Commerce.Nimbus.SportsUs.Models
+@model DiagnosticTree
+@{
+    ViewBag.Title = "Tree";
+    Layout = "~/Views/Shared/_DiagnosticLayout.cshtml";
+    
+    @helper WriteChildrenIds(DiagnosticTreeNode node)
+    {
+        foreach (var child in node.Children)
+        {
+            <span>@Html.ActionLink(child.Id.ToString(), "Item", new { id = child.Id })</span>
+        }
+    }
+    
+    @helper DisplayNode(DiagnosticTreeNode node)
+    {
+        <li><div><a href="@Url.Action("Item", new { Id = @node.Id })">
+                     <span class="id">@node.Id</span>
+                     <span class="name">@node.Name</span>
+                     <span class="type">@node.Type</span>
+                 </a> &gt;&gt;
+                @WriteChildrenIds(@node)</div>
+            @if (node.Children.Count(x => x.IsPage || Model.ShowAll) > 0)
+            {
+                <ul>
+                    @foreach (var child in node.Children.Where(x => x.IsPage || Model.ShowAll))
+                    {
+                        @DisplayNode(child)
+                    }
+                </ul>
+            }
+        </li>
+    }
+}
+
+<section class="diagnostic">
+    <ul class="tree">
+        @DisplayNode(@Model.Root)
+    </ul>
+</section>

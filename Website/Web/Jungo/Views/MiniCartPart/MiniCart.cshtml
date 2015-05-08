@@ -1,0 +1,5 @@
+﻿@model DigitalRiver.CloudLink.Commerce.Nimbus.ViewModels.Cart.MiniCartViewModel
+@{
+    var linkText = Model.IsCartHandledBySite ? Res.MiniCart_Cart + "&nbsp;(" + Model.Quantity + ")" : Res.MiniCart_Checkout;
+}
+<a href="@Model.CartLink">@Html.Raw(linkText)</a>

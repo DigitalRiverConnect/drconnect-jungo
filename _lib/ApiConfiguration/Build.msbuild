@@ -1,0 +1,85 @@
+<Project ToolsVersion="4.0"
+         DefaultTargets="Default"
+         xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <GeneratedClassFileName>ApiConfiguration</GeneratedClassFileName>
+    <ClassFileName>ApiConfiguration</ClassFileName>
+    <DestinationFolder>$(MSBuildProjectDirectory)\..</DestinationFolder>
+  </PropertyGroup>
+  <ItemGroup>
+    <Schemas Include="ApiConfiguration.xsd" />
+    <!-- Csc References -->
+    <References Include="C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\Microsoft.CSharp.dll" />
+    <References Include="C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\mscorlib.dll" />
+    <References Include="C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Xml.dll" />
+    <References Include="C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.dll" />
+    <!-- Clean Up Files -->
+    <FilesToDelete Include="$(MSBuildProjectDirectory)\*.cs" />
+    <FilesToDelete Include="$(MSBuildProjectDirectory)\*.dll" />
+    <FilesToDelete Include="$(MSBuildProjectDirectory)\*.pdb" />
+    <!-- C# File -->
+    <FilesToFix Include="$(MSBuildProjectDirectory)\$(ClassFileName).cs" />
+    <!-- Move -->
+    <FilesToMove Include="$(MSBuildProjectDirectory)\*.dll" />
+  </ItemGroup>
+  <Import Project="C:\Program Files\MSBuild\ExtensionPack\4.0\MSBuild.ExtensionPack.tasks" />
+  <UsingTask TaskName="XSD"
+             AssemblyName="Microsoft.Build.CppTasks.Common, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <Target Name="Default">
+    <MSBuild Projects="$(MSBuildProjectFile)"
+             Targets="Clean" />
+    <MSBuild Projects="$(MSBuildProjectFile)"
+             Targets="GenerateClass" />
+    <MSBuild Projects="$(MSBuildProjectFile)"
+             Targets="FixClassName" />
+    <MSBuild Projects="$(MSBuildProjectFile)"
+             Targets="GenerateSerializerAssembly" />
+    <MSBuild Projects="$(MSBuildProjectFile)"
+             Targets="MoveToDestinationFolder" />
+  </Target>
+  <Target Name="Clean">
+    <Delete Files="@(FilesToDelete)" />
+  </Target>
+  <Target Name="GenerateClass">
+    <XSD AdditionalOptions="/fields /element:config"
+         GenerateFromSchema="classes"
+         Language="CS"
+         Namespace="DigitalRiver.CloudLink.Commerce.Services.Configuration"
+         Sources="@(Schemas)"
+         TrackerLogDirectory="." />
+    <Move SourceFiles="$(GeneratedClassFileName).cs"
+          DestinationFiles="$(ClassFileName).cs"
+          OverwriteReadOnlyFiles="true" />
+  </Target>
+  <Target Name="FixClassName">
+    <MSBuild.ExtensionPack.FileSystem.File TaskAction="Replace"
+                                           RegexPattern="public partial class ApiConfiguration1"
+                                           
+                                           Replacement="public partial class ApiConfiguration"
+                                           Files="@(FilesToFix)" />
+  </Target>
+  <Target Name="GenerateSerializerAssembly">
+    <Csc NoConfig="true"
+         Sources="$(ClassFileName).cs"
+         DisabledWarnings="1701,1702"
+         NoStandardLib="true"
+         WarningLevel="4"
+         DefineConstants="DEBUG;TRACE"
+         DebugType="full"
+         EmitDebugInformation="true"
+         FileAlignment="512"
+         Optimize="false"
+         OutputAssembly="$(ClassFileName).dll"
+         TargetType="library"
+         References="@(References)" />
+    <SGen BuildAssemblyName="$(ClassFileName).dll"
+          BuildAssemblyPath="."
+          ShouldGenerateSerializer="true"
+          UseProxyTypes="false" />
+  </Target>
+  <Target Name="MoveToDestinationFolder">
+    <Move SourceFiles="@(FilesToMove)"
+          DestinationFolder="$(DestinationFolder)"
+          OverwriteReadOnlyFiles="true" />
+  </Target>
+</Project>

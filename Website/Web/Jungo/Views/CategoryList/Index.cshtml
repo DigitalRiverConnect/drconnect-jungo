@@ -1,0 +1,49 @@
+﻿@using IronRuby.Runtime
+@model DigitalRiver.CloudLink.Commerce.Nimbus.ViewModels.Catalog.CategoryListViewModel
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-xs-12">
+            <h4>@Model.Title</h4>
+        </div>
+    </div>
+    <div class="row">
+        @{
+            var i = 0;
+        }
+        @foreach (var item in Model.Categories)
+        {
+            if (i++ % 3 == 0) // Force items to go to a new line
+            {
+                <div class="clearfix"></div>
+            }
+
+            <div class="col-sm-4">
+                <a href="@item.Url">
+                    @if (item.Category != null)
+                    {
+                        <img src="@item.Category.ThumbnailImage" alt="@item.Category.DisplayName" />
+                    }
+                    <h5>@item.Title</h5>
+                    <div>@item.Text</div>
+                    @if (item.Category != null && item.Category.Categories != null && item.Category.Categories.Category != null && item.Category.Categories.Category.Length > 0)
+                    {
+                        var aFewNames = string.Empty;
+                        for (var idx = 0; idx < 3; idx++)
+                        {
+                            if (!string.IsNullOrEmpty(aFewNames))
+                            {
+                                aFewNames += ", ";
+                            }
+                            aFewNames += @item.Category.Categories.Category[idx].DisplayName;
+                        }
+                        if (item.Category.Categories.Category.Length > 3)
+                        {
+                            aFewNames += "...";
+                        }
+                        <span>(includes @aFewNames)</span>
+                    }
+                </a>
+            </div>
+        }
+    </div>
+</div>

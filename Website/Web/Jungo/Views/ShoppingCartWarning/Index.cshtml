@@ -1,0 +1,26 @@
+﻿@using DigitalRiver.CloudLink.Commerce.Nimbus.SportsUs.Infrastructure.Helpers
+@model DigitalRiver.CloudLink.Commerce.Nimbus.ViewModels.WarningErrorModel
+<div class="rwd">
+    <div id="body">
+        <div class="grid pcf-layout">
+            <div class="pcf-main cart">
+                <div id="dr_OfficeDecision" class="dr_OfficeDecision">
+                    <h1 class="heading--medium">@Res.ShoppingCart_CheckEligibilityExistingSharedSubscriptionError</h1>
+                    <p>
+                        @Html.Raw(Model.ErrorMessage)
+                    </p>
+                    <div>
+                        <a class="checkout button-block" href="@Html.ShoppingCartLink()" title="@Res.FormActions_Cancel">
+                            @Res.FormActions_Cancel
+                        </a>
+                    </div>
+                    <div>
+                        <a class="button-block" href="@Html.CheckoutLink()" title="@Res.FormActions_Continue">
+                            @Res.FormActions_Continue
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

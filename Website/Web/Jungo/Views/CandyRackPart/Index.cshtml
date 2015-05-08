@@ -1,0 +1,80 @@
+﻿@using DigitalRiver.CloudLink.Commerce.Nimbus.SportsUs.ViewHelpers
+@using Jungo.Infrastructure.Extensions
+@using Newtonsoft.Json
+@model DigitalRiver.CloudLink.Commerce.Nimbus.ViewModels.Catalog.CrossSellViewModel
+@if (Html.IsManaging())
+{
+    <div class="row">
+        <h2>Up/Cross Sell</h2>
+        <div class="col-sm-12">
+            @for (var i = 0; i < 3; i++)
+            {
+                <div>
+                    <img alt="Product" src="http://placehold.it/60x60&text=Product+Image" />
+                    $0.00
+                    <h3>Product Title</h3>
+                    <p>Product Description</p>
+                    <a href="#">Add to cart</a>
+                </div>
+            }
+        </div>
+    </div>
+}
+else if (Model != null && Model.Offers.Count > 0 && Model.Offers.Any(offer => offer.ProductOffersOfferViewModels != null && offer.ProductOffersOfferViewModels.Length > 0))
+{
+    <div class="row">
+        <h3>@Model.Title</h3>
+        <div class="col-sm-12">
+            @{
+    var idx = 0;
+    var reachedMax = false;
+            }
+
+            @foreach (var offer in Model.Offers.Where(offer => offer.ProductOffersOfferViewModels != null && offer.ProductOffersOfferViewModels.Length > 0))
+            {
+                foreach (var productOffer in offer.ProductOffersOfferViewModels)
+                {
+                    if (++idx > Model.MaxNumberOfProducts)
+                    {
+                        reachedMax = true;
+                        break;
+                    }
+                    <p>
+                                                @{
+                    var displayProduct = productOffer.Product;
+                    var preorderEnabled = displayProduct.CustomAttributes.ValueByName("preorderEnabled", false);
+                    var imgurl = VHCSS.GetImageFromAttribute(productOffer.Product, "productImage4", productOffer.Product.ProductImage);
+                                                }
+                        <a href="@productOffer.ProductLink">
+                            <img alt="@displayProduct.DisplayName" src="@imgurl" />
+                            <p>@displayProduct.Name</p>
+                        </a>
+                        @if (productOffer.Pricing.TotalDiscountWithQuantity.Value > 0)
+                        {
+                            <div>@Res.Product_PriceNowColon&#160;@productOffer.Pricing.FormattedSalePriceWithQuantity</div>
+                            <div>@Res.Product_PriceWasColon&#160;<del>@productOffer.Pricing.FormattedListPriceWithQuantity</del></div>
+                        }
+                        else
+                        {
+                            <span>@productOffer.Pricing.FormattedSalePriceWithQuantity</span>
+                        }
+                        @if (!preorderEnabled && !displayProduct.InventoryStatus.ProductIsInStock && !displayProduct.InventoryStatus.ProductIsAllowsBackorders)
+                        {
+                            <p>@Res.Product_OutOfStock</p>
+                        }
+                        else
+                        {
+                            <div>
+                                <a class="btn btn-primary btn-xs" href="@productOffer.AddToCartLink">@Res.Product_AddToCart</a>
+                            </div>
+                        }
+                    </p>
+                }
+                if (reachedMax)
+                {
+                    break;
+                }
+            }
+        </div>
+    </div>
+}

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<n2 version="2.4.0.0" exportVersion="2" exportDate="07/10/2013 23:28:34">
+  <item id="68" name="catalog" parent="39" title="Catalog" translationKey="28" state="Published" created="01/18/2013 15:03:29" updated="07/10/2013 23:28:34" published="01/18/2013 15:03:29" sortOrder="-2" url="/msusa/store/catalog" visible="True" savedBy="admin" typeName="DigitalRiver.CloudLink.N2MVC.Models.Pages.CatalogPage, DigitalRiver.CloudLink.N2MVC" discriminator="CatalogPage" ancestralTrail="/1/12/13/39/" childState="132">
+    <details />
+    <detailCollections />
+    <children>
+      <child id="80" name="80" versionIndex="0" />
+    </children>
+    <authorizations />
+    <properties />
+  </item>
+  <item id="80" name="" parent="68" title="Container1plus3" zoneName="Content" state="Published" created="01/19/2013 07:48:22" updated="07/10/2013 23:28:34" published="01/19/2013 07:48:22" sortOrder="-7" url="/msusa/store/catalog?item=80" visible="True" savedBy="admin" typeName="DigitalRiver.CloudLink.N2MVC.Models.Parts.TemplatePart, DigitalRiver.CloudLink.N2MVC" discriminator="TemplatePart" ancestralTrail="/1/12/13/39/68/" childState="128">
+    <details>
+      <detail name="ViewTemplate" typeName="System.String, mscorlib" meta="" encoded="True"><![CDATA[Container1plus3]]></detail>
+    </details>
+    <detailCollections />
+    <children>
+      <child id="81" name="81" versionIndex="0" />
+      <child id="82" name="82" versionIndex="0" />
+      <child id="83" name="83" versionIndex="0" />
+    </children>
+    <authorizations />
+    <properties />
+  </item>
+  <item id="81" name="" parent="80" title="" zoneName="Content" state="Published" created="02/26/2013 12:38:31" updated="07/10/2013 23:28:34" published="02/26/2013 13:34:50" sortOrder="-15" url="/msusa/store/catalog?item=81" visible="True" savedBy="admin" typeName="DigitalRiver.CloudLink.N2MVC.Models.Parts.BreadcrumbsPart, DigitalRiver.CloudLink.N2MVC" discriminator="BreadcrumbsPart" ancestralTrail="/1/12/13/39/68/80/" childState="2">
+    <details />
+    <detailCollections />
+    <children />
+    <authorizations />
+    <properties />
+  </item>
+  <item id="82" name="" parent="80" title="" zoneName="Content" state="Published" created="01/19/2013 07:27:30" updated="07/10/2013 23:28:34" published="01/19/2013 07:48:41" sortOrder="-5" url="/msusa/store/catalog?item=82" visible="True" savedBy="admin" typeName="DigitalRiver.CloudLink.N2MVC.Models.Parts.ProductResultsPart, DigitalRiver.CloudLink.N2MVC" discriminator="ProductResultsPart" ancestralTrail="/1/12/13/39/68/80/" childState="2">
+    <details />
+    <detailCollections />
+    <children />
+    <authorizations />
+    <properties />
+  </item>
+  <item id="83" name="" parent="80" title="Categories" zoneName="Left" state="Published" created="01/19/2013 07:30:02" updated="07/10/2013 23:28:34" published="01/19/2013 07:48:41" sortOrder="-2" url="/msusa/store/catalog?item=83" visible="True" savedBy="admin" typeName="DigitalRiver.CloudLink.N2MVC.Models.Parts.CategoriesPart, DigitalRiver.CloudLink.N2MVC" discriminator="CategoriesPart" ancestralTrail="/1/12/13/39/68/80/" childState="2">
+    <details>
+      <detail name="CategoryID" typeName="System.String, mscorlib" meta="" encoded="True"><![CDATA[Tier1]]></detail>
+      <detail name="ViewTemplate" typeName="System.String, mscorlib" meta="" encoded="True"><![CDATA[_CatNavPartial]]></detail>
+      <detail name="DrillDown" typeName="System.Boolean, mscorlib" meta="">True</detail>
+    </details>
+    <detailCollections />
+    <children />
+    <authorizations />
+    <properties />
+  </item>
+</n2>

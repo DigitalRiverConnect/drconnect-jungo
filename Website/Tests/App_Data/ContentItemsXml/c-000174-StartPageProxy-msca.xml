@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<n2 version="2.4.0.0" exportVersion="2" exportDate="07/10/2013 23:28:35">
+  <item id="174" name="msca" parent="12" title="msca" state="Published" created="04/19/2013 00:45:10" updated="07/10/2013 23:28:35" published="04/19/2013 00:45:14" sortOrder="-13" url="/msca" visible="True" savedBy="stwright" typeName="DigitalRiver.CloudLink.N2MVC.Models.Pages.StartPage, DigitalRiver.CloudLink.N2MVC" discriminator="StartPage" ancestralTrail="/1/12/" childState="4">
+    <details>
+      <detail name="LanguageCode" typeName="System.String, mscorlib" meta="" encoded="True"><![CDATA[en-CA]]></detail>
+      <detail name="SiteID" typeName="System.String, mscorlib" meta="" encoded="True"><![CDATA[msca]]></detail>
+    </details>
+    <detailCollections />
+    <children />
+    <authorizations />
+    <properties />
+  </item>
+</n2>

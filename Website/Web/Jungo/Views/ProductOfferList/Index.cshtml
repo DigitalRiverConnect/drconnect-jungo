@@ -1,0 +1,92 @@
+﻿@using DigitalRiver.CloudLink.Commerce.Nimbus.SportsUs.ViewHelpers
+@using Jungo.Infrastructure.Extensions
+@model DigitalRiver.CloudLink.Commerce.Nimbus.ViewModels.Catalog.OfferListViewModel
+@{
+    ViewBag.Title = "Index";
+}
+
+@if (Model != null && Model.ProductOfferViewModels != null && Model.ProductOfferViewModels.Length > 0)
+{
+    <h2>@Model.Title</h2>
+    <div class="row">
+        @{
+    var i = 0;
+        }
+
+        @foreach (var productOfferViewModel in Model.ProductOfferViewModels)
+        {
+            var displayProduct = productOfferViewModel.Product;
+            var preorderEnabled = displayProduct.CustomAttributes.ValueByName("preorderEnabled", false);
+            var productImage = VHCSS.GetImageFromAttribute(productOfferViewModel.Product, "productImage2", productOfferViewModel.Product.ThumbnailImage);
+            if (i++ % 3 == 0)
+            {
+                <div class="clearfix"></div>
+            }
+
+            <div class="col-sm-4">
+
+                @if (!String.IsNullOrEmpty(productOfferViewModel.ProductLink) &&
+                (displayProduct.InventoryStatus.ProductIsInStock || (preorderEnabled && displayProduct.InventoryStatus.ProductIsAllowsBackorders)))
+                {
+                    <a href="@productOfferViewModel.ProductLink">
+                        <img src="@productOfferViewModel.Product.ProductImage" alt="@productOfferViewModel.Product.Name" />
+                        @if (productOfferViewModel.Pricing.TotalDiscountWithQuantity.Value > 0)
+                        {
+                            <p>
+                                <span>@Res.Product_PriceNowColon&#160;@productOfferViewModel.Pricing.FormattedSalePriceWithQuantity</span>
+                                <span>@Res.Product_PriceWasColon&#160;<del>@productOfferViewModel.Pricing.FormattedListPriceWithQuantity</del></span>
+                            </p>
+                        }
+                        else
+                        {
+                            <p>
+                                @productOfferViewModel.Pricing.FormattedSalePriceWithQuantity
+                            </p>
+                        }
+                        @if (!string.IsNullOrWhiteSpace(productOfferViewModel.Product.ShortDescription))
+                        {
+                            <h4>@productOfferViewModel.Product.ShortDescription</h4>
+                        }
+                        @if (!string.IsNullOrWhiteSpace(productOfferViewModel.Product.LongDescription))
+                        {
+                            <div>@productOfferViewModel.Product.LongDescription</div>
+                        }
+                    </a>
+                }
+                else
+                {
+                    <img src="@productImage" alt="@productOfferViewModel.Product.Name" />
+                    if (productOfferViewModel.Pricing.TotalDiscountWithQuantity.Value > 0)
+                    {
+                        <p>
+                            <span>@Res.Product_PriceNowColon&#160;@productOfferViewModel.Pricing.FormattedSalePriceWithQuantity</span>
+                            <span>@Res.Product_PriceWasColon&#160;<del>@productOfferViewModel.Pricing.FormattedListPriceWithQuantity</del></span>
+                        </p>
+                    }
+                    else
+                    {
+                        <p>
+                            @productOfferViewModel.Pricing.FormattedSalePriceWithQuantity
+                        </p>
+                    }
+                    if (!string.IsNullOrWhiteSpace(productOfferViewModel.Product.ShortDescription))
+                    {
+                        <h4>@productOfferViewModel.Product.ShortDescription</h4>
+                    }
+                    if (!string.IsNullOrWhiteSpace(productOfferViewModel.Product.LongDescription))
+                    {
+                        <div>@productOfferViewModel.Product.LongDescription</div>
+                    }
+                    if (!displayProduct.InventoryStatus.ProductIsInStock && !displayProduct.InventoryStatus.ProductIsAllowsBackorders)
+                    {
+                        <p class="description">@Res.Product_OutOfStock</p>
+                    }
+                }
+            </div>
+        }
+    </div>
+}
+else if (Html.IsManaging())
+{
+    <div>Offered products go here.</div>
+}

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+
+	<!-- MVC TEMPLATES -->
+
+	<PropertyGroup>
+		<N2Management-DeployFolder>$(DeployFolder)\$(DeployPrefix)N2Management</N2Management-DeployFolder>
+	</PropertyGroup>
+
+	<Target Name="N2Management-Deploy" DependsOnTargets="Framework-CreateItemGroups;Framework-Deploy">
+		<MakeDir Condition="!Exists($(N2Management-DeployFolder))" Directories="$(N2Management-DeployFolder)"/>
+		<Delete Files="$(N2Management-DeployFolder)\N2.zip" Condition="Exists('$(N2Management-DeployFolder)\N2.zip')"/>
+
+		<Exec Command="&quot;$(BuildFolder)\lib\BuildSupport.exe&quot; ZipDirectory &quot;$(N2Management-DeployFolder)\N2.zip&quot; &quot;$(Framework-DeployFolder)\N2&quot; &quot;N2&quot;" />
+	</Target>
+</Project>

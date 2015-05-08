@@ -1,0 +1,22 @@
+﻿@using DigitalRiver.CloudLink.Commerce.Nimbus.Mvc.Web.Utils
+@using DigitalRiver.CloudLink.Commerce.Nimbus.N2Content
+@using DigitalRiver.CloudLink.Commerce.Nimbus.N2Content
+<div class="grid-container">
+    <div class="logo">
+        <h1 class="heading--large">
+            <a href="@Html.StoreLink()" title="@Res.General_StoreTitle">
+                <img src="@Html.GetPublicURL("~/upload/Content/img/microsoftlogo.png")" alt="@Res.General_StoreTitle" />
+            </a>
+        </h1>
+        @Html.ResourceEditLink(Url,"General","MICROSOFT_STORE")
+    </div>
+    <div class="header-nav-links">
+        @{ Html.DroppableZone(Zones.HeaderSiteAction).Render(); }
+    </div>
+</div>
+<div class="grid-container">
+    <a class="heading--medium heading--bold" href="@Html.StoreLink()">@Res.General_WelcomeToOurStore</a>
+    <div>
+        @{ Html.DroppableZone(Zones.SiteSearch).Render(); }
+    </div>
+</div>

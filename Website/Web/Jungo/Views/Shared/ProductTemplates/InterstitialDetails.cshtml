@@ -1,0 +1,15 @@
+﻿@model DigitalRiver.CloudLink.Commerce.Nimbus.ViewModels.Catalog.ProductDetailPageViewModel
+@if (Model == null || !Model.Product.DisplayableProduct || !Model.Product.Purchasable)
+{
+	<div class="grid-row message" id="product-details">
+        <p>@Res.Catalog", "PRODUCT_NOT_FOUND")</p>
+    </div>
+}
+else
+{
+    <section class="review-checkout">
+        <div class="grid-unit">
+            <a data-product-id="@Model.DisplayProduct.Id" href="javascript:null(0)" class="review-and-checkout box blue button">@Res.Product", "REVIEW_AND_CHECKOUT")</a>
+        </div>
+    </section>
+}

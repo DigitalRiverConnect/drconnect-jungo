@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<n2 version="2.4.0.0" exportVersion="2" exportDate="07/10/2013 23:28:35">
+  <item id="144" name="checkout" parent="39" title="Checkout" translationKey="30" state="Published" created="01/18/2013 15:06:19" updated="07/10/2013 23:28:35" published="01/18/2013 15:06:19" sortOrder="87" url="/msusa/store/checkout" visible="True" savedBy="admin" typeName="DigitalRiver.CloudLink.N2MVC.Models.Pages.CheckoutPage, DigitalRiver.CloudLink.N2MVC" discriminator="CheckoutPage" ancestralTrail="/1/12/13/39/" childState="2">
+    <details />
+    <detailCollections />
+    <children />
+    <authorizations />
+    <properties />
+  </item>
+</n2>

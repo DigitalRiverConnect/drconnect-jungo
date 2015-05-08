@@ -1,0 +1,4 @@
+﻿@model DigitalRiver.CloudLink.Commerce.Nimbus.ViewModels.Cart.ShoppingCartViewModel
+@Html.Partial("ShoppingCart", Model)
+@* this page does ajax posts, so render with anti-forgery token to save client from having to go get one *@
+@Html.Partial("AntiForgeryToken")

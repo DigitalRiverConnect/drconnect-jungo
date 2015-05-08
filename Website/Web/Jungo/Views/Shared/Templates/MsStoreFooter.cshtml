@@ -1,0 +1,73 @@
+﻿@using DigitalRiver.CloudLink.Commerce.Nimbus.Mvc.Web.Utils
+@using DigitalRiver.CloudLink.Commerce.Nimbus.N2Content.Pages
+@using DigitalRiver.CloudLink.Commerce.Nimbus.SportsUs.ViewHelpers
+@using N2
+@{
+    var currentPage = Find.CurrentPage as PageModelBase;
+    var pageTypeCssClass = (currentPage != null) ? currentPage.GetCssClass() : "";
+}
+@if (VHCSS.PageNeedsResponsivePCFFooter(pageTypeCssClass) || Html.IsCheckoutWorkflow())
+{
+    <footer class="site-footer pcf-footer background-grey legal" role="contentinfo">
+        <div class="grid-container">
+            <div class="grid-row column-4">
+                <div class="grid-unit">&nbsp;</div>
+                <div class="grid-unit colspan-3">
+                    <div class="legalwrapper">
+                        @{ Html.DroppableZone("CustomFooterLegalLinkList").Render(); }
+                        <span>@Res.General_HostedByDr</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+}
+else
+{
+    <section class="footer-links background-grey row-padded-top">
+        <div class="grid-container">
+            <div class="grid-row column-4">
+                <div class="grid-unit">
+                    @{ Html.DroppableZone("FooterColumn1").Render(); }
+                </div>
+                <div class="grid-unit">
+                    @{ Html.DroppableZone("FooterColumn2").Render(); }
+                </div>
+                <div class="grid-unit">
+                    @{ Html.DroppableZone("FooterColumn3").Render(); }
+                </div>
+                <div class="grid-unit">
+                    @{ Html.DroppableZone("FooterColumn4").Render(); }
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="site-footer background-grey legal" role="contentinfo">
+        <div class="grid-container">
+            <div class="grid-row column-4">
+                <div class="grid-unit">
+                    @{ Html.DroppableZone("RegionSelector").Render(); }
+                </div>
+                <div class="grid-unit colspan-3">
+                    <div class="legalwrapper">
+                        <img class="logo-desktop" src="@Html.GetPublicURL("~/upload/Content/img/microsoftlogo_footer.png")" alt="@Res.General_Store" data-source-index="0" />
+                        @{ Html.DroppableZone("CustomFooterLegalLinkList").Render(); }
+                        <img class="logo" src="@Html.GetPublicURL("~/upload/Content/img/microsoftlogo_footer.png")" alt="@Res.General_Store" data-source-index="0" />
+                        <span>@Res.General_HostedByDr</span>
+						@Html.ResourceEditLink(Url, "General", "HOSTED_BY_DR")
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+}
+<script type="text/javascript">
+    var msStoreResources = {
+        "see_more" : "@Res.msStoreResources_SeeMore",
+        "see_less": "@Res.msStoreResources_SeeLess",
+        "next": "@Res.msStoreResources_Next",
+        "prev": "@Res.msStoreResources_Prev",
+        "return_to_list": "@Res.msStoreResources_ReturnToList",
+        "buy_button_text": "@Res.msStoreResources_BuyButtonText"
+    };
+</script>

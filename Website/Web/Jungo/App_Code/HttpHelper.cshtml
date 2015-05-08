@@ -1,0 +1,12 @@
+﻿@helper CreateDataRootUrl(HttpRequestBase request)
+{
+    if (request == null || request.Url == null)
+    {
+        <text>data-root-url=""</text>
+    }
+    else
+    {
+        var value = request.Url.GetLeftPart(UriPartial.Authority) + request.ApplicationPath;
+        <text>data-root-url="@value"</text>
+    }
+}

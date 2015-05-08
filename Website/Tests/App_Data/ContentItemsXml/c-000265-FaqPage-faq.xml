@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<n2 version="2.4.0.0" exportVersion="2" exportDate="07/10/2013 23:28:36">
+  <item id="265" name="faq" parent="186" title="Frequently asked Questions" state="Published" created="02/21/2013 01:39:29" updated="07/10/2013 23:28:36" published="02/21/2013 01:40:03" sortOrder="94" url="/msca/fr-ca/store/faq" visible="True" savedBy="admin" typeName="DigitalRiver.CloudLink.N2MVC.Models.Pages.FaqPage, DigitalRiver.CloudLink.N2MVC" discriminator="FaqPage" ancestralTrail="/1/12/174/179/186/" childState="128">
+    <details />
+    <detailCollections />
+    <children>
+      <child id="266" name="266" versionIndex="0" />
+      <child id="267" name="267" versionIndex="0" />
+      <child id="268" name="268" versionIndex="0" />
+      <child id="269" name="269" versionIndex="0" />
+      <child id="270" name="270" versionIndex="0" />
+      <child id="271" name="271" versionIndex="0" />
+      <child id="272" name="272" versionIndex="0" />
+      <child id="273" name="273" versionIndex="0" />
+      <child id="274" name="274" versionIndex="0" />
+      <child id="275" name="275" versionIndex="0" />
+      <child id="276" name="276" versionIndex="0" />
+      <child id="277" name="277" versionIndex="0" />
+      <child id="278" name="278" versionIndex="0" />
+    </children>
+    <authorizations />
+    <properties />
+  </item>
+  <item id="266" name="" parent="265" title="My trial version of Office has or is about to expire and I need to purchase the actual product." zoneName="Questions" state="Published" created="02/22/2013 20:10:05" updated="07/10/2013 23:28:36" published="02/22/2013 21:36:08" sortOrder="-20" url="/msca/fr-ca/store/faq?item=266" visible="True" savedBy="admin" typeName="DigitalRiver.CloudLink.N2MVC.Models.Parts.Faq, DigitalRiver.CloudLink.N2MVC" discriminator="Faq" ancestralTrail="/1/12/174/179/186/265/" childState="2">
+    <details>
+      <detail name="Answer" typeName="System.String, mscorlib" meta="" encoded="True"><![CDATA[&lt;p&gt;&lt;span&gt;You can purchase the product you need by doing so directly on&amp;nbsp;&lt;/span&gt;&lt;a class=&quot;topic&quot; title=&quot;Microsoft Store&quot; href=&quot;http://www.microsoftstore.com/&quot;&gt;www.microsoftstore.com&lt;/a&gt;&lt;span&gt;&amp;nbsp;and locating the product of interest or you can contact us directly to help you with the purchase process by &lt;span style=&quot;text-decoration: underline;&quot;&gt;&lt;strong&gt;contacting us&lt;/strong&gt;&lt;/span&gt; at &lt;strong&gt;1-877-MY-MSSTORE&lt;/strong&gt; (1-877-696-7787).&lt;/span&gt;&lt;/p&gt;]]></detail>
+    </details>
+    <detailCollections />
+    <children />
+    <authorizations />
+    <properties />
+  </item>
+  <item id="267" name="" parent="265" title="I'm looking for my Product Key from a recent purchase made for my downloaded version of Microsoft Office product." zoneName="Questions" state="Published" created="02/21/2013 01:39:29" updated="07/10/2013 23:28:36" published="02/21/2013 01:39:29" sortOrder="-10" url="/msca/fr-ca/store/faq?item=267" visible="True" savedBy="admin" typeName="DigitalRiver.CloudLink.N2MVC.Models.Parts.Faq, DigitalRiver.CloudLink.N2MVC" discriminator="Faq" ancestralTrail="/1/12/174/179/186/265/" childState="2">
+    <details>
+      <detail name="Answer" typeName="System.String, mscorlib" meta="" encoded="True"><![CDATA[&lt;p&gt;If you purchased your product off the Microsoft Store Site or with a Microsoft Store Representative over the phone you will be able to go to&amp;nbsp;&lt;a class=&quot;topic&quot; title=&quot;Microsoft Store&quot; href=&quot;http://www.microsoftstore.com/&quot;&gt;www.microsoftstore.com&lt;/a&gt;&amp;nbsp;and login to your Microsoft account. Click on the&amp;nbsp;&lt;strong&gt;Account&lt;/strong&gt;&amp;nbsp;link at bottom of the page. Review your&amp;nbsp;&lt;strong&gt;Order History&lt;/strong&gt;&amp;nbsp;for the product you purchased and if it was a downloaded purchase item you will see the product key associated with item. You may be asked to login to your Microsoft account you used to make your Microsoft Store purchase before proceeding.&lt;/p&gt;
+&lt;p&gt;A: If you purchased your version of Microsoft Office online from another source other than the Microsoft Store site there is a chance you need to obtain your product key information at the following location.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Check your email for a confirmation order email that will contain your product key as part of the email sent to you after the order was completed on line.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;]]></detail>
+    </details>
+    <detailCollections />
+    <children />
+    <authorizations />
+    <properties />
+  </item>
+  <item id="268" name="" parent="265" title="I have a question about how to use my Microsoft Product or trouble I'm having installing a Microsoft Product." zoneName="Questions" state="Published" created="02/27/2013 19:50:26" updated="07/10/2013 23:28:36" published="02/27/2013 19:50:26" sortOrder="-5" url="/msca/fr-ca/store/faq?item=268" visible="True" savedBy="admin" typeName="DigitalRiver.CloudLink.N2MVC.Models.Parts.Faq, DigitalRiver.CloudLink.N2MVC" discriminator="Faq" ancestralTrail="/1/12/174/179/186/265/" childState="2">
+    <details>
+      <detail name="Answer" typeName="System.String, mscorlib" meta="" encoded="True"><![CDATA[&lt;p&gt;&lt;span&gt;If you have questions or some challenges with using or installing your Microsoft Product we recommend starting at the following Microsoft Help and Support site&amp;nbsp;&lt;/span&gt;&lt;a class=&quot;topic&quot; title=&quot;Microsoft Help and Support&quot; href=&quot;http://support.microsoft.com/&quot; target=&quot;_blank&quot;&gt;http://support.microsoft.com/&lt;/a&gt;&lt;span&gt;. Here you will find FAQ&#39;s and additional support options by selecting the Microsoft Product of interest under the&amp;nbsp;&lt;/span&gt;&lt;strong&gt;Solution Centers&lt;/strong&gt;&lt;span&gt;&amp;nbsp;section. Upon reaching the Solution Center page for the product of interest you can then review existing FAQ&#39;s, forums or you can click on&amp;nbsp;&lt;/span&gt;&lt;strong&gt;Contact a support professional by E-mail, Online, or Phone&lt;/strong&gt;&lt;span&gt;&amp;nbsp;at the top right of each page and you will be presented with the proper support channels available to you for the product in question.&lt;/span&gt;&lt;/p&gt;]]></detail>
+    </details>
+    <detailCollections />
+    <children />
+    <authorizations />
+    <properties />
+  </item>
+  <item id="269" name="" parent="265" title="I need a disc copy of my downloaded copy for my Microsoft Product." zoneName="Questions" state="Published" created="02/27/2013 20:28:29" updated="07/10/2013 23:28:36" published="02/27/2013 20:30:03" sortOrder="-2" url="/msca/fr-ca/store/faq?item=269" visible="True" savedBy="admin" typeName="DigitalRiver.CloudLink.N2MVC.Models.Parts.Faq, DigitalRiver.CloudLink.N2MVC" discriminator="Faq" ancestralTrail="/1/12/174/179/186/265/" childState="2">
+    <details>
+      <detail name="Answer" typeName="System.String, mscorlib" meta="" encoded="True"><![CDATA[&lt;p&gt;To obtain a replacement disc for a Microsoft Product you can contact the Microsoft Supplemental Parts Department. For a minimal fee the Microsoft Supplemental Parts Department will be able to send a replacement disc to you.&lt;/p&gt;
+&lt;p&gt;You can contact the Microsoft Supplemental Parts Department at 1-800-360-7561, Monday through Friday, 5:00 A.M. to 7:00 P.M. Pacific Time.&lt;/p&gt;
+&lt;p&gt;If you need additional assistance, please feel free to contact us at 1-877-MY-MSSTORE (1-877-696-7786).&lt;/p&gt;]]></detail>
+    </details>
+    <detailCollections />
+    <children />
+    <authorizations />
+    <properties />
+  </item>
+  <item id="270" name="" parent="265" title="I have not yet received my email confirmation invoice after purchasing my Microsoft Store product." zoneName="Questions" state="Published" created="02/27/2013 20:28:29" updated="07/10/2013 23:28:36" published="02/27/2013 20:30:03" sortOrder="0" url="/msca/fr-ca/store/faq?item=270" visible="True" savedBy="admin" typeName="DigitalRiver.CloudLink.N2MVC.Models.Parts.Faq, DigitalRiver.CloudLink.N2MVC" discriminator="Faq" ancestralTrail="/1/12/174/179/186/265/" childState="2">
+    <details>
+      <detail name="Answer" typeName="System.String, mscorlib" meta="" encoded="True"><![CDATA[&lt;p&gt;Please be sure you have looked in your inbox and your junk mail folder as a first step for the email confirmation for the account you used to place your purchase. You can go to&amp;nbsp;&lt;a class=&quot;topic&quot; title=&quot;Microsoft Store&quot; href=&quot;http://www.microsoftstore.com/&quot;&gt;www.microsoftstore.com&lt;/a&gt;&amp;nbsp;and login to your Microsoft account. Click on the&amp;nbsp;&lt;strong&gt;Account&lt;/strong&gt;&amp;nbsp;link at the bottom of the page. Review your&amp;nbsp;&lt;strong&gt;Order History&lt;/strong&gt;&amp;nbsp;for the product and review the status of your order at this location. You may be asked to login to your Microsoft account you used to make your Microsoft Store purchase before proceeding.&lt;/p&gt;
+&lt;p&gt;If you saw a message noting that your order may take up to 24 hours to process upon completion of the ordering process on line or in your purchase history your order was showing a status of pending please review the following.&lt;/p&gt;
+&lt;p&gt;In order to ensure quality, your order is being reviewed by our Order Verification Team.&lt;/p&gt;
+&lt;p&gt;If you need additional assistance, please feel free to contact a Microsoft Store Representative at 1-877-MY-MSSTORE (1-877-696-7786).&lt;/p&gt;]]></detail>
+    </details>
+    <detailCollections />
+    <children />
+    <authorizations />
+    <properties />
+  </item>
+  <item id="271" name="" parent="265" title="I'm having trouble downloading my product after purchasing on Microsoft Store." zoneName="Questions" state="Published" created="02/27/2013 20:28:29" updated="07/10/2013 23:28:36" published="02/27/2013 20:30:03" sortOrder="1" url="/msca/fr-ca/store/faq?item=271" visible="True" savedBy="admin" typeName="DigitalRiver.CloudLink.N2MVC.Models.Parts.Faq, DigitalRiver.CloudLink.N2MVC" discriminator="Faq" ancestralTrail="/1/12/174/179/186/265/" childState="2">
+    <details>
+      <detail name="Answer" typeName="System.String, mscorlib" meta="" encoded="True"><![CDATA[&lt;p&gt;You can start by reviewing the information at&amp;nbsp;&lt;a class=&quot;topic&quot; title=&quot;Microsoft Store Help&quot; href=&quot;http://www.microsoftstore.com/store/msstore/html/pbPage.Help&quot;&gt;http://www.microsoftstore.com/store/msstore/html/pbPage.Help&lt;/a&gt;&amp;nbsp;under the&amp;nbsp;&lt;strong&gt;Software Downloads&lt;/strong&gt;&amp;nbsp;or&amp;nbsp;&lt;strong&gt;Download Manager&lt;/strong&gt;&amp;nbsp;sections for details around downloading your product.&lt;/p&gt;
+&lt;p&gt;If you need additional assistance, please feel free to contact Microsoft Store at 1-877-MY-MSSTORE (1-877-696-7786).&lt;/p&gt;]]></detail>
+    </details>
+    <detailCollections />
+    <children />
+    <authorizations />
+    <properties />
+  </item>
+  <item id="272" name="" parent="265" title="What’s the difference between 32- and 64-bit versions of Windows?" zoneName="Questions" state="Published" created="02/27/2013 20:28:29" updated="07/10/2013 23:28:36" published="02/27/2013 20:30:03" sortOrder="2" url="/msca/fr-ca/store/faq?item=272" visible="True" savedBy="admin" typeName="DigitalRiver.CloudLink.N2MVC.Models.Parts.Faq, DigitalRiver.CloudLink.N2MVC" discriminator="Faq" ancestralTrail="/1/12/174/179/186/265/" childState="2">
+    <details>
+      <detail name="Answer" typeName="System.String, mscorlib" meta="" encoded="True"><![CDATA[&lt;p&gt;32- and 64-bits refer to the way a computer&amp;rsquo;s central processor (essentially, its brain) handles information. Computers that contain 64-bit processors handle data in larger blocks, which makes them more efficient. You can&amp;rsquo;t put software designed for a 64-bit system on a 32-bit system, though &amp;mdash; it won&amp;rsquo;t work.&lt;/p&gt;
+&lt;p&gt;To find out what type of system your computer is running:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Click&amp;nbsp;&lt;strong&gt;Start&lt;/strong&gt;, right-click&amp;nbsp;&lt;strong&gt;Computer&lt;/strong&gt;, and then click&amp;nbsp;&lt;strong&gt;Properties&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;The operating system appears as follows:&lt;/li&gt;
+&lt;ul&gt;
+&lt;li&gt;For a 64-bit version operating system, &quot;64-bit Operating System&quot; appears under&amp;nbsp;&lt;strong&gt;System Type&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;For a 32-bit version operating system, &quot;32-bit Operating System&quot; appears for under&amp;nbsp;&lt;strong&gt;System Type&lt;/strong&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/ol&gt;]]></detail>
+    </details>
+    <detailCollections />
+    <children />
+    <authorizations />
+    <properties />
+  </item>
+  <item id="273" name="" parent="265" title="How do I get status of my order?" zoneName="Questions" state="Published" created="02/27/2013 20:28:29" updated="07/10/2013 23:28:36" published="02/27/2013 20:30:03" sortOrder="3" url="/msca/fr-ca/store/faq?item=273" visible="True" savedBy="admin" typeName="DigitalRiver.CloudLink.N2MVC.Models.Parts.Faq, DigitalRiver.CloudLink.N2MVC" discriminator="Faq" ancestralTrail="/1/12/174/179/186/265/" childState="2">
+    <details>
+      <detail name="Answer" typeName="System.String, mscorlib" meta="" encoded="True"><![CDATA[&lt;p&gt;&lt;span&gt;Please go to&amp;nbsp;&lt;/span&gt;&lt;a title=&quot;Tracking Your Order&quot; href=&quot;http://www.microsoftstore.com/store/msstore/html/pbPage.Help_Orders_Shipping&quot; target=&quot;_blank&quot;&gt;Tracking Your Order&lt;/a&gt;&lt;span&gt;.&lt;/span&gt;&lt;/p&gt;]]></detail>
+    </details>
+    <detailCollections />
+    <children />
+    <authorizations />
+    <properties />
+  </item>
+  <item id="274" name="" parent="265" title="How do I return a product I purchased at the Microsoft Store?" zoneName="Questions" state="Published" created="02/27/2013 20:28:29" updated="07/10/2013 23:28:36" published="02/27/2013 20:30:03" sortOrder="4" url="/msca/fr-ca/store/faq?item=274" visible="True" savedBy="admin" typeName="DigitalRiver.CloudLink.N2MVC.Models.Parts.Faq, DigitalRiver.CloudLink.N2MVC" discriminator="Faq" ancestralTrail="/1/12/174/179/186/265/" childState="2">
+    <details>
+      <detail name="Answer" typeName="System.String, mscorlib" meta="" encoded="True"><![CDATA[&lt;p&gt;To return products purchased through the&amp;nbsp;&lt;a class=&quot;topic&quot; title=&quot;online Microsoft Store&quot; href=&quot;http://www.microsoftstore.com/&quot; target=&quot;_blank&quot;&gt;online Microsoft Store (www.microsoftstore.com)&lt;/a&gt;.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Dial 1-877-MY-MS-STORE (1-877-696-7786)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong class=&quot;alert&quot;&gt;Note:&lt;/strong&gt;&amp;nbsp;&amp;nbsp;At this time, Microsoft cannot process returns for purchases made at retail locations by phone&lt;/p&gt;
+&lt;p&gt;To return products purchased at Microsoft Store retail locations, please visit the store where the original transaction took place or contact the retail store location via phone.&lt;/p&gt;
+&lt;p&gt;&lt;a class=&quot;topic&quot; title=&quot;Retail Store Locations&quot; href=&quot;http://www.microsoftstore.com/Locations&quot; target=&quot;_blank&quot;&gt;Retail Store Locations&lt;/a&gt;&lt;/p&gt;]]></detail>
+    </details>
+    <detailCollections />
+    <children />
+    <authorizations />
+    <properties />
+  </item>
+  <item id="275" name="" parent="265" title="I purchased a PC from Microsoft Store. How do I get technical support for Microsoft Signature?" zoneName="Questions" state="Published" created="02/27/2013 20:28:29" updated="07/10/2013 23:28:36" published="02/27/2013 20:30:03" sortOrder="5" url="/msca/fr-ca/store/faq?item=275" visible="True" savedBy="admin" typeName="DigitalRiver.CloudLink.N2MVC.Models.Parts.Faq, DigitalRiver.CloudLink.N2MVC" discriminator="Faq" ancestralTrail="/1/12/174/179/186/265/" childState="2">
+    <details>
+      <detail name="Answer" typeName="System.String, mscorlib" meta="" encoded="True"><![CDATA[&lt;p&gt;&lt;span&gt;To learn more about Microsoft&amp;nbsp;&lt;/span&gt;&lt;em&gt;Signature&lt;/em&gt;&lt;span&gt;&amp;nbsp;Premium, set up a new account, activate your membership or get additional assistance, please visit&amp;nbsp;&lt;/span&gt;&lt;a class=&quot;topic&quot; title=&quot;Microsoft Signature Premium&quot; href=&quot;http://signature.microsoft.com/&quot; target=&quot;_blank&quot;&gt;http://signature.microsoft.com&lt;/a&gt;&lt;span&gt;.&lt;/span&gt;&lt;/p&gt;]]></detail>
+    </details>
+    <detailCollections />
+    <children />
+    <authorizations />
+    <properties />
+  </item>
+  <item id="276" name="" parent="265" title="How do I get help on my PC I purchased with Microsoft Signature?" zoneName="Questions" state="Published" created="02/27/2013 20:28:29" updated="07/10/2013 23:28:36" published="02/27/2013 20:30:03" sortOrder="6" url="/msca/fr-ca/store/faq?item=276" visible="True" savedBy="admin" typeName="DigitalRiver.CloudLink.N2MVC.Models.Parts.Faq, DigitalRiver.CloudLink.N2MVC" discriminator="Faq" ancestralTrail="/1/12/174/179/186/265/" childState="2">
+    <details>
+      <detail name="Answer" typeName="System.String, mscorlib" meta="" encoded="True"><![CDATA[&lt;p&gt;&lt;span&gt;To learn more about Microsoft&amp;nbsp;&lt;/span&gt;&lt;em&gt;Signature&lt;/em&gt;&lt;span&gt;&amp;nbsp;Premium, set up a new account, activate your membership or get additional assistance, please visit&amp;nbsp;&lt;/span&gt;&lt;a class=&quot;topic&quot; title=&quot;Microsoft Signature Premium&quot; href=&quot;http://signature.microsoft.com/&quot; target=&quot;_blank&quot;&gt;http://signature.microsoft.com&lt;/a&gt;&lt;span&gt;.&lt;/span&gt;&lt;/p&gt;]]></detail>
+    </details>
+    <detailCollections />
+    <children />
+    <authorizations />
+    <properties />
+  </item>
+  <item id="277" name="" parent="265" title="How do I get my PC loaded with Microsoft Signature repaired?" zoneName="Questions" state="Published" created="02/27/2013 20:28:29" updated="07/10/2013 23:28:36" published="02/27/2013 20:30:03" sortOrder="7" url="/msca/fr-ca/store/faq?item=277" visible="True" savedBy="admin" typeName="DigitalRiver.CloudLink.N2MVC.Models.Parts.Faq, DigitalRiver.CloudLink.N2MVC" discriminator="Faq" ancestralTrail="/1/12/174/179/186/265/" childState="2">
+    <details>
+      <detail name="Answer" typeName="System.String, mscorlib" meta="" encoded="True"><![CDATA[&lt;p&gt;&lt;span&gt;Please go to&amp;nbsp;&lt;/span&gt;&lt;a class=&quot;topic&quot; title=&quot;PC Repair&quot; href=&quot;http://www.microsoftstore.com/store/msstore/html/pbPage.Help_Technical_Support#ms_help_topics_at2&quot; target=&quot;_blank&quot;&gt;PC Repair&lt;/a&gt;&lt;span&gt;.&lt;/span&gt;&lt;/p&gt;]]></detail>
+    </details>
+    <detailCollections />
+    <children />
+    <authorizations />
+    <properties />
+  </item>
+  <item id="278" name="" parent="265" title="How do I start with Answer Desk?" zoneName="Questions" state="Published" created="02/27/2013 20:28:29" updated="07/10/2013 23:28:36" published="02/27/2013 20:30:03" sortOrder="17" url="/msca/fr-ca/store/faq?item=278" visible="True" savedBy="admin" typeName="DigitalRiver.CloudLink.N2MVC.Models.Parts.Faq, DigitalRiver.CloudLink.N2MVC" discriminator="Faq" ancestralTrail="/1/12/174/179/186/265/" childState="2">
+    <details>
+      <detail name="Answer" typeName="System.String, mscorlib" meta="" encoded="True"><![CDATA[&lt;p&gt;It&amp;rsquo;s easy. You can start a chat with an Answer Tech any time.&lt;/p&gt;
+&lt;p&gt;First, go to&amp;nbsp;&lt;a class=&quot;topic&quot; title=&quot;microsoftstore.com&quot; href=&quot;http://www.microsoftstore.com/&quot;&gt;microsoftstore.com&lt;/a&gt;. Click on Answer Desk from the options on the left. You&amp;rsquo;ll find descriptions of Answer Desk services, and will have the option to start an online chat with a Microsoft Answer Tech, any time 24/7. During your complimentary chat, the Answer Tech will diagnose your problem. If the problem is simple and they can help you fix it quickly, you&amp;rsquo;re done. You won&amp;rsquo;t be charged for any service you don&amp;rsquo;t specifically authorize&amp;mdash;and you&amp;rsquo;re welcome to visit us again any time.&lt;/p&gt;
+&lt;p&gt;For other Answer Desk related questions, please go&amp;nbsp;&lt;a class=&quot;topic&quot; title=&quot;here&quot; href=&quot;http://www.microsoftstore.com/store/msstore/html/pbPage.Answer_Desk_Frequently_Asked_Questions&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;]]></detail>
+    </details>
+    <detailCollections />
+    <children />
+    <authorizations />
+    <properties />
+  </item>
+</n2>

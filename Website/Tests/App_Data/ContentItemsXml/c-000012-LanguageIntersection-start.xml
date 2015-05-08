@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<n2 version="2.4.0.0" exportVersion="2" exportDate="07/10/2013 23:28:34">
+  <item id="12" name="start" parent="1" title="Microsoft" state="Published" created="01/17/2013 23:11:25" updated="07/10/2013 23:28:34" published="01/17/2013 23:11:25" sortOrder="500010" url="/" visible="True" savedBy="ehornbostel" typeName="DigitalRiver.CloudLink.N2MVC.Models.Pages.LanguageIntersection, DigitalRiver.CloudLink.N2MVC" discriminator="LanguageIntersection" ancestralTrail="/1/" childState="4">
+    <details />
+    <detailCollections />
+    <children />
+    <authorizations />
+    <properties />
+  </item>
+</n2>

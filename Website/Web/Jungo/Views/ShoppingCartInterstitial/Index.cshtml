@@ -1,0 +1,12 @@
+﻿@using DigitalRiver.CloudLink.Commerce.Nimbus.N2Content
+@using DigitalRiver.CloudLink.Commerce.Nimbus.N2Content.Services
+@model DigitalRiver.CloudLink.Commerce.Nimbus.ViewModels.Cart.ShoppingCartInterstitialViewModel
+
+@{
+    var buyLink = Jungo.Infrastructure.DependencyResolver.Current.Get<ILinkGenerator>().GenerateShoppingCartLink();
+}
+
+<div id="shopping-cart-interstitial" data-buy-link="@buyLink">
+    @{ Html.DroppableZone(Zones.RecursiveContent).Render(); }
+    @{ Html.DroppableZone(Zones.Content).Render(); }
+</div> 

@@ -1,0 +1,1 @@
+﻿<%@ Application Codebehind="Global.asax.cs" Inherits="DigitalRiver.CloudLink.Commerce.Nimbus.SportsUs.MvcApplication" Language="C#" %>

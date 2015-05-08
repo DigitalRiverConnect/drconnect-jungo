@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="qualified">
+	<xs:element name="config" type="ApiConfiguration"/>
+	<xs:complexType name="ApiConfiguration">
+		<xs:sequence>
+			<xs:element name="application" type="ApplicationType" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="ApplicationType">
+		<xs:sequence>
+			<xs:element name="plugin" type="PluginType" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+		<xs:attribute name="apiKey" use="required"/>
+		<xs:attribute name="siteId" use="required"/>
+		<xs:attribute name="owner" use="required"/>
+    <xs:attribute name="programId" use="optional"/>
+    <xs:attribute name="allowLatest" type="xs:boolean" use="optional" default="false" />
+	</xs:complexType>
+	<xs:complexType name="PluginType">
+		<xs:simpleContent>
+			<xs:extension base="xs:string">
+				<xs:attribute name="type" type="xs:string" use="required"/>
+			</xs:extension>
+		</xs:simpleContent>
+	</xs:complexType>
+</xs:schema>

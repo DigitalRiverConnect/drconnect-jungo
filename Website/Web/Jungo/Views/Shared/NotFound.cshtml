@@ -1,0 +1,17 @@
+﻿@using DigitalRiver.CloudLink.Commerce.Nimbus.SportsUs.Infrastructure.Helpers
+<!--div id="@ViewBag.ComponentID">
+    <h2>@ViewBag.Message</h2>
+</div-->
+<section>
+    <div class="grid-container">
+        <div class="grid-row">
+            <div class="grid-unit">
+                <h1 class="heading--large">@Res.ErrorCode_NotFound</h1>
+                <h2 id="dr_noResultsFound" class="heading--medium">@Res.ErrorCode_UnableToFindRequestedItem</h2>
+                <div id="continue-shopping-button">
+                    <a class="box green" href="@Html.StoreLink()">@Res.Checkout_ContinueShopping</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<n2 version="2.4.0.0" exportVersion="2" exportDate="07/10/2013 23:28:37">
+  <item id="1" name="root" title="Root Node" state="Published" created="01/17/2013 23:11:25" updated="07/10/2013 23:28:34" published="01/17/2013 23:11:25" sortOrder="0" url="/N2/Myself/Root.aspx?page=1" visible="True" savedBy="admin" typeName="N2.Management.Myself.RootBase, N2.Management" discriminator="RootBase" ancestralTrail="/" childState="140">
+    <details>
+      <detail name="Installation.AppPath" typeName="System.String, mscorlib" meta="" encoded="True"><![CDATA[/]]></detail>
+      <detail name="Installation.Host" typeName="System.String, mscorlib" meta="" encoded="True"><![CDATA[http://localhost:49755]]></detail>
+    </details>
+    <detailCollections />
+    <children>
+      <child id="2" name="2" versionIndex="0" />
+      <child id="3" name="TemplateUsers" versionIndex="0" />
+      <child id="10" name="10" versionIndex="0" />
+      <child id="11" name="11" versionIndex="0" />
+      <child id="426" name="Templates" versionIndex="0" />
+    </children>
+    <authorizations />
+    <properties />
+  </item>
+  <item id="2" name="" parent="1" title="Activity" zoneName="Left" state="Published" created="02/15/2013 10:13:01" updated="07/10/2013 23:28:34" published="02/15/2013 10:13:14" sortOrder="-5" url="/N2/Myself/Root.aspx?page=1&amp;item=2" visible="True" savedBy="admin" typeName="N2.Management.Myself.ActivityPart, N2.Management" discriminator="ActivityPart" ancestralTrail="/1/" childState="2">
+    <details>
+      <detail name="LatestChangesMaxCount" typeName="System.Int32, mscorlib" meta="">5</detail>
+      <detail name="DraftsMaxCount" typeName="System.Int32, mscorlib" meta="">0</detail>
+    </details>
+    <detailCollections />
+    <children />
+    <authorizations />
+    <properties />
+  </item>
+  <item id="3" name="TemplateUsers" parent="1" title="Users" state="New" created="03/13/2013 02:32:08" updated="07/10/2013 23:28:34" published="03/13/2013 02:32:08" sortOrder="-2" url="/N2/Myself/Root.aspx?page=1&amp;item=3" visible="True" savedBy="admin" typeName="N2.Security.Items.UserList, N2.Management" discriminator="UserList" ancestralTrail="/1/" childState="128">
+    <details>
+      <detail name="Roles" typeName="System.String, mscorlib" meta="" encoded="True"><![CDATA[Everyone
+Members
+Writers
+Editors
+Administrators]]></detail>
+    </details>
+    <detailCollections />
+    <children>
+      <child id="4" name="rreed" versionIndex="0" />
+      <child id="5" name="stwright" versionIndex="0" />
+      <child id="6" name="ehornbostel" versionIndex="0" />
+      <child id="7" name="sweber" versionIndex="0" />
+      <child id="8" name="abagyan" versionIndex="0" />
+      <child id="9" name="test-1" versionIndex="0" />
+    </children>
+    <authorizations />
+    <properties />
+  </item>
+  <item id="4" name="rreed" parent="3" title="rreed" state="New" created="03/13/2013 02:32:08" updated="07/10/2013 23:28:34" published="03/13/2013 02:32:08" sortOrder="-10" url="/N2/Myself/Root.aspx?page=1&amp;item=4" visible="True" savedBy="admin" typeName="N2.Security.Items.User, N2.Management" discriminator="User" ancestralTrail="/1/3/" childState="2">
+    <details>
+      <detail name="Password" typeName="System.String, mscorlib" meta="" encoded="True"><![CDATA[0D36983161583E7F5BD178ADB0A8C272B8F567B7]]></detail>
+      <detail name="Email" typeName="System.String, mscorlib" meta="" encoded="True"><![CDATA[rreed@digitalriver.com]]></detail>
+      <detail name="PasswordQuestion" typeName="System.String, mscorlib" meta="" encoded="True"><![CDATA[8b659c5b-74f0-4bca-99c6-5e3759880d1e]]></detail>
+      <detail name="PasswordAnswer" typeName="System.String, mscorlib" meta="" encoded="True"><![CDATA[da846056-3912-4897-abab-dbcd3e88e7d0]]></detail>
+      <detail name="IsApproved" typeName="System.Boolean, mscorlib" meta="">True</detail>
+      <detail name="LastLoginDate" typeName="System.DateTime, mscorlib" meta="">05/30/2013 22:59:22</detail>
+    </details>
+    <detailCollections>
+      <collection name="Roles">
+        <detail name="Roles" typeName="System.String, mscorlib" meta="" encoded="True"><![CDATA[Editors]]></detail>
+        <detail name="Roles" typeName="System.String, mscorlib" meta="" encoded="True"><![CDATA[Administrators]]></detail>
+        <detail name="Roles" typeName="System.String, mscorlib" meta="" encoded="True"><![CDATA[Everyone]]></detail>
+        <detail name="Roles" typeName="System.String, mscorlib" meta="" encoded="True"><![CDATA[Members]]></detail>
+        <detail name="Roles" typeName="System.String, mscorlib" meta="" encoded="True"><![CDATA[Writers]]></detail>
+      </collection>
+    </detailCollections>
+    <children />
+    <authorizations />
+    <properties />
+  </item>
+  <item id="5" name="stwright" parent="3" title="stwright" state="New" created="03/18/2013 19:25:52" updated="07/10/2013 23:28:34" published="03/18/2013 19:25:52" sortOrder="-5" url="/N2/Myself/Root.aspx?page=1&amp;item=5" visible="True" savedBy="admin" typeName="N2.Security.Items.User, N2.Management" discriminator="User" ancestralTrail="/1/3/" childState="2">
+    <details>
+      <detail name="Password" typeName="System.String, mscorlib" meta="" encoded="True"><![CDATA[D9504504749CE053E52D79F21F951DFC590F263C]]></detail>
+      <detail name="Email" typeName="System.String, mscorlib" meta="" encoded="True"><![CDATA[stwright@digitalriver.com]]></detail>
+      <detail name="PasswordQuestion" typeName="System.String, mscorlib" meta="" encoded="True"><![CDATA[1cb7e3ec-3fe2-494a-b88b-1cf772a308b9]]></detail>
+      <detail name="PasswordAnswer" typeName="System.String, mscorlib" meta="" encoded="True"><![CDATA[9b6158fc-5330-434b-8b39-2c162505f99d]]></detail>
+      <detail name="IsApproved" typeName="System.Boolean, mscorlib" meta="">True</detail>
+      <detail name="LastLoginDate" typeName="System.DateTime, mscorlib" meta="">05/29/2013 22:45:45</detail>
+    </details>
+    <detailCollections>
+      <collection name="Roles">
+        <detail name="Roles" typeName="System.String, mscorlib" meta="" encoded="True"><![CDATA[Administrators]]></detail>
+      </collection>
+    </detailCollections>
+    <children />
+    <authorizations />
+    <properties />
+  </item>
+  <item id="6" name="ehornbostel" parent="3" title="ehornbostel" state="New" created="04/19/2013 00:47:04" updated="07/10/2013 23:28:34" published="04/19/2013 00:47:04" sortOrder="-2" url="/N2/Myself/Root.aspx?page=1&amp;item=6" visible="True" savedBy="" typeName="N2.Security.Items.User, N2.Management" discriminator="User" ancestralTrail="/1/3/" childState="2">
+    <details>
+      <detail name="Password" typeName="System.String, mscorlib" meta="" encoded="True"><![CDATA[5BAA61E4C9B93F3F0682250B6CF8331B7EE68FD8]]></detail>
+      <detail name="PasswordQuestion" typeName="System.String, mscorlib" meta="" encoded="True"><![CDATA[1d2209eb-06aa-4fef-947f-4ef4fef33930]]></detail>
+      <detail name="PasswordAnswer" typeName="System.String, mscorlib" meta="" encoded="True"><![CDATA[085dbe6c-9e59-4b60-ac36-61ada87a30bb]]></detail>
+      <detail name="IsApproved" typeName="System.Boolean, mscorlib" meta="">True</detail>
+      <detail name="LastLoginDate" typeName="System.DateTime, mscorlib" meta="">05/29/2013 16:53:58</detail>
+    </details>
+    <detailCollections>
+      <collection name="Roles">
+        <detail name="Roles" typeName="System.String, mscorlib" meta="" encoded="True"><![CDATA[Everyone]]></detail>
+        <detail name="Roles" typeName="System.String, mscorlib" meta="" encoded="True"><![CDATA[Members]]></detail>
+        <detail name="Roles" typeName="System.String, mscorlib" meta="" encoded="True"><![CDATA[Writers]]></detail>
+        <detail name="Roles" typeName="System.String, mscorlib" meta="" encoded="True"><![CDATA[Editors]]></detail>
+        <detail name="Roles" typeName="System.String, mscorlib" meta="" encoded="True"><![CDATA[Administrators]]></detail>
+      </collection>
+    </detailCollections>
+    <children />
+    <authorizations />
+    <properties />
+  </item>
+  <item id="7" name="sweber" parent="3" title="sweber" state="New" created="04/22/2013 22:44:28" updated="07/10/2013 23:28:34" published="04/22/2013 22:44:28" sortOrder="0" url="/N2/Myself/Root.aspx?page=1&amp;item=7" visible="True" savedBy="" typeName="N2.Security.Items.User, N2.Management" discriminator="User" ancestralTrail="/1/3/" childState="2">
+    <details>
+      <detail name="Password" typeName="System.String, mscorlib" meta="" encoded="True"><![CDATA[268668279C506E523C8A972EAAEA03E65DC9C95C]]></detail>
+      <detail name="Email" typeName="System.String, mscorlib" meta="" encoded="True"><![CDATA[sweber@digitalriver.com]]></detail>
+      <detail name="PasswordQuestion" typeName="System.String, mscorlib" meta="" encoded="True"><![CDATA[093237b6-ddfa-45b8-97b2-639b0f009928]]></detail>
+      <detail name="PasswordAnswer" typeName="System.String, mscorlib" meta="" encoded="True"><![CDATA[1077f2c2-d623-4aa4-9dfe-9869c9b6a0e4]]></detail>
+      <detail name="IsApproved" typeName="System.Boolean, mscorlib" meta="">True</detail>
+      <detail name="LastLoginDate" typeName="System.DateTime, mscorlib" meta="">05/20/2013 16:24:27</detail>
+    </details>
+    <detailCollections>
+      <collection name="Roles">
+        <detail name="Roles" typeName="System.String, mscorlib" meta="" encoded="True"><![CDATA[Editors]]></detail>
+      </collection>
+    </detailCollections>
+    <children />
+    <authorizations />
+    <properties />
+  </item>
+  <item id="8" name="abagyan" parent="3" title="abagyan" state="New" created="04/29/2013 05:02:09" updated="07/10/2013 23:28:34" published="04/29/2013 05:02:09" sortOrder="1" url="/N2/Myself/Root.aspx?page=1&amp;item=8" visible="True" savedBy="" typeName="N2.Security.Items.User, N2.Management" discriminator="User" ancestralTrail="/1/3/" childState="2">
+    <details>
+      <detail name="Password" typeName="System.String, mscorlib" meta="" encoded="True"><![CDATA[044D9F827DB2FE6D8C0293381004A00E676D52AC]]></detail>
+      <detail name="Email" typeName="System.String, mscorlib" meta="" encoded="True"><![CDATA[abagyan@digitalriver.com]]></detail>
+      <detail name="PasswordQuestion" typeName="System.String, mscorlib" meta="" encoded="True"><![CDATA[5236805b-de08-4875-aedb-8f2b2578b0cd]]></detail>
+      <detail name="PasswordAnswer" typeName="System.String, mscorlib" meta="" encoded="True"><![CDATA[4f61a7e0-8fae-4313-a04c-53f2bb55a8e6]]></detail>
+      <detail name="IsApproved" typeName="System.Boolean, mscorlib" meta="">True</detail>
+      <detail name="LastLoginDate" typeName="System.DateTime, mscorlib" meta="">04/29/2013 05:08:55</detail>
+    </details>
+    <detailCollections>
+      <collection name="Roles">
+        <detail name="Roles" typeName="System.String, mscorlib" meta="" encoded="True"><![CDATA[Administrators]]></detail>
+      </collection>
+    </detailCollections>
+    <children />
+    <authorizations />
+    <properties />
+  </item>
+  <item id="9" name="test-1" parent="3" title="test-1" state="New" created="05/20/2013 18:55:22" updated="07/10/2013 23:28:34" published="05/20/2013 18:55:22" sortOrder="11" url="/N2/Myself/Root.aspx?page=1&amp;item=9" visible="True" savedBy="" typeName="N2.Security.Items.User, N2.Management" discriminator="User" ancestralTrail="/1/3/" childState="2">
+    <details>
+      <detail name="Password" typeName="System.String, mscorlib" meta="" encoded="True"><![CDATA[5BAA61E4C9B93F3F0682250B6CF8331B7EE68FD8]]></detail>
+      <detail name="PasswordQuestion" typeName="System.String, mscorlib" meta="" encoded="True"><![CDATA[78113d70-3f89-425e-a588-70cffd809446]]></detail>
+      <detail name="PasswordAnswer" typeName="System.String, mscorlib" meta="" encoded="True"><![CDATA[c79424d0-6237-42dc-9e5f-26e5476290dc]]></detail>
+      <detail name="IsApproved" typeName="System.Boolean, mscorlib" meta="">True</detail>
+    </details>
+    <detailCollections>
+      <collection name="Roles">
+        <detail name="Roles" typeName="System.String, mscorlib" meta="" encoded="True"><![CDATA[Everyone]]></detail>
+        <detail name="Roles" typeName="System.String, mscorlib" meta="" encoded="True"><![CDATA[Members]]></detail>
+        <detail name="Roles" typeName="System.String, mscorlib" meta="" encoded="True"><![CDATA[Writers]]></detail>
+        <detail name="Roles" typeName="System.String, mscorlib" meta="" encoded="True"><![CDATA[Editors]]></detail>
+        <detail name="Roles" typeName="System.String, mscorlib" meta="" encoded="True"><![CDATA[Administrators]]></detail>
+      </collection>
+    </detailCollections>
+    <children />
+    <authorizations />
+    <properties />
+  </item>
+  <item id="10" name="" parent="1" title="Statistics" zoneName="Right" state="Published" created="05/17/2013 14:01:47" updated="07/10/2013 23:28:34" published="05/17/2013 14:02:23" sortOrder="10" url="/N2/Myself/Root.aspx?page=1&amp;item=10" visible="True" savedBy="" typeName="N2.Management.Myself.StatisticsPart, N2.Management" discriminator="Statistics" ancestralTrail="/1/" childState="2">
+    <details />
+    <detailCollections />
+    <children />
+    <authorizations />
+    <properties />
+  </item>
+  <item id="11" name="" parent="1" title="Languages" zoneName="Right" state="Published" created="05/17/2013 14:01:36" updated="07/10/2013 23:28:34" published="05/17/2013 14:02:23" sortOrder="20" url="/N2/Myself/Root.aspx?page=1&amp;item=11" visible="True" savedBy="" typeName="N2.Management.Myself.LanguagesPart, N2.Management" discriminator="LanguagesPart" ancestralTrail="/1/" childState="2">
+    <details>
+      <detail name="LatestChangesMaxCount" typeName="System.Int32, mscorlib" meta="">0</detail>
+    </details>
+    <detailCollections />
+    <children />
+    <authorizations />
+    <properties />
+  </item>
+  <item id="426" name="Templates" parent="1" title="Templates" state="New" created="05/20/2013 21:26:30" updated="07/10/2013 23:28:37" published="05/20/2013 21:26:30" sortOrder="2146482647" url="/N2/Myself/Root.aspx?page=1&amp;item=426" visible="False" savedBy="" typeName="N2.Management.Content.Templates.TemplateContainer, N2.Management" discriminator="TemplateContainer" ancestralTrail="/1/" childState="4">
+    <details />
+    <detailCollections />
+    <children />
+    <authorizations />
+    <properties />
+  </item>
+</n2>

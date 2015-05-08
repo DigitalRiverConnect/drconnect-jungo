@@ -1,0 +1,4 @@
+{
+    "billboardUri": "%Config.ShopperAPI.billboardUri%",
+	"sessionTokenUri": "%Config.ShopperAPI.sessionTokenUri%"
+}

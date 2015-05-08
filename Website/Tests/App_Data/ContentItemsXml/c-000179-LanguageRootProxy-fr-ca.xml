@@ -1,0 +1,390 @@
+<?xml version="1.0" encoding="utf-8"?>
+<n2 version="2.4.0.0" exportVersion="2" exportDate="07/10/2013 23:28:35">
+  <item id="179" name="fr-ca" parent="174" title="fr-CA" state="Published" created="04/19/2013 00:46:07" updated="07/10/2013 23:28:35" published="04/19/2013 00:46:11" sortOrder="0" url="/msca/fr-ca" visible="True" savedBy="sweber" typeName="DigitalRiver.CloudLink.N2MVC.Models.Pages.LanguageRoot, DigitalRiver.CloudLink.N2MVC" discriminator="LanguageRoot" ancestralTrail="/1/12/174/" childState="132">
+    <details>
+      <detail name="LanguageCode" typeName="System.String, mscorlib" meta="" encoded="True"><![CDATA[fr-CA]]></detail>
+    </details>
+    <detailCollections />
+    <children>
+      <child id="180" name="180" versionIndex="0" />
+      <child id="182" name="182" versionIndex="0" />
+      <child id="183" name="183" versionIndex="0" />
+    </children>
+    <authorizations />
+    <properties />
+  </item>
+  <item id="180" name="" parent="179" title="" zoneName="Content" state="Published" created="04/19/2013 17:20:44" updated="07/10/2013 23:28:35" published="04/19/2013 17:20:58" sortOrder="-10" url="/msca/fr-ca?item=180" visible="True" savedBy="ehornbostel" typeName="DigitalRiver.CloudLink.N2MVC.Models.Parts.TemplatePart, DigitalRiver.CloudLink.N2MVC" discriminator="TemplatePart" ancestralTrail="/1/12/174/179/" childState="128">
+    <details>
+      <detail name="ViewTemplate" typeName="System.String, mscorlib" meta="" encoded="True"><![CDATA[HomeHero]]></detail>
+    </details>
+    <detailCollections />
+    <children>
+      <child id="181" name="181" versionIndex="0" />
+    </children>
+    <authorizations />
+    <properties />
+  </item>
+  <item id="181" name="" parent="180" title="" zoneName="HeroBanner" state="Published" created="04/19/2013 17:20:56" updated="07/10/2013 23:28:35" published="04/19/2013 17:20:58" sortOrder="0" url="/msca/fr-ca?item=181" visible="True" savedBy="ehornbostel" typeName="DigitalRiver.CloudLink.N2MVC.Models.Parts.CmsPopPart, DigitalRiver.CloudLink.N2MVC" discriminator="CmsPopPart" ancestralTrail="/1/12/174/179/180/" childState="2">
+    <details>
+      <detail name="ViewTemplate" typeName="System.String, mscorlib" meta="" encoded="True"><![CDATA[MsComHeroBanner]]></detail>
+    </details>
+    <detailCollections />
+    <children />
+    <authorizations />
+    <properties />
+  </item>
+  <item id="182" name="" parent="179" title="" zoneName="Navigation" state="Published" created="04/19/2013 17:23:05" updated="07/10/2013 23:28:35" published="04/19/2013 17:23:07" sortOrder="-5" url="/msca/fr-ca?item=182" visible="True" savedBy="sweber" typeName="DigitalRiver.CloudLink.N2MVC.Models.Parts.TemplatePart, DigitalRiver.CloudLink.N2MVC" discriminator="TemplatePart" ancestralTrail="/1/12/174/179/" childState="2">
+    <details>
+      <detail name="Text" typeName="System.String, mscorlib" meta="" encoded="True"><![CDATA[&lt;nav id=&quot;mscom-navigation&quot; role=&quot;navigation&quot; bi:type=&quot;menu&quot; class=&quot;menu-component&quot;&gt;
+    &lt;div class=&quot;grid-container&quot;&gt;
+        &lt;span class=&quot;menulevel-storelink&quot;&gt;&lt;span class=&quot;store-editorial&quot;&gt;  &lt;a href=&quot;http://content.microsoftstore.com/store/store-lookup/allstores?WT.mc_id=MSCOMCAHPsurface_link&quot;&gt;Essayez Surface dans une Microsoft Store pr&#232;s de chez vous&lt;/a&gt;
+         &lt;/span&gt;&lt;/span&gt;
+        &lt;ul role=&quot;menubar&quot; class=&quot;top-level-menubar&quot;&gt;
+            &lt;li role=&quot;menuitem&quot; class=&quot;top-level-menuitem dropdown&quot;&gt;&lt;a class=&quot;top-level-link&quot; bi:index=&quot;0&quot; bi:track=&quot;false&quot; bi:titleflag=&quot;t1&quot; bi:title=&quot;t1&quot; href=&quot;&quot;&gt;Produits&lt;/a&gt;
+                &lt;div class=&quot;dropdown-menu&quot; bi:parenttitle=&quot;t1&quot;&gt;
+                    &lt;div class=&quot;grid-container&quot;&gt;
+                        &lt;div class=&quot;grid-row row-4&quot;&gt;&lt;div class=&quot;grid-unit list-of-links list-of-links-sm&quot;&gt;
+                                &lt;h5 class=&quot;heading&quot; bi:titleflag=&quot;t1&quot; bi:title=&quot;t1&quot;&gt;Windows&lt;/h5&gt;
+                                &lt;ul role=&quot;menu&quot; bi:parenttitle=&quot;t1&quot;&gt;
+                                    &lt;li role=&quot;menuitem&quot;&gt;&lt;a bi:index=&quot;0&quot; bi:cpid=&quot;hpMenu&quot; href=&quot;http://windows.microsoft.com/fr-ca/windows/products&quot;&gt;Tous les produits Windows&lt;/a&gt;&lt;/li&gt;
+                                    &lt;li role=&quot;menuitem&quot;&gt;&lt;a bi:index=&quot;1&quot; bi:cpid=&quot;hpMenu&quot; href=&quot;http://windows.microsoft.com/fr-CA/windows-8/meet&quot;&gt;Windows 8&lt;/a&gt;&lt;/li&gt;
+                                    &lt;li role=&quot;menuitem&quot;&gt;&lt;a bi:index=&quot;2&quot; bi:cpid=&quot;hpMenu&quot; href=&quot;http://windows.microsoft.com/fr-ca/internet-explorer/download-ie&quot;&gt;Internet Explorer&lt;/a&gt;&lt;/li&gt;
+                                    &lt;li role=&quot;menuitem&quot;&gt;&lt;a bi:index=&quot;3&quot; bi:cpid=&quot;hpMenu&quot; href=&quot;http://www.microsoftstore.com/store/msca/fr_CA/cat/ThemeID.27659600/categoryID.57493900?WT.mc_id=MSCOM_FR_CA_HP_Products_Windows&quot;&gt;Acheter Windows&amp;nbsp;8&lt;/a&gt;&lt;/li&gt;
+                                    &lt;/ul&gt;
+                                &lt;h5 class=&quot;heading&quot; bi:titleflag=&quot;t2&quot; bi:title=&quot;t2&quot;&gt;Office&lt;/h5&gt;
+                                &lt;ul role=&quot;menu&quot; bi:parenttitle=&quot;t2&quot;&gt;
+                                    &lt;li role=&quot;menuitem&quot;&gt;&lt;a bi:index=&quot;0&quot; bi:cpid=&quot;hpMenu&quot; href=&quot;http://office.microsoft.com/fr-ca&quot;&gt;Tous les produits Office&lt;/a&gt;&lt;/li&gt;
+                                    &lt;li role=&quot;menuitem&quot;&gt;&lt;a bi:index=&quot;1&quot; bi:cpid=&quot;hpMenu&quot; href=&quot;http://office.microsoft.com/fr-ca/buy-microsoft-office-and-microsoft-office-365-online-FX102886268.aspx&quot;&gt;Office pour la famille&lt;/a&gt;&lt;/li&gt;
+                                    &lt;li role=&quot;menuitem&quot;&gt;&lt;a bi:index=&quot;2&quot; bi:cpid=&quot;hpMenu&quot; href=&quot;http://office.microsoft.com/fr-ca/business/&quot;&gt;Office pour les entreprises&lt;/a&gt;&lt;/li&gt;
+                                    &lt;li role=&quot;menuitem&quot;&gt;&lt;a bi:index=&quot;3&quot; bi:cpid=&quot;hpMenu&quot; href=&quot;http://www.microsoftstore.com/store/msca/fr_CA/cat/ThemeID.27659600/categoryID.61243200?WT.mc_id=MSCOM_FR_CA_HP_Products_Office&quot;&gt;Acheter des logiciels Office&lt;/a&gt;&lt;/li&gt;
+                                    &lt;/ul&gt;
+                                &lt;h5 class=&quot;heading&quot; bi:titleflag=&quot;t3&quot; bi:title=&quot;t3&quot;&gt;&lt;/h5&gt;
+                                &lt;ul role=&quot;menu&quot; bi:parenttitle=&quot;t3&quot;&gt;
+                                    &lt;li role=&quot;menuitem&quot;&gt;&lt;a bi:index=&quot;0&quot; bi:cpid=&quot;hpMenu&quot; href=&quot;http://www.microsoft.com/fr/ca/sitemap.aspx&quot;&gt;Voir tous les produits&lt;/a&gt;&lt;/li&gt;
+                                    &lt;/ul&gt;
+                            &lt;/div&gt;&lt;div class=&quot;grid-unit list-of-links list-of-links-sm&quot;&gt;
+                                &lt;h5 class=&quot;heading&quot; bi:titleflag=&quot;t1&quot; bi:title=&quot;t1&quot;&gt;Appareils&lt;/h5&gt;
+                                &lt;ul role=&quot;menu&quot; bi:parenttitle=&quot;t1&quot;&gt;
+                                    &lt;li role=&quot;menuitem&quot;&gt;&lt;a bi:index=&quot;0&quot; bi:cpid=&quot;hpMenu&quot; bi:linkid=&quot;HP_MNU_132F1FRCA32267&quot; href=&quot;http://www.microsoft.com/surface/fr-ca&quot;&gt;Surface&lt;/a&gt;&lt;/li&gt;
+                                    &lt;li role=&quot;menuitem&quot;&gt;&lt;a bi:index=&quot;1&quot; bi:cpid=&quot;hpMenu&quot; href=&quot;http://www.microsoft.com/hardware/fr-ca&quot;&gt;Mat&#233;riel Microsoft&lt;/a&gt;&lt;/li&gt;
+                                    &lt;li role=&quot;menuitem&quot;&gt;&lt;a bi:index=&quot;2&quot; bi:cpid=&quot;hpMenu&quot; href=&quot;http://www.xbox.com/fr-ca&quot;&gt;Xbox&lt;/a&gt;&lt;/li&gt;
+                                    &lt;li role=&quot;menuitem&quot;&gt;&lt;a bi:index=&quot;3&quot; bi:cpid=&quot;hpMenu&quot; href=&quot;http://www.windowsphone.com/fr-ca&quot;&gt;Windows Phone&lt;/a&gt;&lt;/li&gt;
+                                    &lt;/ul&gt;
+                                &lt;h5 class=&quot;heading&quot; bi:titleflag=&quot;t2&quot; bi:title=&quot;t2&quot;&gt;Services&lt;/h5&gt;
+                                &lt;ul role=&quot;menu&quot; bi:parenttitle=&quot;t2&quot;&gt;
+                                    &lt;li role=&quot;menuitem&quot;&gt;&lt;a bi:index=&quot;0&quot; bi:cpid=&quot;hpMenu&quot; href=&quot;http://windows.microsoft.com/fr-ca/windows/outlook&quot;&gt;Outlook.com&lt;/a&gt;&lt;/li&gt;
+                                    &lt;li role=&quot;menuitem&quot;&gt;&lt;a bi:index=&quot;1&quot; bi:cpid=&quot;hpMenu&quot; href=&quot;http://windows.microsoft.com/fr-ca/skydrive/download&quot;&gt;H&#233;bergement dans SkyDrive&lt;/a&gt;&lt;/li&gt;
+                                    &lt;li role=&quot;menuitem&quot;&gt;&lt;a bi:index=&quot;2&quot; bi:cpid=&quot;hpMenu&quot; href=&quot;http://www.skype.com/intl/fr/?cm_mmc=MSFT|TRAF_B1-_-mscom-hero-fr&quot;&gt;Skype&lt;/a&gt;&lt;/li&gt;
+                                    &lt;li role=&quot;menuitem&quot;&gt;&lt;a bi:index=&quot;3&quot; bi:cpid=&quot;hpMenu&quot; href=&quot;http://ca.msn.com/defaultf.aspx?lang=fr-ca&amp;amp;ocid=MicroHP&quot;&gt;MSN Canada&lt;/a&gt;&lt;/li&gt;
+                                    &lt;li role=&quot;menuitem&quot;&gt;&lt;a bi:index=&quot;4&quot; bi:cpid=&quot;hpMenu&quot; href=&quot;http://www.bing.com/?scope=web&amp;amp;setmkt=fr-CA&quot;&gt;Bing&lt;/a&gt;&lt;/li&gt;
+                                    &lt;/ul&gt;
+                            &lt;/div&gt;&lt;div class=&quot;grid-unit list-of-links list-of-links-sm&quot;&gt;
+                                &lt;h5 class=&quot;heading&quot; bi:titleflag=&quot;t1&quot; bi:title=&quot;t1&quot;&gt;Serveur et outils&lt;/h5&gt;
+                                &lt;ul role=&quot;menu&quot; bi:parenttitle=&quot;t1&quot;&gt;
+                                    &lt;li role=&quot;menuitem&quot;&gt;&lt;a bi:index=&quot;0&quot; bi:cpid=&quot;hpMenu&quot; href=&quot;http://www.microsoft.com/fr-ca/server-cloud/ws2012/default.aspx&quot;&gt;Tous produits et serveurs&lt;/a&gt;&lt;/li&gt;
+                                    &lt;li role=&quot;menuitem&quot;&gt;&lt;a bi:index=&quot;1&quot; bi:cpid=&quot;hpMenu&quot; href=&quot;http://www.microsoft.com/fr-ca/server-cloud/ws2012/default.aspx&quot;&gt;Windows Server&lt;/a&gt;&lt;/li&gt;
+                                    &lt;li role=&quot;menuitem&quot;&gt;&lt;a bi:index=&quot;2&quot; bi:cpid=&quot;hpMenu&quot; href=&quot;http://www.microsoft.com/france/serveur-cloud/sql/default.aspx&quot;&gt;SQL Server&lt;/a&gt;&lt;/li&gt;
+                                    &lt;li role=&quot;menuitem&quot;&gt;&lt;a bi:index=&quot;3&quot; bi:cpid=&quot;hpMenu&quot; href=&quot;http://technet.microsoft.com/fr-ca/exchange&quot;&gt;Exchange Server&lt;/a&gt;&lt;/li&gt;
+                                    &lt;li role=&quot;menuitem&quot;&gt;&lt;a bi:index=&quot;4&quot; bi:cpid=&quot;hpMenu&quot; href=&quot;http://www.microsoft.com/visualstudio/fr-ca&quot;&gt;Visual Studio&lt;/a&gt;&lt;/li&gt;
+                                    &lt;li role=&quot;menuitem&quot;&gt;&lt;a bi:index=&quot;5&quot; bi:cpid=&quot;hpMenu&quot; href=&quot;http://www.windowsazure.com&quot;&gt;Windows Azure&lt;/a&gt;&lt;/li&gt;
+                                    &lt;li role=&quot;menuitem&quot;&gt;&lt;a bi:index=&quot;6&quot; bi:cpid=&quot;hpMenu&quot; href=&quot;http://www.microsoft.com/fr-ca/windows/windowsintune/&quot;&gt;Windows Intune&lt;/a&gt;&lt;/li&gt;
+                                    &lt;/ul&gt;
+                                &lt;h5 class=&quot;heading&quot; bi:titleflag=&quot;t2&quot; bi:title=&quot;t2&quot;&gt;D&#233;veloppeurs et pros des TI&lt;/h5&gt;
+                                &lt;ul role=&quot;menu&quot; bi:parenttitle=&quot;t2&quot;&gt;
+                                    &lt;li role=&quot;menuitem&quot;&gt;&lt;a bi:index=&quot;0&quot; bi:cpid=&quot;hpMenu&quot; href=&quot;http://www.microsoft.com/learning/fr/fr/default.aspx&quot;&gt;Certifications&lt;/a&gt;&lt;/li&gt;
+                                    &lt;li role=&quot;menuitem&quot;&gt;&lt;a bi:index=&quot;1&quot; bi:cpid=&quot;hpMenu&quot; href=&quot;http://msdn.microsoft.com/fr-ca/default.aspx&quot;&gt;MSDN (Microsoft Developer Network)&lt;/a&gt;&lt;/li&gt;
+                                    &lt;li role=&quot;menuitem&quot;&gt;&lt;a bi:index=&quot;2&quot; bi:cpid=&quot;hpMenu&quot; href=&quot;http://technet.microsoft.com/fr-ca/default.aspx&quot;&gt;TechNet pour pros des TI&lt;/a&gt;&lt;/li&gt;
+                                    &lt;/ul&gt;
+                            &lt;/div&gt;&lt;div class=&quot;grid-unit list-of-links list-of-links-sm&quot;&gt;
+                                &lt;h5 class=&quot;heading&quot; bi:titleflag=&quot;t1&quot; bi:title=&quot;t1&quot;&gt;Professionnel, Entreprise&lt;/h5&gt;
+                                &lt;ul role=&quot;menu&quot; bi:parenttitle=&quot;t1&quot;&gt;
+                                    &lt;li role=&quot;menuitem&quot;&gt;&lt;a bi:index=&quot;0&quot; bi:cpid=&quot;hpMenu&quot; href=&quot;http://www.microsoft.com/fr-ca/dynamics/default.aspx&quot;&gt;Microsoft Dynamics&lt;/a&gt;&lt;/li&gt;
+                                    &lt;li role=&quot;menuitem&quot;&gt;&lt;a bi:index=&quot;1&quot; bi:cpid=&quot;hpMenu&quot; href=&quot;http://www.microsoft.com/business/fr-ca/Pages/default.aspx&quot;&gt;Petite/Moyenne entreprise&lt;/a&gt;&lt;/li&gt;
+                                    &lt;li role=&quot;menuitem&quot;&gt;&lt;a bi:index=&quot;2&quot; bi:cpid=&quot;hpMenu&quot; href=&quot;http://www.microsoft.com/france/entreprises/&quot;&gt;Solutions pour entreprises et secteurs d&#39;activit&#233;&lt;/a&gt;&lt;/li&gt;
+                                    &lt;li role=&quot;menuitem&quot;&gt;&lt;a bi:index=&quot;3&quot; bi:cpid=&quot;hpMenu&quot; href=&quot;http://pinpoint.microsoft.com/fr-ca/home?WT.mc_id=MSCOM_HP_ca_NAV_PC_Solutions&quot;&gt;Rechercher un expert (Pinpoint)&lt;/a&gt;&lt;/li&gt;
+                                    &lt;li role=&quot;menuitem&quot;&gt;&lt;a bi:index=&quot;4&quot; bi:cpid=&quot;hpMenu&quot; href=&quot;https://partner.microsoft.com/canada-fr/partner?countrycode=fr-ca&quot;&gt;Ressources partenaires MS&lt;/a&gt;&lt;/li&gt;
+                                    &lt;/ul&gt;
+                            &lt;/div&gt;
+                    &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/li&gt;
+            &lt;li role=&quot;menuitem&quot; class=&quot;top-level-menuitem dropdown&quot;&gt;&lt;a class=&quot;top-level-link&quot; bi:index=&quot;1&quot; bi:track=&quot;false&quot; bi:titleflag=&quot;t1&quot; bi:title=&quot;t1&quot; href=&quot;&quot;&gt;T&#233;l&#233;chargements&lt;/a&gt;
+                &lt;div class=&quot;dropdown-menu&quot; bi:parenttitle=&quot;t1&quot;&gt;
+                    &lt;div class=&quot;grid-container&quot;&gt;
+                        &lt;div class=&quot;grid-row row-2&quot;&gt;&lt;div class=&quot;grid-unit list-of-links list-of-links-sm&quot;&gt;
+                                &lt;h5 class=&quot;heading&quot; bi:titleflag=&quot;t1&quot; bi:title=&quot;t1&quot;&gt;Windows&lt;/h5&gt;
+                                &lt;ul role=&quot;menu&quot; bi:parenttitle=&quot;t1&quot;&gt;
+                                    &lt;li role=&quot;menuitem&quot;&gt;&lt;a bi:index=&quot;0&quot; bi:cpid=&quot;hpMenu&quot; href=&quot;http://windows.microsoft.com/fr-ca/windows/downloads&quot;&gt;Tous les t&#233;l&#233;chargements Windows&lt;/a&gt;&lt;/li&gt;
+                                    &lt;li role=&quot;menuitem&quot;&gt;&lt;a bi:index=&quot;1&quot; bi:cpid=&quot;hpMenu&quot; href=&quot;http://www.microsoftstore.com/store/msca/fr_CA/cat/ThemeID.27659600/categoryID.57493900?WT.mc_id=MSCOM_FR_CA_HP_Downloads_Windows&quot;&gt;T&#233;l&#233;charger Windows&amp;nbsp;8&lt;/a&gt;&lt;/li&gt;
+                                    &lt;li role=&quot;menuitem&quot;&gt;&lt;a bi:index=&quot;2&quot; bi:cpid=&quot;hpMenu&quot; href=&quot;http://windows.microsoft.com/fr-ca/windows/downloads&quot;&gt;T&#233;l&#233;chargements gratuits&lt;/a&gt;&lt;/li&gt;
+                                    &lt;li role=&quot;menuitem&quot;&gt;&lt;a bi:index=&quot;3&quot; bi:cpid=&quot;hpMenu&quot; href=&quot;http://windows.microsoft.com/fr-ca/internet-explorer/download-ie&quot;&gt;Internet Explorer&lt;/a&gt;&lt;/li&gt;
+                                    &lt;/ul&gt;
+                                &lt;h5 class=&quot;heading&quot; bi:titleflag=&quot;t2&quot; bi:title=&quot;t2&quot;&gt;Office&lt;/h5&gt;
+                                &lt;ul role=&quot;menu&quot; bi:parenttitle=&quot;t2&quot;&gt;
+                                    &lt;li role=&quot;menuitem&quot;&gt;&lt;a bi:index=&quot;0&quot; bi:cpid=&quot;hpMenu&quot; href=&quot;http://office.microsoft.com/fr-CA/downloads/&quot;&gt;Tous les t&#233;l&#233;chargements Office&lt;/a&gt;&lt;/li&gt;
+                                    &lt;li role=&quot;menuitem&quot;&gt;&lt;a bi:index=&quot;1&quot; bi:cpid=&quot;hpMenu&quot; href=&quot;http://www.microsoftstore.com/store/msca/fr_CA/cat/ThemeID.27659600/categoryID.61243200?WT.mc_id=MSCOM_FR_CA_HP_Downloads_Office&quot;&gt;T&#233;l&#233;charger Office&lt;/a&gt;&lt;/li&gt;
+                                    &lt;li role=&quot;menuitem&quot;&gt;&lt;a bi:index=&quot;2&quot; bi:cpid=&quot;hpMenu&quot; href=&quot;http://office.microsoft.com/fr-CA/try/&quot;&gt;P&#233;riodes d’essai gratuit&lt;/a&gt;&lt;/li&gt;
+                                    &lt;li role=&quot;menuitem&quot;&gt;&lt;a bi:index=&quot;3&quot; bi:cpid=&quot;hpMenu&quot; href=&quot;http://office.microsoft.com/fr-CA/templates/&quot;&gt;Mod&#232;les&lt;/a&gt;&lt;/li&gt;
+                                    &lt;/ul&gt;
+                            &lt;/div&gt;&lt;div class=&quot;grid-unit list-of-links list-of-links-sm&quot;&gt;
+                                &lt;h5 class=&quot;heading&quot; bi:titleflag=&quot;t1&quot; bi:title=&quot;t1&quot;&gt;Plus de t&#233;l&#233;chargements&lt;/h5&gt;
+                                &lt;ul role=&quot;menu&quot; bi:parenttitle=&quot;t1&quot;&gt;
+                                    &lt;li role=&quot;menuitem&quot;&gt;&lt;a bi:index=&quot;0&quot; bi:cpid=&quot;hpMenu&quot; href=&quot;http://www.microsoft.com/fr-ca/download/default.aspx?WT.mc_id=MSCOM_HP_ca_Nav_Downloads&quot;&gt;Download Center&lt;/a&gt;&lt;/li&gt;
+                                    &lt;li role=&quot;menuitem&quot;&gt;&lt;a bi:index=&quot;1&quot; bi:cpid=&quot;hpMenu&quot; href=&quot;http://windows.microsoft.com/fr-ca/windows/security-essentials-download&quot;&gt;Microsoft Security Essentials&lt;/a&gt;&lt;/li&gt;
+                                    &lt;li role=&quot;menuitem&quot;&gt;&lt;a bi:index=&quot;2&quot; bi:cpid=&quot;hpMenu&quot; href=&quot;http://www.update.microsoft.com&quot;&gt;Microsoft Update&lt;/a&gt;&lt;/li&gt;
+                                    &lt;li role=&quot;menuitem&quot;&gt;&lt;a bi:index=&quot;3&quot; bi:cpid=&quot;hpMenu&quot; href=&quot;http://windows.microsoft.com/fr-ca/windows/hardware-drivers-help&quot;&gt;Pilotes (son, USB, autre)&lt;/a&gt;&lt;/li&gt;
+                                    &lt;li role=&quot;menuitem&quot;&gt;&lt;a bi:index=&quot;4&quot; bi:cpid=&quot;hpMenu&quot; href=&quot;http://www.microsoft.com/hardware/fr-ca/downloads&quot;&gt;Pilotes de mat&#233;riel MS&lt;/a&gt;&lt;/li&gt;
+                                    &lt;/ul&gt;
+                            &lt;/div&gt;
+                    &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/li&gt;
+            &lt;li role=&quot;menuitem&quot; class=&quot;top-level-menuitem dropdown&quot;&gt;&lt;a class=&quot;top-level-link&quot; bi:index=&quot;2&quot; bi:track=&quot;false&quot; bi:titleflag=&quot;t1&quot; bi:title=&quot;t1&quot; href=&quot;&quot;&gt;Assistance&lt;/a&gt;
+                &lt;div class=&quot;dropdown-menu&quot; bi:parenttitle=&quot;t1&quot;&gt;
+                    &lt;div class=&quot;grid-container&quot;&gt;
+                        &lt;div class=&quot;grid-row row-3&quot;&gt;&lt;div class=&quot;grid-unit list-of-links list-of-links-sm&quot;&gt;
+                                &lt;h5 class=&quot;heading&quot; bi:titleflag=&quot;t1&quot; bi:title=&quot;t1&quot;&gt;Par ressource&lt;/h5&gt;
+                                &lt;ul role=&quot;menu&quot; bi:parenttitle=&quot;t1&quot;&gt;
+                                    &lt;li role=&quot;menuitem&quot;&gt;&lt;a bi:index=&quot;0&quot; bi:cpid=&quot;hpMenu&quot; href=&quot;http://support.microsoft.com/?ln=fr-ca&quot;&gt;Accueil Support Microsoft&lt;/a&gt;&lt;/li&gt;
+                                    &lt;li role=&quot;menuitem&quot;&gt;&lt;a bi:index=&quot;1&quot; bi:cpid=&quot;hpMenu&quot; href=&quot;http://answers.microsoft.com/fr-fr/&quot;&gt;Demander &#224; la communaut&#233;&lt;/a&gt;&lt;/li&gt;
+                                    &lt;li role=&quot;menuitem&quot;&gt;&lt;a bi:index=&quot;2&quot; bi:cpid=&quot;hpMenu&quot; href=&quot;http://support.microsoft.com/contactus/?ln=fr-ca&quot;&gt;Clavardage ou appel&lt;/a&gt;&lt;/li&gt;
+                                    &lt;li role=&quot;menuitem&quot;&gt;&lt;a bi:index=&quot;3&quot; bi:cpid=&quot;hpMenu&quot; href=&quot;http://search.microsoft.com/fr-ca/&quot;&gt;Base de connaissances&lt;/a&gt;&lt;/li&gt;
+                                    &lt;/ul&gt;
+                                &lt;h5 class=&quot;heading&quot; bi:titleflag=&quot;t2&quot; bi:title=&quot;t2&quot;&gt;Par produit&lt;/h5&gt;
+                                &lt;ul role=&quot;menu&quot; bi:parenttitle=&quot;t2&quot;&gt;
+                                    &lt;li role=&quot;menuitem&quot;&gt;&lt;a bi:index=&quot;0&quot; bi:cpid=&quot;hpMenu&quot; href=&quot;http://windows.microsoft.com/fr-ca/windows-8/meet&quot;&gt;Windows 8&lt;/a&gt;&lt;/li&gt;
+                                    &lt;li role=&quot;menuitem&quot;&gt;&lt;a bi:index=&quot;1&quot; bi:cpid=&quot;hpMenu&quot; href=&quot;http://support.microsoft.com/find-solutions/more?ln=fr-ca&amp;amp;family=windows&quot;&gt;Autres produits Windows&lt;/a&gt;&lt;/li&gt;
+                                    &lt;li role=&quot;menuitem&quot;&gt;&lt;a bi:index=&quot;2&quot; bi:cpid=&quot;hpMenu&quot; href=&quot;http://office.microsoft.com/fr-CA/support/&quot;&gt;Office (Outlook/Excel...)&lt;/a&gt;&lt;/li&gt;
+                                    &lt;li role=&quot;menuitem&quot;&gt;&lt;a bi:index=&quot;3&quot; bi:cpid=&quot;hpMenu&quot; href=&quot;http://www.microsoft.com/Surface/fr-ca/support/home&quot;&gt;Surface&lt;/a&gt;&lt;/li&gt;
+                                    &lt;/ul&gt;
+                            &lt;/div&gt;&lt;div class=&quot;grid-unit list-of-links list-of-links-sm&quot;&gt;
+                                &lt;h5 class=&quot;heading&quot; bi:titleflag=&quot;t1&quot; bi:title=&quot;t1&quot;&gt;Par sujet&lt;/h5&gt;
+                                &lt;ul role=&quot;menu&quot; bi:parenttitle=&quot;t1&quot;&gt;
+                                    &lt;li role=&quot;menuitem&quot;&gt;&lt;a bi:index=&quot;0&quot; bi:cpid=&quot;hpMenu&quot; href=&quot;http://search.microsoft.com/fr-ca/&quot;&gt;Messages d’erreurs&lt;/a&gt;&lt;/li&gt;
+                                    &lt;li role=&quot;menuitem&quot;&gt;&lt;a bi:index=&quot;1&quot; bi:cpid=&quot;hpMenu&quot; href=&quot;http://www.update.microsoft.com&quot;&gt;Microsoft Update&lt;/a&gt;&lt;/li&gt;
+                                    &lt;li role=&quot;menuitem&quot;&gt;&lt;a bi:index=&quot;2&quot; bi:cpid=&quot;hpMenu&quot; href=&quot;http://windows.microsoft.com/fr-ca/windows/install-upgrade-activate-help&quot;&gt;Installer, mettre &#224; niveau et activer  (Windows)&lt;/a&gt;&lt;/li&gt;
+                                    &lt;li role=&quot;menuitem&quot;&gt;&lt;a bi:index=&quot;3&quot; bi:cpid=&quot;hpMenu&quot; href=&quot;http://support.microsoft.com/kb/811224/fr&quot;&gt;Cl&#233;s de produit&lt;/a&gt;&lt;/li&gt;
+                                    &lt;li role=&quot;menuitem&quot;&gt;&lt;a bi:index=&quot;4&quot; bi:cpid=&quot;hpMenu&quot; href=&quot;http://windows.microsoft.com/fr-ca/windows/hardware-drivers-help&quot;&gt;Pilotes (son, USB, autre)&lt;/a&gt;&lt;/li&gt;
+                                    &lt;li role=&quot;menuitem&quot;&gt;&lt;a bi:index=&quot;5&quot; bi:cpid=&quot;hpMenu&quot; href=&quot;http://www.microsoft.com/hardware/fr-ca/downloads&quot;&gt;Pilotes de mat&#233;riel MS&lt;/a&gt;&lt;/li&gt;
+                                    &lt;/ul&gt;
+                            &lt;/div&gt;&lt;div class=&quot;grid-unit list-of-links list-of-links-sm&quot;&gt;
+                                &lt;h5 class=&quot;heading&quot; bi:titleflag=&quot;t1&quot; bi:title=&quot;t1&quot;&gt;Par public cible&lt;/h5&gt;
+                                &lt;ul role=&quot;menu&quot; bi:parenttitle=&quot;t1&quot;&gt;
+                                    &lt;li role=&quot;menuitem&quot;&gt;&lt;a bi:index=&quot;0&quot; bi:cpid=&quot;hpMenu&quot; href=&quot;http://support.microsoft.com/?ln=fr-ca&quot;&gt;Utilisateurs &#224; domicile&lt;/a&gt;&lt;/li&gt;
+                                    &lt;li role=&quot;menuitem&quot;&gt;&lt;a bi:index=&quot;1&quot; bi:cpid=&quot;hpMenu&quot; href=&quot;http://smallbusiness.support.microsoft.com/fr-ca/&quot;&gt;Pour les petites entreprises&lt;/a&gt;&lt;/li&gt;
+                                    &lt;li role=&quot;menuitem&quot;&gt;&lt;a bi:index=&quot;2&quot; bi:cpid=&quot;hpMenu&quot; href=&quot;http://technet.microsoft.com/fr-ca/ms772425&quot;&gt;Professionnels des TI&lt;/a&gt;&lt;/li&gt;
+                                    &lt;li role=&quot;menuitem&quot;&gt;&lt;a bi:index=&quot;3&quot; bi:cpid=&quot;hpMenu&quot; href=&quot;http://msdn.microsoft.com/fr-ca/hh361695&quot;&gt;D&#233;veloppeurs&lt;/a&gt;&lt;/li&gt;
+                                    &lt;/ul&gt;
+                            &lt;/div&gt;
+                    &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/li&gt;
+            &lt;li role=&quot;menuitem&quot; class=&quot;top-level-menuitem dropdown&quot;&gt;&lt;a class=&quot;top-level-link&quot; bi:index=&quot;3&quot; bi:track=&quot;false&quot; bi:titleflag=&quot;t1&quot; bi:title=&quot;t1&quot; href=&quot;&quot;&gt;S&#233;curit&#233;&lt;/a&gt;
+                &lt;div class=&quot;dropdown-menu&quot; bi:parenttitle=&quot;t1&quot;&gt;
+                    &lt;div class=&quot;grid-container&quot;&gt;
+                        &lt;div class=&quot;grid-row row-1&quot;&gt;&lt;div class=&quot;grid-unit list-of-links list-of-links-sm&quot;&gt;
+                                &lt;h5 class=&quot;heading&quot; bi:titleflag=&quot;t1&quot; bi:title=&quot;t1&quot;&gt;&lt;/h5&gt;
+                                &lt;ul role=&quot;menu&quot; bi:parenttitle=&quot;t1&quot;&gt;
+                                    &lt;li role=&quot;menuitem&quot;&gt;&lt;a bi:index=&quot;0&quot; bi:cpid=&quot;hpMenu&quot; href=&quot;http://www.microsoft.com/fr-fr/security/default.aspx&quot;&gt;Accueil S&#233;curit&#233;&lt;/a&gt;&lt;/li&gt;
+                                    &lt;li role=&quot;menuitem&quot;&gt;&lt;a bi:index=&quot;1&quot; bi:cpid=&quot;hpMenu&quot; href=&quot;http://windows.microsoft.com/fr-ca/windows-live/essentials-home&quot;&gt;Microsoft Security Essentials&lt;/a&gt;&lt;/li&gt;
+                                    &lt;li role=&quot;menuitem&quot;&gt;&lt;a bi:index=&quot;2&quot; bi:cpid=&quot;hpMenu&quot; href=&quot;http://www.update.microsoft.com&quot;&gt;Microsoft Update&lt;/a&gt;&lt;/li&gt;
+                                    &lt;li role=&quot;menuitem&quot;&gt;&lt;a bi:index=&quot;3&quot; bi:cpid=&quot;hpMenu&quot; href=&quot;http://www.microsoft.com/fr-fr/security/family-safety/default.aspx&quot;&gt;Contr&#244;le parental&lt;/a&gt;&lt;/li&gt;
+                                    &lt;/ul&gt;
+                            &lt;/div&gt;
+                    &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/li&gt;
+            &lt;li role=&quot;menuitem&quot; class=&quot;top-level-menuitem dropdown&quot;&gt;&lt;a class=&quot;top-level-link&quot; bi:index=&quot;4&quot; bi:track=&quot;false&quot; bi:titleflag=&quot;t1&quot; bi:title=&quot;t1&quot; 		  href=&quot;/n2msft/msca/fr-CA/Store&quot;&gt;Acheter&lt;/a&gt;
+            &lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/div&gt;
+&lt;/nav&gt;]]></detail>
+    </details>
+    <detailCollections />
+    <children />
+    <authorizations />
+    <properties />
+  </item>
+  <item id="183" name="" parent="179" title="" zoneName="Content" state="Published" created="04/23/2013 02:48:42" updated="07/10/2013 23:28:35" published="04/23/2013 02:50:07" sortOrder="0" url="/msca/fr-ca?item=183" visible="True" savedBy="sweber" typeName="DigitalRiver.CloudLink.N2MVC.Models.Parts.TemplatePart, DigitalRiver.CloudLink.N2MVC" discriminator="TemplatePart" ancestralTrail="/1/12/174/179/" childState="128">
+    <details>
+      <detail name="ViewTemplate" typeName="System.String, mscorlib" meta="" encoded="True"><![CDATA[Container1plus3]]></detail>
+    </details>
+    <detailCollections />
+    <children>
+      <child id="184" name="184" versionIndex="0" />
+      <child id="185" name="185" versionIndex="0" />
+    </children>
+    <authorizations />
+    <properties />
+  </item>
+  <item id="184" name="" parent="183" title="" zoneName="Left" state="Published" created="04/23/2013 02:49:03" updated="07/10/2013 23:28:35" published="04/23/2013 02:50:07" sortOrder="-10" url="/msca/fr-ca?item=184" visible="True" savedBy="sweber" typeName="DigitalRiver.CloudLink.N2MVC.Models.Parts.HtmlPart, DigitalRiver.CloudLink.N2MVC" discriminator="HtmlPart" ancestralTrail="/1/12/174/179/183/" childState="2">
+    <details>
+      <detail name="Text" typeName="System.String, mscorlib" meta="" encoded="True"><![CDATA[&lt;div bi:type=&quot;list&quot; class=&quot;list-of-links list-of-links-xlg list-array&quot;&gt;
+    &lt;h2 bi:titleflag=&quot;t1&quot; bi:title=&quot;t1&quot; class=&quot;heading&quot;&gt;D&#233;couvrez&lt;/h2&gt;
+    &lt;ul bi:parenttitle=&quot;t1&quot;&gt;
+        &lt;li&gt;&lt;a bi:index=&quot;0&quot; bi:linkid=&quot;BNV-00-DiscoverWin&quot; bi:cpid=&quot;hpDiscover&quot; href=&quot;http://windows.microsoft.com/fr-CA/windows/home&quot;&gt;Windows&lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li&gt;&lt;a bi:index=&quot;1&quot; bi:linkid=&quot;BNV-00-DiscoverOff&quot; href=&quot;http://office.microsoft.com/fr-CA&quot;&gt;Office&lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li&gt;&lt;a bi:index=&quot;2&quot; bi:linkid=&quot;BNV-00-DisdcoverSurf&quot; href=&quot;/surface/fr-ca&quot;&gt;Surface&lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li&gt;&lt;a bi:index=&quot;3&quot; bi:linkid=&quot;BNV-00-DiscoverWP&quot; bi:cpid=&quot;hpDiscover&quot; href=&quot;http://www.windowsphone.com/fr-ca&quot;&gt;Windows Phone&lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li&gt;&lt;a bi:index=&quot;4&quot; bi:linkid=&quot;BNV-00-DiscoverXbox&quot; bi:cpid=&quot;hpDiscover&quot; href=&quot;http://www.xbox.com/fr-ca&quot;&gt;Xbox&lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li&gt;&lt;a bi:index=&quot;5&quot; bi:linkid=&quot;BNV-00-DiscoverSkype&quot; bi:cpid=&quot;hpDiscover&quot; href=&quot;http://www.skype.com/intl/fr/?cm_mmc=MSFT|TRAF_B1-_-mscom-hero-fr&quot;&gt;Skype&lt;/a&gt;
+        &lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/div&gt;]]></detail>
+    </details>
+    <detailCollections />
+    <children />
+    <authorizations />
+    <properties />
+  </item>
+  <item id="185" name="" parent="183" title="" zoneName="Content" state="Published" created="04/23/2013 02:49:33" updated="07/10/2013 23:28:35" published="04/23/2013 02:50:07" sortOrder="0" url="/msca/fr-ca?item=185" visible="True" savedBy="sweber" typeName="DigitalRiver.CloudLink.N2MVC.Models.Parts.HtmlPart, DigitalRiver.CloudLink.N2MVC" discriminator="HtmlPart" ancestralTrail="/1/12/174/179/183/" childState="2">
+    <details>
+      <detail name="Text" typeName="System.String, mscorlib" meta="" encoded="True"><![CDATA[&lt;div class=&quot;grid-unit col-3&quot;&gt;&lt;div id=&quot;pivot-1&quot; class=&quot;pivot &quot; bi:type=&quot;pivot&quot; style=&quot;display: block;&quot;&gt;&lt;h2 class=&quot;heading&quot; bi:titleflag=&quot;t1&quot; bi:title=&quot;t1&quot;&gt;Pour la maison&lt;/h2&gt;&lt;a href=&quot;#pivot-2&quot; class=&quot;pivot-switch&quot; bi:track=&quot;false&quot;&gt;Pour le travail&lt;/a&gt;&lt;div class=&quot;grid-row row-3 features&quot;&gt;&lt;div class=&quot;grid-unit&quot;&gt;
+&lt;div bi:type=&quot;highlight&quot; class=&quot;hpHighlight &quot;&gt;
+    &lt;a href=&quot;http://clk.atdmt.com/MRT/go/439185032/direct/01/&quot; bi:linkid=&quot;HH1-GEN-133O1FRCA35961&quot; bi:cpid=&quot;homeHighlight&quot;&gt;&lt;div class=&quot;highlight-content&quot;&gt;
+        &lt;div class=&quot;highlight-img&quot;&gt;
+        &lt;img bi:parenttitle=&quot;t1&quot; src=&quot;http://i.s-microsoft.com/global/ImageStore/PublishingImages/FY13/Asset/highlights/Ofc365HP_Kappa_0128_420x210_EN_US.jpg&quot; alt=&quot;Essayez Office&amp;nbsp;365 Famille Premium d&#232;s aujourd&#39;hui.&quot; bi:mimiclink=&quot;true&quot; bi:type=&quot;img&quot;&gt;
+         &lt;/div&gt;
+        &lt;div class=&quot;highlight-text&quot;&gt;       
+        
+        &lt;p bi:parenttitle=&quot;t1&quot; bi:mimiclink=&quot;true&quot; bi:type=&quot;desc&quot;&gt;Essayez Office&amp;nbsp;365 Famille Premium, tout votre bureau dans le nuage.&lt;/p&gt;
+        &lt;/div&gt;&lt;/div&gt;&lt;/a&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;grid-unit&quot;&gt;
+&lt;div bi:type=&quot;highlight&quot; class=&quot;hpHighlight &quot;&gt;
+    &lt;a href=&quot;http://clk.atdmt.com/MRT/go/407350226/direct/01/&quot; bi:linkid=&quot;HH2-GEN-131P1FRCA21307&quot; bi:cpid=&quot;homeHighlight&quot;&gt;&lt;div class=&quot;highlight-content&quot;&gt;
+        &lt;div class=&quot;highlight-img&quot;&gt;
+        &lt;img bi:parenttitle=&quot;t1&quot; src=&quot;http://i.s-microsoft.com/global/ImageStore/PublishingImages/FY13/Asset/highlights/WPbuy_BG_0225_420x210_FR_FR.jpg&quot; alt=&quot;Trouvez l’appareil Windows Phone qui convient &#224; votre style.&quot; bi:mimiclink=&quot;true&quot; bi:type=&quot;img&quot;&gt;
+         &lt;/div&gt;
+        &lt;div class=&quot;highlight-text&quot;&gt;       
+        
+        &lt;p bi:parenttitle=&quot;t1&quot; bi:mimiclink=&quot;true&quot; bi:type=&quot;desc&quot;&gt;Magnifiquement con&#231;u avec vous en t&#234;te.  Choisissez votre nouveau Windows&amp;nbsp;Phone.&lt;/p&gt;
+        &lt;/div&gt;&lt;/div&gt;&lt;/a&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;grid-unit&quot;&gt;
+&lt;div bi:type=&quot;highlight&quot; class=&quot;hpHighlight &quot;&gt;
+    &lt;a href=&quot;http://clk.atdmt.com/MRT/go/432665529/direct/01/&quot; bi:linkid=&quot;HH3-GEN-133B2FRCA37436&quot; bi:cpid=&quot;homeHighlight&quot;&gt;&lt;div class=&quot;highlight-content&quot;&gt;
+        &lt;div class=&quot;highlight-img&quot;&gt;
+        &lt;img bi:parenttitle=&quot;t1&quot; src=&quot;http://i.s-microsoft.com/global/imagestore/PublishingImages/Intl/Wave 8 HP/10_01_12_Features_Highlights/BingGeneric_0128_420x210_ROW.png&quot; alt=&quot;Essayez Bing, un moteur de recherche qui trouve les r&#233;ponses &#224; vos questions.&quot; bi:mimiclink=&quot;true&quot; bi:type=&quot;img&quot;&gt;
+         &lt;/div&gt;
+        &lt;div class=&quot;highlight-text&quot;&gt;       
+        
+        &lt;p bi:parenttitle=&quot;t1&quot; bi:mimiclink=&quot;true&quot; bi:type=&quot;desc&quot;&gt;Bing est un moteur de recherche qui trouve les r&#233;ponses &#224; vos questions. Essayez-le d&#232;s aujourd’hui. &lt;/p&gt;
+        &lt;/div&gt;&lt;/div&gt;&lt;/a&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;grid-row row-3 &quot;&gt;&lt;div class=&quot;grid-unit&quot;&gt;
+
+&lt;div bi:type=&quot;list&quot; class=&quot;list-of-links list-of-links-med&quot;&gt;
+    &lt;h3 bi:titleflag=&quot;t1&quot; bi:title=&quot;t1&quot; class=&quot;heading&quot;&gt;T&#233;l&#233;chargements&lt;/h3&gt;
+    &lt;ul bi:parenttitle=&quot;t1&quot;&gt;
+        &lt;li&gt;&lt;a bi:index=&quot;0&quot; bi:linkid=&quot;MA1-GEN-131W4FRCA22343&quot; bi:cpid=&quot;homeModA&quot; href=&quot;http://windows.microsoft.com/fr-ca/windows/downloads&quot;&gt;T&#233;l&#233;chargements Windows&lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li&gt;&lt;a bi:index=&quot;1&quot; bi:linkid=&quot;MA2-GEN-133O4FRCA37071&quot; bi:cpid=&quot;homeModA&quot; href=&quot;http://office.microsoft.com/fr-ca/downloads&quot;&gt;T&#233;l&#233;chargements Office&lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li&gt;&lt;a bi:index=&quot;2&quot; bi:linkid=&quot;MA3-GEN-131Z4FRCA21986&quot; bi:cpid=&quot;homeModA&quot; href=&quot;http://www.microsoft.com/fr-ca/download/default.aspx?WT.mc_id=MSCOM_FR_CA_HP_SUPPORTHOME_131Z4FRCA21986&quot;&gt;Download Center&lt;/a&gt;
+        &lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;grid-unit&quot;&gt;
+
+&lt;div bi:type=&quot;list&quot; class=&quot;list-of-links list-of-links-med&quot;&gt;
+    &lt;h3 bi:titleflag=&quot;t1&quot; bi:title=&quot;t1&quot; class=&quot;heading&quot;&gt;S&#233;curit&#233; et mises &#224; jour&lt;/h3&gt;
+    &lt;ul bi:parenttitle=&quot;t1&quot;&gt;
+        &lt;li&gt;&lt;a bi:index=&quot;0&quot; bi:linkid=&quot;MB1-GEN-131Z4FRCA21978&quot; bi:cpid=&quot;homeModB&quot; href=&quot;http://www.update.microsoft.com/microsoftupdate/v6/vistadefault.aspx?ln=fr-ca&quot;&gt;Microsoft Update&lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li&gt;&lt;a bi:index=&quot;1&quot; bi:linkid=&quot;MB2-GEN-131Z4FRCA21979&quot; bi:cpid=&quot;homeModB&quot; href=&quot;http://windows.microsoft.com/fr-ca/windows/products/security-essentials&quot;&gt;Microsoft Security Essentials&lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li&gt;&lt;a bi:index=&quot;2&quot; bi:linkid=&quot;MB3-GEN-131W4FRCA21980&quot; bi:cpid=&quot;homeModB&quot; href=&quot;http://windows.microsoft.com/fr-ca/windows/downloads/service-packs&quot;&gt;Centre de Service Packs&lt;/a&gt;
+        &lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;grid-unit&quot;&gt;
+
+&lt;div bi:type=&quot;list&quot; class=&quot;list-of-links list-of-links-med&quot;&gt;
+    &lt;h3 bi:titleflag=&quot;t1&quot; bi:title=&quot;t1&quot; class=&quot;heading&quot;&gt;Assistance&lt;/h3&gt;
+    &lt;ul bi:parenttitle=&quot;t1&quot;&gt;
+        &lt;li&gt;&lt;a bi:index=&quot;0&quot; bi:linkid=&quot;MC1-GEN-131W4FRCA21970&quot; bi:cpid=&quot;homeModC&quot; href=&quot;http://windows.microsoft.com/fr-ca/windows/help&quot;&gt;Aide et conseils pour Windows&lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li&gt;&lt;a bi:index=&quot;1&quot; bi:linkid=&quot;MC2-GEN-133O4FRCA36956&quot; bi:cpid=&quot;homeModC&quot; href=&quot;http://office.microsoft.com/fr-ca/support/&quot;&gt;Office : aide et proc&#233;dures&lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li&gt;&lt;a bi:index=&quot;2&quot; bi:linkid=&quot;MC3-GEN-131Z4FRCA21977&quot; bi:cpid=&quot;homeModC&quot; href=&quot;http://support.microsoft.com/?ln=fr-ca&quot;&gt;Accueil Support Microsoft&lt;/a&gt;
+        &lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div id=&quot;pivot-2&quot; class=&quot;pivot &quot; bi:type=&quot;pivot&quot; style=&quot;display: none;&quot;&gt;&lt;h2 class=&quot;heading&quot; bi:titleflag=&quot;t1&quot; bi:title=&quot;t1&quot;&gt;Pour le travail&lt;/h2&gt;&lt;a href=&quot;#pivot-1&quot; class=&quot;pivot-switch&quot; bi:track=&quot;false&quot;&gt;Pour la maison&lt;/a&gt;&lt;div class=&quot;grid-row row-3 features&quot;&gt;&lt;div class=&quot;grid-unit&quot;&gt;
+&lt;div bi:type=&quot;highlight&quot; class=&quot;hpHighlight &quot;&gt;
+    &lt;a href=&quot;http://clk.atdmt.com/MRT/go/406873053/direct/01/&quot; bi:linkid=&quot;HW1-GEN-131A2FRCA21322&quot; bi:cpid=&quot;workHighlight&quot;&gt;&lt;div class=&quot;highlight-content&quot;&gt;
+        &lt;div class=&quot;highlight-img&quot;&gt;
+        &lt;img bi:parenttitle=&quot;t1&quot; src=&quot;http://i.s-microsoft.com/global/ImageStore/PublishingImages/FY13/Asset/highlights/Azure_0304_420x210_EN_US.png&quot; alt=&quot;Obtenez la version d’essai gratuite de Windows Azure.&quot; bi:mimiclink=&quot;true&quot; bi:type=&quot;img&quot;&gt;
+         &lt;/div&gt;
+        &lt;div class=&quot;highlight-text&quot;&gt;       
+        
+        &lt;p bi:parenttitle=&quot;t1&quot; bi:mimiclink=&quot;true&quot; bi:type=&quot;desc&quot;&gt;D&#233;placez vos applications sans devoir les r&#233;&#233;crire. Obtenez une version d’essai gratuite de Windows Azure.&lt;/p&gt;
+        &lt;/div&gt;&lt;/div&gt;&lt;/a&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;grid-unit&quot;&gt;
+&lt;div bi:type=&quot;highlight&quot; class=&quot;hpHighlight &quot;&gt;
+    &lt;a href=&quot;http://clk.atdmt.com/MRT/go/406965804/direct/01/&quot; bi:linkid=&quot;HW2-GEN-131D2FRCA21320&quot; bi:cpid=&quot;workHighlight&quot;&gt;&lt;div class=&quot;highlight-content&quot;&gt;
+        &lt;div class=&quot;highlight-img&quot;&gt;
+        &lt;img bi:parenttitle=&quot;t1&quot; src=&quot;http://i.s-microsoft.com/global/imagestore/PublishingImages/Intl/Wave 8 HP/10_01_12_Features_Highlights/Dyn_1001_420x210_EN_US.jpg&quot; alt=&quot;Faites l&#39;essai de Microsoft Dynamics&amp;nbsp;CRM&amp;nbsp;Online gratuitement.&quot; bi:mimiclink=&quot;true&quot; bi:type=&quot;img&quot;&gt;
+         &lt;/div&gt;
+        &lt;div class=&quot;highlight-text&quot;&gt;       
+        
+        &lt;p bi:parenttitle=&quot;t1&quot; bi:mimiclink=&quot;true&quot; bi:type=&quot;desc&quot;&gt;Tirez parti des contacts de vos clients. Faites l&#39;essai de Microsoft Dynamics&amp;nbsp;CRM&amp;nbsp;gratuitement.&lt;/p&gt;
+        &lt;/div&gt;&lt;/div&gt;&lt;/a&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;grid-unit&quot;&gt;
+&lt;div bi:type=&quot;highlight&quot; class=&quot;hpHighlight &quot;&gt;
+    &lt;a href=&quot;http://www.microsoft.com/fr-ca/business/experts/default.aspx&quot; bi:linkid=&quot;HW3-GEN-134Z6FRCA45445&quot; bi:cpid=&quot;workHighlight&quot;&gt;&lt;div class=&quot;highlight-content&quot;&gt;
+        &lt;div class=&quot;highlight-img&quot;&gt;
+        &lt;img bi:parenttitle=&quot;t1&quot; src=&quot;http://i.s-microsoft.com/global/imagestore/PublishingImages/Intl/Wave 8 HP/10_01_12_Features_Highlights/PinpointCanada_0401_420x210_FR-CA.jpg&quot; alt=&quot;Microsoft Pinpoint - Plus de 1 000 partenaires Microsoft pr&#234;ts &#224; vous aider.  Trouvez le v&#244;tre d&#232;s aujourd’hui.&quot; bi:mimiclink=&quot;true&quot; bi:type=&quot;img&quot;&gt;
+         &lt;/div&gt;
+        &lt;div class=&quot;highlight-text&quot;&gt;       
+        
+        &lt;p bi:parenttitle=&quot;t1&quot; bi:mimiclink=&quot;true&quot; bi:type=&quot;desc&quot;&gt;Microsoft Pinpoint - Plus de 1 000 partenaires Microsoft pr&#234;ts &#224; vous aider.  Trouvez le v&#244;tre d&#232;s aujourd’hui.&lt;/p&gt;
+        &lt;/div&gt;&lt;/div&gt;&lt;/a&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;grid-row row-3 &quot;&gt;&lt;div class=&quot;grid-unit&quot;&gt;
+
+&lt;div bi:type=&quot;list&quot; class=&quot;list-of-links list-of-links-med&quot;&gt;
+    &lt;h3 bi:titleflag=&quot;t1&quot; bi:title=&quot;t1&quot; class=&quot;heading&quot;&gt;T&#233;l&#233;chargements&lt;/h3&gt;
+    &lt;ul bi:parenttitle=&quot;t1&quot;&gt;
+        &lt;li&gt;&lt;a bi:index=&quot;0&quot; bi:linkid=&quot;ME1-GEN-131Z4FRCA22346&quot; bi:cpid=&quot;workModE&quot; href=&quot;http://technet.microsoft.com/fr-ca/evalcenter&quot;&gt;Centre d&#39;&#233;valuation TechNet&lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li&gt;&lt;a bi:index=&quot;1&quot; bi:linkid=&quot;ME2-GEN-131Z4FRCA22347&quot; bi:cpid=&quot;workModE&quot; href=&quot;http://msdn.microsoft.com/fr-ca/evalcenter/default.aspx&quot;&gt;Centre d&#39;&#233;valuation MSDN&lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li&gt;&lt;a bi:index=&quot;2&quot; bi:linkid=&quot;ME3-GEN-131Z4FRCA21986&quot; bi:cpid=&quot;workModE&quot; href=&quot;http://www.microsoft.com/fr-ca/download/default.aspx?WT.mc_id=MSCOM_FR_CA_HP_SUPPORTWORK_131Z4FRCA21986&quot;&gt;Download Center&lt;/a&gt;
+        &lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;grid-unit&quot;&gt;
+
+&lt;div bi:type=&quot;list&quot; class=&quot;list-of-links list-of-links-med&quot;&gt;
+    &lt;h3 bi:titleflag=&quot;t1&quot; bi:title=&quot;t1&quot; class=&quot;heading&quot;&gt;Solutions d&#39;entreprises&lt;/h3&gt;
+    &lt;ul bi:parenttitle=&quot;t1&quot;&gt;
+        &lt;li&gt;&lt;a bi:index=&quot;0&quot; bi:linkid=&quot;MF1-GEN-131Z4FRCA23586&quot; bi:cpid=&quot;workModF&quot; href=&quot;http://pinpoint.microsoft.com/fr-CA/home&quot;&gt;Trouver un partenaire (Pinpoint)&lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li&gt;&lt;a bi:index=&quot;1&quot; bi:linkid=&quot;MF2-GEN-132Z4FRCA34348&quot; bi:cpid=&quot;workModF&quot; href=&quot;http://www.microsoft.com/fr-ca/business/enterprise/default.aspx&quot;&gt;Petites et moyennes entreprises&lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li&gt;&lt;a bi:index=&quot;2&quot; bi:linkid=&quot;MF3-GEN-132Z4FRCA34330&quot; bi:cpid=&quot;workModF&quot; href=&quot;http://www.microsoft.com/business/fr-ca/pages/default.aspx&quot;&gt;Microsoft SMB Portal&lt;/a&gt;
+        &lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;grid-unit&quot;&gt;
+
+&lt;div bi:type=&quot;list&quot; class=&quot;list-of-links list-of-links-med&quot;&gt;
+    &lt;h3 bi:titleflag=&quot;t1&quot; bi:title=&quot;t1&quot; class=&quot;heading&quot;&gt;Assistance&lt;/h3&gt;
+    &lt;ul bi:parenttitle=&quot;t1&quot;&gt;
+        &lt;li&gt;&lt;a bi:index=&quot;0&quot; bi:linkid=&quot;MG1-GEN-131Z4FRCA22933&quot; bi:cpid=&quot;workModG&quot; href=&quot;http://smallbusiness.support.microsoft.com/fr-ca&quot;&gt;Petites et moyennes entreprises&lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li&gt;&lt;a bi:index=&quot;1&quot; bi:linkid=&quot;MG2-GEN-131Z4FRCA22351&quot; bi:cpid=&quot;workModG&quot; href=&quot;http://technet.microsoft.com/fr-ca/ms772425&quot;&gt;Support pour les professionnels des TI&lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li&gt;&lt;a bi:index=&quot;2&quot; bi:linkid=&quot;MG3-GEN-131Z4FRCA22352&quot; bi:cpid=&quot;workModG&quot; href=&quot;http://msdn.microsoft.com/fr-ca/hh361695&quot;&gt;Support pour les d&#233;veloppeurs&lt;/a&gt;
+        &lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;]]></detail>
+    </details>
+    <detailCollections />
+    <children />
+    <authorizations />
+    <properties />
+  </item>
+</n2>

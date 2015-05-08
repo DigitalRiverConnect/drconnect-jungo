@@ -1,0 +1,951 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AgeGate_AgeRestrictedContent" xml:space="preserve">
+    <value>Sorry, you are not old enough to watch this content.</value>
+  </data>
+  <data name="AgeGate_VerifyBirthDate" xml:space="preserve">
+    <value>Enter your date of birth.</value>
+  </data>
+  <data name="Catalog_AgeGateDateInvalid" xml:space="preserve">
+    <value>We're sorry but an invalid date was selected. Please select a valid date and try again.</value>
+  </data>
+  <data name="Catalog_CatalogHomeName" xml:space="preserve">
+    <value>Home</value>
+  </data>
+  <data name="Catalog_CatalogSearchDidYouMean" xml:space="preserve">
+    <value>Did you mean</value>
+  </data>
+  <data name="Catalog_CatalogSearchDidYouMeanQuestionMark" xml:space="preserve">
+    <value>?</value>
+  </data>
+  <data name="Catalog_CatalogSearchNoResultsFoundFor" xml:space="preserve">
+    <value>No results were found for: "{0}"</value>
+  </data>
+  <data name="Catalog_CatalogSearchResetAllFilters" xml:space="preserve">
+    <value>Reset all filters</value>
+  </data>
+  <data name="Catalog_CatalogSearchResultsFiltersHeading" xml:space="preserve">
+    <value>Refine your results</value>
+  </data>
+  <data name="Catalog_CatalogSearchResultsSupportMessage" xml:space="preserve">
+    <value>Can't find what you want? We're here to help.</value>
+  </data>
+  <data name="Catalog_CatalogSearchResultsSupportPhone" xml:space="preserve">
+    <value>1-800-598-7450</value>
+  </data>
+  <data name="Catalog_CatalogSearchResultsTitle" xml:space="preserve">
+    <value>Search results for</value>
+  </data>
+  <data name="Catalog_LoadingXThroughYOfZResults" xml:space="preserve">
+    <value>Loading... %lt;span class="currentPageStart"%gt;{0}%lt;/span%gt;-%lt;span class="currentPageEnd"%gt;{1}%lt;/span%gt; of {2} Results</value>
+  </data>
+  <data name="Catalog_NoProductsFound" xml:space="preserve">
+    <value>Sorry, no products were found.</value>
+  </data>
+  <data name="Catalog_ProductNotFound" xml:space="preserve">
+    <value>Sorry, the product does not exist.</value>
+  </data>
+  <data name="Catalog_SearchResultsColon" xml:space="preserve">
+    <value>Search results:</value>
+  </data>
+  <data name="Catalog_ShopTheseCategoriesColon" xml:space="preserve">
+    <value>Shop these {0} categories</value>
+  </data>
+  <data name="Catalog_ViewingOneThroughXOfYResultsPart1" xml:space="preserve">
+    <value>Viewing </value>
+  </data>
+  <data name="Catalog_ViewingOneThroughXOfYResultsPart2" xml:space="preserve">
+    <value> of </value>
+  </data>
+  <data name="Catalog_ViewingOneThroughXOfYResultsPart3" xml:space="preserve">
+    <value> Results</value>
+  </data>
+  <data name="Checkout_Cart" xml:space="preserve">
+    <value>Shopping Cart.</value>
+  </data>
+  <data name="Checkout_CartIsEmpty" xml:space="preserve">
+    <value>Your Shopping Cart is Empty.</value>
+  </data>
+  <data name="Checkout_ContinueShopping" xml:space="preserve">
+    <value>Continue Shopping</value>
+  </data>
+  <data name="Checkout_PaymentOptionsImage" xml:space="preserve">
+    <value>http://www.credit-card-logos.com/images/multiple_credit-card-logos-1/credit_card_logos_22.gif</value>
+  </data>
+  <data name="Checkout_PaymentOptionsText" xml:space="preserve">
+    <value>Payment options</value>
+  </data>
+  <data name="Checkout_PromoCodeColon" xml:space="preserve">
+    <value>Promo Code:</value>
+  </data>
+  <data name="Checkout_VerizonSecured" xml:space="preserve">
+    <value>Verizon Secured</value>
+  </data>
+  <data name="CheckoutTotals_BeforeTaxes" xml:space="preserve">
+    <value>before taxes</value>
+  </data>
+  <data name="CheckoutTotals_DiscountColon" xml:space="preserve">
+    <value>Discount:</value>
+  </data>
+  <data name="CheckoutTotals_SubtotalBeforeTaxesColon" xml:space="preserve">
+    <value>Subtotal:</value>
+  </data>
+  <data name="CustomBundles_AddToCart" xml:space="preserve">
+    <value>Add to cart</value>
+  </data>
+  <data name="CustomBundles_AlternateImage" xml:space="preserve">
+    <value>Alternate image</value>
+  </data>
+  <data name="CustomBundles_CheckMark" xml:space="preserve">
+    <value>check mark</value>
+  </data>
+  <data name="CustomBundles_Close" xml:space="preserve">
+    <value>Close</value>
+  </data>
+  <data name="CustomBundles_ContinueShopping" xml:space="preserve">
+    <value>Continue shopping</value>
+  </data>
+  <data name="CustomBundles_FinishYourBundle" xml:space="preserve">
+    <value>Finish Your Bundle</value>
+  </data>
+  <data name="CustomBundles_NotFound" xml:space="preserve">
+    <value>Not found</value>
+  </data>
+  <data name="CustomBundles_OutOfStock" xml:space="preserve">
+    <value>Out of stock</value>
+  </data>
+  <data name="CustomBundles_PidsPreselected" xml:space="preserve">
+    <value>We've automatically added these products for you.</value>
+  </data>
+  <data name="CustomBundles_Preorder" xml:space="preserve">
+    <value>Pre-Order</value>
+  </data>
+  <data name="CustomBundles_QuickLook" xml:space="preserve">
+    <value>Quick look</value>
+  </data>
+  <data name="CustomBundles_QuickView" xml:space="preserve">
+    <value>Quick View</value>
+  </data>
+  <data name="CustomBundles_Remove" xml:space="preserve">
+    <value>Remove</value>
+  </data>
+  <data name="CustomBundles_ReviewYourBundle" xml:space="preserve">
+    <value>Review Your Bundle</value>
+  </data>
+  <data name="CustomBundles_Select" xml:space="preserve">
+    <value>Select</value>
+  </data>
+  <data name="CustomBundles_SelectARequiredProduct" xml:space="preserve">
+    <value>Select a required product</value>
+  </data>
+  <data name="CustomBundles_Selected" xml:space="preserve">
+    <value>Selected</value>
+  </data>
+  <data name="CustomBundles_ShowFewerProducts" xml:space="preserve">
+    <value>Show fewer products</value>
+  </data>
+  <data name="CustomBundles_ShowMoreProducts" xml:space="preserve">
+    <value>Show more products</value>
+  </data>
+  <data name="CustomBundles_UnableToFindBundle" xml:space="preserve">
+    <value>This bundle is not currently available.</value>
+  </data>
+  <data name="CustomBundles_Was" xml:space="preserve">
+    <value>was</value>
+  </data>
+  <data name="Date_April" xml:space="preserve">
+    <value>April</value>
+  </data>
+  <data name="Date_August" xml:space="preserve">
+    <value>August</value>
+  </data>
+  <data name="Date_Day" xml:space="preserve">
+    <value>Day</value>
+  </data>
+  <data name="Date_December" xml:space="preserve">
+    <value>December</value>
+  </data>
+  <data name="Date_February" xml:space="preserve">
+    <value>February</value>
+  </data>
+  <data name="Date_January" xml:space="preserve">
+    <value>January</value>
+  </data>
+  <data name="Date_July" xml:space="preserve">
+    <value>July</value>
+  </data>
+  <data name="Date_June" xml:space="preserve">
+    <value>June</value>
+  </data>
+  <data name="Date_March" xml:space="preserve">
+    <value>March</value>
+  </data>
+  <data name="Date_May" xml:space="preserve">
+    <value>May</value>
+  </data>
+  <data name="Date_Month" xml:space="preserve">
+    <value>Month</value>
+  </data>
+  <data name="Date_November" xml:space="preserve">
+    <value>November</value>
+  </data>
+  <data name="Date_October" xml:space="preserve">
+    <value>October</value>
+  </data>
+  <data name="Date_September" xml:space="preserve">
+    <value>September</value>
+  </data>
+  <data name="Date_Year" xml:space="preserve">
+    <value>Year</value>
+  </data>
+  <data name="Error_JavascriptDisabledError" xml:space="preserve">
+    <value>Sorry, JavaScript must be enabled to view this page.</value>
+  </data>
+  <data name="Error_WeAreCurrentlyExperiencingProblems" xml:space="preserve">
+    <value>We are currently experiencing problems. Please try again later.</value>
+  </data>
+  <data name="ErrorCode_ErrorOccurred" xml:space="preserve">
+    <value>Sorry, an error occurred while processing your request.</value>
+  </data>
+  <data name="ErrorCode_ErrorProcessingOrder" xml:space="preserve">
+    <value>There was an issue processing your order requiring automatic logout. Please contact 1-800-598-7450 for assistance in completing your purchase. Error Code: {0}</value>
+  </data>
+  <data name="ErrorCode_ErrorProcessingOrderExpiredCard" xml:space="preserve">
+    <value>There was an issue processing your order. Your credit card has expired. You will need to update credit card information or use a different payment method to proceed with checkout. Error Code: {0}</value>
+  </data>
+  <data name="ErrorCode_ErrorProcessingOrderNewBrowser" xml:space="preserve">
+    <value>There was an issue processing your order requiring automatic logout. You will need to login again to proceeed with checkout. Error Code: {0}</value>
+  </data>
+  <data name="ErrorCode_ErrorProcessingOrderNewBrowserDifferentPayment" xml:space="preserve">
+    <value>There was an issue processing your order requiring automatic logout. You will need to login again and use a different payment method to proceed with checkout. Error Code: {0}</value>
+  </data>
+  <data name="ErrorCode_ErrorProcessingOrderTooManyItemsInCart" xml:space="preserve">
+    <value>There was an issue processing your order requiring automatic logout. You will need to login again and use a different payment method to proceed with checkout. Error Code: {0}</value>
+  </data>
+  <data name="ErrorCode_FieldError" xml:space="preserve">
+    <value>field error</value>
+  </data>
+  <data name="ErrorCode_NotFound" xml:space="preserve">
+    <value>Not found</value>
+  </data>
+  <data name="ErrorCode_RequiredFieldsMissing" xml:space="preserve">
+    <value>Please review the information below and fill in all required fields</value>
+  </data>
+  <data name="ErrorCode_ThisFieldIsRequired" xml:space="preserve">
+    <value>This field is required.</value>
+  </data>
+  <data name="ErrorCode_UnableToFindRequestedItem" xml:space="preserve">
+    <value>We were unable to find the item you requested.</value>
+  </data>
+  <data name="FormActions_Add" xml:space="preserve">
+    <value>Add</value>
+  </data>
+  <data name="FormActions_AddAddress" xml:space="preserve">
+    <value>Add a new address</value>
+  </data>
+  <data name="FormActions_Apply" xml:space="preserve">
+    <value>Apply</value>
+  </data>
+  <data name="FormActions_Cancel" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="FormActions_CancelEditAddress" xml:space="preserve">
+    <value>Cancel edit address</value>
+  </data>
+  <data name="FormActions_Change" xml:space="preserve">
+    <value>Change</value>
+  </data>
+  <data name="FormActions_ColonFieldsMarkFormat" xml:space="preserve">
+    <value>{0}:</value>
+  </data>
+  <data name="FormActions_Continue" xml:space="preserve">
+    <value>Continue</value>
+  </data>
+  <data name="FormActions_Delete" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="FormActions_Edit" xml:space="preserve">
+    <value>Edit</value>
+  </data>
+  <data name="FormActions_EditAddress" xml:space="preserve">
+    <value>Edit address</value>
+  </data>
+  <data name="FormActions_EditPaymentInformation" xml:space="preserve">
+    <value>Edit payment information</value>
+  </data>
+  <data name="FormActions_EditShippingMethod" xml:space="preserve">
+    <value>Edit shipping method</value>
+  </data>
+  <data name="FormActions_IndicatesRequiredFields" xml:space="preserve">
+    <value>Indicates required fields</value>
+  </data>
+  <data name="FormActions_MakeDefault" xml:space="preserve">
+    <value>Make default</value>
+  </data>
+  <data name="FormActions_RequiredFieldsMark" xml:space="preserve">
+    <value>*</value>
+  </data>
+  <data name="FormActions_RequiredFieldsMarkFormat" xml:space="preserve">
+    <value>{0}{1}{2}{3}</value>
+  </data>
+  <data name="FormActions_Save" xml:space="preserve">
+    <value>Save</value>
+  </data>
+  <data name="FormActions_SaveNewAddress" xml:space="preserve">
+    <value>Save new address</value>
+  </data>
+  <data name="FormActions_SelectOption" xml:space="preserve">
+    <value>Select</value>
+  </data>
+  <data name="FormActions_Submit" xml:space="preserve">
+    <value>Submit</value>
+  </data>
+  <data name="General_Address" xml:space="preserve">
+    <value>Address</value>
+  </data>
+  <data name="General_CartItems" xml:space="preserve">
+    <value>Cart Items</value>
+  </data>
+  <data name="General_ClickToPlay" xml:space="preserve">
+    <value>Click to play the video</value>
+  </data>
+  <data name="General_Close" xml:space="preserve">
+    <value>Close</value>
+  </data>
+  <data name="General_FrequentlyAskedQuestions" xml:space="preserve">
+    <value>Frequently asked questions</value>
+  </data>
+  <data name="General_Help" xml:space="preserve">
+    <value>Help</value>
+  </data>
+  <data name="General_Home" xml:space="preserve">
+    <value>Home</value>
+  </data>
+  <data name="General_HostedByDr" xml:space="preserve">
+    <value>This site is hosted by Digital River</value>
+  </data>
+  <data name="General_LoadingImages" xml:space="preserve">
+    <value>Loading images...</value>
+  </data>
+  <data name="General_Menu" xml:space="preserve">
+    <value>Menu</value>
+  </data>
+  <data name="General_Store" xml:space="preserve">
+    <value>SportsUS</value>
+  </data>
+  <data name="General_StoreHome" xml:space="preserve">
+    <value>SportsUS Home</value>
+  </data>
+  <data name="General_StoreTitle" xml:space="preserve">
+    <value>SportsUS Online Store</value>
+  </data>
+  <data name="General_StoreOnline" xml:space="preserve">
+    <value>SportsUS Online Store</value>
+  </data>
+  <data name="General_NeedHelpQuestion" xml:space="preserve">
+    <value>Need help?</value>
+  </data>
+  <data name="General_PleaseWait" xml:space="preserve">
+    <value>Please wait...</value>
+  </data>
+  <data name="General_PrintSubscriptionDetails" xml:space="preserve">
+    <value>Print subscription details</value>
+  </data>
+  <data name="General_QuantityColon" xml:space="preserve">
+    <value>Quantity:</value>
+  </data>
+  <data name="General_ReturnToTop" xml:space="preserve">
+    <value>Return to top</value>
+  </data>
+  <data name="General_SearchButtonText" xml:space="preserve">
+    <value>Search</value>
+  </data>
+  <data name="General_Search" xml:space="preserve">
+    <value>Search SportsUs</value>
+  </data>
+  <data name="General_ServerErrorPageTitle" xml:space="preserve">
+    <value>Server Error - Sports US</value>
+  </data>
+  <data name="General_TermsOfUseAndSale" xml:space="preserve">
+    <value>Terms of Use And Sale</value>
+  </data>
+  <data name="General_ToggleNavigation" xml:space="preserve">
+    <value>Toggle Navigation</value>
+  </data>
+  <data name="General_ToggleSearch" xml:space="preserve">
+    <value>Toggle Search</value>
+  </data>
+  <data name="General_WelcomeToOurStore" xml:space="preserve">
+    <value>Welcome to SportsUS Online Store</value>
+  </data>
+  <data name="GetOffersException_OfferNotFound" xml:space="preserve">
+    <value>Provided Offer ID not available for shopper</value>
+  </data>
+  <data name="GetOffersException_ProductNotFound" xml:space="preserve">
+    <value>Product not found for provided product key</value>
+  </data>
+  <data name="Help_PrivacyStatement" xml:space="preserve">
+    <value>Privacy Statement</value>
+  </data>
+  <data name="Help_TermsOfUseAndSale" xml:space="preserve">
+    <value>Terms Of Use and Sale</value>
+  </data>
+  <data name="InvoiceViewModel_EndingIn" xml:space="preserve">
+    <value>ending in </value>
+  </data>
+  <data name="InvoiceViewModel_BeforeApplicableTaxes" xml:space="preserve">
+    <value>*before applicable taxes</value>
+  </data>
+  <data name="InvoiceViewModel_SubtotalIncludesCalifornia" xml:space="preserve">
+    <value>*Subtotal includes California </value>
+  </data>
+  <data name="InvoiceViewModel_BillTo" xml:space="preserve">
+    <value>Bill to</value>
+  </data>
+  <data name="InvoiceViewModel_BillingAddress" xml:space="preserve">
+    <value>Billing Address:</value>
+  </data>
+  <data name="InvoiceViewModel_BillingAddressColon" xml:space="preserve">
+    <value>Billing Address:</value>
+  </data>
+  <data name="InvoiceViewModel_CheckingOnPossibleDownloadLink" xml:space="preserve">
+    <value>Checking on possible download link...</value>
+  </data>
+  <data name="InvoiceViewModel_ContinueShopping" xml:space="preserve">
+    <value>Continue shopping</value>
+  </data>
+  <data name="InvoiceViewModel_DeliveryMethod" xml:space="preserve">
+    <value>Delivery method: </value>
+  </data>
+  <data name="InvoiceViewModel_Discount" xml:space="preserve">
+    <value>Discount:</value>
+  </data>
+  <data name="InvoiceViewModel_Download" xml:space="preserve">
+    <value>Download</value>
+  </data>
+  <data name="InvoiceViewModel_Email" xml:space="preserve">
+    <value>Email: </value>
+  </data>
+  <data name="InvoiceViewModel_EmailColon" xml:space="preserve">
+    <value>Email:</value>
+  </data>
+  <data name="InvoiceViewModel_EstimatedShipDate" xml:space="preserve">
+    <value>Estimated ship date: </value>
+  </data>
+  <data name="InvoiceViewModel_EstimatedShipDateColon" xml:space="preserve">
+    <value>Estimated Ship Date:</value>
+  </data>
+  <data name="InvoiceViewModel_EwasteFee" xml:space="preserve">
+    <value>eWaste Fee</value>
+  </data>
+  <data name="InvoiceViewModel_EwasteFeeDocumentation" xml:space="preserve">
+    <value>eWaste Fee Documentation</value>
+  </data>
+  <data name="InvoiceViewModel_EwasteFeeUrl" xml:space="preserve">
+    <value>/sportsus/en-us/home</value>
+  </data>
+  <data name="InvoiceViewModel_ExpirationDate" xml:space="preserve">
+    <value>Expiration Date: </value>
+  </data>
+  <data name="InvoiceViewModel_ExpirationDateColon" xml:space="preserve">
+    <value>Expiration Date:</value>
+  </data>
+  <data name="InvoiceViewModel_InstallManage" xml:space="preserve">
+    <value>Install/Manage</value>
+  </data>
+  <data name="InvoiceViewModel_LineItemPromoCodeTypeInstructions" xml:space="preserve">
+    <value>Please see your confirmation email for additional information</value>
+  </data>
+  <data name="InvoiceViewModel_Order" xml:space="preserve">
+    <value>Order</value>
+  </data>
+  <data name="InvoiceViewModel_OrderNum" xml:space="preserve">
+    <value>Order #: </value>
+  </data>
+  <data name="InvoiceViewModel_OrderDate" xml:space="preserve">
+    <value>Order date: </value>
+  </data>
+  <data name="InvoiceViewModel_OrderNumber" xml:space="preserve">
+    <value>Order number: </value>
+  </data>
+  <data name="InvoiceViewModel_OrderDateColon" xml:space="preserve">
+    <value>Order date:</value>
+  </data>
+  <data name="InvoiceViewModel_OrderDiscountColon" xml:space="preserve">
+    <value>Order discount:</value>
+  </data>
+  <data name="InvoiceViewModel_OrderNumberColon" xml:space="preserve">
+    <value>Order number:</value>
+  </data>
+  <data name="InvoiceViewModel_OrderStatusColon" xml:space="preserve">
+    <value>Status:</value>
+  </data>
+  <data name="InvoiceViewModel_OrderTotalColon" xml:space="preserve">
+    <value>Order total:</value>
+  </data>
+  <data name="InvoiceViewModel_Payment" xml:space="preserve">
+    <value>Payment:</value>
+  </data>
+  <data name="InvoiceViewModel_PaymentColon" xml:space="preserve">
+    <value>Payment:</value>
+  </data>
+  <data name="InvoiceViewModel_PreOrder" xml:space="preserve">
+    <value>Pre-Order</value>
+  </data>
+  <data name="InvoiceViewModel_ProductKey" xml:space="preserve">
+    <value>Product Key: </value>
+  </data>
+  <data name="InvoiceViewModel_PurchasingInformation" xml:space="preserve">
+    <value>Purchasing Information</value>
+  </data>
+  <data name="InvoiceViewModel_Qty" xml:space="preserve">
+    <value>Qty: </value>
+  </data>
+  <data name="InvoiceViewModel_ShipTo" xml:space="preserve">
+    <value>Ship to</value>
+  </data>
+  <data name="InvoiceViewModel_ShipToAddress" xml:space="preserve">
+    <value>Ship-To Address:</value>
+  </data>
+  <data name="InvoiceViewModel_ShipToAddressColon" xml:space="preserve">
+    <value>Ship-To Address:</value>
+  </data>
+  <data name="InvoiceViewModel_ShippingMethod" xml:space="preserve">
+    <value>Shipping Method:</value>
+  </data>
+  <data name="InvoiceViewModel_Shipping" xml:space="preserve">
+    <value>Shipping:</value>
+  </data>
+  <data name="InvoiceViewModel_ShippingMethodColon" xml:space="preserve">
+    <value>Shipping Method:</value>
+  </data>
+  <data name="InvoiceViewModel_Subtotal" xml:space="preserve">
+    <value>Subtotal:</value>
+  </data>
+  <data name="InvoiceViewModel_SubtotalColnAst" xml:space="preserve">
+    <value>Subtotal:*</value>
+  </data>
+  <data name="InvoiceViewModel_Tax" xml:space="preserve">
+    <value>Tax:</value>
+  </data>
+  <data name="InvoiceViewModel_ThankYouForYourOrder" xml:space="preserve">
+    <value>Thank you for your order</value>
+  </data>
+  <data name="InvoiceViewModel_ThankYou" xml:space="preserve">
+    <value>Thank you!</value>
+  </data>
+  <data name="InvoiceViewModel_ThankYouMessaging" xml:space="preserve">
+    <value>Thank you for your order</value>
+  </data>
+  <data name="InvoiceViewModel_Total" xml:space="preserve">
+    <value>Total:</value>
+  </data>
+  <data name="InvoiceViewModel_ViewInstructions" xml:space="preserve">
+    <value>View instructions</value>
+  </data>
+  <data name="InvoiceViewModel_WeveSentYourReceiptAndAnyRelatedInstructionsTo" xml:space="preserve">
+    <value>%lt;br /%gt;We've sent your receipt and any related instructions to: </value>
+  </data>
+  <data name="InvoiceViewModel_YourOrderNumber" xml:space="preserve">
+    <value>Your order number: </value>
+  </data>
+  <data name="MiniCart_Cart" xml:space="preserve">
+    <value>Cart</value>
+  </data>
+  <data name="PageTitle_Category" xml:space="preserve">
+    <value>SportsUS - Shop {CategoryName}</value>
+  </data>
+  <data name="PageTitle_PagetypeAllOthers" xml:space="preserve">
+    <value>SportsUS - Shop for all your sports equipment online</value>
+  </data>
+  <data name="PageTitle_PagetypeSearchResults" xml:space="preserve">
+    <value>SportsUS - Search Results</value>
+  </data>
+  <data name="PageTitle_PagetypeShoppingCart" xml:space="preserve">
+    <value>SportsUS - Shopping Cart</value>
+  </data>
+  <data name="PageTitle_Product" xml:space="preserve">
+    <value>SportsUS - Buy {ProductName}</value>
+  </data>
+  <data name="Parts_ClickToPlayVideo" xml:space="preserve">
+    <value>Click to play the video</value>
+  </data>
+  <data name="Parts_ScrollLeft" xml:space="preserve">
+    <value>Scroll left</value>
+  </data>
+  <data name="Parts_ScrollRight" xml:space="preserve">
+    <value>Scroll right</value>
+  </data>
+  <data name="PaymentMethodsList_Edit" xml:space="preserve">
+    <value>Edit</value>
+  </data>
+  <data name="PaymentMethodsList_EndingIn" xml:space="preserve">
+    <value> ending in </value>
+  </data>
+  <data name="PaymentMethodsList_Expires" xml:space="preserve">
+    <value>Expires </value>
+  </data>
+  <data name="PaymentMethodsList_PayWith" xml:space="preserve">
+    <value>Pay with:</value>
+  </data>
+  <data name="PaymentMethodsList_PayWithPaypal" xml:space="preserve">
+    <value>Pay with PayPal</value>
+  </data>
+  <data name="PaymentMethodsList_PayWithThisCard" xml:space="preserve">
+    <value>Pay with this card</value>
+  </data>
+  <data name="PriceViewModel_Vatnotification" xml:space="preserve">
+    <value>incl. GST</value>
+  </data>
+  <data name="Product_360View" xml:space="preserve">
+    <value>360-view</value>
+  </data>
+  <data name="Product_Add" xml:space="preserve">
+    <value>Add</value>
+  </data>
+  <data name="Product_AddToCart" xml:space="preserve">
+    <value>Add to cart</value>
+  </data>
+  <data name="Product_Added" xml:space="preserve">
+    <value>Added</value>
+  </data>
+  <data name="Product_AddedToCart" xml:space="preserve">
+    <value>added to your cart</value>
+  </data>
+  <data name="Product_AddingToCart" xml:space="preserve">
+    <value>Adding to cart</value>
+  </data>
+  <data name="Product_ColorColon" xml:space="preserve">
+    <value>Color:</value>
+  </data>
+  <data name="Product_DeliveryMethodColon" xml:space="preserve">
+    <value>Delivery method:</value>
+  </data>
+  <data name="Product_EstimatedShipDateColon" xml:space="preserve">
+    <value>Estimated ship date:</value>
+  </data>
+  <data name="Product_For2Pcs" xml:space="preserve">
+    <value>For 2 PCs</value>
+  </data>
+  <data name="Product_For2PcsOrMacs" xml:space="preserve">
+    <value>For 2 PCs or Macs</value>
+  </data>
+  <data name="Product_ForOneMac" xml:space="preserve">
+    <value>For one Mac</value>
+  </data>
+  <data name="Product_ForOnePc" xml:space="preserve">
+    <value>For one PC</value>
+  </data>
+  <data name="Product_ForUptoThreeMacs" xml:space="preserve">
+    <value>For up to three Macs</value>
+  </data>
+  <data name="Product_ForUptoThreePcs" xml:space="preserve">
+    <value>For up to three PCs</value>
+  </data>
+  <data name="Product_ForUptoTwoMacs" xml:space="preserve">
+    <value>For up to two Macs</value>
+  </data>
+  <data name="Product_ForUptoTwoPcs" xml:space="preserve">
+    <value>For up to two PCs</value>
+  </data>
+  <data name="Product_LicenseTypeColon" xml:space="preserve">
+    <value>License type:</value>
+  </data>
+  <data name="Product_OutOfStock" xml:space="preserve">
+    <value>Out of stock</value>
+  </data>
+  <data name="Product_PdpTabsHeaderDefault" xml:space="preserve">
+    <value>Details</value>
+  </data>
+  <data name="Product_PreOrderNow" xml:space="preserve">
+    <value>Pre-order now</value>
+  </data>
+  <data name="Product_Preorder" xml:space="preserve">
+    <value>Pre-Order</value>
+  </data>
+  <data name="Product_PriceFrom" xml:space="preserve">
+    <value>From</value>
+  </data>
+  <data name="Product_PriceNow" xml:space="preserve">
+    <value>Now</value>
+  </data>
+  <data name="Product_PriceNowColon" xml:space="preserve">
+    <value>Now:</value>
+  </data>
+  <data name="Product_PriceSave" xml:space="preserve">
+    <value>Save</value>
+  </data>
+  <data name="Product_PriceSaveColon" xml:space="preserve">
+    <value>Save:</value>
+  </data>
+  <data name="Product_PriceStartingAt" xml:space="preserve">
+    <value>Starting at</value>
+  </data>
+  <data name="Product_PriceWas" xml:space="preserve">
+    <value>was</value>
+  </data>
+  <data name="Product_PriceWasColon" xml:space="preserve">
+    <value>was:</value>
+  </data>
+  <data name="Product_ProductNotAvailable" xml:space="preserve">
+    <value>Product not available</value>
+  </data>
+  <data name="Product_QuantityColon" xml:space="preserve">
+    <value>Quantity:</value>
+  </data>
+  <data name="Product_QuantityShort" xml:space="preserve">
+    <value>Qty</value>
+  </data>
+  <data name="Product_QuantityShortColon" xml:space="preserve">
+    <value>Qty:</value>
+  </data>
+  <data name="Product_QuickView" xml:space="preserve">
+    <value>QUICK VIEW</value>
+  </data>
+  <data name="Product_ReleaseDateColon" xml:space="preserve">
+    <value>Release date:</value>
+  </data>
+  <data name="Product_Remove" xml:space="preserve">
+    <value>Remove</value>
+  </data>
+  <data name="Product_ReviewAndCheckout" xml:space="preserve">
+    <value>Review and checkout</value>
+  </data>
+  <data name="Product_ShopThisProduct" xml:space="preserve">
+    <value>Shop this product</value>
+  </data>
+  <data name="Product_SoldOut" xml:space="preserve">
+    <value>sold out</value>
+  </data>
+  <data name="Product_StudentPrice" xml:space="preserve">
+    <value>Student price</value>
+  </data>
+  <data name="Product_ViewInstructions" xml:space="preserve">
+    <value>View instructions</value>
+  </data>
+  <data name="Product_YouSave" xml:space="preserve">
+    <value>SAVE</value>
+  </data>
+  <data name="ProductDeliveryMethods_Physical" xml:space="preserve">
+    <value>Ship it</value>
+  </data>
+  <data name="ProductDetailPage_FreeShipping" xml:space="preserve">
+    <value>Free Shipping on orders over $49.99</value>
+  </data>
+  <data name="SearchPartViewModel_SearchFieldPlaceholder" xml:space="preserve">
+    <value>Search by keyword</value>
+  </data>
+  <data name="SearchResultViewModel_NoMoreProductsFound" xml:space="preserve">
+    <value>No more products were found.</value>
+  </data>
+  <data name="SearchResultViewModel_NoProductsFoundPost" xml:space="preserve">
+    <value>. Please check your search criteria and try again.</value>
+  </data>
+  <data name="SearchResultViewModel_NoProductsFoundPre" xml:space="preserve">
+    <value>No results were found for: </value>
+  </data>
+  <data name="ShoppingCart_AddCouponFailed" xml:space="preserve">
+    <value>Invalid promo code</value>
+  </data>
+  <data name="ShoppingCart_AddCouponInvalidCoupon" xml:space="preserve">
+    <value>Unable to add coupon to shopping cart</value>
+  </data>
+  <data name="ShoppingCart_AddCouponInvalidCouponAlreadyUsed" xml:space="preserve">
+    <value>Unable to add coupon to shopping cart. Coupon code has already been used</value>
+  </data>
+  <data name="ShoppingCart_AddCouponInvalidCouponCode" xml:space="preserve">
+    <value>Unable to add coupon to shopping cart. Coupon code is not valid</value>
+  </data>
+  <data name="ShoppingCart_AddCouponInvalidCouponNotExists" xml:space="preserve">
+    <value>Unable to add coupon to shopping cart. Coupon code does not exist</value>
+  </data>
+  <data name="ShoppingCart_AddCouponInvalidCouponOfferHitItsLimit" xml:space="preserve">
+    <value>Unable to add coupon to shopping cart. Offer has hit its limit and the coupon code is no longer available</value>
+  </data>
+  <data name="ShoppingCart_AddCouponInvalidCouponOfferNotYetLive" xml:space="preserve">
+    <value>Unable to add coupon to shopping cart. Offer associated to this coupon is not live</value>
+  </data>
+  <data name="ShoppingCart_AddCouponInvalidCouponOfferUsedByShopper" xml:space="preserve">
+    <value>Unable to add coupon to shopping cart. Shopper has already used a coupon for this offer</value>
+  </data>
+  <data name="ShoppingCart_AddCouponInvalidCouponSessionExpired" xml:space="preserve">
+    <value>Unable to add coupon to shopping cart. Session the coupon was applied to has expired</value>
+  </data>
+  <data name="ShoppingCart_AddProductCartLocked" xml:space="preserve">
+    <value>We're sorry but your shopping cart is locked</value>
+  </data>
+  <data name="ShoppingCart_AddProductFailed" xml:space="preserve">
+    <value>We're sorry but we were unable to add the product to the cart.</value>
+  </data>
+  <data name="ShoppingCart_AddProductOutOfStock" xml:space="preserve">
+    <value>We're sorry but the product is currently out of stock and cannot be added to your cart.</value>
+  </data>
+  <data name="ShoppingCart_ChangeVariationFailed" xml:space="preserve">
+    <value>We're sorry but we were unable to update your item.</value>
+  </data>
+  <data name="ShoppingCart_ChangeVariationGenericProduct" xml:space="preserve">
+    <value>the product</value>
+  </data>
+  <data name="ShoppingCart_ChangeVariationProductOutOfStock" xml:space="preserve">
+    <value>We're sorry but {0} is currently out of stock and cannot be added to your cart.</value>
+  </data>
+  <data name="ShoppingCart_CheckEligibilityExistingSharedSubscriptionError" xml:space="preserve">
+    <value>You may only have one active subscription.</value>
+  </data>
+  <data name="ShoppingCart_ItemAddedToCart" xml:space="preserve">
+    <value>has been added to your cart.</value>
+  </data>
+  <data name="ShoppingCart_UpdateLineItemFailed" xml:space="preserve">
+    <value>We're sorry but we were unable to update your item.</value>
+  </data>
+  <data name="ShoppingCart_UpdateShippingFailed" xml:space="preserve">
+    <value>We're sorry but we were unable to update shipping method.</value>
+  </data>
+  <data name="ShoppingCart_ViewCart" xml:space="preserve">
+    <value>View cart</value>
+  </data>
+  <data name="ShoppingCartViewModel_ButtonCheckoutNormal" xml:space="preserve">
+    <value>Checkout</value>
+  </data>
+  <data name="SortCategory_SortByColon" xml:space="preserve">
+    <value>Sort by:</value>
+  </data>
+  <data name="SortCategory_SortChoiceNameAsc" xml:space="preserve">
+    <value>Name (A to Z)</value>
+  </data>
+  <data name="SortCategory_SortChoiceNameDesc" xml:space="preserve">
+    <value>Name (Z to A)</value>
+  </data>
+  <data name="SortCategory_SortChoicePriceAsc" xml:space="preserve">
+    <value>Price (low to high)</value>
+  </data>
+  <data name="SortCategory_SortChoicePriceDesc" xml:space="preserve">
+    <value>Price (high to low)</value>
+  </data>
+  <data name="SortCategory_SortChoiceTopSellers" xml:space="preserve">
+    <value>Top sellers</value>
+  </data>
+  <data name="MiniCart_Checkout" xml:space="preserve">
+    <value>Checkout</value>
+  </data>
+  <data name="General_Currency" xml:space="preserve">
+    <value>$</value>
+  </data>
+</root>

@@ -1,0 +1,5 @@
+{
+    "aesKey": "<replace this>",
+    "aesInitVector": "<replace this>",
+    "aesSalt": "<replace this>"
+}

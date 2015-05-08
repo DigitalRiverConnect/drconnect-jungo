@@ -1,0 +1,18 @@
+﻿@using DigitalRiver.CloudLink.Commerce.Nimbus.N2Content
+@using DigitalRiver.CloudLink.Commerce.Nimbus.N2Content
+@section Meta {
+    @Content.Register.Meta("Description").Container("Metadata").Display()
+    @Content.Register.Meta("Keywords").Container("Metadata").Display()
+    @Content.Register.Meta("Robots").Container("Metadata").Display()
+}
+@if (Model != null && !string.IsNullOrWhiteSpace(Model.Text))
+{
+    <section>
+        <div class="grid-container">
+            <div class="grid-row">
+                <div class="page-text">@Html.DisplayContent("Text")</div>
+            </div>
+        </div>
+    </section>
+}
+@{ Html.DroppableZone(Zones.Content).Render(); }

@@ -1,0 +1,24 @@
+﻿@using DigitalRiver.CloudLink.Commerce.Nimbus.N2Content
+@model DigitalRiver.CloudLink.Commerce.Nimbus.ViewModels.Layout.ContentPageViewModel
+@section Meta {
+	@Content.Register.Meta("Robots").Container("Metadata").Display()
+	@{  
+		var item = Content.Current.Page;        
+		if (item != null)
+		{
+		<meta name="cms-id" content="@item.ID" />
+		<meta name="cms-version" content="@item.VersionIndex" />
+		}
+	}
+}
+@if (Model != null && !string.IsNullOrWhiteSpace(Model.Text))
+{
+    <section>
+        <div class="grid-container">
+            <div class="grid-row">
+                <div class="page-text">@Html.DisplayContent("Text")</div>
+            </div>
+        </div>
+    </section>
+}
+@{ Html.DroppableZone(Zones.Content).Render(); }

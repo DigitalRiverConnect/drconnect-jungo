@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<n2 version="2.4.0.0" exportVersion="2" exportDate="07/10/2013 23:28:35">
+  <item id="175" name="en-ca" parent="174" title="en-CA" state="Published" created="04/19/2013 00:45:31" updated="07/10/2013 23:28:35" published="04/19/2013 00:45:31" sortOrder="-10" url="/msca/en-ca" visible="True" savedBy="ehornbostel" typeName="DigitalRiver.CloudLink.N2MVC.Models.Pages.LanguageRoot, DigitalRiver.CloudLink.N2MVC" discriminator="LanguageRoot" ancestralTrail="/1/12/174/" childState="128">
+    <details>
+      <detail name="LanguageCode" typeName="System.String, mscorlib" meta="" encoded="True"><![CDATA[en-CA]]></detail>
+    </details>
+    <detailCollections />
+    <children>
+      <child id="176" name="176" versionIndex="0" />
+      <child id="177" name="177" versionIndex="0" />
+    </children>
+    <authorizations />
+    <properties />
+  </item>
+  <item id="176" name="" parent="175" title="" zoneName="Header" state="Published" created="04/19/2013 16:52:35" updated="07/10/2013 23:28:35" published="04/19/2013 16:57:15" sortOrder="-10" url="/msca/en-ca?item=176" visible="True" savedBy="ehornbostel" typeName="DigitalRiver.CloudLink.N2MVC.Models.Parts.TemplatePart, DigitalRiver.CloudLink.N2MVC" discriminator="TemplatePart" ancestralTrail="/1/12/174/175/" childState="2">
+    <details>
+      <detail name="ViewTemplate" typeName="System.String, mscorlib" meta="" encoded="True"><![CDATA[MsComNav]]></detail>
+    </details>
+    <detailCollections />
+    <children />
+    <authorizations />
+    <properties />
+  </item>
+  <item id="177" name="" parent="175" title="" zoneName="Content" state="Published" created="04/19/2013 17:19:40" updated="07/10/2013 23:28:35" published="04/19/2013 17:20:27" sortOrder="-5" url="/msca/en-ca?item=177" visible="True" savedBy="ehornbostel" typeName="DigitalRiver.CloudLink.N2MVC.Models.Parts.TemplatePart, DigitalRiver.CloudLink.N2MVC" discriminator="TemplatePart" ancestralTrail="/1/12/174/175/" childState="128">
+    <details>
+      <detail name="ViewTemplate" typeName="System.String, mscorlib" meta="" encoded="True"><![CDATA[HomeHero]]></detail>
+    </details>
+    <detailCollections />
+    <children>
+      <child id="178" name="178" versionIndex="0" />
+    </children>
+    <authorizations />
+    <properties />
+  </item>
+  <item id="178" name="" parent="177" title="" zoneName="HeroBanner" state="Published" created="04/19/2013 17:20:15" updated="07/10/2013 23:28:35" published="04/19/2013 17:20:27" sortOrder="0" url="/msca/en-ca?item=178" visible="True" savedBy="ehornbostel" typeName="DigitalRiver.CloudLink.N2MVC.Models.Parts.CmsPopPart, DigitalRiver.CloudLink.N2MVC" discriminator="CmsPopPart" ancestralTrail="/1/12/174/175/177/" childState="2">
+    <details>
+      <detail name="ViewTemplate" typeName="System.String, mscorlib" meta="" encoded="True"><![CDATA[MsComHeroBanner]]></detail>
+    </details>
+    <detailCollections />
+    <children />
+    <authorizations />
+    <properties />
+  </item>
+</n2>

@@ -1,0 +1,66 @@
+﻿@using System.Linq;
+@using DigitalRiver.CloudLink.Commerce.Nimbus.N2Content.Models
+@model DigitalRiver.CloudLink.Commerce.Nimbus.N2Content.Models.ContentPickerViewModel
+@{
+    Layout = "~/Views/Shared/_AdminPopupLayout.cshtml";
+    ViewBag.Title = "Site Manager Content Picker";
+}
+<div class="admin" id="content-picker" data-control-id="@Model.ControlId">
+    <div id="page-search">
+        <div class="search-query input-apend ng-scope">
+            @using (Html.BeginForm(new { action = "index" }))
+            { 
+                @Html.DisplayContent("Keywords")
+                @Html.HiddenFor(vm => vm.StartPage)
+                @Html.TextBoxFor(vm => vm.SearchCriteria, new { @value = "Search keyword", @placeholder = "Search keyword" })
+            }
+            <button id="btnSearch" class="btn" title="Search"><b class="n2-icon-search"></b></button>
+            <button id="btnReset" class="btn" title="Reset"><b class="n2-icon-remove"></b></button>
+        </div>
+    </div>
+    <div id="page-tree">
+        <div id="no-results">
+            <p>No categories were found</p>
+        </div>
+        @helper ShowTree(IEnumerable<ContentItemViewModel> items, int level, bool first)
+        {
+            <ul class="targettable ng-scope expanded">
+            @foreach (var v in items)
+            {
+                var _children = from chld in v.Children
+                                where chld.IsPage
+                                select chld;
+                var disp = string.IsNullOrEmpty(v.Title) ? v.Name : v.Title;
+
+                <li class="node ng-scope  @(_children.Any() ? "expanded" : "")">
+                    <div class="item ng-scope">
+                        <b class="handle"></b>
+                        <a href="#" class="toggle">
+                            <b class="toggle-expand n2-icon-chevron-right"></b>
+                            <b class="toggle-collapse icon-chevron-up"></b>
+                            <b class="toggle-loading icon-repeat"></b>
+                        </a>
+                        <a href="javascript:void(0)" target="preview" class="link ng-binding" title="@v.Name" data-content-title="@v.Title" data-content-url="@v.Url" data-content-name="@v.Name">
+                            <b class="ico n2-icon-file" style="display: none;"></b>
+                            <span class="page-icon" style="background-image:url(/favicon.ico)"></span>&nbsp;@disp
+                        </a>
+                    </div>
+                    @if (_children.Any())
+                    {
+                        @ShowTree(_children, level + 1, false)
+                    }
+                </li>
+            }
+            </ul>
+        }
+        @{
+            var children = from chld in Model.StartPage.Children
+                           where chld.IsPage
+                           select chld;
+        }
+        @if (children.Any())
+        { 
+            @ShowTree(children, 0, true)          
+        }
+    </div>
+</div>

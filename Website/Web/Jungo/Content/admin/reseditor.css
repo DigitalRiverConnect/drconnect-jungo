@@ -1,0 +1,128 @@
+﻿body {
+    font-size: .85em;
+    font-family: "Segoe UI", Verdana, Helvetica, Sans-Serif;
+    color: #232323;
+    background-color: #fff;
+}
+
+header, footer, nav, section {
+    display: block;
+}
+
+
+/* Styles for basic forms
+-----------------------------------------------------------*/
+fieldset {
+    border: 1px solid #ddd;
+    padding: 0.5em 0 0.6em 1.2em;
+    margin: 0 0 1.5em 0;
+}
+
+legend {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+textarea {
+    min-height: 75px;
+}
+
+.editor-label {
+    margin: 1em 0 0 0;
+}
+
+.editor-field {
+    margin: 0.5em 0 0 0;
+}
+
+
+/* Styles for validation helpers
+-----------------------------------------------------------*/
+.field-validation-error {
+    color: #f00;
+}
+
+.field-validation-valid {
+    display: none;
+}
+
+.input-validation-error {
+    border: 1px solid #f00;
+    background-color: #fee;
+}
+
+.validation-summary-errors {
+    font-weight: bold;
+    color: #f00;
+}
+
+.validation-summary-valid {
+    display: none;
+}
+
+BODY { font-family: Cambria, Georgia, "Times New Roman"; margin: 0; }
+DIV#header DIV.title, DIV.item H3, DIV.item H4, DIV.pager A {
+    font: bold 1em "Arial Narrow", "Franklin Gothic Medium", Arial;
+}
+DIV#header { background-color: #18a0de; border-bottom: 2px solid #3aaee3; color: White; }
+DIV#header DIV.title { font-size: 1.6em; padding: .4em; }
+DIV#content { border-left: 2px solid #3aaee3; margin-left: 13em; padding: 1em;padding-top: .5em; height: 31em;overflow-y: scroll; }
+div#content th { color: #eee;text-align: left;background-color: #3aaee3;border: #d2edf9 1px solid;}
+div#content td { border: #d2edf9 1px solid;}
+div#content td, div#content th { padding: 3px;}
+div#content table { border-spacing: 3px;border-collapse: collapse;}
+div#content .labelRightJust, div#content .labelRightJustNarrow {float:left;text-align: right;padding-right:5px;font-weight: bold;width: 90px;}
+div#content .labelRightJustNarrow { width: 45px; }
+div#content .editorSpacing { padding-bottom: 5px;}
+div#content table form { display: inline;padding: 0;border: 0;}
+
+DIV#search { float: left; width: 12em; padding: .3em; padding-top: .5em; }
+
+DIV.item { border-top: 1px dotted gray; padding-top: .7em; margin-bottom: .7em; }
+DIV.item:first-child { border-top:none; padding-top: 0; }
+DIV.item H3 { font-size: 1.3em; margin: 0 0 .25em 0; }
+DIV.item H4 { font-size: 1.1em; margin:.4em 0 0 0; }
+
+DIV.pager { text-align:right; border-bottom: 2px solid silver;
+    padding: .5em 0 0 0; margin-bottom: 1em; }
+DIV.pager A { font-size: 1.1em; color: #666; text-decoration: none;
+      padding: 0 .4em 0 .4em; }
+DIV.pager A:hover { background-color: Silver; }
+DIV.pager A.selected { background-color: #3aaee3; color: White; }
+
+
+/*
+DIV#search A
+{
+    font: bold 1.1em "Arial Narrow","Franklin Gothic Medium",Arial; display: block;
+    text-decoration: none; padding: .6em; color: Black;
+    border-bottom: 1px solid silver;
+}
+DIV#search A.selected { background-color: #666; color: White; }
+DIV#search A:hover { background-color: #CCC; }
+DIV#search A.selected:hover { background-color: #666; }
+*/
+div#search .separator-line { width: 8em;border-top: #444444 1px dashed;margin-top: 1em;margin-left: 2em;}
+
+FORM { margin: 0; padding: 0; }
+DIV.item FORM { float:right; }
+DIV.item INPUT {
+    color:White; background-color: #333; border: 1px solid black; cursor:pointer; 
+}
+
+H2 { margin-top: 0.3em }
+TFOOT TD { border-top: 1px dotted gray; font-weight: bold; }
+A.actionButton, INPUT.actionButton {
+    font: .8em Arial; color: White; margin: .5em;
+    text-decoration: none; padding: .15em 1.5em .2em 1.5em;
+    background-color: #18a0de; border: 1px solid #3aaee3;
+}
+A.actionButton:hover, INPUT.actionButton:hover {
+    background-color: #3aaee3; border: 1px solid #d9f0f9; cursor:pointer
+}
+a.squattyButton, INPUT.squattyButton { margin: 0;padding: 1px;background-color: #51b6e6;border-color: #d9f0f9;}
+
+DIV#cart { float:right; margin: .8em; color: Silver; 
+   background-color: #555; padding: .5em .5em .5em 1em; }
+DIV#cart A { text-decoration: none; padding: .4em 1em .4em 1em; line-height:2.1em;
+   margin-left: .5em; background-color: #333; color:White; border: 1px solid black;}

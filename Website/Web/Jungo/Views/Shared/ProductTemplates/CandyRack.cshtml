@@ -1,0 +1,46 @@
+﻿@using DigitalRiver.CloudLink.Commerce.Nimbus.SportsUs.Infrastructure.Helpers
+@using Jungo.Infrastructure.Extensions
+@model DigitalRiver.CloudLink.Commerce.Nimbus.ViewModels.Catalog.CrossSellViewModel
+@if (Model.Offers.Count > 0)
+{
+    <div class="recommend-heading">
+        <h1>@Model.Title</h1>
+    </div>
+    <ul class="candy-rack">
+        @foreach (var product in Model.Offers.SelectMany(x => x.ProductOffers.ProductOffer).GroupBy(x => x.Product.Id).Select(x => x.First()).Take(Model.MaxNumberOfProducts).Select((value, i) => new { Index = i + 1, Value = value }))
+        {
+            var offer = Model.Offers.First(o => o.ProductOffers.ProductOffer.Any(p => p.Product.Id == product.Value.Id));
+            var displayProduct = product.Value.Product;
+            var preorderEnabled = displayProduct.CustomAttributes.ValueByName("preorderEnabled", false);
+            <li class="item-@product.Index">
+                <img src="@displayProduct.ThumbnailImage" alt="@displayProduct.ManufacturerName" />
+                @if (!string.IsNullOrWhiteSpace(displayProduct.DisplayName))
+                {
+                    <p>@displayProduct.DisplayName</p>
+                }
+                @if (product.Value.Pricing.TotalDiscountWithQuantity.Value > 0)
+                {
+                    <p class="item-price productPriceDiscounted">@product.Value.Pricing.FormattedSalePriceWithQuantity</p>
+                    <p class="item-price">
+                        <span class="regular-price">@Res.Product_PriceWas&nbsp;<del>@product.Value.Pricing.FormattedListPriceWithQuantity</del></span>
+                    </p>
+                }
+                else
+                {
+                    <p class="item-price">@product.Value.Pricing.FormattedListPriceWithQuantity</p>
+                }
+                @if (!preorderEnabled && !displayProduct.InventoryStatus.ProductIsInStock && !displayProduct.InventoryStatus.ProductIsAllowsBackorders)
+                {
+                    <p class="description">@Res.Product_OutOfStock</p>
+                }
+                else
+                {
+                    <a class="cta" href="javascript:void(0)" data-text-added="@Res.Product_Added" data-text-adding="@Res.Product_AddingToCart" data-product-id="@displayProduct.Id" data-offer-id="@offer.Id">@Res.Product_AddToCart</a>
+                }
+            </li>
+        }
+    </ul>
+    <div class="loading">
+        <img height="41" width="41" src="@Html.GetPublicURL("~/upload/Content/img/loader.gif")" alt="@Res.General_PleaseWait" />
+    </div>
+}

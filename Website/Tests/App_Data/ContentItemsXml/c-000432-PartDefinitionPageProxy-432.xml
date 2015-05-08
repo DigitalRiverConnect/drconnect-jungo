@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<n2 version="2.4.0.0" exportVersion="2" exportDate="07/10/2013 23:28:37">
+  <item id="432" name="" parent="431" title="YouTube" state="Published" created="06/26/2013 12:49:53" updated="07/10/2013 23:28:37" published="06/26/2013 14:37:48" sortOrder="0" url="/PartDefinitionPage/Index?page=432" visible="True" savedBy="admin" typeName="DigitalRiver.CloudLink.N2MVC.Models.Pages.PartDefinitionPage, DigitalRiver.CloudLink.N2MVC" discriminator="PartDefinitionPage" ancestralTrail="/1/431/" childState="128">
+    <details>
+      <detail name="Description" typeName="System.String, mscorlib" meta="" encoded="True"><![CDATA[Embedded YouTube Video Player]]></detail>
+      <detail name="Icon" typeName="System.String, mscorlib" meta="" encoded="True"><![CDATA[{IconsUrl}/film.png]]></detail>
+      <detail name="Template" typeName="System.String, mscorlib" meta="" encoded="True"><![CDATA[@model DigitalRiver.CloudLink.N2MVC.Models.Parts.ContentPart
+@if (Content.Has.WatchUrl)
+{
+	string uniqueId = Html.UniqueID(&quot;v&quot;);
+	var watchUrl = new N2.Web.Url(Content.Data.WatchUrl);
+	N2.Web.Url embed = &quot;http://www.youtube.com/v/&quot; + watchUrl.GetQuery(&quot;v&quot;); //&quot;http://www.youtube.com/embed/&quot; + watchUrl.GetQuery(&quot;v&quot;);
+	if (Content.Has.HD)
+	{
+		embed = embed.AppendQuery(&quot;hd&quot;, Content.Data.HD ? 1 : 0);
+	}
+&lt;div id=&quot;@uniqueId&quot; class=&quot;part video&quot;&gt;
+&lt;div class=&quot;video-inner&quot;&gt;
+&lt;object width=&quot;480&quot; height=&quot;390&quot;&gt;&lt;param name=&quot;movie&quot; value=&quot;@embed&quot;&gt;&lt;/param&gt;&lt;param name=&quot;allowFullScreen&quot; value=&quot;true&quot;&gt;&lt;/param&gt;&lt;param name=&quot;allowscriptaccess&quot; value=&quot;always&quot;&gt;&lt;/param&gt;&lt;embed src=&quot;@embed&quot; type=&quot;application/x-shockwave-flash&quot; allowscriptaccess=&quot;always&quot; allowfullscreen=&quot;true&quot; width=&quot;480&quot; height=&quot;390&quot;&gt;&lt;/embed&gt;&lt;/object&gt;
+&lt;/div&gt;
+&lt;script type=&quot;text/javascript&quot;&gt;
+	$(document).ready(function () {
+		var $c = $(&quot;#@uniqueId&quot;);
+		var lowerPadding = ($c.closest(&quot;.slider&quot;).length &gt; 0) ? 42 : 0;
+		var map = { width: $c.width(), height: ($c.height() - lowerPadding) };
+		$c.find(&quot;object&quot;).attr(map).find(&quot;embed&quot;).attr(map);
+	});
+&lt;/script&gt;
+&lt;/div&gt;
+}]]></detail>
+    </details>
+    <detailCollections />
+    <children>
+      <child id="433" name="433" versionIndex="0" />
+      <child id="434" name="434" versionIndex="0" />
+    </children>
+    <authorizations />
+    <properties />
+  </item>
+  <item id="433" name="" parent="432" title="WatchUrl" zoneName="Attributes" state="Published" created="06/26/2013 12:49:53" updated="07/10/2013 23:28:37" published="06/26/2013 12:49:53" sortOrder="-10" url="/PartDefinitionPage/Index?page=432&amp;item=433" visible="True" savedBy="admin" typeName="DigitalRiver.CloudLink.N2MVC.Models.Pages.PartDefinitionPage+AttributePart, DigitalRiver.CloudLink.N2MVC" discriminator="AttributePart" ancestralTrail="/1/431/432/" childState="2">
+    <details>
+      <detail name="DefaultValue" typeName="System.String, mscorlib" meta="" encoded="True"><![CDATA[http://www.youtube.com/watch?v=]]></detail>
+      <detail name="HelpText" typeName="System.String, mscorlib" meta="" encoded="True"><![CDATA[YouTube Video Link - must include ?V= parameter for your video.]]></detail>
+    </details>
+    <detailCollections />
+    <children />
+    <authorizations />
+    <properties />
+  </item>
+  <item id="434" name="" parent="432" title="HD" zoneName="Attributes" state="Published" created="06/26/2013 12:49:53" updated="07/10/2013 23:28:37" published="06/26/2013 12:49:53" sortOrder="0" url="/PartDefinitionPage/Index?page=432&amp;item=434" visible="True" savedBy="admin" typeName="DigitalRiver.CloudLink.N2MVC.Models.Pages.PartDefinitionPage+AttributePart, DigitalRiver.CloudLink.N2MVC" discriminator="AttributePart" ancestralTrail="/1/431/432/" childState="2">
+    <details>
+      <detail name="PartType" typeName="System.Enum, mscorlib" meta="DigitalRiver.CloudLink.N2MVC.Models.Pages.PartDefinitionPage+AttributePart+AttributePartTypeEnum, DigitalRiver.CloudLink.N2MVC, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" encoded="True"><![CDATA[CheckBox]]></detail>
+      <detail name="HelpText" typeName="System.String, mscorlib" meta="" encoded="True"><![CDATA[High Definition]]></detail>
+    </details>
+    <detailCollections />
+    <children />
+    <authorizations />
+    <properties />
+  </item>
+</n2>

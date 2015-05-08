@@ -1,0 +1,15 @@
+﻿@model DigitalRiver.CloudLink.Commerce.Nimbus.SportsUs.Models.DiagnosticLock
+
+@{
+    ViewBag.Title = "Lock";
+    Layout = "~/Views/Shared/_DiagnosticLayout.cshtml";
+}
+
+@if (Model.IsLocked)
+{
+    <div>Replication is locked for @Model.LockDuration.ToString()</div>
+}
+else
+{
+    <div>Replication failed to lock.</div>
+}

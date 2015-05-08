@@ -1,0 +1,25 @@
+{
+	"delimiterComment": "Only Tab and Comma are supported",
+	"fieldNameComment": "Available fields: Order, LogType, RequestType, TimeElapsed, Host, Uri, RequestPayload, HttpStatus, DataSource, ResponsePayload, Error, SessionId, RequestId, DrRequestId, ResponsePayloadFirst1000, ResponsePayloadCompressed, ServerTrace",  
+	"delimiter": "Tab",
+	"columns":
+	[
+		{ "heading": "seq", "fieldName": "Order" },
+		{ "heading": "logType", "fieldName": "LogType" },
+		{ "heading": "requestType", "fieldName": "RequestType" },
+		{ "heading": "timeElapsed", "fieldName": "TimeElapsed" },
+		{ "heading": "requestHost", "fieldName": "Host" },
+		{ "heading": "requestUri", "fieldName": "Uri" },
+		{ "heading": "requestPayload", "fieldName": "RequestPayload" },
+		{ "heading": "responseStatus", "fieldName": "HttpStatus" },
+		{ "heading": "dataFlow", "fieldName": "DataFlow" },
+		{ "heading": "responsePayload", "fieldName": "ResponsePayloadFirst1000" },
+		{ "heading": "compressed", "fieldName": "ResponsePayloadCompressed" },
+		{ "heading": "error", "fieldName": "Error" },
+		{ "heading": "sessionId", "fieldName": "SessionId" },
+		{ "heading": "requestId", "fieldName": "RequestId" },
+		{ "heading": "dr-request-id", "fieldName": "DrRequestId" },
+		{ "heading": "serverTrace", "fieldName": "ServerTrace" }
+	],
+	"logLevelsIncluded": [ "FATAL","ERROR","INFO" ]
+}

@@ -1,0 +1,53 @@
+@using DigitalRiver.CloudLink.Commerce.Nimbus.N2Content
+@using DigitalRiver.CloudLink.Commerce.Nimbus.SportsUs.Infrastructure.Helpers
+@model DigitalRiver.CloudLink.Commerce.Nimbus.N2Content.Pages.FaqPage
+@section Meta {
+    @{  
+        var item = Content.Current.Page;
+        if (item != null)
+        {
+        <meta name="cms-id" content="@item.ID" />
+        <meta name="cms-version" content="@item.VersionIndex" />
+        } 
+    }
+}
+<section>
+    <div class="grid-container">
+        <div class="breadcrumbs breadcrumbs-padded">
+	        <a href="@Html.StoreLink()">@Res.General_Home</a>&nbsp;&gt;&nbsp;<a href="@Html.ContentPageLink("help")">@Res.General_Help</a>&nbsp;&gt;&nbsp;@Res.General_FrequentlyAskedQuestions
+        </div>
+    </div>
+</section>
+<section class="row-padded-bottom">
+    <div id="faq-page" class="grid-container">
+        <div id="content">
+            <h1 class="heading--large">@Html.DisplayContent("Title")</h1>
+            @if (Html.IsManaging())
+            {
+                Html.DroppableZone(Zones.Questions).Render();
+            }
+            else
+            {
+                <div>
+                    <ul class="menuLinks">
+                        @foreach (var question in Model.Questions)
+                        {
+                            <li><a href="#faq_@question.ID">@question.Title</a></li>
+                        }
+                    </ul>
+                </div>
+                foreach (var question in Model.Questions)
+                {
+                    <div id="faq_@question.ID">
+                        <h2 class="heading--medium">@question.Title</h2>@Html.Raw(question.Answer)
+                    </div>
+                }
+            }
+        </div>
+        <div>
+            <a href="#content" title="@Res.General_ReturnToTop">
+                <p class="returnTop">@Res.General_ReturnToTop</p>
+            </a>
+        </div>
+    </div>
+</section>

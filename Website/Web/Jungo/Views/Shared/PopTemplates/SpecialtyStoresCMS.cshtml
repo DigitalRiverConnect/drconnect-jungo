@@ -1,0 +1,12 @@
+﻿@model DigitalRiver.CloudLink.Commerce.Nimbus.ViewModels.Catalog.OffersViewModel
+@if (Model != null)
+{
+    <h1 class="heading--large">@Model.DisplayName</h1>
+    foreach (var item in Model.Items)
+    {
+    <div class="specialty-store">
+        <h2 class="heading--small">@item.DisplayName</h2>
+        <a href="@item.TargetUrl" class="cta" title="@item.DisplayName">@item.LinkText</a>
+    </div>
+    }
+}

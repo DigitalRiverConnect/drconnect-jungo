@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<n2 version="2.4.0.0" exportVersion="2" exportDate="07/10/2013 23:28:36">
+  <item id="365" name="xbox-360" parent="285" title="Xbox 360" state="Published" created="03/11/2013 22:16:04" updated="07/10/2013 23:28:36" published="03/11/2013 22:16:04" sortOrder="84" url="/msca/store/xbox-360" visible="True" savedBy="admin" typeName="DigitalRiver.CloudLink.N2MVC.Models.Pages.CatalogPage, DigitalRiver.CloudLink.N2MVC" discriminator="CatalogPage" ancestralTrail="/1/12/174/285/" childState="4">
+    <details />
+    <detailCollections />
+    <children />
+    <authorizations />
+    <properties />
+  </item>
+</n2>

@@ -1,0 +1,30 @@
+﻿@using DigitalRiver.CloudLink.Commerce.Nimbus.SportsUs.Infrastructure.Helpers
+@using DigitalRiver.CloudLink.Commerce.Nimbus.SportsUs.Infrastructure.Session
+@model DigitalRiver.CloudLink.Commerce.Nimbus.ViewModels.Layout.LanguageSelectorPartViewModel
+
+@{
+    var sessionLangCode = WebSession.Current.LanguageCode;
+    var worldWidePage = Html.ContentPageLink("WorldWidePage");
+    var language = Model.Languages.FirstOrDefault(l => l.LanguageCode.Substring(0,2).Equals(sessionLangCode, StringComparison.InvariantCultureIgnoreCase));
+}
+
+@if (language != null)
+{
+    if (string.IsNullOrWhiteSpace(worldWidePage))
+    {
+        <!-- Content page not created for World Wide Page! -->
+        <span class="locale-selector">
+            <span class="icon-globe"></span>@language.LanguageTitle
+        </span>
+    }
+    else
+    {
+        <a class="locale-selector" href="@worldWidePage" title="@language.LanguageTitle">
+            <span class="icon-globe"></span>@language.LanguageTitle
+        </a>
+    }
+}
+else
+{
+     //this is the case when Model doesn't have language 
+}

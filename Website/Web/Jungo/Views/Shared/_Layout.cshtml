@@ -1,0 +1,146 @@
+﻿@using DigitalRiver.CloudLink.Commerce.Nimbus.N2Content.Pages
+@using DigitalRiver.CloudLink.Commerce.Nimbus.SportsUs.Infrastructure
+@using DigitalRiver.CloudLink.Commerce.Nimbus.SportsUs.Infrastructure.Helpers
+@using DigitalRiver.CloudLink.Commerce.Nimbus.SportsUs.Infrastructure.Session
+@using N2
+@{
+    // if we got here with a HandleErrorInfo model, it means the combination of N2 and MVC did a nasty switch on us;
+    //    meaning we had a perfectly good model for the page in question but due to an error in rendering
+    //      some part somewhere deep down in some zone, an exception was thrown;
+    //    N2/MVC then replaced our perfectly good model with a HandleErrorInfo model containing the exception thrown
+    //      and then started invoking our layout again;
+    //    since nothing in this layout expects a HandleErrorInfo model, but rather very sincerely expects the original,
+    //      perfectly good model, things proceed to blow sky high;
+    
+    var theModel = Model as HandleErrorInfo;
+    if (theModel != null)
+    {
+        throw new Exception("see inner exception", theModel.Exception);
+    }
+    var lang = (WebSession.IsInitialized) ? WebSession.Current.LanguageCode ?? "" : "";
+    var culture = (WebSession.IsInitialized) ? WebSession.Current.CultureCode ?? "" : "";
+    var siteId = WebSession.Current.SiteId;
+}
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js ie lt-ie9 lt-ie8 lt-ie7" xml:lang="@lang" lang="@lang" culture="@culture" dir="ltr"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie lt-ie9 lt-ie8" xml:lang="@lang" lang="@lang" culture="@culture" dir="ltr"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie lt-ie9" xml:lang="@lang" lang="@lang" culture="@culture" dir="ltr"> <![endif]-->
+<!--[if IE 9]>    <html class="no-js ie " xml:lang="@lang" lang="@lang" culture="@culture" dir="ltr"> <![endif]-->
+<!--[if gt IE 8]><!--> 
+<html xml:lang="@lang" lang="@lang" culture="@culture" dir="ltr">
+<!--<![endif]-->
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta requestId="@Html.GetRequestId()" />
+        
+        @Html.Partial("MetaTags")
+        
+        <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" href="/favicon.ico" />
+
+        <title>@ViewBag.Title</title>
+        @RenderSection("Meta", required: false)
+
+        @Styles.Render("~/coteries/site_css")
+        @Scripts.Render("~/coteries/core")
+
+        @{ Html.DroppableZone("RecursiveCSS").Render(); }
+        @{ Html.DroppableZone("CSS").Render(); }
+        @{ Html.DroppableZone("RecursiveJavascript").Render(); }
+        @{ Html.DroppableZone("Javascript").Render(); }
+    </head>
+
+    <body>
+        @* Required for N2CMS admin functionality *@
+        @{ Html.ControlPanel().Configure(cp =>
+           {
+               cp.IncludeJQuery = false;
+               cp.IncludeCkEditor = true;
+           }).Render(); }        
+        
+        <div class="container">
+            <div class="page-header">
+                <div class="row">
+                    <div class="col-sm-3"><a href="@Html.StoreLink()"><img src="/Content/img/site/sportsInc.png" /></a></div>
+                    <div class="col-sm-9">
+                        <div class="search-part header-link">
+                            <form method="get" action="@Html.SearchActionLink()" name="ProductSearchForm" id="ProductSearchForm">
+                                <div class="global-navigation">
+                                    <div id="search-container" data-service-url='@Url.Action("AutoComplete", "Search", new { siteId = @siteId, cultureCode = @culture })'
+                                         data-site-id="@siteId" data-culture-code="@culture" data-product-url="@Html.ProductDetailLink(null)" data-max-results="5">
+                                        <div class="search-form enabled">
+                                            <div class="input-wrapper">
+                                                <div class="input-group">
+                                                    <input class="input_text ac_input form-control" name="query" maxlength="255" id="search-box" autocomplete="off" type="text" placeholder="@Res.SearchPartViewModel_SearchFieldPlaceholder" />
+                                                    <span class="input-group-btn">
+                                                        <button type="submit" class="search-submit btn btn-default" title="@Res.General_SearchButtonText">
+                                                            <span class="glyphicon glyphicon-search"></span>
+                                                        </button>    
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            
+                                        </div>
+                                        <div class="ac-wrapper panel panel-default">
+                                            <ul class="ac-container panel-body"></ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <script id="ac-item-template" type="text/template">
+                            <a href="<%= productUrl %>" title="<%= displayName %>"><%= displayNameHighlighted %></a>
+                        </script>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            @{ Html.DroppableZone("BeforeContent").Render(); }
+            @RenderBody()
+            @{ Html.DroppableZone("AfterContent").Render(); }
+        </div>
+        @Scripts.Render("~/coteries/site_js")
+        @{ Html.DroppableZone("RecursiveJavascriptFooter").Render(); }
+        @{ Html.DroppableZone("JavascriptFooter").Render(); }
+        @*
+        A page shouldn't be cached if it is rendered with an anti-forgery token.
+        To allow pages to be cached, and still use anti-forgery tokens for posts, the following gets loaded dynamically
+          via ajax with anti-forgery token when needed for ajax post.
+        An anti-forgery token might already be present in a form, in which case the following isn't used.
+        But if the page does not have a token, we detect this absence and ask the server for a token,
+          which gets stored here only in the in-memory DOM for use by any subsequent post done on the same page.
+        If a page is NOT cachable and is known to contain potential ajax posts, put on the relevant .cshtml
+          a form with a token to avoid having to go to the server to get it.
+        *@
+        <div id="__AjaxAntiForgeryContainer"></div>
+        <div id="fb-root"></div>
+        <script>
+            (function (d, s, id) {
+                $(window).load(function() {
+                    var js, fjs = d.getElementsByTagName(s)[0];
+                    if (d.getElementById(id)) return;
+                    js = d.createElement(s);
+                    js.id = id;
+                    js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+                    fjs.parentNode.insertBefore(js, fjs);
+                });
+            }(document, 'script', 'facebook-jssdk'));
+        </script>
+        <script type="text/javascript">
+            (function (d) {
+                $(window).load(function() {
+                    var f = d.getElementsByTagName('SCRIPT')[0], p = d.createElement('SCRIPT');
+                    p.type = 'text/javascript';
+                    p.async = true;
+                    p.src = '//assets.pinterest.com/js/pinit.js';
+                    p.setAttribute('data-pin-build', 'parsePinBtns');
+                    f.parentNode.insertBefore(p, f);
+                });
+            }(document));
+        </script>
+    </body>
+</html>

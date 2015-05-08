@@ -1,0 +1,86 @@
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+
+  <PropertyGroup>
+    <PipelineCollectFilesPhaseDependsOn>
+      GenerateN2ManagementZip;
+      CustomCollectFiles;
+    CollectMapFiles;
+    CollectConfigFiles
+      $(PipelineCollectFilesPhaseDependsOn)
+    </PipelineCollectFilesPhaseDependsOn>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <OnAfterTransformWebConfig>
+      $(OnAfterTransformWebConfig);
+      CustomTransformWebConfig;
+    </OnAfterTransformWebConfig>
+  </PropertyGroup>
+
+  <PropertyGroup>
+      <_N2ConfigTransformFile Condition=" '$(N2Admin)' == 'false' ">$(MSBuildProjectDirectory)\N2.$(Configuration).config</_N2ConfigTransformFile>
+  </PropertyGroup>
+
+  <Target Name="CustomTransformWebConfig" Condition=" Exists($(_N2ConfigTransformFile)) ">
+    <Message Text="_WebConfigTransformOutput: $(_WebConfigTransformOutput)" Importance="High" />
+    <TransformXml Destination="$(_WebConfigTransformOutput)" 
+                  Source="$(_WebConfigTransformOutput)" 
+                  Transform="$(_N2ConfigTransformFile)" />
+  </Target>
+
+  <Target Name="GenerateN2ManagementZip" Condition=" '$(N2Admin)' == 'true' ">
+    <MSBuild Projects="$(MSBuildProjectDirectory)\..\..\..\N2CMS\build\n2.proj" Targets="zipmanagement" Properties="Configuration=Release;Platform=x86" />
+    <MakeDir Condition="!Exists('$(MSBuildProjectDirectory)\N2')" Directories="$(MSBuildProjectDirectory)\N2" />
+    <Copy SourceFiles="$(MSBuildProjectDirectory)\..\..\..\N2CMS\output\n2cms_2.5.10_N2Management\N2.zip" DestinationFolder="$(MSBuildProjectDirectory)\N2" />
+    <Copy SourceFiles="$(MSBuildProjectDirectory)\..\..\..\N2CMS\output\n2cms_2.5.10_Framework\N2\Web.config" DestinationFolder="$(MSBuildProjectDirectory)\N2" />
+    <ItemGroup>
+      <_N2ManagementFiles Include="$(MSBuildProjectDirectory)\N2\N2.zip" />
+      <_N2ManagementFiles Include="$(MSBuildProjectDirectory)\N2\Web.config" />
+      <FilesForPackagingFromProject Include="%(_N2ManagementFiles.Identity)">
+        <DestinationRelativePath>N2\%(RecursiveDir)%(Filename)%(Extension)</DestinationRelativePath>
+      </FilesForPackagingFromProject>
+    </ItemGroup>
+  </Target>
+
+  <Target Name="CollectConfigFiles">
+    <ItemGroup>
+      <_ConfigFiles Include="$(MSBuildProjectDirectory)\..\..\..\Config\**\*.*" />
+    </ItemGroup>
+    <Copy SourceFiles="%(_ConfigFiles.Identity)" DestinationFolder="$(MSBuildProjectDirectory)\Config\%(RecursiveDir)"  />
+    <ItemGroup>
+      <_ConfigFilesToPackage Include="$(MSBuildProjectDirectory)\Config\**\*.*" />
+      <FilesForPackagingFromProject Include="%(_ConfigFilesToPackage.Identity)">
+        <DestinationRelativePath>Config\%(RecursiveDir)%(Filename)%(Extension)</DestinationRelativePath>
+      </FilesForPackagingFromProject>
+    </ItemGroup>
+  </Target>
+
+  <Target Name="CustomCollectFiles" Condition="Exists('$(MSBuildProjectDirectory)\Revision.txt')">
+    <ItemGroup>
+      <_CustomFiles Include="$(MSBuildProjectDirectory)\Revision.txt" />
+      <FilesForPackagingFromProject Include="%(_CustomFiles.Identity)">
+        <DestinationRelativePath>%(Filename)%(Extension)</DestinationRelativePath>
+      </FilesForPackagingFromProject>
+    </ItemGroup>
+  </Target>
+
+  <Target Name="CollectEnvironmentTxt" Condition="Exists('$(MSBuildProjectDirectory)\Config\environment.txt')">
+    <ItemGroup>
+      <_CustomFiles Include="$(MSBuildProjectDirectory)\Config\environment.txt" />
+      <FilesForPackagingFromProject Include="%(_CustomFiles.Identity)">
+        <DestinationRelativePath>%(Filename)%(Extension)</DestinationRelativePath>
+      </FilesForPackagingFromProject>
+    </ItemGroup>
+  </Target>
+
+  <Target Name="CollectMapFiles" Condition="Exists('$(MSBuildProjectDirectory)\js_log.xml')">
+    <ItemGroup>
+      <_MapFiles Include="$(MSBuildProjectDirectory)\js_log.xml" />
+      <_MapFiles Include="$(MSBuildProjectDirectory)\css_log.xml" />
+      <FilesForPackagingFromProject Include="%(_MapFiles.Identity)">
+        <DestinationRelativePath>%(Filename)%(Extension)</DestinationRelativePath>
+      </FilesForPackagingFromProject>
+    </ItemGroup>
+  </Target>
+
+</Project>

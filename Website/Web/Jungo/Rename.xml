@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WebGrease>
+ <Settings>
+    <ImageDirectories>Content\img</ImageDirectories>
+    <ImageExtensions>png;jpg;jpeg;gif;ico</ImageExtensions>
+  </Settings>
+
+  <JsFileSet name="Core" output="output\rename">
+    <Autoname>
+      <RenameFiles>true</RenameFiles>
+    </Autoname>
+
+    <Bundling>
+      <AssembleFiles>true</AssembleFiles>
+    </Bundling>
+
+    <Inputs>
+      <Input searchPattern="*.js">output\minify</Input>
+    </Inputs>
+  </JsFileSet>
+
+  <CssFileSet name="Site" output="output\rename">
+    <Bundling>
+      <AssembleFiles>true</AssembleFiles>
+    </Bundling>
+
+    <Autoname>
+      <RenameFiles>true</RenameFiles>
+    </Autoname>
+
+    <!-- Specifies the input locations -->
+    <Inputs>
+      <Input searchPattern="*.css">output\minify</Input>
+    </Inputs>
+  </CssFileSet>
+</WebGrease>

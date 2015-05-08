@@ -1,0 +1,8 @@
+﻿@using DigitalRiver.CloudLink.Commerce.Nimbus.N2Content
+@model DigitalRiver.CloudLink.Commerce.Nimbus.ViewModels.Catalog.CatalogPageViewModel
+    
+<div id="body">
+    @{ Html.DroppableZone(Zones.RecursiveContent).Render(); }
+    @{ Html.DroppableZone(Zones.Content).Render(); }
+</div>
+    

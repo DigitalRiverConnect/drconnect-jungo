@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<n2 version="2.4.0.0" exportVersion="2" exportDate="07/10/2013 23:28:36">
+  <item id="334" name="office" parent="333" title="Office" state="Published" created="03/11/2013 22:16:25" updated="07/10/2013 23:28:36" published="03/11/2013 22:16:25" sortOrder="-10" url="/msca/store/office/office" visible="True" savedBy="admin" typeName="DigitalRiver.CloudLink.N2MVC.Models.Pages.ProductPage, DigitalRiver.CloudLink.N2MVC" discriminator="ProductPage" ancestralTrail="/1/12/174/285/333/" childState="2">
+    <details />
+    <detailCollections />
+    <children />
+    <authorizations />
+    <properties />
+  </item>
+</n2>

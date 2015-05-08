@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<n2 version="2.4.0.0" exportVersion="2" exportDate="07/10/2013 23:28:37">
+  <item id="425" name="Trash" parent="1" title="Trash" state="Published" created="01/17/2013 23:21:49" updated="07/10/2013 23:28:37" published="06/20/2013 20:44:54" sortOrder="1000000" url="/N2/Content/Trash/Default.aspx?page=425" visible="False" savedBy="admin" typeName="N2.Edit.Trash.TrashContainerItem, N2.Management" discriminator="TrashContainerItem" ancestralTrail="/1/" childState="2">
+    <details>
+      <detail name="PurgeInterval" typeName="System.Enum, mscorlib" meta="N2.Edit.Trash.TrashPurgeInterval, N2, Version=2.4.0.0, Culture=neutral, PublicKeyToken=null" encoded="True"><![CDATA[Weekly]]></detail>
+    </details>
+    <detailCollections />
+    <children />
+    <authorizations />
+    <properties />
+  </item>
+</n2>

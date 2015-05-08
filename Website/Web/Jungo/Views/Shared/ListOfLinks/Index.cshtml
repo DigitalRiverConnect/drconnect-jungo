@@ -1,0 +1,27 @@
+﻿@model DigitalRiver.CloudLink.Commerce.Nimbus.ViewModels.Layout.ListofLinksViewModel
+@{
+    var clr = Model.UseButton ?  Page.BackgroundColor : Model.BackgroundColor;
+    var inlineClass = Model.UseButton ? "inline" : "";
+    var buttonColor = !string.IsNullOrWhiteSpace(Model.BackgroundColor) ? Model.BackgroundColor : "";
+}
+<div class="list-of-links @inlineClass">
+    @if (!string.IsNullOrWhiteSpace(Model.Title))
+    {
+    <h4 class="bold">@Model.Title</h4>
+    }
+    <ul>
+    @foreach (var lnk in Model.Links)
+    {
+        <li>
+        @if (Model.UseButton)
+        {
+            <a class="button @buttonColor" href="@lnk.TargetUrl" @LinkHelper.CreateTarget(lnk.Target) title="@lnk.LinkText">@lnk.LinkText</a>
+        }
+        else
+        {
+            <a href="@lnk.TargetUrl" style="color: @Model.ForegroundColor;" @LinkHelper.CreateTarget(lnk.Target) title="@lnk.LinkText">@lnk.LinkText</a>
+        }
+        </li>
+    }
+    </ul>
+</div>

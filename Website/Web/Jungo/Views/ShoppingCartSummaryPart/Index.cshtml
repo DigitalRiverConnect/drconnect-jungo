@@ -1,0 +1,80 @@
+﻿@using DigitalRiver.CloudLink.Commerce.Nimbus.SportsUs.ViewHelpers
+@model DigitalRiver.CloudLink.Commerce.Nimbus.ViewModels.Cart.ShoppingCartViewModel
+<div id="shopping-cart-summary">
+    <h1 class="title">@Res.Checkout_Cart</h1>
+    <div id="shopping-cart-table">
+        <ul id="lineItems">
+                        @foreach (var lineItem in Model.Cart.LineItems.LineItem)
+                        {
+                            var imageSrc = VHCSS.GetImageFromAttribute(lineItem.Product, "productImage4", lineItem.Product.ProductImage);
+                <li>
+                    <div class="result product">
+                        <div class="img-container">
+                            <img src="@imageSrc" alt="@lineItem.Product.DisplayName" />
+                        </div>
+                        <div class="detail-container">
+                            <h4 class="title">
+                                <span>@lineItem.Product.DisplayName</span>
+                            </h4>
+                            <div class="show-for-resp6">
+                                <div class="price font-semi-light">
+                                    <span class="sale">
+                                        @lineItem.Pricing.FormattedSalePriceWithQuantity
+                                    </span>
+                                </div>
+                            </div>
+                            @* TODO: Add in functionality to display qty 1 for products that can't be sold individually or promotional products.  *@
+                            @*<div class="sub-text">@LineItemLabelHelper.RenderLineItemLabel(lineItem.Product)</div>*@
+                            <div class="quantity">
+                                <label for="quantityList">@Res.Product_QuantityColon</label>@lineItem.Quantity
+                            </div>
+                            @* TODO: Need to change the model later to check for promotional products where we need to show preorder info  *@
+                            @*@if (lineItem.Product.PreOrderReleaseDateHasValue)
+                            {
+                                <div class="sub-text">@Res.Product_PreOrder</div>
+                                <div class="sub-text">@Res.Product_ReleaseDateColon&#160;@lineItem.Product.PreOrderReleaseDate.ToShortDateString()</div>
+                            }*@
+                            @*@{
+                            var gameRatingInfo = VHGameRating.GetGameRating(lineItem.Product);
+                            }
+                            @if (gameRatingInfo != null)
+                            {
+                                <div class="ratings">
+                                    <img alt="@gameRatingInfo.Rating" title="@gameRatingInfo.Rating" src="@gameRatingInfo.ImageUrl" border="0">
+                                    <div class="ratingReasons">
+                                    @foreach (var reason in gameRatingInfo.Reasons)
+                                    {
+                                        <div>@reason</div>
+                                    }
+                                    </div>
+                                </div>
+                            }*@
+                        </div>
+                        <div class="price-container hide-for-resp6">
+                            <div class="price font-semi-light">
+                                <span class="sale">
+                                    @lineItem.Pricing.FormattedSalePriceWithQuantity
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            }
+        </ul>
+        <div id="checkout-totals" class="content-container">
+            <table>
+            @if (!string.IsNullOrEmpty(Model.Cart.Pricing.FormattedDiscount))
+            {
+                <tr>
+                    <td>@Res.CheckoutTotals_DiscountColon</td>
+                    <td>-@Model.Cart.Pricing.FormattedDiscount</td>
+                </tr>
+            }
+                <tr>
+                    <td>@Res.CheckoutTotals_SubtotalBeforeTaxesColon</td>
+                    <td>@Model.Cart.Pricing.FormattedSubtotal</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>

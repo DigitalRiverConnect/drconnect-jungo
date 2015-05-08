@@ -1,0 +1,19 @@
+﻿@model DigitalRiver.CloudLink.Commerce.Nimbus.ViewModels.Cart.BuyViewModel
+@if (@Model.SiteInfo.IsCartHandledBySite)
+{
+    <button id="buy-button" class="btn btn-info">@Res.Product_AddToCart</button>
+}
+else
+{
+    <form method="post" action="@Model.FormActionUri" name="ProductDetailsForm">
+        <input name="Action" type="hidden" value="AddItemToRequisition" />
+        <input name="SiteID" type="hidden" value="@Model.SiteInfo.SiteId" />
+        <input name="Locale" type="hidden" value="@Model.SiteInfo.GcLocale" />
+        <input name="Form" value="" type="hidden" />
+        <input name="ThemeID" value="38823900" type="hidden" />
+        <input name="CallingPageID" type="hidden" value="ProductDetailsPage" />
+        <input name="ORIG_VALUE_productID" value="" type="hidden" />
+        <input id="form-product-id" name="productID" type="hidden" value="@Model.ProductId" />
+        <button id="buy-button" class="btn btn-info" data-addcart-text="Adding to cart" type="submit">@Res.Product_AddToCart</button>
+    </form>
+}

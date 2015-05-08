@@ -1,0 +1,7 @@
+﻿@using System.Web.Mvc;
+@using System.Web.Mvc.Html;
+
+@helper CreateTarget(string value)
+{
+    if(!string.IsNullOrWhiteSpace(value)){<text>target="@value"</text>}
+}

@@ -1,0 +1,19 @@
+{
+    "CategoryRedirects": [
+        {
+            "categoryId": "123456789",
+            "toWhat": "CategoryId",
+            "value": "987654321"
+        },
+        {
+            "categoryId": "234567890",
+            "toWhat": "ProductId",
+            "value": "098765432"
+        },
+        {
+            "categoryId": "345678901",
+            "toWhat": "Path",
+            "value": "/store"
+        }
+    ]
+}

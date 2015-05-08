@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<n2 version="2.4.0.0" exportVersion="2" exportDate="07/10/2013 23:28:36">
+  <item id="257" name="cart" parent="186" title="Cart" state="Published" created="01/18/2013 15:06:05" updated="07/10/2013 23:28:36" published="01/18/2013 15:06:05" sortOrder="85" url="/msca/fr-ca/store/cart" visible="True" savedBy="stwright" typeName="DigitalRiver.CloudLink.N2MVC.Models.Pages.ShoppingCartPage, DigitalRiver.CloudLink.N2MVC" discriminator="ShoppingCartPage" ancestralTrail="/1/12/174/179/186/" childState="128">
+    <details />
+    <detailCollections />
+    <children>
+      <child id="258" name="258" versionIndex="0" />
+    </children>
+    <authorizations />
+    <properties />
+  </item>
+  <item id="258" name="" parent="257" title="Shopping Cart Container" zoneName="Content" state="Published" created="04/19/2013 00:55:02" updated="07/10/2013 23:28:36" published="04/19/2013 00:55:10" sortOrder="0" url="/msca/fr-ca/store/cart?item=258" visible="True" savedBy="stwright" typeName="DigitalRiver.CloudLink.N2MVC.Models.Parts.TemplatePart, DigitalRiver.CloudLink.N2MVC" discriminator="TemplatePart" ancestralTrail="/1/12/174/179/186/257/" childState="128">
+    <details>
+      <detail name="ViewTemplate" typeName="System.String, mscorlib" meta="" encoded="True"><![CDATA[Container2plus1]]></detail>
+    </details>
+    <detailCollections />
+    <children>
+      <child id="259" name="259" versionIndex="0" />
+    </children>
+    <authorizations />
+    <properties />
+  </item>
+  <item id="259" name="" parent="258" title="" zoneName="Content" state="Published" created="04/19/2013 00:55:08" updated="07/10/2013 23:28:36" published="04/19/2013 01:01:22" sortOrder="0" url="/msca/fr-ca/store/cart?item=259" visible="True" savedBy="" typeName="DigitalRiver.CloudLink.N2MVC.Models.Parts.ShoppingCartPart, DigitalRiver.CloudLink.N2MVC" discriminator="ShoppingCartPart" ancestralTrail="/1/12/174/179/186/257/258/" childState="2">
+    <details />
+    <detailCollections />
+    <children />
+    <authorizations />
+    <properties />
+  </item>
+</n2>

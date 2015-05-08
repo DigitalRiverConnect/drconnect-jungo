@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<n2 version="2.4.0.0" exportVersion="2" exportDate="07/10/2013 23:28:37">
+  <item id="431" name="" parent="1" title="Part Definitions" state="Published" created="06/26/2013 12:44:25" updated="07/10/2013 23:28:37" published="06/26/2013 12:50:44" sortOrder="2146482657" url="/Default.aspx?page=431" visible="True" savedBy="admin" typeName="DigitalRiver.CloudLink.N2MVC.Models.Pages.FolderPage, DigitalRiver.CloudLink.N2MVC" discriminator="FolderPage" ancestralTrail="/1/" childState="4">
+    <details />
+    <detailCollections />
+    <children />
+    <authorizations />
+    <properties />
+  </item>
+</n2>

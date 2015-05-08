@@ -1,0 +1,163 @@
+﻿@using DigitalRiver.CloudLink.Commerce.Nimbus.SportsUs.Infrastructure.Helpers
+@using DigitalRiver.CloudLink.Commerce.Nimbus.SportsUs.ViewHelpers
+@model DigitalRiver.CloudLink.Commerce.Nimbus.ViewModels.Cart.ShoppingCartViewModel
+<div id="ShoppingCartDiv">
+    <script type="text/javascript">
+        $(function () {
+            $('.dynamicOrderNumber').parent('p').addClass("emptyCartNoReq");
+            $('.emptyCartNoReq').html("<!--empty cart-->");
+        });
+    </script>
+
+    @if (Model.ErrorMessages != null)
+    {
+        <div class="row">
+            <div class="col-sm-6">
+                <p>
+                    <ul>
+                        @foreach (var errorMessage in Model.ErrorMessages)
+                        {
+                            <li class="bg-danger">@Html.Raw(errorMessage)</li>
+                        }
+                    </ul>
+                </p>
+            </div>
+        </div>
+    }
+
+    <div id="dr_offerUsageLimitMessaging"></div>
+    <p></p>
+
+    @if (Model.Count == 0)
+    {
+        <div class="row" id="shopping-cart-empty">
+            <div class="col-sm-12">
+                <div class="lead">@Res.Checkout_CartIsEmpty</div>
+                <a id="continueShoppingButton" class="box green" href="@Html.StoreLink()">@Res.Checkout_ContinueShopping</a>
+            </div>
+        </div>
+    }
+    else
+    {
+        var checkoutButtonLanguage = Res.ShoppingCartViewModel_ButtonCheckoutNormal;
+
+        if (Model.IsShoppingCartLocked)
+        {
+            <script>
+                $(function () {
+                    $(".checkout").removeAttr("onclick");
+                    $(".checkout").removeAttr("href");
+                    $(".lineitem-info select").attr("disabled", "disabled");
+                    $("#coupon-code").attr("disabled", "disabled");
+                    $("#addCouponToCartLink").removeAttr("id");
+                    $("#shipping-method").attr("disabled", "disabled");
+                });
+            </script>
+        }
+        <div class="row">
+            <div class="col-sm-4">
+                <h1>@Res.Checkout_Cart</h1>
+                <p>
+                    <a class="btn btn-primary" href="@Html.StoreLink()">@Res.Checkout_ContinueShopping</a>
+                </p>
+            </div>
+            <div class="col-sm-8">
+                <span>
+                    <input id="spinner" type="image" style="display: none;" src="/Content/img/admin/loading.gif" alt="update" title="update" />
+                </span>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-9">
+                <script type="text/javascript">
+                    var lineitemJSON = {};
+                </script>
+                @foreach (var lineItem in Model.Cart.LineItems.LineItem)
+                {
+                    var imageSrc = VHCSS.GetImageFromAttribute(lineItem.Product, "productImage4", lineItem.Product.ProductImage);
+                    var removeLink = "removeLink" + lineItem.Product.Id;
+                    <script type="text/javascript">
+                        $(function () {
+                            $("#@removeLink").click(function () {
+                                $("#spinner").css("display", "inline");
+                            });
+                        });
+                    </script>
+                    <div class="row">
+                        <div class="col-sm-2">
+                            <img alt="@lineItem.Product.Name" title="@lineItem.Product.Name" src="@imageSrc" />
+                        </div>
+                        <div class="col-sm-4">
+                            <a class="title" href="@Html.BaseProductDetailLink(lineItem.Product)" lineitemid="@lineItem.Uri">@lineItem.Product.Name</a>
+                        </div>
+                        <div class="col-sm-2">@lineItem.Pricing.FormattedSalePriceWithQuantity</div>
+                        <div class="col-sm-2">
+                            @{
+                                var selectName = "select" + @lineItem.Product.Id;
+                                var quantityName = "quantity" + @lineItem.Product.Id;
+                                var formName = "form" + @lineItem.Product.Id;
+                            }
+                            <select id="@selectName" name="@selectName">
+                                @{
+                    var quantityMax = lineItem.Product.MaximumQuantity.HasValue
+                        ? lineItem.Product.MaximumQuantity.Value
+                        : ((lineItem.Quantity > 5) ? lineItem.Quantity : 5);
+                                }
+                                @for (var i = 1; i <= quantityMax; i++)
+                                {
+                                    var selectedAttr = (i == lineItem.Quantity) ? "selected=selected" : "";
+                                    <option value="@i" @selectedAttr>@i</option>
+                                }
+                            </select>
+                            <script type="text/javascript">
+                                $(function () {
+                                    $("#@selectName").change(function () {
+                                        var qty = this.selectedOptions[0].value;
+                                        $("#@quantityName").val(qty);
+                                        $("#spinner").css("display", "inline");
+                                        $("#@formName").submit();
+                                    });
+                                });
+                            </script>
+                            @using (Ajax.BeginForm("UpdateLineItem", null, new AjaxOptions { UpdateTargetId = "ShoppingCartDiv" }, new { id = "form" + @lineItem.Product.Id }))
+                            {
+                                <input type="hidden" name="LineItemId" value="@lineItem.Uri" />
+                                <input type="hidden" name="Quantity" id="@quantityName" value="@lineItem.Quantity" />
+                            }
+                        </div>
+                        <div class="col-sm-2">
+                            @using (Html.BeginForm("UpdateLineItem", "ShoppingCartPart", new { LineItemId = lineItem.Uri, Quantity = 0 },
+                                FormMethod.Post, new { id = "removeLink" + lineItem.Product.Id }))
+                            {
+                                <button type="submit" class="btn btn-link"><span class="glyphicon glyphicon-trash"></span></button>
+                            }
+                        </div>
+                    </div>
+                }
+            </div>
+            <div class="col-sm-3">
+                <div>
+                    @Html.ActionLink(checkoutButtonLanguage, "Checkout", null, new { @class = "btn btn-large btn-primary" })
+                </div>
+                @{ Html.DroppableZone("CartControls").Render(); }
+                
+                @using (Ajax.BeginForm("AddCoupon", null, new AjaxOptions { UpdateTargetId = "ShoppingCartDiv" }, new { id = "couponForm" }))
+                {
+                    @Res.Checkout_PromoCodeColon <input name="CouponCode" value="" maxlength="20" id="CouponCode" size="10" type="text" />
+                    <input type="submit" class="btn btn-link" value="@Res.FormActions_Apply" />
+                }
+                @if (Model.Cart.Pricing.Discount.Value != 0.0M && !String.IsNullOrEmpty(Model.Cart.Pricing.FormattedDiscount))
+                {
+                    <p>
+                        @Res.CheckoutTotals_DiscountColon
+                        -@Model.Cart.Pricing.FormattedDiscount
+                    </p>
+                }
+                <div>
+                    @Res.CheckoutTotals_SubtotalBeforeTaxesColon &nbsp; @Res.General_Currency@(Model.Cart.Pricing.Subtotal.Value - Model.Cart.Pricing.Discount.Value) &nbsp; @Res.CheckoutTotals_BeforeTaxes
+                </div>
+                @Html.ActionLink(checkoutButtonLanguage, "Checkout", null, new { @class = "btn btn-large btn-primary" })
+            </div>
+        </div>
+    }
+</div>

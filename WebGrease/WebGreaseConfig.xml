@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WebGrease>
+  <Settings>
+  </Settings>
+
+  <!-- Specifies a CssFileSet named Sample that outputs to a relative
+       folder location -->
+  <CssFileSet name="Sample" output="output\css">
+
+    <!-- Minification settings for the solution’s Debug configuration -->
+    <Minification config="Release">
+      <Minify>True</Minify>
+    </Minification>
+
+    <!-- Sprite settings for the solution’s Release configuration -->
+    <Spriting config="Release">
+      <SpriteImages>false</SpriteImages>
+    </Spriting>
+
+    <!-- File renaming settings for the solution’s Debug configuration -->
+    <Autoname config="Release">
+      <!-- Disables file renaming -->
+      <RenameFiles>false</RenameFiles>
+    </Autoname>
+
+    <Bundling config="Release">
+      <AssembleFiles>true</AssembleFiles>
+    </Bundling>
+
+    <!-- Specifies the input locations -->
+    <Inputs>
+      <!-- Specifies a single file with a relative path -->
+      <Input>Content\globals\breadcrumbs.css</Input>
+      <Input>Content\globals\header.css</Input>
+      <Input>Content\globals\global.css</Input>
+      <Input>Content\globals\footer.css</Input>
+      <Input>Content\globals\navigation.css</Input>
+      <Input>Content\globals\n2_override.css</Input>
+      <Input>Content\globals\responsive.css</Input>
+      <Input>Content\globals\animate-custom.css</Input>
+      <Input>Content\globals\slider-tabs.css</Input>
+      <Input>Content\globals\office-subscriptions.css</Input>
+      <Input>Content\pages\catalog.css</Input>
+      <Input>Content\pages\error.css</Input>
+      <Input>Content\pages\faq.css</Input>
+      <Input>Content\parts\product\productDetails.css</Input>
+      <Input>Content\parts\product\productExtendedDetails.css</Input>
+      <Input>Content\parts\product\productFooter.css</Input>
+      <Input>Content\parts\product\productImages.css</Input>
+      <Input>Content\parts\product\productSocial.css</Input>
+      <Input>Content\parts\product\productAgeGate.css</Input>
+      <Input>Content\parts\product\productInterstitial.css</Input>
+      <Input>Content\parts\product\productQuickView.css</Input>
+      <Input>Content\parts\banners.css</Input>
+      <Input>Content\parts\productResult.css</Input>
+      <Input>Content\parts\searchResult.css</Input>
+      <Input>Content\parts\pricePart.css</Input>
+      <Input>Content\parts\shoppingCart\shoppingCart.css</Input>
+      <Input searchPattern="*.css">Content\parts\checkout_flow\</Input>
+      <Input searchPattern="*.css">Content\parts\shopper_account\</Input>
+      <Input searchPattern="*.css">Content\parts\link_templates\"</Input>
+    </Inputs>
+  </CssFileSet>
+
+  <!-- Specifies a JsFileSet named Sample that outputs to a relative
+       folder location -->
+  <JsFileSet name="Sample" output="output\js">
+
+    <!-- Minification settings for the solution’s Release configuration -->
+    <Minification config="Release">
+      <Minify>True</Minify>
+      <GlobalsToIgnore>jQuery;Msn</GlobalsToIgnore>
+    </Minification>
+
+    <!-- Validation settings for the solution’s Debug configuration -->
+    <Validation config="Release">
+      <Analyze>True</Analyze>
+      <AnalyzeArguments>-analyze -WARN:4</AnalyzeArguments>
+    </Validation>
+
+    <Autoname config="Release">
+      <!-- Disables file renaming -->
+      <RenameFiles>true</RenameFiles>
+    </Autoname>
+
+    <!--Bundling settings for the solution’s Release configuration -->
+    <Bundling config="Release">
+      <AssembleFiles>true</AssembleFiles>
+    </Bundling>
+
+    <!-- Specifies the input locations -->
+    <Inputs>
+      <Input searchPattern="Scripts\jquery-*.js">Scripts\</Input>
+    </Inputs>
+  </JsFileSet>
+</WebGrease>

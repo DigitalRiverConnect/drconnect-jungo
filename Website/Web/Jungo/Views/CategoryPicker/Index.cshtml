@@ -1,0 +1,52 @@
+﻿@using DigitalRiver.CloudLink.Commerce.Nimbus.ViewModels.Catalog
+@model DigitalRiver.CloudLink.Commerce.Nimbus.N2Content.Models.CategoryPickerViewModel
+@{
+    Layout = "~/Views/Shared/_AdminPopupLayout.cshtml";
+    ViewBag.Title = "Site Manager Category Picker";
+}
+<div class="admin" id="category-picker" data-category-id="@Model.ControlId">
+    <div id="page-search">
+        <div class="search-query input-append ng-scope">
+            @using (Html.BeginForm(new { action = "index" }))
+            {
+                @Html.DisplayContent("Keywords")
+                @Html.HiddenFor(vm => vm.CategoryId)
+                @Html.TextBoxFor(vm => vm.SearchCriteria, new { @type = "search", @class = "ng-pristine ng-valid", @value = "Enter keyword", @placeholder = "Enter keyword" })
+            }
+            <button id="btnSearch" class="btn" title="Search"><b class="n2-icon-search"></b></button>
+            <button id="btnReset" class="btn" title="Reset"><b class="n2-icon-remove"></b></button>
+        </div>
+    </div>
+    <div id="page-tree">
+        <div id="no-results">
+            <p>No categories were found</p>
+        </div>
+        @helper ShowTree(IEnumerable<CategoryViewModel> items, int level, bool first)
+        {
+            <ul class="targettable ng-scope expanded">
+                @foreach (var v in items)
+                {
+                    <li class="node ng-scope @(v.Items.Count > 0 ? "expanded" : "")">
+                        <div class="item ng-scope">
+                            <b class="handle"></b>
+                            <a href="#" class="toggle">
+                                <b class="toggle-expand n2-icon-chevron-right"></b>
+                                <b class="toggle-collapse icon-chevron-up"></b>
+                                <b class="toggle-loading icon-repeat"></b>
+                            </a>
+                            <a href="javascript:void(0)" target="preview" class="link ng-binding" title="@v.DisplayName" id="@v.CategoryId" data-category-id="@v.CategoryId" data-category-name="@v.DisplayName" data-category-url="?categoryId=@v.CategoryId" data-category-image-url="@v.Image">
+                                <b class="ico n2-icon-file" style="display: none;"></b>
+                                <span class="page-icon" style="background-image:url(/favicon.ico)"></span>&nbsp;@v.CategoryId - @v.DisplayName
+                            </a>
+                        </div>
+                        @if (v.Items.Count > 0)
+                        {
+                            @ShowTree(v.Items, level + 1, false)
+                        }
+                    </li>
+                }
+            </ul>
+        }
+        @ShowTree(Model.Categories.Items, 0, true)
+    </div>
+</div>

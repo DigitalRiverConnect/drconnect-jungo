@@ -1,0 +1,20 @@
+﻿@using DigitalRiver.CloudLink.Commerce.Nimbus.N2Content
+@model DigitalRiver.CloudLink.Commerce.Nimbus.ViewModels.Catalog.SearchPageViewModel
+
+@{
+    var pageHasProdResultsPart = Model.PageHasProdResultsPart;
+    const string rwdDivOpen = "<div class=\"rwd\">";
+    const string rwdDivClose = "</div>";
+}
+@if (!pageHasProdResultsPart)
+{
+    <text>@Html.Raw(rwdDivOpen)</text>
+}
+<div id="body">
+    @{ Html.DroppableZone(Zones.RecursiveContent).Render(); }
+    @{ Html.DroppableZone(Zones.Content).Render(); }
+</div>
+@if (!pageHasProdResultsPart)
+{
+    <text>@Html.Raw(rwdDivClose)</text>
+}

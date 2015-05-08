@@ -1,0 +1,51 @@
+﻿@using DigitalRiver.CloudLink.Commerce.Nimbus.SportsUs.Infrastructure
+@using DigitalRiver.CloudLink.Commerce.Nimbus.SportsUs.Infrastructure.Helpers
+@using DigitalRiver.CloudLink.Commerce.Nimbus.SportsUs.Infrastructure.Session
+@{
+    var lang = WebSession.Current.LanguageCode ?? "";
+    var culture = (WebSession.IsInitialized) ? WebSession.Current.CultureCode ?? "" : "";
+    var siteId = WebSession.Current.SiteId;
+}
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js ie lt-ie9 lt-ie8 lt-ie7" xml:lang="@lang" lang="@lang" culture="@culture" dir="ltr"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie lt-ie9 lt-ie8" xml:lang="@lang" lang="@lang" culture="@culture" dir="ltr"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie lt-ie9" xml:lang="@lang" lang="@lang" culture="@culture" dir="ltr"> <![endif]-->
+<!--[if IE 9]>    <html class="no-js ie " xml:lang="@lang" lang="@lang" culture="@culture" dir="ltr"> <![endif]-->
+<!--[if gt IE 8]><!--> <html xml:lang="@lang" lang="@lang" culture="@culture" dir="ltr"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta requestId="@Html.GetRequestId()" />
+        
+        <link rel="shortcut icon" type="image/x-icon" href="@Html.GetPublicURL("~/upload/Content/img/favicon.ico")" />
+        <link rel="icon" type="image/png" href="@Html.GetPublicURL("~/upload/Content/img/favicon.ico")" />
+        
+        <title>@ViewBag.Title</title>
+
+        @RenderSection("Meta", required: false)
+        
+        @Styles.Render("~/coteries/site_css")
+        @Scripts.Render("~/coteries/core")
+
+        @{ Html.DroppableZone("RecursiveCSS").Render(); }
+        @{ Html.DroppableZone("CSS").Render(); }
+        @{ Html.DroppableZone("RecursiveJavascript").Render(); }
+        @{ Html.DroppableZone("Javascript").Render(); }
+    </head>
+    <body>
+        @* Required for N2CMS admin functionality *@
+        @{ Html.ControlPanel().Configure(cp =>
+           {
+               cp.IncludeJQuery = false;
+               cp.IncludeCkEditor = true;
+           }).Render(); }        
+
+        @{ Html.DroppableZone("BeforeContent").Render(); }
+        @RenderBody()
+        @{ Html.DroppableZone("AfterContent").Render(); }
+
+        @Scripts.Render("~/coteries/site_js")
+        @{ Html.DroppableZone("RecursiveJavascriptFooter").Render(); }
+    </body>
+</html>

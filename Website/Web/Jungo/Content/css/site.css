@@ -1,0 +1,29 @@
+﻿a:hover {
+    text-decoration: none;
+}
+
+#search-container {
+    position: relative;
+}
+
+.ac-wrapper {
+    position: absolute;
+    background-color: #fff;
+    width: 100%;
+    display: none;
+}
+
+.ac-container {
+    list-style: none;
+    margin: 0;
+    padding: 5px 10px;
+}
+
+.ac-container > li {
+    margin: 0;
+    padding: 0;
+}
+
+.ac-container > li.selected {
+    background-color: #bdf;
+}

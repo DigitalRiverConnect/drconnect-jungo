@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<n2 version="2.4.0.0" exportVersion="2" exportDate="07/10/2013 23:28:36">
+  <item id="357" name="surface" parent="354" title="Surface" state="Published" created="01/18/2013 15:06:42" updated="07/10/2013 23:28:36" published="01/18/2013 15:06:42" sortOrder="10" url="/msca/store/surface/surface" visible="True" savedBy="admin" typeName="DigitalRiver.CloudLink.N2MVC.Models.Pages.ProductPage, DigitalRiver.CloudLink.N2MVC" discriminator="ProductPage" ancestralTrail="/1/12/174/285/354/" childState="128">
+    <details>
+      <detail name="ProductID" typeName="System.String, mscorlib" meta="" encoded="True"><![CDATA[274608200]]></detail>
+    </details>
+    <detailCollections />
+    <children>
+      <child id="358" name="358" versionIndex="0" />
+      <child id="360" name="360" versionIndex="0" />
+    </children>
+    <authorizations />
+    <properties />
+  </item>
+  <item id="358" name="" parent="357" title="Product Extended Details Container" zoneName="Content" state="Published" created="03/06/2013 02:17:16" updated="07/10/2013 23:28:36" published="03/06/2013 02:19:26" sortOrder="-10" url="/msca/store/surface/surface?item=358" visible="True" savedBy="admin" typeName="DigitalRiver.CloudLink.N2MVC.Models.Parts.TemplatePart, DigitalRiver.CloudLink.N2MVC" discriminator="TemplatePart" ancestralTrail="/1/12/174/285/354/357/" childState="128">
+    <details>
+      <detail name="ViewTemplate" typeName="System.String, mscorlib" meta="" encoded="True"><![CDATA[ContainerFull]]></detail>
+    </details>
+    <detailCollections />
+    <children>
+      <child id="359" name="359" versionIndex="0" />
+    </children>
+    <authorizations />
+    <properties />
+  </item>
+  <item id="359" name="" parent="358" title="" zoneName="Content" state="Published" created="03/06/2013 02:17:29" updated="07/10/2013 23:28:36" published="03/06/2013 02:19:26" sortOrder="-10" url="/msca/store/surface/surface?item=359" visible="True" savedBy="admin" typeName="DigitalRiver.CloudLink.N2MVC.Models.Parts.ProductDetailsPart, DigitalRiver.CloudLink.N2MVC" discriminator="ProductDetailsPart" ancestralTrail="/1/12/174/285/354/357/358/" childState="2">
+    <details>
+      <detail name="ViewTemplate" typeName="System.String, mscorlib" meta="" encoded="True"><![CDATA[ProductExtendedDetails]]></detail>
+    </details>
+    <detailCollections />
+    <children />
+    <authorizations />
+    <properties />
+  </item>
+  <item id="360" name="" parent="357" title="" zoneName="Content" state="Published" created="03/18/2013 20:22:34" updated="07/10/2013 23:28:36" published="03/18/2013 20:23:24" sortOrder="0" url="/msca/store/surface/surface?item=360" visible="True" savedBy="admin" typeName="DigitalRiver.CloudLink.N2MVC.Models.Parts.TemplatePart, DigitalRiver.CloudLink.N2MVC" discriminator="TemplatePart" ancestralTrail="/1/12/174/285/354/357/" childState="128">
+    <details>
+      <detail name="ViewTemplate" typeName="System.String, mscorlib" meta="" encoded="True"><![CDATA[Container5plus3]]></detail>
+    </details>
+    <detailCollections />
+    <children>
+      <child id="361" name="361" versionIndex="0" />
+      <child id="362" name="362" versionIndex="0" />
+    </children>
+    <authorizations />
+    <properties />
+  </item>
+  <item id="361" name="" parent="360" title="" zoneName="Content" state="Published" created="03/18/2013 20:22:53" updated="07/10/2013 23:28:36" published="03/18/2013 20:23:24" sortOrder="-10" url="/msca/store/surface/surface?item=361" visible="True" savedBy="admin" typeName="DigitalRiver.CloudLink.N2MVC.Models.Parts.ProductDetailsPart, DigitalRiver.CloudLink.N2MVC" discriminator="ProductDetailsPart" ancestralTrail="/1/12/174/285/354/357/360/" childState="2">
+    <details>
+      <detail name="ViewTemplate" typeName="System.String, mscorlib" meta="" encoded="True"><![CDATA[ProductImages]]></detail>
+    </details>
+    <detailCollections />
+    <children />
+    <authorizations />
+    <properties />
+  </item>
+  <item id="362" name="" parent="360" title="" zoneName="Right" state="Published" created="03/18/2013 20:23:08" updated="07/10/2013 23:28:36" published="03/18/2013 20:23:24" sortOrder="0" url="/msca/store/surface/surface?item=362" visible="True" savedBy="admin" typeName="DigitalRiver.CloudLink.N2MVC.Models.Parts.ProductDetailsPart, DigitalRiver.CloudLink.N2MVC" discriminator="ProductDetailsPart" ancestralTrail="/1/12/174/285/354/357/360/" childState="2">
+    <details>
+      <detail name="ViewTemplate" typeName="System.String, mscorlib" meta="" encoded="True"><![CDATA[ProductDetails]]></detail>
+    </details>
+    <detailCollections />
+    <children />
+    <authorizations />
+    <properties />
+  </item>
+</n2>

@@ -1,0 +1,79 @@
+﻿@using DigitalRiver.CloudLink.Commerce.Nimbus.SportsUs.ViewHelpers
+@using DigitalRiver.CloudLink.Commerce.Nimbus.ViewModels.Catalog
+@using Jungo.Infrastructure.Config
+@using Microsoft.Ajax.Utilities
+@model DigitalRiver.CloudLink.Commerce.Nimbus.ViewModels.Catalog.ProductDetailPageViewModel
+
+@helper DisplayOptions(VariationsCollection.Variation variation, string prevLevelId, int optionLevel)
+{
+    var variationId = (prevLevelId != null ? prevLevelId + "-" : "") + variation.Id;
+    
+    <div id="option-control-@variationId" class="option-control hidden">
+        <h5>@variation.Name:</h5>
+        <div class="btn-group" data-toggle="buttons">
+            @foreach (var option in variation.Options)
+            {
+                var safeOptionValue = option.Value.Replace('.', '_');
+                safeOptionValue = safeOptionValue.Replace(' ', '_');
+                var itemFullName = variationId + "-" + safeOptionValue;
+                var variationButtonId = "btn" + itemFullName;
+                <label id="@variationButtonId" class="btn btn-primary">
+                    <input type="radio" id="@itemFullName" name="@variationId" value="@safeOptionValue" />@option.Value
+                </label>
+            }
+        </div>
+    </div>
+    foreach (var option in variation.Options.Where(option => option.Variations != null && option.Variations.Options.Any()))
+    {
+        @DisplayOptions(option.Variations, variationId + '-' + option.Value, optionLevel + 1)
+    }
+}
+@{
+    var imageUrlPrefix = ConfigLoader.Get<ExternalWebLinkConfig>().ProductImageUrl;
+    var productImageUrl = VHCSS.GetImageFromAttribute(Model.Product, "productImage3", Model.Product.ThumbnailImage);
+}
+<div id="product-details" class="row" data-is-site-cart="true" data-shopping-cart-link="@Html.ShoppingCartLink()" data-product-id="@Model.DisplayProduct.Id" data-variations="@Model.VariationOptionsJson" data-image-url-prefix="@imageUrlPrefix">
+    <div class="col-sm-6">
+        <div id="product-images-wrapper">
+            <img src="@productImageUrl" alt="@Model.DisplayProduct.ShortDescription" />
+        </div>
+    </div>
+    <div class="col-sm-6">
+        <div>
+            <h2 id="product-name">@Model.DisplayProduct.DisplayName</h2>
+            <div class="product-price">
+                @if (Model.DisplayProduct.InventoryStatus.ProductIsAllowsBackorders && Model.DisplayProduct.InventoryStatus.ProductIsInStock)
+                {
+                    <p class="shipping-notes">@Res.Product_PreOrderNow</p>
+                }
+                <p id="product-current-price" class="product-current-price">@Model.Product.Pricing.FormattedListPriceWithQuantity</p>
+            </div>
+            <div id="product-description" class="product-description">
+                @Model.Product.ShortDescription
+            </div>
+            @if (Model.HasVariationOptions)
+            {
+                <div class="variation-control">
+                    @DisplayOptions(Model.VariationOptions.Variations, null, 0)
+                </div>
+            }
+            <p>
+                <div id="product-add-to-cart" class="product-add-to-cart">
+                    @if (!Model.DisplayProduct.InventoryStatus.ProductIsAllowsBackorders && !Model.DisplayProduct.InventoryStatus.ProductIsInStock)
+                    {
+                        <span class="text-danger">@Res.Product_OutOfStock</span>
+                    }
+                    else if (!Model.DisplayProduct.DisplayableProduct || !Model.DisplayProduct.Purchasable)
+                    {
+                        <span class="text-warning">@Res.Product_ProductNotAvailable</span>
+                    }
+                    else
+                    {
+                        Html.RenderPartial("Button", Model.BuyViewModel);
+                    }
+                </div>
+            </p>
+            <p class="shipping-return-text">@Res.ProductDetailPage_FreeShipping</p>
+        </div>
+    </div>
+</div>

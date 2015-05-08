@@ -1,0 +1,17 @@
+﻿@model string
+@{
+    Layout = "~/Views/Shared/_ErrorLayout.cshtml";
+}
+<section>
+    <div class="grid-container">
+        <div class="grid-row">
+            <div class="grid-unit">
+                <h1 class="heading--large">Not found</h1>
+                <h2 id="dr_noResultsFound" class="heading--medium">We were unable to find the item you requested.</h2>
+                <div id="continue-shopping-button">
+                    <a class="box green" href="@Model">Continue Shopping</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

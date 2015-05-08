@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<n2 version="2.4.0.0" exportVersion="2" exportDate="07/10/2013 23:28:35">
+  <item id="105" name="product" parent="84" title="Product" state="Published" created="01/18/2013 15:06:42" updated="07/10/2013 23:28:35" published="01/18/2013 15:06:42" sortOrder="10" url="/msusa/store/office/product" visible="True" savedBy="rreed" typeName="DigitalRiver.CloudLink.N2MVC.Models.Pages.ProductPage, DigitalRiver.CloudLink.N2MVC" discriminator="ProductPage" ancestralTrail="/1/12/13/39/84/" childState="128">
+    <details />
+    <detailCollections />
+    <children>
+      <child id="106" name="106" versionIndex="0" />
+      <child id="111" name="111" versionIndex="0" />
+      <child id="113" name="113" versionIndex="0" />
+    </children>
+    <authorizations />
+    <properties />
+  </item>
+  <item id="106" name="" parent="105" title="Product Images + Details" zoneName="Content" state="Published" created="03/06/2013 02:11:53" updated="07/10/2013 23:28:35" published="03/06/2013 02:19:26" sortOrder="-10" url="/msusa/store/office/product?item=106" visible="True" savedBy="admin" typeName="DigitalRiver.CloudLink.N2MVC.Models.Parts.TemplatePart, DigitalRiver.CloudLink.N2MVC" discriminator="TemplatePart" ancestralTrail="/1/12/13/39/84/105/" childState="128">
+    <details>
+      <detail name="ViewTemplate" typeName="System.String, mscorlib" meta="" encoded="True"><![CDATA[Container5plus3]]></detail>
+    </details>
+    <detailCollections />
+    <children>
+      <child id="107" name="107" versionIndex="0" />
+      <child id="108" name="108" versionIndex="0" />
+      <child id="109" name="109" versionIndex="0" />
+      <child id="110" name="110" versionIndex="0" />
+    </children>
+    <authorizations />
+    <properties />
+  </item>
+  <item id="107" name="" parent="106" title="" zoneName="Content" state="Published" created="05/03/2013 20:39:53" updated="07/10/2013 23:28:35" published="05/03/2013 20:40:06" sortOrder="-20" url="/msusa/store/office/product?item=107" visible="True" savedBy="" typeName="DigitalRiver.CloudLink.N2MVC.Models.Parts.BreadcrumbsPart, DigitalRiver.CloudLink.N2MVC" discriminator="BreadcrumbsPart" ancestralTrail="/1/12/13/39/84/105/106/" childState="2">
+    <details />
+    <detailCollections />
+    <children />
+    <authorizations />
+    <properties />
+  </item>
+  <item id="108" name="" parent="106" title="" zoneName="Content" state="Published" created="03/06/2013 02:12:03" updated="07/10/2013 23:28:35" published="03/06/2013 02:19:26" sortOrder="-10" url="/msusa/store/office/product?item=108" visible="True" savedBy="admin" typeName="DigitalRiver.CloudLink.N2MVC.Models.Parts.ProductDetailsPart, DigitalRiver.CloudLink.N2MVC" discriminator="ProductDetailsPart" ancestralTrail="/1/12/13/39/84/105/106/" childState="2">
+    <details>
+      <detail name="ViewTemplate" typeName="System.String, mscorlib" meta="" encoded="True"><![CDATA[ProductImages]]></detail>
+    </details>
+    <detailCollections />
+    <children />
+    <authorizations />
+    <properties />
+  </item>
+  <item id="109" name="" parent="106" title="" zoneName="Right" state="Published" created="03/06/2013 02:13:42" updated="07/10/2013 23:28:35" published="03/06/2013 02:19:26" sortOrder="-5" url="/msusa/store/office/product?item=109" visible="True" savedBy="admin" typeName="DigitalRiver.CloudLink.N2MVC.Models.Parts.ProductDetailsPart, DigitalRiver.CloudLink.N2MVC" discriminator="ProductDetailsPart" ancestralTrail="/1/12/13/39/84/105/106/" childState="2">
+    <details>
+      <detail name="ViewTemplate" typeName="System.String, mscorlib" meta="" encoded="True"><![CDATA[ProductDetails]]></detail>
+    </details>
+    <detailCollections />
+    <children />
+    <authorizations />
+    <properties />
+  </item>
+  <item id="110" name="" parent="106" title="Stacked Product Offers" zoneName="Right" state="Published" created="03/06/2013 02:14:46" updated="07/10/2013 23:28:35" published="03/06/2013 02:19:26" sortOrder="0" url="/msusa/store/office/product?item=110" visible="True" savedBy="admin" typeName="DigitalRiver.CloudLink.N2MVC.Models.Parts.CmsPopPart, DigitalRiver.CloudLink.N2MVC" discriminator="CmsPopPart" ancestralTrail="/1/12/13/39/84/105/106/" childState="2">
+    <details>
+      <detail name="ViewTemplate" typeName="System.String, mscorlib" meta="" encoded="True"><![CDATA[SmallStackedProductOffers]]></detail>
+    </details>
+    <detailCollections />
+    <children />
+    <authorizations />
+    <properties />
+  </item>
+  <item id="111" name="" parent="105" title="Offer Container" zoneName="Content" state="Published" created="03/06/2013 02:15:13" updated="07/10/2013 23:28:35" published="03/06/2013 02:19:26" sortOrder="-5" url="/msusa/store/office/product?item=111" visible="True" savedBy="admin" typeName="DigitalRiver.CloudLink.N2MVC.Models.Parts.TemplatePart, DigitalRiver.CloudLink.N2MVC" discriminator="TemplatePart" ancestralTrail="/1/12/13/39/84/105/" childState="128">
+    <details>
+      <detail name="ViewTemplate" typeName="System.String, mscorlib" meta="" encoded="True"><![CDATA[ContainerFull]]></detail>
+    </details>
+    <detailCollections />
+    <children>
+      <child id="112" name="112" versionIndex="0" />
+    </children>
+    <authorizations />
+    <properties />
+  </item>
+  <item id="112" name="" parent="111" title="Goes great with" zoneName="Content" state="Published" created="05/01/2013 18:38:28" updated="07/10/2013 23:28:35" published="05/01/2013 19:29:48" sortOrder="-20" url="/msusa/store/office/product?item=112" visible="True" savedBy="ehornbostel" typeName="DigitalRiver.CloudLink.N2MVC.Models.Parts.CrossSellPart, DigitalRiver.CloudLink.N2MVC" discriminator="CrossSellPart" ancestralTrail="/1/12/13/39/84/105/111/" childState="2">
+    <details>
+      <detail name="PromotionId" typeName="System.String, mscorlib" meta="" encoded="True"><![CDATA[ms_PDP_CrossSell]]></detail>
+      <detail name="ViewTemplate" typeName="System.String, mscorlib" meta="" encoded="True"><![CDATA[CrossSell]]></detail>
+    </details>
+    <detailCollections />
+    <children />
+    <authorizations />
+    <properties />
+  </item>
+  <item id="113" name="" parent="105" title="Product Extended Details Container" zoneName="Content" state="Published" created="03/06/2013 02:17:16" updated="07/10/2013 23:28:35" published="03/06/2013 02:19:26" sortOrder="0" url="/msusa/store/office/product?item=113" visible="True" savedBy="admin" typeName="DigitalRiver.CloudLink.N2MVC.Models.Parts.TemplatePart, DigitalRiver.CloudLink.N2MVC" discriminator="TemplatePart" ancestralTrail="/1/12/13/39/84/105/" childState="128">
+    <details>
+      <detail name="ViewTemplate" typeName="System.String, mscorlib" meta="" encoded="True"><![CDATA[ContainerFull]]></detail>
+    </details>
+    <detailCollections />
+    <children>
+      <child id="114" name="114" versionIndex="0" />
+      <child id="115" name="115" versionIndex="0" />
+    </children>
+    <authorizations />
+    <properties />
+  </item>
+  <item id="114" name="" parent="113" title="" zoneName="Content" state="Published" created="03/06/2013 02:17:29" updated="07/10/2013 23:28:35" published="03/06/2013 02:19:26" sortOrder="-10" url="/msusa/store/office/product?item=114" visible="True" savedBy="admin" typeName="DigitalRiver.CloudLink.N2MVC.Models.Parts.ProductDetailsPart, DigitalRiver.CloudLink.N2MVC" discriminator="ProductDetailsPart" ancestralTrail="/1/12/13/39/84/105/113/" childState="2">
+    <details>
+      <detail name="ViewTemplate" typeName="System.String, mscorlib" meta="" encoded="True"><![CDATA[ProductExtendedDetails]]></detail>
+    </details>
+    <detailCollections />
+    <children />
+    <authorizations />
+    <properties />
+  </item>
+  <item id="115" name="" parent="113" title="You may also like" zoneName="Content" state="Published" created="05/01/2013 18:39:09" updated="07/10/2013 23:28:35" published="05/01/2013 18:39:16" sortOrder="0" url="/msusa/store/office/product?item=115" visible="True" savedBy="ehornbostel" typeName="DigitalRiver.CloudLink.N2MVC.Models.Parts.CrossSellPart, DigitalRiver.CloudLink.N2MVC" discriminator="CrossSellPart" ancestralTrail="/1/12/13/39/84/105/113/" childState="2">
+    <details>
+      <detail name="PromotionId" typeName="System.String, mscorlib" meta="" encoded="True"><![CDATA[ms_PDP_Related_Products]]></detail>
+      <detail name="ViewTemplate" typeName="System.String, mscorlib" meta="" encoded="True"><![CDATA[RelatedProducts]]></detail>
+    </details>
+    <detailCollections />
+    <children />
+    <authorizations />
+    <properties />
+  </item>
+</n2>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WebGrease>
+ <Settings>
+    <ImageDirectories>Content\img</ImageDirectories>
+    <ImageExtensions>png;jpg;jpeg;gif;ico</ImageExtensions>
+  </Settings>
+
+  <JsFileSet name="core" output="output\bundle\core.js">
+    <Autoname>
+      <RenameFiles>true</RenameFiles>
+    </Autoname>
+
+    <Bundling>
+      <AssembleFiles>true</AssembleFiles>
+    </Bundling>
+
+    <Inputs>
+      <Input>Scripts\jquery-2.1.1.js</Input>
+      <Input>Scripts\jquery.validate.js</Input>
+      <Input>Scripts\jquery.validate.unobtrusive.js</Input>
+      <Input>Scripts\jquery.unobtrusive-ajax.js</Input>
+      <Input>Scripts\bootstrap\bootstrap.js</Input>
+      <Input>Scripts\underscore-min.js</Input>
+      <Input>Scripts\backbone-min.js</Input>
+      <Input>Scripts\json2.js</Input>
+      <Input>Scripts\modernizr-2.6.2.js</Input>
+      <Input>Scripts\html5.js</Input>
+      <Input>Scripts\moment.js</Input>
+      <Input>Scripts\adminFix.js</Input>
+    </Inputs>
+  </JsFileSet>
+
+  <JsFileSet name="site_js" output="output\bundle\site_js.js">
+    <Autoname>
+      <RenameFiles>true</RenameFiles>
+    </Autoname>
+
+    <Bundling>
+      <AssembleFiles>true</AssembleFiles>
+    </Bundling>
+
+    <Inputs>
+      <Input searchPattern="*.js">Scripts\dr</Input>
+      <Input>Scripts\site.js</Input>
+	 </Inputs>
+  </JsFileSet>
+
+  <JsFileSet name="admin_js" output="output\bundle\admin_js.js">
+    <Autoname>
+      <RenameFiles>true</RenameFiles>
+    </Autoname>
+
+    <Bundling>
+      <AssembleFiles>true</AssembleFiles>
+    </Bundling>
+
+    <Inputs>
+      <Input>Scripts\admin\admin.js</Input>
+      <Input>Scripts\admin\productPickerPopup.js</Input>
+      <Input>Scripts\editors\imagePicker.js</Input>
+      <Input searchPattern="*.js">Scripts\parts</Input>
+      <Input>Scripts\dr\placeholder_fill.js</Input>
+    </Inputs>
+  </JsFileSet>
+
+  <CssFileSet name="site_css" output="output\bundle\site_css.css">
+    <Bundling>
+      <AssembleFiles>true</AssembleFiles>
+    </Bundling>
+
+    <Autoname>
+      <RenameFiles>true</RenameFiles>
+    </Autoname>
+
+    <!-- Specifies the input locations -->
+    <Inputs>
+      <Input searchPattern="*.css">Content\bootstrap\css</Input>
+      <Input searchPattern="*.css">Content\pages</Input>
+      <Input searchPattern="*.css">Content\css</Input>
+    </Inputs>
+  </CssFileSet>
+
+  <CssFileSet name="admin_css" output="output\bundle\admin_css.css">
+    <Bundling>
+      <AssembleFiles>true</AssembleFiles>
+    </Bundling>
+
+    <Autoname>
+      <RenameFiles>true</RenameFiles>
+    </Autoname>
+
+    <!-- Specifies the input locations -->
+    <Inputs>
+      <Input searchPattern="*.css">Content\bootstrap\css</Input>
+      <Input searchPattern="*.css">Content\admin</Input>
+    </Inputs>
+  </CssFileSet>
+</WebGrease>

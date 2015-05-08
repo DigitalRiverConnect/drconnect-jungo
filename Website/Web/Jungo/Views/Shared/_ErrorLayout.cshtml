@@ -1,0 +1,90 @@
+﻿@using DigitalRiver.CloudLink.Commerce.Nimbus.SportsUs.Infrastructure
+@using DigitalRiver.CloudLink.Commerce.Nimbus.SportsUs.Infrastructure.Helpers
+@using DigitalRiver.CloudLink.Commerce.Nimbus.SportsUs.Infrastructure.Session
+@{
+    string siteId;
+    string languageCode;
+    string countryCode;
+    string currencyCode;
+    string storeLink;
+
+    try
+    {
+        siteId = WebSession.Current.SiteId;
+    }
+    catch
+    {
+        siteId = "no_site";
+    }
+
+    try
+    {
+        languageCode = WebSession.Current.LanguageCode;
+    }
+    catch
+    {
+        languageCode = "no_language_code";
+    }
+
+    try
+    {
+        countryCode = WebSession.Current.CountryCode;
+    }
+    catch
+    {
+        countryCode = "no_country_code";
+    }
+
+    try
+    {
+        currencyCode = WebSession.Current.CurrencyCode;
+    }
+    catch
+    {
+        currencyCode = "no_currency_code";
+    }
+
+    try
+    {
+        storeLink = Html.StoreLink();
+    }
+    catch (Exception)
+    {
+        storeLink = "http://www.digitalriver.com";
+    }
+}
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=10" />
+        <meta requestId="@Html.GetRequestId()" />
+        <link rel="shortcut icon" type="image/x-icon" href="@Html.GetPublicURL("~/upload/Content/img/favicon.ico")" />
+        <link rel="icon" type="image/png" href="@Html.GetPublicURL("~/upload/Content/img/favicon.ico")" />
+        <title>Server Error - Sports Us</title>
+        @RenderSection("Meta", required: false)
+        @Styles.Render("~/coteries/site_css")
+        @Scripts.Render("~/coteries/core")
+    </head>
+    <body>
+        <div class="container">
+            <div class="page-header">
+                <div class="row">
+                    <div class="col-sm-3"><a href="/sportsus/en-us/home"><img src="/Content/img/site/sportsInc.png" /></a></div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            @RenderBody()
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-9">&nbsp;</div>
+                <div class="col-sm-3">
+                    <img src="http://drh.img.digitalriver.com/DRHM/Storefront/Site/sportsus/cm/images/drdemo_logo_footer.png">
+                </div>
+            </div>
+        </div>
+        @Scripts.Render("~/coteries/site_js")
+    </body>
+</html>

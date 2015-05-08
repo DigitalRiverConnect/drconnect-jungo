@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<n2 version="2.4.0.0" exportVersion="2" exportDate="07/10/2013 23:28:36">
+  <item id="232" name="office" parent="186" title="Office" state="Published" created="02/27/2013 15:41:37" updated="07/10/2013 23:28:35" published="02/27/2013 15:41:37" sortOrder="6" url="/msca/fr-ca/store/office" visible="True" savedBy="rreed" typeName="DigitalRiver.CloudLink.N2MVC.Models.Pages.CatalogPage, DigitalRiver.CloudLink.N2MVC" discriminator="CatalogPage" ancestralTrail="/1/12/174/179/186/" childState="132">
+    <details>
+      <detail name="CategoryID" typeName="System.String, mscorlib" meta="" encoded="True"><![CDATA[62684700]]></detail>
+    </details>
+    <detailCollections />
+    <children>
+      <child id="234" name="234" versionIndex="0" />
+    </children>
+    <authorizations />
+    <properties />
+  </item>
+  <item id="234" name="" parent="232" title="" zoneName="Content" state="Published" created="03/18/2013 20:38:47" updated="07/10/2013 23:28:35" published="03/18/2013 20:52:07" sortOrder="0" url="/msca/fr-ca/store/office?item=234" visible="True" savedBy="admin" typeName="DigitalRiver.CloudLink.N2MVC.Models.Parts.TemplatePart, DigitalRiver.CloudLink.N2MVC" discriminator="TemplatePart" ancestralTrail="/1/12/174/179/186/232/" childState="128">
+    <details>
+      <detail name="ViewTemplate" typeName="System.String, mscorlib" meta="" encoded="True"><![CDATA[ContainerFull]]></detail>
+    </details>
+    <detailCollections />
+    <children>
+      <child id="235" name="235" versionIndex="0" />
+      <child id="239" name="239" versionIndex="0" />
+      <child id="242" name="242" versionIndex="0" />
+      <child id="247" name="247" versionIndex="0" />
+      <child id="252" name="252" versionIndex="0" />
+    </children>
+    <authorizations />
+    <properties />
+  </item>
+  <item id="235" name="" parent="234" title="What's new with computers" zoneName="Content" state="Published" created="03/18/2013 20:43:25" updated="07/10/2013 23:28:35" published="03/18/2013 20:52:07" sortOrder="-10" url="/msca/fr-ca/store/office?item=235" visible="True" savedBy="admin" typeName="DigitalRiver.CloudLink.N2MVC.Models.Parts.CmsPopPart, DigitalRiver.CloudLink.N2MVC" discriminator="CmsPopPart" ancestralTrail="/1/12/174/179/186/232/234/" childState="128">
+    <details>
+      <detail name="ViewTemplate" typeName="System.String, mscorlib" meta="" encoded="True"><![CDATA[TopCategories]]></detail>
+      <detail name="NumElementsWide" typeName="System.String, mscorlib" meta="" encoded="True"><![CDATA[3]]></detail>
+    </details>
+    <detailCollections />
+    <children>
+      <child id="236" name="236" versionIndex="0" />
+      <child id="237" name="237" versionIndex="0" />
+      <child id="238" name="238" versionIndex="0" />
+    </children>
+    <authorizations />
+    <properties />
+  </item>
+  <item id="236" name="" parent="235" title="Save up to $400 on select notebooks" zoneName="Offers" state="Published" created="03/18/2013 20:43:25" updated="07/10/2013 23:28:35" published="03/18/2013 20:52:07" sortOrder="-10" url="" visible="True" savedBy="admin" typeName="DigitalRiver.CloudLink.N2MVC.Models.Parts.PromotionOffer, DigitalRiver.CloudLink.N2MVC" discriminator="PromotionOffer" ancestralTrail="/1/12/174/179/186/232/234/235/" childState="2">
+    <details>
+      <detail name="Title" typeName="System.String, mscorlib" meta="" encoded="True"><![CDATA[Save up to $400 on select notebooks]]></detail>
+      <detail name="Image" typeName="System.String, mscorlib" meta="" encoded="True"><![CDATA[~/upload/save_on_select_notebooks.jpg]]></detail>
+    </details>
+    <detailCollections />
+    <children />
+    <authorizations />
+    <properties />
+  </item>
+  <item id="237" name="" parent="235" title="Hey students, see how to get 10% off" zoneName="Offers" state="Published" created="03/18/2013 20:43:25" updated="07/10/2013 23:28:35" published="03/18/2013 20:52:07" sortOrder="-5" url="" visible="True" savedBy="admin" typeName="DigitalRiver.CloudLink.N2MVC.Models.Parts.PromotionOffer, DigitalRiver.CloudLink.N2MVC" discriminator="PromotionOffer" ancestralTrail="/1/12/174/179/186/232/234/235/" childState="2">
+    <details>
+      <detail name="Title" typeName="System.String, mscorlib" meta="" encoded="True"><![CDATA[Hey students, see how to get 10% off]]></detail>
+      <detail name="Image" typeName="System.String, mscorlib" meta="" encoded="True"><![CDATA[~/upload/discount_for_students.jpg]]></detail>
+    </details>
+    <detailCollections />
+    <children />
+    <authorizations />
+    <properties />
+  </item>
+  <item id="238" name="" parent="235" title="Pre-order the Surface Pro, arriving February 9" zoneName="Offers" state="Published" created="03/18/2013 20:43:25" updated="07/10/2013 23:28:35" published="03/18/2013 20:52:07" sortOrder="0" url="" visible="True" savedBy="admin" typeName="DigitalRiver.CloudLink.N2MVC.Models.Parts.PromotionOffer, DigitalRiver.CloudLink.N2MVC" discriminator="PromotionOffer" ancestralTrail="/1/12/174/179/186/232/234/235/" childState="2">
+    <details>
+      <detail name="Title" typeName="System.String, mscorlib" meta="" encoded="True"><![CDATA[Pre-order the Surface Pro, arriving February 9]]></detail>
+      <detail name="Image" typeName="System.String, mscorlib" meta="" encoded="True"><![CDATA[~/upload/pre-order_surface.jpg]]></detail>
+    </details>
+    <detailCollections />
+    <children />
+    <authorizations />
+    <properties />
+  </item>
+  <item id="239" name="" parent="234" title="Which suite fits your lifestyle?" zoneName="Content" state="Published" created="03/18/2013 20:54:03" updated="07/10/2013 23:28:35" published="03/18/2013 21:51:22" sortOrder="-5" url="/msca/fr-ca/store/office?item=239" visible="True" savedBy="rreed" typeName="DigitalRiver.CloudLink.N2MVC.Models.Parts.CmsPopPart, DigitalRiver.CloudLink.N2MVC" discriminator="CmsPopPart" ancestralTrail="/1/12/174/179/186/232/234/" childState="128">
+    <details>
+      <detail name="ViewTemplate" typeName="System.String, mscorlib" meta="" encoded="True"><![CDATA[TopCategories]]></detail>
+      <detail name="NumElementsWide" typeName="System.String, mscorlib" meta="" encoded="True"><![CDATA[4]]></detail>
+    </details>
+    <detailCollections />
+    <children>
+      <child id="240" name="240" versionIndex="0" />
+      <child id="241" name="241" versionIndex="0" />
+    </children>
+    <authorizations />
+    <properties />
+  </item>
+  <item id="240" name="" parent="239" title="Office 365 Home Premium" zoneName="Offers" state="Published" created="03/18/2013 20:54:03" updated="07/10/2013 23:28:35" published="03/18/2013 21:51:22" sortOrder="-10" url="" visible="True" savedBy="admin" typeName="DigitalRiver.CloudLink.N2MVC.Models.Parts.PromotionOffer, DigitalRiver.CloudLink.N2MVC" discriminator="PromotionOffer" ancestralTrail="/1/12/174/179/186/232/234/239/" childState="2">
+    <details>
+      <detail name="Title" typeName="System.String, mscorlib" meta="" encoded="True"><![CDATA[Office 365 Home Premium]]></detail>
+      <detail name="TagLine" typeName="System.String, mscorlib" meta="" encoded="True"><![CDATA[Recommended]]></detail>
+      <detail name="Image" typeName="System.String, mscorlib" meta="" encoded="True"><![CDATA[~/upload/10675_Monaco_Wireframe_PDP_1a_Compare_09.jpg]]></detail>
+    </details>
+    <detailCollections />
+    <children />
+    <authorizations />
+    <properties />
+  </item>
+  <item id="241" name="" parent="239" title="Office Home &amp; Student 2013" zoneName="Offers" state="Published" created="03/18/2013 20:54:03" updated="07/10/2013 23:28:35" published="03/18/2013 21:51:22" sortOrder="0" url="?productId=274817500" visible="True" savedBy="rreed" typeName="DigitalRiver.CloudLink.N2MVC.Models.Parts.PromotionOffer, DigitalRiver.CloudLink.N2MVC" discriminator="PromotionOffer" ancestralTrail="/1/12/174/179/186/232/234/239/" childState="2">
+    <details>
+      <detail name="Title" typeName="System.String, mscorlib" meta="" encoded="True"><![CDATA[Office Home &amp; Student 2013]]></detail>
+      <detail name="Image" typeName="System.String, mscorlib" meta="" encoded="True"><![CDATA[~/upload/msusa/store/office/60/65/67/en-US-Global_NAV_Office.png]]></detail>
+      <detail name="TargetUrl" typeName="System.String, mscorlib" meta="" encoded="True"><![CDATA[?productId=274817500]]></detail>
+    </details>
+    <detailCollections />
+    <children />
+    <authorizations />
+    <properties />
+  </item>
+  <item id="242" name="" parent="234" title="Recommended applications" zoneName="Content" state="Published" created="03/18/2013 21:07:48" updated="07/10/2013 23:28:35" published="03/18/2013 21:51:22" sortOrder="-2" url="/msca/fr-ca/store/office?item=242" visible="True" savedBy="admin" typeName="DigitalRiver.CloudLink.N2MVC.Models.Parts.CmsPopPart, DigitalRiver.CloudLink.N2MVC" discriminator="CmsPopPart" ancestralTrail="/1/12/174/179/186/232/234/" childState="128">
+    <details>
+      <detail name="ViewTemplate" typeName="System.String, mscorlib" meta="" encoded="True"><![CDATA[TopCategories]]></detail>
+      <detail name="NumElementsWide" typeName="System.String, mscorlib" meta="" encoded="True"><![CDATA[4]]></detail>
+    </details>
+    <detailCollections />
+    <children>
+      <child id="243" name="243" versionIndex="0" />
+      <child id="244" name="244" versionIndex="0" />
+      <child id="245" name="245" versionIndex="0" />
+      <child id="246" name="246" versionIndex="0" />
+    </children>
+    <authorizations />
+    <properties />
+  </item>
+  <item id="243" name="" parent="242" title="Word 2013" zoneName="Offers" state="Published" created="03/18/2013 21:07:48" updated="07/10/2013 23:28:35" published="03/18/2013 21:51:22" sortOrder="-10" url="?productId=274817900" visible="True" savedBy="admin" typeName="DigitalRiver.CloudLink.N2MVC.Models.Parts.PromotionOffer, DigitalRiver.CloudLink.N2MVC" discriminator="PromotionOffer" ancestralTrail="/1/12/174/179/186/232/234/242/" childState="2">
+    <details>
+      <detail name="Title" typeName="System.String, mscorlib" meta="" encoded="True"><![CDATA[Word 2013]]></detail>
+      <detail name="TagLine" typeName="System.String, mscorlib" meta="" encoded="True"><![CDATA[With Word 2013 you can create more beautiful and...]]></detail>
+      <detail name="Image" typeName="System.String, mscorlib" meta="" encoded="True"><![CDATA[~/upload/10675_Redesign_Category_19_r5_c1_s4.jpg]]></detail>
+      <detail name="TargetUrl" typeName="System.String, mscorlib" meta="" encoded="True"><![CDATA[?productId=274817900]]></detail>
+    </details>
+    <detailCollections />
+    <children />
+    <authorizations />
+    <properties />
+  </item>
+  <item id="244" name="" parent="242" title="Outlook 2010" zoneName="Offers" state="Published" created="03/18/2013 21:07:48" updated="07/10/2013 23:28:35" published="03/18/2013 21:51:22" sortOrder="-5" url="" visible="True" savedBy="admin" typeName="DigitalRiver.CloudLink.N2MVC.Models.Parts.PromotionOffer, DigitalRiver.CloudLink.N2MVC" discriminator="PromotionOffer" ancestralTrail="/1/12/174/179/186/232/234/242/" childState="2">
+    <details>
+      <detail name="Title" typeName="System.String, mscorlib" meta="" encoded="True"><![CDATA[Outlook 2010]]></detail>
+      <detail name="TagLine" typeName="System.String, mscorlib" meta="" encoded="True"><![CDATA[Outlook 2013 is designed to help you focus on what...]]></detail>
+      <detail name="Image" typeName="System.String, mscorlib" meta="" encoded="True"><![CDATA[~/upload/10675_Redesign_Category_19_r5_c3_s4.jpg]]></detail>
+    </details>
+    <detailCollections />
+    <children />
+    <authorizations />
+    <properties />
+  </item>
+  <item id="245" name="" parent="242" title="Powerpoint 2013" zoneName="Offers" state="Published" created="03/18/2013 21:07:48" updated="07/10/2013 23:28:35" published="03/18/2013 21:51:22" sortOrder="-2" url="?productId=274817800" visible="True" savedBy="admin" typeName="DigitalRiver.CloudLink.N2MVC.Models.Parts.PromotionOffer, DigitalRiver.CloudLink.N2MVC" discriminator="PromotionOffer" ancestralTrail="/1/12/174/179/186/232/234/242/" childState="2">
+    <details>
+      <detail name="Title" typeName="System.String, mscorlib" meta="" encoded="True"><![CDATA[Powerpoint 2013]]></detail>
+      <detail name="TagLine" typeName="System.String, mscorlib" meta="" encoded="True"><![CDATA[PowerPoint 2013 is cleaner and primed for use on t....]]></detail>
+      <detail name="Image" typeName="System.String, mscorlib" meta="" encoded="True"><![CDATA[~/upload/10675_Redesign_Category_19_r5_c13_s4.jpg]]></detail>
+      <detail name="TargetUrl" typeName="System.String, mscorlib" meta="" encoded="True"><![CDATA[?productId=274817800]]></detail>
+    </details>
+    <detailCollections />
+    <children />
+    <authorizations />
+    <properties />
+  </item>
+  <item id="246" name="" parent="242" title="Excel 2013" zoneName="Offers" state="Published" created="03/18/2013 21:43:14" updated="07/10/2013 23:28:35" published="03/18/2013 21:51:22" sortOrder="0" url="?productId=274817400" visible="True" savedBy="admin" typeName="DigitalRiver.CloudLink.N2MVC.Models.Parts.PromotionOffer, DigitalRiver.CloudLink.N2MVC" discriminator="PromotionOffer" ancestralTrail="/1/12/174/179/186/232/234/242/" childState="2">
+    <details>
+      <detail name="Title" typeName="System.String, mscorlib" meta="" encoded="True"><![CDATA[Excel 2013]]></detail>
+      <detail name="TagLine" typeName="System.String, mscorlib" meta="" encoded="True"><![CDATA[Excel 2013 has a brand new look and a new featured...]]></detail>
+      <detail name="Image" typeName="System.String, mscorlib" meta="" encoded="True"><![CDATA[~/upload/10675_Redesign_Category_19_r5_c7_s4.jpg]]></detail>
+      <detail name="Text" typeName="System.String, mscorlib" meta="" encoded="True"><![CDATA[From touch to type, office to living room, your screen to the big screen, you can see more, share more, and do more with Surface.]]></detail>
+      <detail name="TargetUrl" typeName="System.String, mscorlib" meta="" encoded="True"><![CDATA[?productId=274817400]]></detail>
+    </details>
+    <detailCollections />
+    <children />
+    <authorizations />
+    <properties />
+  </item>
+  <item id="247" name="" parent="234" title="What makes Office great" zoneName="Content" state="Published" created="03/18/2013 21:48:43" updated="07/10/2013 23:28:35" published="03/18/2013 21:51:22" sortOrder="0" url="/msca/fr-ca/store/office?item=247" visible="True" savedBy="admin" typeName="DigitalRiver.CloudLink.N2MVC.Models.Parts.CmsPopPart, DigitalRiver.CloudLink.N2MVC" discriminator="CmsPopPart" ancestralTrail="/1/12/174/179/186/232/234/" childState="128">
+    <details>
+      <detail name="ViewTemplate" typeName="System.String, mscorlib" meta="" encoded="True"><![CDATA[TopCategories]]></detail>
+      <detail name="NumElementsWide" typeName="System.String, mscorlib" meta="" encoded="True"><![CDATA[4]]></detail>
+    </details>
+    <detailCollections />
+    <children>
+      <child id="248" name="248" versionIndex="0" />
+      <child id="249" name="249" versionIndex="0" />
+      <child id="250" name="250" versionIndex="0" />
+      <child id="251" name="251" versionIndex="0" />
+    </children>
+    <authorizations />
+    <properties />
+  </item>
+  <item id="248" name="" parent="247" title="Expert-picked selection" zoneName="Offers" state="Published" created="03/18/2013 21:48:43" updated="07/10/2013 23:28:35" published="03/18/2013 21:51:22" sortOrder="-10" url="" visible="True" savedBy="admin" typeName="DigitalRiver.CloudLink.N2MVC.Models.Parts.PromotionOffer, DigitalRiver.CloudLink.N2MVC" discriminator="PromotionOffer" ancestralTrail="/1/12/174/179/186/232/234/247/" childState="2">
+    <details>
+      <detail name="Title" typeName="System.String, mscorlib" meta="" encoded="True"><![CDATA[Expert-picked selection]]></detail>
+      <detail name="Image" typeName="System.String, mscorlib" meta="" encoded="True"><![CDATA[~/upload/PC_Great_1.jpg]]></detail>
+      <detail name="Text" typeName="System.String, mscorlib" meta="" encoded="True"><![CDATA[lorem ipsum dolor sit amet, adiscrpating elit. pellented lorem odio]]></detail>
+    </details>
+    <detailCollections />
+    <children />
+    <authorizations />
+    <properties />
+  </item>
+  <item id="249" name="" parent="247" title="With Microsoft Signature" zoneName="Offers" state="Published" created="03/18/2013 21:48:43" updated="07/10/2013 23:28:35" published="03/18/2013 21:51:22" sortOrder="-5" url="" visible="True" savedBy="admin" typeName="DigitalRiver.CloudLink.N2MVC.Models.Parts.PromotionOffer, DigitalRiver.CloudLink.N2MVC" discriminator="PromotionOffer" ancestralTrail="/1/12/174/179/186/232/234/247/" childState="2">
+    <details>
+      <detail name="Title" typeName="System.String, mscorlib" meta="" encoded="True"><![CDATA[With Microsoft Signature]]></detail>
+      <detail name="Image" typeName="System.String, mscorlib" meta="" encoded="True"><![CDATA[~/upload/PC_Great_2.jpg]]></detail>
+      <detail name="Text" typeName="System.String, mscorlib" meta="" encoded="True"><![CDATA[lorem ipsum dolor sit amet, adiscrpating elit. pellented lorem odio]]></detail>
+    </details>
+    <detailCollections />
+    <children />
+    <authorizations />
+    <properties />
+  </item>
+  <item id="250" name="" parent="247" title="Get up and running" zoneName="Offers" state="Published" created="03/18/2013 21:48:43" updated="07/10/2013 23:28:35" published="03/18/2013 21:51:22" sortOrder="-2" url="" visible="True" savedBy="admin" typeName="DigitalRiver.CloudLink.N2MVC.Models.Parts.PromotionOffer, DigitalRiver.CloudLink.N2MVC" discriminator="PromotionOffer" ancestralTrail="/1/12/174/179/186/232/234/247/" childState="2">
+    <details>
+      <detail name="Title" typeName="System.String, mscorlib" meta="" encoded="True"><![CDATA[Get up and running]]></detail>
+      <detail name="Image" typeName="System.String, mscorlib" meta="" encoded="True"><![CDATA[~/upload/PC_Great_3.jpg]]></detail>
+      <detail name="Text" typeName="System.String, mscorlib" meta="" encoded="True"><![CDATA[lorem ipsum dolor sit amet, adiscrpating elit. pellented lorem odio]]></detail>
+    </details>
+    <detailCollections />
+    <children />
+    <authorizations />
+    <properties />
+  </item>
+  <item id="251" name="" parent="247" title="Support from Answer Desk" zoneName="Offers" state="Published" created="03/18/2013 21:48:43" updated="07/10/2013 23:28:35" published="03/18/2013 21:51:22" sortOrder="0" url="" visible="True" savedBy="admin" typeName="DigitalRiver.CloudLink.N2MVC.Models.Parts.PromotionOffer, DigitalRiver.CloudLink.N2MVC" discriminator="PromotionOffer" ancestralTrail="/1/12/174/179/186/232/234/247/" childState="2">
+    <details>
+      <detail name="Title" typeName="System.String, mscorlib" meta="" encoded="True"><![CDATA[Support from Answer Desk]]></detail>
+      <detail name="Image" typeName="System.String, mscorlib" meta="" encoded="True"><![CDATA[~/upload/PC_Great_4.jpg]]></detail>
+      <detail name="Text" typeName="System.String, mscorlib" meta="" encoded="True"><![CDATA[lorem ipsum dolor sit amet, adiscrpating elit. pellented lorem odio]]></detail>
+    </details>
+    <detailCollections />
+    <children />
+    <authorizations />
+    <properties />
+  </item>
+  <item id="252" name="" parent="234" title="" zoneName="Content" state="Published" created="03/18/2013 21:48:59" updated="07/10/2013 23:28:35" published="03/18/2013 21:51:22" sortOrder="10" url="/msca/fr-ca/store/office?item=252" visible="True" savedBy="admin" typeName="DigitalRiver.CloudLink.N2MVC.Models.Parts.TextPart, DigitalRiver.CloudLink.N2MVC" discriminator="TextPart" ancestralTrail="/1/12/174/179/186/232/234/" childState="2">
+    <details>
+      <detail name="Text" typeName="System.String, mscorlib" meta="" encoded="True"><![CDATA[&lt;h2&gt;Terms &amp;amp; conditions&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;See&amp;nbsp;&lt;a href=&quot;http://www.microsoftstore.com/store/msrelcan/en_US/cat/ThemeID.29345300/categoryID.62111800#&quot;&gt;office.com/information&lt;/a&gt;&amp;nbsp;for applicable devices. Internet connection required. Internet and mobile telephone usage charges may apply.&lt;/li&gt;
+&lt;li&gt;Application availability and features vary by platform and device. Publisher, Access and OneNote available on PC only.&lt;/li&gt;
+&lt;li&gt;Skype account required. Exludes special, premium and non-geographic numbers. Calls to mobiles are for select countries only. Skype world minutes available in select countries. See&amp;nbsp;&lt;a href=&quot;http://www.microsoftstore.com/store/msrelcan/en_US/cat/ThemeID.29345300/categoryID.62111800#&quot;&gt;FAQ&lt;/a&gt;&amp;nbsp;for details.&lt;/li&gt;
+&lt;li&gt;Windows 7 or Windows 8 OS required. Internet connection required.&lt;/li&gt;
+&lt;/ol&gt;]]></detail>
+    </details>
+    <detailCollections />
+    <children />
+    <authorizations />
+    <properties />
+  </item>
+</n2>

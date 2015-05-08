@@ -1,0 +1,405 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created with Liquid XML Studio 0.9.15.0 (http://www.liquid-technologies.com) -->
+<schema xmlns:common="http://integration.digitalriver.com/Common/1.0" elementFormDefault="qualified" targetNamespace="http://integration.digitalriver.com/Common/1.0" xmlns="http://www.w3.org/2001/XMLSchema">
+  <complexType name="ProductKey">
+    <annotation>
+      <documentation><![CDATA[
+                A product can be obtained as follows
+                  - Using a productID
+                  - Using a combination of external reference ID and company ID.
+
+                    Seucrity checks will be performed by the application to ensure that the requestor 
+                    has access to the product
+            ]]></documentation>
+    </annotation>
+    <sequence>
+      <element minOccurs="0" form="unqualified" name="productID" nillable="true" type="string">
+        <annotation>
+          <documentation>Maximum length of 64.</documentation>
+        </annotation>
+      </element>
+      <element minOccurs="0" form="unqualified" name="externalReferenceID" nillable="true" type="string">
+        <annotation>
+          <documentation>Maximum length of 64.</documentation>
+        </annotation>
+      </element>
+      <element minOccurs="0" form="unqualified" name="companyID" nillable="true" type="string">
+        <annotation>
+          <documentation>Maximum length of 64.</documentation>
+        </annotation>
+      </element>
+      <element minOccurs="0" form="unqualified" name="locale" nillable="true" type="string">
+        <annotation>
+          <documentation>Maximum length of 16.</documentation>
+        </annotation>
+      </element>
+    </sequence>
+  </complexType>
+  <complexType name="SubscriptionKey">
+    <annotation>
+      <documentation><![CDATA[
+                A subscription can be obtained as follows
+                  - Using a Digital River assigned unique subscriptionID
+            ]]></documentation>
+    </annotation>
+    <sequence>
+      <element minOccurs="0" form="unqualified" name="subscriptionID" nillable="true" type="string">
+        <annotation>
+          <documentation>Maximum length of 64.</documentation>
+        </annotation>
+      </element>
+    </sequence>
+  </complexType>
+  <complexType name="CatalogKey">
+    <annotation>
+      <documentation><![CDATA[
+                A catalog can be obtained as follows
+                  - Using a catalogID
+                  - Using a combination of catalog name and company ID.
+                    Seucrity checks will be performed by the application to ensure that the requestor 
+                    has access to the catalog
+            ]]></documentation>
+    </annotation>
+    <sequence>
+      <element minOccurs="0" form="unqualified" name="catalogID" nillable="true" type="string">
+        <annotation>
+          <documentation>Maximum length of 64.</documentation>
+        </annotation>
+      </element>
+      <element minOccurs="0" form="unqualified" name="catalogName" nillable="true" type="string">
+        <annotation>
+          <documentation>Maximum length of 255.</documentation>
+        </annotation>
+      </element>
+      <element minOccurs="0" form="unqualified" name="companyID" nillable="true" type="string">
+        <annotation>
+          <documentation>Maximum length of 64.</documentation>
+        </annotation>
+      </element>
+    </sequence>
+  </complexType>
+  <complexType name="CategoryKey">
+    <annotation>
+      <documentation><![CDATA[
+                A catalog can be obtained as follows
+                  - Using a categoryID
+                  - Using a combination of catalog key and a category pattern. Category pattern is defined
+                    as subcategory/[subcategory]* 
+                       The subcategories are seperated by /
+                    
+                    Seucrity checks will be performed by the application to ensure that the requestor 
+                    has access to the category
+            ]]></documentation>
+    </annotation>
+    <sequence>
+      <element minOccurs="0" form="unqualified" name="categoryID" nillable="true" type="string">
+        <annotation>
+          <documentation>Maximum length of 64.</documentation>
+        </annotation>
+      </element>
+      <element minOccurs="0" form="unqualified" name="catalogKey" nillable="true" type="string" />
+      <element minOccurs="0" form="unqualified" name="pattern" nillable="true" type="string" />
+    </sequence>
+  </complexType>
+  <complexType name="UserKey">
+    <annotation>
+      <documentation><![CDATA[
+                A user is identified by
+                  - Digital River internal userID OR
+                  - Combination of loginID & siteID OR
+                  - Combination of externalReferenceID & siteID OR
+                  - Combination of externalReferenceID & companyID
+            ]]></documentation>
+    </annotation>
+    <sequence>
+      <element minOccurs="0" form="unqualified" name="userID" nillable="true" type="string">
+        <annotation>
+          <documentation>A unique ID in Digital River's system (a database key). Maximum length of 64.</documentation>
+        </annotation>
+      </element>
+      <element minOccurs="0" form="unqualified" name="externalReferenceID" nillable="true" type="string">
+        <annotation>
+          <documentation>An ID that is typically passed via a single signon call or is custom filled from URL parameters passed into a URL. Maximum length of 64.</documentation>
+        </annotation>
+      </element>
+      <element minOccurs="0" form="unqualified" name="companyID" nillable="true" type="string">
+        <annotation>
+          <documentation>The company to which the user belongs (this is the "buying" company). Maximum length of 64.</documentation>
+        </annotation>
+      </element>
+      <element minOccurs="0" form="unqualified" name="loginID" nillable="true" type="string">
+        <annotation>
+          <documentation>This typically manifests itself as an email address. This is generally obtained from either the checkout page or through a single signon call. This is unique per siteID. Maximum length of 255.</documentation>
+        </annotation>
+      </element>
+      <element minOccurs="0" form="unqualified" name="siteID" nillable="true" type="string">
+        <annotation>
+          <documentation>A unique ID in Digital River's system (a database key). Maximum length of 64.</documentation>
+        </annotation>
+      </element>
+    </sequence>
+  </complexType>
+  <complexType name="AddressInfo">
+    <sequence>
+      <annotation>
+        <documentation>Contains address information.</documentation>
+      </annotation>
+      <element minOccurs="0" form="unqualified" name="addressID" nillable="true" type="string">
+        <annotation>
+          <documentation>Maximum length of 64.</documentation>
+        </annotation>
+      </element>
+      <element form="unqualified" name="city" type="string">
+        <annotation>
+          <documentation>Maximum length of 128.</documentation>
+        </annotation>
+      </element>
+      <element form="unqualified" name="countryA2" nillable="true" type="string">
+        <annotation>
+          <documentation>
+                        Two character country code according to ISO 3166 -1standards,
+                        format A-2.
+                        (http://www.davros.org/misc/iso3166.html).
+                    </documentation>
+        </annotation>
+      </element>
+      <element form="unqualified" name="country" type="string">
+        <annotation>
+          <documentation>
+                        Two character country code according to ISO 3166 -1standards,
+                        format A-2.
+                        (http://www.davros.org/misc/iso3166.html).
+                    </documentation>
+        </annotation>
+      </element>
+      <element form="unqualified" name="countryName" type="string">
+        <annotation>
+          <documentation>Maximum length of 128.</documentation>
+        </annotation>
+      </element>
+      <element form="unqualified" name="line1" type="string">
+        <annotation>
+          <documentation>Maximum length of 255.</documentation>
+        </annotation>
+      </element>
+      <element minOccurs="0" form="unqualified" name="line2" nillable="true" type="string">
+        <annotation>
+          <documentation>Maximum length of 255.</documentation>
+        </annotation>
+      </element>
+      <element minOccurs="0" form="unqualified" name="line3" nillable="true" type="string">
+        <annotation>
+          <documentation>Maximum length of 255.</documentation>
+        </annotation>
+      </element>
+      <element minOccurs="0" form="unqualified" name="locationCode" nillable="true" type="string">
+        <annotation>
+          <documentation>Maximum length of 128.</documentation>
+        </annotation>
+      </element>
+      <element minOccurs="0" form="unqualified" name="name1" nillable="true" type="string">
+        <annotation>
+          <documentation>Maximum length of 255.</documentation>
+        </annotation>
+      </element>
+      <element minOccurs="0" form="unqualified" name="name2" nillable="true" type="string">
+        <annotation>
+          <documentation>Maximum length of 255.</documentation>
+        </annotation>
+      </element>
+      <element minOccurs="0" form="unqualified" name="phoneNumber" nillable="true" type="string">
+        <annotation>
+          <documentation>Maximum length of 64.</documentation>
+        </annotation>
+      </element>
+      <element form="unqualified" name="postalCode" type="string">
+        <annotation>
+          <documentation>
+                        Postal code should follow format for country of address. Maximum length of 32.
+                    </documentation>
+        </annotation>
+      </element>
+      <element minOccurs="0" form="unqualified" name="state" nillable="true" type="string">
+        <annotation>
+          <documentation>
+                        State or province code.
+                        Use two character codes for the United States (http://www.usps.com/ncsc/lookups/abbreviations.html#states)
+                        or Canada (http://saaropean.net/countries/postal.html#ca).
+                    </documentation>
+        </annotation>
+      </element>
+      <element minOccurs="0" form="unqualified" name="email" nillable="true" type="string">
+        <annotation>
+          <documentation>Maximum length of 255.</documentation>
+        </annotation>
+      </element>
+      <element minOccurs="0" form="unqualified" name="faxPhone" nillable="true" type="string">
+        <annotation>
+          <documentation>Maximum length of 32.</documentation>
+        </annotation>
+      </element>
+      <element minOccurs="0" form="unqualified" name="companyName" nillable="true" type="string">
+        <annotation>
+          <documentation>Maximum length of 255.</documentation>
+        </annotation>
+      </element>
+      <element minOccurs="0" form="unqualified" name="phoneNumber2" nillable="true" type="string">
+        <annotation>
+          <documentation>Maximum length of 64.</documentation>
+        </annotation>
+      </element>
+      <element minOccurs="0" form="unqualified" name="countyName" nillable="true" type="string">
+        <annotation>
+          <documentation>Maximum length of 64.</documentation>
+        </annotation>
+      </element>
+      <element minOccurs="0" form="unqualified" name="extendedAttributes" nillable="true" type="common:ExtendedAttributesInfoArray">
+        <annotation>
+          <documentation>Maximum length of 4000.</documentation>
+        </annotation>
+      </element>
+    </sequence>
+  </complexType>
+  <complexType name="MoneyInfo">
+    <sequence>
+      <annotation>
+        <documentation>Contains Money Info information.</documentation>
+      </annotation>
+      <element form="unqualified" name="currencyCode" type="string">
+        <annotation>
+          <documentation>
+                        Three character currency code to be used for the amounts below. See the ISO 4217 maintenance
+                        agency (http://www.iso.org/iso/support/faqs/faqs_widely_used_standards/widely_used_standards_other/currency_codes/currency_codes_list-1.htm) for more information,
+                        including a table of currency codes.  Maximum length of 9.
+                    </documentation>
+        </annotation>
+      </element>
+      <element form="unqualified" name="amount" type="decimal">
+        <annotation>
+          <documentation>Maximum precision of 18, scale of 2.</documentation>
+        </annotation>
+      </element>
+    </sequence>
+  </complexType>
+  <complexType name="SiteInfo">
+    <sequence>
+      <annotation>
+        <documentation />
+      </annotation>
+      <element form="unqualified" name="siteID" type="string">
+        <annotation>
+          <documentation>Digital River id for the site the order was placed on.  Maximum length of 64.</documentation>
+        </annotation>
+      </element>
+      <element minOccurs="0" form="unqualified" name="siteAddress" nillable="true" type="common:AddressInfo">
+        <annotation>
+          <documentation>
+                        The billing address for the company that owns this site.
+                    </documentation>
+        </annotation>
+      </element>
+      <element minOccurs="0" form="unqualified" name="siteURL" nillable="true" type="string">
+        <annotation>
+          <documentation>The url that this order was placed on.</documentation>
+        </annotation>
+      </element>
+    </sequence>
+  </complexType>
+  <complexType name="ExtendedAttributesInfoArray">
+    <annotation>
+      <documentation>
+				The combined length of all contained ExtendedAttributesInfo elements is 4000
+				characters. This includes the opening and closing XML elements.
+			</documentation>
+    </annotation>
+    <sequence>
+      <element minOccurs="0" maxOccurs="unbounded" form="unqualified" name="item" nillable="true" type="common:ExtendedAttributesInfo" />
+    </sequence>
+  </complexType>
+  <complexType name="ExtendedAttributesInfo">
+    <sequence>
+      <element form="unqualified" name="name" type="string" />
+      <element form="unqualified" name="value" type="string" />
+      <element minOccurs="0" form="unqualified" name="valueDataType" nillable="true" type="string">
+        <annotation>
+          <documentation>
+                        Expected values are: string int long float boolean
+                        Default: string
+                    </documentation>
+        </annotation>
+      </element>
+    </sequence>
+  </complexType>
+  <complexType name="UserInfo">
+    <sequence>
+      <annotation>
+        <documentation>
+                    Contains information about a user
+                </documentation>
+      </annotation>
+      <element minOccurs="1" maxOccurs="1" form="unqualified" name="userKey" type="common:UserKey">
+        <annotation>
+          <documentation>
+                        Key identifying the user
+                    </documentation>
+        </annotation>
+      </element>
+      <element minOccurs="1" maxOccurs="1" form="unqualified" name="firstName" type="string">
+        <annotation>
+          <documentation>
+                        First name of the user. Maximum length of 255,
+                    </documentation>
+        </annotation>
+      </element>
+      <element minOccurs="1" maxOccurs="1" form="unqualified" name="lastName" type="string">
+        <annotation>
+          <documentation>
+                        Last name of the user. Maximum length of 255.
+                    </documentation>
+        </annotation>
+      </element>
+      <element minOccurs="1" maxOccurs="1" form="unqualified" name="email" type="string">
+        <annotation>
+          <documentation>
+                        Email of the user. Maximum length of 255.
+                    </documentation>
+        </annotation>
+      </element>
+      <element minOccurs="1" maxOccurs="1" form="unqualified" name="locale" type="string">
+        <annotation>
+          <documentation>
+                        Locale of the user. Maximum length of 64.
+                    </documentation>
+        </annotation>
+      </element>
+      <element minOccurs="0" maxOccurs="1" form="unqualified" name="homePhone" nillable="true" type="string">
+        <annotation>
+          <documentation>
+                        Home Phone Number. Maximum length of 32.
+                    </documentation>
+        </annotation>
+      </element>
+      <element minOccurs="0" maxOccurs="1" form="unqualified" name="faxPhone" nillable="true" type="string">
+        <annotation>
+          <documentation>
+                        Fax Phone Number. Maximum length of 32.
+                    </documentation>
+        </annotation>
+      </element>
+      <element minOccurs="0" maxOccurs="1" form="unqualified" name="shippingAddress" nillable="true" type="common:AddressInfo">
+        <annotation>
+          <documentation>
+                        Shipping address
+                    </documentation>
+        </annotation>
+      </element>
+      <element minOccurs="0" maxOccurs="1" form="unqualified" name="billingAddress" nillable="true" type="common:AddressInfo">
+        <annotation>
+          <documentation>
+                        Billing address
+                    </documentation>
+        </annotation>
+      </element>
+    </sequence>
+  </complexType>
+</schema>

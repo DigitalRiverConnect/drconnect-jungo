@@ -1,0 +1,4 @@
+[submodule "WindowsPowerShell"]
+	path = WindowsPowerShell
+	url = git@github.digitalriverws.net:cloudlink/windows_powershell.git
+	branch = master

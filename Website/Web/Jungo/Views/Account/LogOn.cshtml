@@ -1,0 +1,28 @@
+﻿@model DigitalRiver.CloudLink.Commerce.Nimbus.ViewModels.Shopper.LogOnModel
+<div id="dr_Login" class="dr_Content">
+@Html.ValidationSummary(true, "Login was unsuccessful. Please correct the errors and try again.")
+@using (Html.BeginForm()) {
+        <fieldset id="dr_login">
+            <legend>Account Information</legend>
+            <h1>Log On</h1>
+            <p>Please enter your user name and password. @Html.ActionLink("Register", "register") if you don't have an account.</p>
+            <div class="dr_formLine" >
+                @Html.LabelFor(m => m.UserName)
+                @Html.TextBoxFor(m => m.UserName)
+                @Html.ValidationMessageFor(m => m.UserName)
+            </div>
+            <div class="dr_formLine" >
+                @Html.LabelFor(m => m.Password)
+                @Html.PasswordFor(m => m.Password)
+                @Html.ValidationMessageFor(m => m.Password)
+            </div>
+            <div class="dr_formLine" >
+                @Html.CheckBoxFor(m => m.RememberMe)
+                @Html.LabelFor(m => m.RememberMe)
+            </div>
+            <div id="dr_siteButtons">
+                <input type="submit" value="login" class="dr_button">    
+            </div>
+        </fieldset>
+}
+</div>

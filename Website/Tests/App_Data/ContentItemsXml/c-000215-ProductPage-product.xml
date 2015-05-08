@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<n2 version="2.4.0.0" exportVersion="2" exportDate="07/10/2013 23:28:35">
+  <item id="215" name="product" parent="214" title="Product" state="Published" created="01/18/2013 15:06:42" updated="07/10/2013 23:28:35" published="01/18/2013 15:06:42" sortOrder="-10" url="/msca/fr-ca/store/catalog/product" visible="True" savedBy="stwright" typeName="DigitalRiver.CloudLink.N2MVC.Models.Pages.ProductPage, DigitalRiver.CloudLink.N2MVC" discriminator="ProductPage" ancestralTrail="/1/12/174/179/186/214/" childState="128">
+    <details />
+    <detailCollections />
+    <children>
+      <child id="216" name="216" versionIndex="0" />
+      <child id="220" name="220" versionIndex="0" />
+      <child id="221" name="221" versionIndex="0" />
+    </children>
+    <authorizations />
+    <properties />
+  </item>
+  <item id="216" name="" parent="215" title="Product Images + Details" zoneName="Content" state="Published" created="03/06/2013 02:11:53" updated="07/10/2013 23:28:35" published="03/06/2013 02:19:26" sortOrder="-10" url="/msca/fr-ca/store/catalog/product?item=216" visible="True" savedBy="admin" typeName="DigitalRiver.CloudLink.N2MVC.Models.Parts.TemplatePart, DigitalRiver.CloudLink.N2MVC" discriminator="TemplatePart" ancestralTrail="/1/12/174/179/186/214/215/" childState="128">
+    <details>
+      <detail name="ViewTemplate" typeName="System.String, mscorlib" meta="" encoded="True"><![CDATA[Container5plus3]]></detail>
+    </details>
+    <detailCollections />
+    <children>
+      <child id="217" name="217" versionIndex="0" />
+      <child id="218" name="218" versionIndex="0" />
+      <child id="219" name="219" versionIndex="0" />
+    </children>
+    <authorizations />
+    <properties />
+  </item>
+  <item id="217" name="" parent="216" title="" zoneName="Content" state="Published" created="03/06/2013 02:12:03" updated="07/10/2013 23:28:35" published="03/06/2013 02:19:26" sortOrder="-10" url="/msca/fr-ca/store/catalog/product?item=217" visible="True" savedBy="admin" typeName="DigitalRiver.CloudLink.N2MVC.Models.Parts.ProductDetailsPart, DigitalRiver.CloudLink.N2MVC" discriminator="ProductDetailsPart" ancestralTrail="/1/12/174/179/186/214/215/216/" childState="2">
+    <details>
+      <detail name="ViewTemplate" typeName="System.String, mscorlib" meta="" encoded="True"><![CDATA[ProductImages]]></detail>
+    </details>
+    <detailCollections />
+    <children />
+    <authorizations />
+    <properties />
+  </item>
+  <item id="218" name="" parent="216" title="" zoneName="Right" state="Published" created="03/06/2013 02:13:42" updated="07/10/2013 23:28:35" published="03/06/2013 02:19:26" sortOrder="-5" url="/msca/fr-ca/store/catalog/product?item=218" visible="True" savedBy="admin" typeName="DigitalRiver.CloudLink.N2MVC.Models.Parts.ProductDetailsPart, DigitalRiver.CloudLink.N2MVC" discriminator="ProductDetailsPart" ancestralTrail="/1/12/174/179/186/214/215/216/" childState="2">
+    <details>
+      <detail name="ViewTemplate" typeName="System.String, mscorlib" meta="" encoded="True"><![CDATA[ProductDetails]]></detail>
+    </details>
+    <detailCollections />
+    <children />
+    <authorizations />
+    <properties />
+  </item>
+  <item id="219" name="" parent="216" title="Stacked Product Offers" zoneName="Right" state="Published" created="03/06/2013 02:14:46" updated="07/10/2013 23:28:35" published="03/06/2013 02:19:26" sortOrder="0" url="/msca/fr-ca/store/catalog/product?item=219" visible="True" savedBy="admin" typeName="DigitalRiver.CloudLink.N2MVC.Models.Parts.CmsPopPart, DigitalRiver.CloudLink.N2MVC" discriminator="CmsPopPart" ancestralTrail="/1/12/174/179/186/214/215/216/" childState="2">
+    <details>
+      <detail name="ViewTemplate" typeName="System.String, mscorlib" meta="" encoded="True"><![CDATA[SmallStackedProductOffers]]></detail>
+    </details>
+    <detailCollections />
+    <children />
+    <authorizations />
+    <properties />
+  </item>
+  <item id="220" name="" parent="215" title="Offer Container" zoneName="Content" state="Published" created="03/06/2013 02:15:13" updated="07/10/2013 23:28:35" published="03/06/2013 02:19:26" sortOrder="-5" url="/msca/fr-ca/store/catalog/product?item=220" visible="True" savedBy="admin" typeName="DigitalRiver.CloudLink.N2MVC.Models.Parts.TemplatePart, DigitalRiver.CloudLink.N2MVC" discriminator="TemplatePart" ancestralTrail="/1/12/174/179/186/214/215/" childState="2">
+    <details>
+      <detail name="ViewTemplate" typeName="System.String, mscorlib" meta="" encoded="True"><![CDATA[ContainerFull]]></detail>
+    </details>
+    <detailCollections />
+    <children />
+    <authorizations />
+    <properties />
+  </item>
+  <item id="221" name="" parent="215" title="Product Extended Details Container" zoneName="Content" state="Published" created="03/06/2013 02:17:16" updated="07/10/2013 23:28:35" published="03/06/2013 02:19:26" sortOrder="0" url="/msca/fr-ca/store/catalog/product?item=221" visible="True" savedBy="admin" typeName="DigitalRiver.CloudLink.N2MVC.Models.Parts.TemplatePart, DigitalRiver.CloudLink.N2MVC" discriminator="TemplatePart" ancestralTrail="/1/12/174/179/186/214/215/" childState="128">
+    <details>
+      <detail name="ViewTemplate" typeName="System.String, mscorlib" meta="" encoded="True"><![CDATA[ContainerFull]]></detail>
+    </details>
+    <detailCollections />
+    <children>
+      <child id="222" name="222" versionIndex="0" />
+      <child id="223" name="223" versionIndex="0" />
+    </children>
+    <authorizations />
+    <properties />
+  </item>
+  <item id="222" name="" parent="221" title="" zoneName="Content" state="Published" created="03/06/2013 02:17:29" updated="07/10/2013 23:28:35" published="03/06/2013 02:19:26" sortOrder="-10" url="/msca/fr-ca/store/catalog/product?item=222" visible="True" savedBy="admin" typeName="DigitalRiver.CloudLink.N2MVC.Models.Parts.ProductDetailsPart, DigitalRiver.CloudLink.N2MVC" discriminator="ProductDetailsPart" ancestralTrail="/1/12/174/179/186/214/215/221/" childState="2">
+    <details>
+      <detail name="ViewTemplate" typeName="System.String, mscorlib" meta="" encoded="True"><![CDATA[ProductExtendedDetails]]></detail>
+    </details>
+    <detailCollections />
+    <children />
+    <authorizations />
+    <properties />
+  </item>
+  <item id="223" name="" parent="221" title="You may also like" zoneName="Content" state="Published" created="03/06/2013 02:19:23" updated="07/10/2013 23:28:35" published="03/06/2013 02:19:26" sortOrder="0" url="/msca/fr-ca/store/catalog/product?item=223" visible="True" savedBy="admin" typeName="DigitalRiver.CloudLink.N2MVC.Models.Parts.CmsPopPart, DigitalRiver.CloudLink.N2MVC" discriminator="CmsPopPart" ancestralTrail="/1/12/174/179/186/214/215/221/" childState="128">
+    <details>
+      <detail name="ViewTemplate" typeName="System.String, mscorlib" meta="" encoded="True"><![CDATA[TopCategories]]></detail>
+      <detail name="CssClass" typeName="System.String, mscorlib" meta="" encoded="True"><![CDATA[recommended-products]]></detail>
+      <detail name="NumElementsWide" typeName="System.String, mscorlib" meta="" encoded="True"><![CDATA[4]]></detail>
+    </details>
+    <detailCollections />
+    <children>
+      <child id="224" name="224" versionIndex="0" />
+      <child id="225" name="225" versionIndex="0" />
+      <child id="226" name="226" versionIndex="0" />
+      <child id="227" name="227" versionIndex="0" />
+    </children>
+    <authorizations />
+    <properties />
+  </item>
+  <item id="224" name="" parent="223" title="Office 365 Premium" zoneName="Offers" state="Published" created="03/11/2013 23:26:39" updated="07/10/2013 23:28:35" published="03/11/2013 23:26:56" sortOrder="-10" url="" visible="True" savedBy="admin" typeName="DigitalRiver.CloudLink.N2MVC.Models.Parts.PromotionOffer, DigitalRiver.CloudLink.N2MVC" discriminator="PromotionOffer" ancestralTrail="/1/12/174/179/186/214/215/221/223/" childState="2">
+    <details>
+      <detail name="Title" typeName="System.String, mscorlib" meta="" encoded="True"><![CDATA[Office 365 Premium]]></detail>
+      <detail name="Image" typeName="System.String, mscorlib" meta="" encoded="True"><![CDATA[~/upload/278x180.gif]]></detail>
+      <detail name="Text" typeName="System.String, mscorlib" meta="" encoded="True"><![CDATA[Lorem ipsum dolor sit amet, consectetur a dipiscing elit. Pellentesque lorem odio, euismod id.]]></detail>
+    </details>
+    <detailCollections />
+    <children />
+    <authorizations />
+    <properties />
+  </item>
+  <item id="225" name="" parent="223" title="Office for Mac Home and Student 2011" zoneName="Offers" state="Published" created="03/11/2013 23:26:39" updated="07/10/2013 23:28:35" published="03/11/2013 23:26:56" sortOrder="-5" url="" visible="True" savedBy="admin" typeName="DigitalRiver.CloudLink.N2MVC.Models.Parts.PromotionOffer, DigitalRiver.CloudLink.N2MVC" discriminator="PromotionOffer" ancestralTrail="/1/12/174/179/186/214/215/221/223/" childState="2">
+    <details>
+      <detail name="Title" typeName="System.String, mscorlib" meta="" encoded="True"><![CDATA[Office for Mac Home and Student 2011]]></detail>
+      <detail name="Image" typeName="System.String, mscorlib" meta="" encoded="True"><![CDATA[~/upload/278x180.gif]]></detail>
+      <detail name="Text" typeName="System.String, mscorlib" meta="" encoded="True"><![CDATA[Lorem ipsum dolor sit amet, consectetur a dipiscing elit. Pellentesque lorem odio, euismod id.]]></detail>
+    </details>
+    <detailCollections />
+    <children />
+    <authorizations />
+    <properties />
+  </item>
+  <item id="226" name="" parent="223" title="Windows 7 Professional" zoneName="Offers" state="Published" created="03/11/2013 23:26:39" updated="07/10/2013 23:28:35" published="03/11/2013 23:26:56" sortOrder="-2" url="" visible="True" savedBy="admin" typeName="DigitalRiver.CloudLink.N2MVC.Models.Parts.PromotionOffer, DigitalRiver.CloudLink.N2MVC" discriminator="PromotionOffer" ancestralTrail="/1/12/174/179/186/214/215/221/223/" childState="2">
+    <details>
+      <detail name="Title" typeName="System.String, mscorlib" meta="" encoded="True"><![CDATA[Windows 7 Professional]]></detail>
+      <detail name="Image" typeName="System.String, mscorlib" meta="" encoded="True"><![CDATA[~/upload/278x180.gif]]></detail>
+      <detail name="Text" typeName="System.String, mscorlib" meta="" encoded="True"><![CDATA[Lorem ipsum dolor sit amet, consectetur a dipiscing elit. Pellentesque lorem odio, euismod id.]]></detail>
+    </details>
+    <detailCollections />
+    <children />
+    <authorizations />
+    <properties />
+  </item>
+  <item id="227" name="" parent="223" title="Windows 7 Ultimate" zoneName="Offers" state="Published" created="03/11/2013 23:26:39" updated="07/10/2013 23:28:35" published="03/11/2013 23:26:56" sortOrder="0" url="" visible="True" savedBy="admin" typeName="DigitalRiver.CloudLink.N2MVC.Models.Parts.PromotionOffer, DigitalRiver.CloudLink.N2MVC" discriminator="PromotionOffer" ancestralTrail="/1/12/174/179/186/214/215/221/223/" childState="2">
+    <details>
+      <detail name="Title" typeName="System.String, mscorlib" meta="" encoded="True"><![CDATA[Windows 7 Ultimate]]></detail>
+      <detail name="Image" typeName="System.String, mscorlib" meta="" encoded="True"><![CDATA[~/upload/278x180.gif]]></detail>
+      <detail name="Text" typeName="System.String, mscorlib" meta="" encoded="True"><![CDATA[Lorem ipsum dolor sit amet, consectetur a dipiscing elit. Pellentesque lorem odio, euismod id.]]></detail>
+    </details>
+    <detailCollections />
+    <children />
+    <authorizations />
+    <properties />
+  </item>
+</n2>

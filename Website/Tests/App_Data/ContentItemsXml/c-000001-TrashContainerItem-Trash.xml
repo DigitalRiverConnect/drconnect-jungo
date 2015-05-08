@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<n2 version="2.4.0.0" exportVersion="2" exportDate="07/10/2013 23:30:30">
+  <item id="1" name="Trash" title="Trash" state="New" created="07/10/2013 23:30:30" updated="07/10/2013 23:30:30" published="07/10/2013 23:30:30" sortOrder="1000000" url="/N2/Content/Trash/Default.aspx?page=1" visible="False" savedBy="" typeName="N2.Edit.Trash.TrashContainerItem, N2.Management" discriminator="TrashContainerItem" ancestralTrail="/" childState="0">
+    <details />
+    <detailCollections />
+    <children />
+    <authorizations>
+      <role>admin</role>
+      <role>Editors</role>
+      <role>Administrators</role>
+    </authorizations>
+    <properties />
+  </item>
+</n2>

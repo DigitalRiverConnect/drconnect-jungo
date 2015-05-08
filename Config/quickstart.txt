@@ -1,0 +1,38 @@
+How To Config
+=============
+
+Really Quick Start:
+- copy Config\environment.txt.sample to environment.txt
+- first time only: 1) rebuild, 2) delete your FileCache (if any) and 3) restart IIS
+
+Config Files:
+- Sets of related configuration parameters are grouped into objects.
+- Models for each object are defined in C# POCOs, named like MySlickStuffConfig.
+- A file containing the JSON representation of the model is called MySlickStuff.json.
+- The Config root directory contains system-wide settings.
+- Subdirectories within Config override values by environment.
+- If the environment name is dotted, such as Cloud.PROD.US_WEST, the search path for environment configs is:
+    1) Config\Cloud\PROD\US_WEST
+    2) Config\Cloud\PROD
+    3) Config\Cloud
+- The "Local" directory within Config is not revision-controlled, and overrides both system-wide and environment settings.
+- Environment.txt contains the name of your current environment.
+- A model is loaded via:
+   var myConfig = ConfigurationService.GetConfig<MySlickStuffConfig>();
+
+To modify an existing configuration to be JSON:
+- remove IConfig implementation
+- make the POCO properties conform to what you want the JSON to look like (or vice versa)
+    so ordinary JsonConvert.Deserialize populates the properties instead of what it used to do
+    which was usually dumpster diving in the xml
+- remove any configuration section designer and xsd no longer needed because the properties populate themselves via JSON
+- make properties have a public setter (most old IConfig implementations made the setter private)
+- change references to loading the config to use ConfigurationService.GetConfig<MySlickStuffConfig>();
+- create a default JSON file for revision control, and others in appropriate subfolders by environment if need be
+
+To define a new configuration:
+- create a new model -- just a POCO -- but you can add other convenience methods if you want -- follow naming convention above
+- put system-wide default settings into a json file in the Config directory -- follow naming convention above
+- put environment-specific settings, if any, into environment subdirectories within Config directory
+- load your settings as shown above with ConfigurationService.GetConfig<YourConfig>()
+- use the settings to vary system behavior as desired

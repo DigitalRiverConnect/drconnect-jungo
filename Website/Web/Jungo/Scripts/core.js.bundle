@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<bundle minify="true" runOnBuild="true" output="core.js">
+  <!--The order of the <file> elements determines the order of them when bundled.--> 
+  <file>/Scripts/jquery-1.8.3.js</file>
+  <file>/Scripts/jquery.validate.js</file>
+  <file>/Scripts/jquery.validate.unobtrusive.js</file>
+  <file>/Scripts/jquery.ba-postmessage.js</file>
+  <file>/Scripts/jquery.ba-bbq.js</file>
+  <file>/Scripts/underscore-min.js</file>
+  <file>/Scripts/backbone-min.js</file>
+  <file>/Scripts/modernizr-2.6.2.js</file>
+  <file>/Scripts/json2.js</file>
+  <file>/Scripts/html5.js</file>
+  <file>/Scripts/ms/fontfix.js</file>
+  <file>/Scripts/ms/picture-polyfill.js</file>
+  <file>/Scripts/responsive/foundation.js</file>
+  <file>/Scripts/responsive/foundation.orbit.js</file>
+  <file>/Scripts/responsive/foundation.section.js</file>
+  <file>/Scripts/responsive/app.js</file>
+  <file>/Scripts/moment.js</file>
+  <file>/Scripts/waypoints-min.js</file>
+  <file>/Scripts/waypoints-sticky.js</file>
+</bundle>

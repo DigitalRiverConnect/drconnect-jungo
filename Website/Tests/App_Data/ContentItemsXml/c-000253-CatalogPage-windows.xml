@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<n2 version="2.4.0.0" exportVersion="2" exportDate="07/10/2013 23:28:36">
+  <item id="253" name="windows" parent="186" title="Windows" state="Published" created="03/11/2013 22:15:47" updated="07/10/2013 23:28:36" published="03/11/2013 22:15:47" sortOrder="62" url="/msca/fr-ca/store/windows" visible="True" savedBy="admin" typeName="DigitalRiver.CloudLink.N2MVC.Models.Pages.CatalogPage, DigitalRiver.CloudLink.N2MVC" discriminator="CatalogPage" ancestralTrail="/1/12/174/179/186/" childState="4">
+    <details />
+    <detailCollections />
+    <children />
+    <authorizations />
+    <properties />
+  </item>
+</n2>
